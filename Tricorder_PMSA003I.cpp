@@ -2,6 +2,26 @@
 
 Tricorder_PMSA003I::Tricorder_PMSA003I(){
 	sensor_name = "PMSA003I";
+	
+	sensor_options.push_back(sensor_option(
+		"enabled",
+		OP_Boolean,
+		[&](nlohmann::json val)->bool{			
+			enabled = val.get<bool>();
+			return true;
+		},
+		[&]()->nlohmann::json{ return enabled; }
+	));
+	sensor_options.push_back(sensor_option(
+		"report_rate",
+		OP_Double,
+		[&](nlohmann::json val)->bool{
+			report_rate = val.get<double>();
+			return true;
+		},
+		[&]()->nlohmann::json{
+			return report_rate; }
+	));
 }
 
 bool Tricorder_PMSA003I::sensor_init(){
@@ -13,20 +33,6 @@ bool Tricorder_PMSA003I::sensor_init(){
 	}
 	
 	return initialized;
-}
-
-bool Tricorder_PMSA003I::set_property(char *nam, char *val){
-	if(strcmp(nam, "enabled") == 0){
-		if(strcmp(val, "true") == 0){
-			enabled = true;
-		}else if(strcmp(val, "false") == 0){
-			enabled = false;
-		}
-	}else if(strcmp(nam, "report_rate") == 0){
-		report_rate = atoi(val);
-	}
-	
-	return true;
 }
 
 bool Tricorder_PMSA003I::read_sensor(){
@@ -49,19 +55,4 @@ nlohmann::json Tricorder_PMSA003I::populate_data(){
 	};
 	
 	return data_frame;
-}
-
-nlohmann::json Tricorder_PMSA003I::populate_options(){
-	nlohmann::json opts_frame = {"enabled"};
-	
-	return opts_frame;
-}
-
-nlohmann::json Tricorder_PMSA003I::query_state(char *opnam){
-	nlohmann::json frame;
-	if(strcmp(opnam, "enabled") == 0){
-		frame["state"] = enabled;
-	}
-	
-	return frame;
 }

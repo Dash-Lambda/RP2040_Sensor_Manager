@@ -12,7 +12,9 @@
 
 #define LED_PIN 25
 
-#define MAX_BUFFER_SIZE 128
+#define MAX_BUFFER_SIZE 1024
+#define MAX_INITIALIZATION_RETRIES 2
+#define INITIALIZATION_RETRY_DELAY 10
 
 void send_json(nlohmann::json frame){
 	printf("<%s>\n", frame.dump().c_str());
@@ -39,15 +41,25 @@ int main(){
 	// Global Variables
 	bool led_state = false;
 	uint64_t led_stamp = time_us_64();
-	char nam_buf[MAX_BUFFER_SIZE], prop_buf[MAX_BUFFER_SIZE], val_buf[MAX_BUFFER_SIZE];
+	//char nam_buf[MAX_BUFFER_SIZE], prop_buf[MAX_BUFFER_SIZE], val_buf[MAX_BUFFER_SIZE];
 	bool read_ready = false;
 	int read_state = 0;
 	int read_idx = 0;
 	
+	char input_buffer[MAX_BUFFER_SIZE];
+	
 	// Initialize Sensors
 	printf("<Initializing Sensors>\n");
 	for(Tricorder_Sensor *sensor : sensors){
-		if(sensor->sensor_init()){
+		int counter = 0;
+		bool success = sensor->sensor_init();
+		while(!success && counter < MAX_INITIALIZATION_RETRIES){
+			sleep_ms(INITIALIZATION_RETRY_DELAY);
+			counter++;
+			success = sensor->sensor_init();
+			printf("<Retrying: %s>\n", sensor->sensor_name);
+		}
+		if(success){
 			printf("<Initialized: %s>\n", sensor->sensor_name);
 		}else{
 			printf("<Failed To Initialize: %s>\n", sensor->sensor_name);
@@ -59,9 +71,80 @@ int main(){
 		//printf("Start Loop\n");
 		uint64_t current_time = time_us_64();
 		
+		// Read Input
+		if(uart_is_readable(uart0)){
+			if(read_idx >= MAX_BUFFER_SIZE){
+				read_ready = false;
+				read_idx = 0;
+				read_state = 0;
+			}
+			char tmp = uart_getc(uart0);
+			switch(read_state){
+				case 0:
+					if(tmp == '<'){
+						read_state = 1;
+						read_idx = 0;
+					}
+					break;
+				case 1:
+					if(tmp == '>'){
+						input_buffer[read_idx] = '\0';
+						read_state = 0;
+						read_idx = 0;
+						read_ready = true;
+					}else{
+						input_buffer[read_idx] = tmp;
+						read_idx++;
+					}
+					break;
+			}
+		}
+		
+		// Handle Input
+		if(read_ready){
+			read_ready = false;
+			auto jinp = nlohmann::json::parse(input_buffer);
+			const char *cmd = jinp.at("command").get<std::string>().c_str();
+			if(strcmp(cmd, "list_sensors") == 0){
+				nlohmann::json sensor_list = nlohmann::json::array();
+				for(Tricorder_Sensor *sensor : sensors){
+					nlohmann::json entry = {
+						{"name", sensor->sensor_name},
+						{"Initialized", sensor->initialized},
+						{"enabled", sensor->enabled}
+					};
+					sensor_list.push_back(entry);
+				}
+				nlohmann::json report_frame = {
+					{"report", "sensor_list"},
+					{"sensors", sensor_list}
+				};
+				send_json(report_frame);
+			}else if(strcmp(cmd, "set_parameter") == 0){
+				const char *target = jinp.at("sensor").get<std::string>().c_str();
+				const char *param = jinp.at("param").get<std::string>().c_str();
+				const char *val = jinp.at("value").get<std::string>().c_str();
+				for(Tricorder_Sensor *sensor : sensors){
+					if(strcmp(target, sensor->sensor_name) == 0){
+						sensor->set_property((char*)param, (char*)val);
+						break;
+					}
+				}
+			}else if(strcmp(cmd, "list_options") == 0){
+				const char *target = jinp.at("sensor").get<std::string>().c_str();
+				for(Tricorder_Sensor *sensor : sensors){
+					if(strcmp(target, sensor->sensor_name) == 0){
+						nlohmann::json opts_frame = sensor->report_options();
+						send_json(opts_frame);
+						break;
+					}
+				}
+			}
+		}
+		
 		// Handle input
 		//printf("Reading Input..\n");
-		if(uart_is_readable(uart0)){
+		/*if(uart_is_readable(uart0)){
 			if(read_idx >= MAX_BUFFER_SIZE){
 				read_ready = false;
 				read_idx = 0;
@@ -154,7 +237,7 @@ int main(){
 				}
 			}
 			read_ready = false;
-		}
+		}*/
 		
 		// Update LED
 		//printf("Updating LED...\n");

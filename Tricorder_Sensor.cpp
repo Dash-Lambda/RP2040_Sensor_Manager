@@ -11,13 +11,18 @@ bool Tricorder_Sensor::sensor_init(){return false;}
 
 bool Tricorder_Sensor::read_sensor(){return false;}
 
-bool Tricorder_Sensor::set_property(char *nam, char *val){return false;}
-
 nlohmann::json Tricorder_Sensor::populate_data(){return nlohmann::json();}
 
-nlohmann::json Tricorder_Sensor::populate_options(){return nlohmann::json();}
-
-nlohmann::json Tricorder_Sensor::query_state(char *opnam){return nlohmann::json();}
+bool Tricorder_Sensor::set_property(char *nam, char *val){
+	for(sensor_option op : sensor_options){
+		if(strcmp(nam, op.op_name) == 0){
+			op.set(val);
+			break;
+		}
+	}
+	
+	return true;
+}
 
 nlohmann::json Tricorder_Sensor::build_json(){
 	nlohmann::json data_frame = populate_data();
@@ -31,6 +36,14 @@ nlohmann::json Tricorder_Sensor::build_json(){
 	return report_frame;
 }
 
+nlohmann::json Tricorder_Sensor::populate_options(){
+	nlohmann::json opt_frame = nlohmann::json::array();
+	for(sensor_option op : sensor_options){
+		opt_frame.push_back(op.op_name);
+	}
+	return opt_frame;
+}
+
 nlohmann::json Tricorder_Sensor::report_options(){
 	nlohmann::json ops_frame = populate_options();
 	nlohmann::json report_frame = {
@@ -40,6 +53,17 @@ nlohmann::json Tricorder_Sensor::report_options(){
 	};
 	
 	return report_frame;
+}
+
+nlohmann::json Tricorder_Sensor::query_state(char *opnam){
+	nlohmann::json frame;
+	for(sensor_option op : sensor_options){
+		if(strcmp(opnam, op.op_name) == 0){
+			frame["state"] = op.get();
+			break;
+		}
+	}
+	return frame;
 }
 
 nlohmann::json Tricorder_Sensor::report_state(char *opnam){

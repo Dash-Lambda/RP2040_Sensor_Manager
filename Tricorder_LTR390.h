@@ -10,12 +10,9 @@ class Tricorder_LTR390 : public Tricorder_Sensor
 	public:
 		Tricorder_LTR390();
 		bool sensor_init();
-		bool set_property(char *nam, char *val);
 		bool read_sensor();
 		nlohmann::json populate_data();
-		nlohmann::json populate_options();
 		nlohmann::json populate_state();
-		nlohmann::json query_state(char *opnam);
 	private:
 		Adafruit_LTR390 sensor_obj;
 		uint32_t cur_data;

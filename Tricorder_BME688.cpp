@@ -12,6 +12,96 @@ Tricorder_BME688::Tricorder_BME688(){
 	read_after = 0;
 	heaterTemp = 0;
 	heaterTime = 0;
+	
+	sensor_options.push_back(sensor_option(
+		"enabled",
+		OP_Boolean,
+		[&](nlohmann::json val)->bool{			
+			enabled = val.get<bool>();
+			return true;
+		},
+		[&]()->nlohmann::json{ return enabled; }
+	));
+	
+	sensor_options.push_back(sensor_option(
+		"tempOverSampling",
+		OP_Integer,
+		[&](nlohmann::json val)->bool{			
+			sensor_obj.setTemperatureOversampling(val.get<long>());
+			return true;
+		},
+		[&]()->nlohmann::json{ return "unimplemented"; }
+	));
+	
+	sensor_options.push_back(sensor_option(
+		"pressureOverSampling",
+		OP_Integer,
+		[&](nlohmann::json val)->bool{			
+			sensor_obj.setPressureOversampling(val.get<long>());
+			return true;
+		},
+		[&]()->nlohmann::json{ return "unimplemented"; }
+	));
+	
+	sensor_options.push_back(sensor_option(
+		"humidityOverSampling",
+		OP_Integer,
+		[&](nlohmann::json val)->bool{			
+			sensor_obj.setHumidityOversampling(val.get<long>());
+			return true;
+		},
+		[&]()->nlohmann::json{ return "unimplemented"; }
+	));
+	
+	sensor_options.push_back(sensor_option(
+		"IIRFilterSize",
+		OP_Integer,
+		[&](nlohmann::json val)->bool{			
+			sensor_obj.setIIRFilterSize(val.get<long>());
+			return true;
+		},
+		[&]()->nlohmann::json{ return "unimplemented"; }
+	));
+	
+	sensor_options.push_back(sensor_option(
+		"heaterTemp",
+		OP_Integer,
+		[&](nlohmann::json val)->bool{			
+			heaterTemp = val.get<long>();
+			return true;
+		},
+		[&]()->nlohmann::json{ return "unimplemented"; }
+	));
+	
+	sensor_options.push_back(sensor_option(
+		"heaterTime",
+		OP_Integer,
+		[&](nlohmann::json val)->bool{			
+			heaterTime = val.get<long>();
+			return true;
+		},
+		[&]()->nlohmann::json{ return "unimplemented"; }
+	));
+	
+	sensor_options.push_back(sensor_option(
+		"runHeat",
+		OP_Boolean,
+		[&](nlohmann::json val)->bool{			
+			if(val.get<bool>()){ sensor_obj.setGasHeater(heaterTemp, heaterTime); }
+			return true;
+		},
+		[&]()->nlohmann::json{ return "unreadable"; }
+	));
+	
+	sensor_options.push_back(sensor_option(
+		"ODR",
+		OP_Integer,
+		[&](nlohmann::json val)->bool{			
+			sensor_obj.setODR(val.get<long>());
+			return true;
+		},
+		[&]()->nlohmann::json{ return "unimplemented"; }
+	));
 }
 
 bool Tricorder_BME688::sensor_init(){
@@ -42,34 +132,6 @@ bool Tricorder_BME688::read_sensor(){
 	return false;
 }
 
-bool Tricorder_BME688::set_property(char *nam, char *val){
-	if(strcmp(nam, "enabled") == 0){
-		if(strcmp(val, "true") == 0){
-			enabled = true;
-		}else if(strcmp(val, "false") == 0){
-			enabled = false;
-		}
-	}else if(strcmp(nam, "TempOS") == 0){
-		sensor_obj.setTemperatureOversampling(atoi(val));
-	}else if(strcmp(nam, "PresOS") == 0){
-		sensor_obj.setPressureOversampling(atoi(val));
-	}else if(strcmp(nam, "HumOS") == 0){
-		sensor_obj.setHumidityOversampling(atoi(val));
-	}else if(strcmp(nam, "IIRFS") == 0){
-		sensor_obj.setIIRFilterSize(atoi(val));
-	}else if(strcmp(nam, "HeatTemp") == 0){
-		heaterTemp = atoi(val);
-	}else if(strcmp(nam, "HeatTime") == 0){
-		heaterTime = atoi(val);
-	}else if(strcmp(nam, "RunHeat") == 0){
-		sensor_obj.setGasHeater(heaterTemp, heaterTime);
-	}else if(strcmp(nam, "ODR") == 0){
-		sensor_obj.setODR(atoi(val));
-	}
-	
-	return true;
-}
-
 nlohmann::json Tricorder_BME688::populate_data(){
 	nlohmann::json data_frame = {
 		{"temperature", sensor_obj.temperature},
@@ -80,18 +142,4 @@ nlohmann::json Tricorder_BME688::populate_data(){
 	};
 	
 	return data_frame;
-}
-
-nlohmann::json Tricorder_BME688::populate_options(){
-	nlohmann::json opts_frame = {"enabled", "TempOS", "PresOS", "HumOS", "IIRFS", "HeatTemp", "HeatTime", "RunHeat", "ODR"};
-	return opts_frame;
-}
-
-nlohmann::json Tricorder_BME688::query_state(char *opnam){
-	nlohmann::json frame;
-	if(strcmp(opnam, "enabled") == 0){
-		frame["state"] = enabled;
-	}
-	
-	return frame;
 }
