@@ -14,6 +14,8 @@ add_subdirectory(/home/dashy/pico-arduino-compat/libs/adafruit-as7341 build-pac-
 add_subdirectory(/home/dashy/pico-arduino-compat/libs/adafruit-bme680-library build-pac-adafruit-bme680-library)
 add_subdirectory(/home/dashy/pico-arduino-compat/libs/adafruit-ltr390-library build-pac-adafruit-ltr390-library)
 add_subdirectory(/home/dashy/pico-arduino-compat/libs/adafruit-pm25-aqi-sensor build-pac-adafruit-pm25-aqi-sensor)
+add_subdirectory(/home/dashy/pico-arduino-compat/libs/tlv493d-a1b6 build-pac-tlv493d-a1b6)
+add_subdirectory(/home/dashy/pico-arduino-compat/libs/sensirion-i2c-scd4x build-pac-sensirion-i2c-scd4x)
 #add_subdirectory(/home/dashy/pico-arduino-compat/libs/adafruit-busio build-pac-adafruit-busio)
 
 add_library(Tricorder_Sensor Tricorder_Sensor.cpp)
@@ -21,6 +23,8 @@ add_library(Tricorder_AS7341 Tricorder_AS7341.cpp)
 add_library(Tricorder_BME688 Tricorder_BME688.cpp)
 add_library(Tricorder_LTR390 Tricorder_LTR390.cpp)
 add_library(Tricorder_PMSA003I Tricorder_PMSA003I.cpp)
+add_library(Tricorder_TLV493D Tricorder_TLV493D.cpp)
+add_library(Tricorder_SCD41 Tricorder_SCD41.cpp)
 add_executable(sensor_manager sensor_manager.cpp)
 
 target_link_libraries(Tricorder_Sensor
@@ -42,6 +46,14 @@ target_link_libraries(Tricorder_PMSA003I
 	pico_stdlib
 	pac-adafruit-pm25-aqi-sensor
 	)
+target_link_libraries(Tricorder_TLV493D
+	pico_stdlib
+	pac-tlv493d-a1b6
+	)
+target_link_libraries(Tricorder_SCD41
+	pico_stdlib
+	pac-sensirion-i2c-scd4x
+	)
 target_link_libraries(sensor_manager 
 	pico_stdlib
 	#pac-adafruit-as7341
@@ -50,6 +62,8 @@ target_link_libraries(sensor_manager
 	Tricorder_BME688
 	Tricorder_LTR390
 	Tricorder_PMSA003I
+	Tricorder_TLV493D
+	Tricorder_SCD41
 	)
 
 pico_add_extra_outputs(sensor_manager)

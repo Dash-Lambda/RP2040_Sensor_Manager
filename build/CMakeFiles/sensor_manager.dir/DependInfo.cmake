@@ -122,6 +122,9 @@ set(CMAKE_ASM_TARGET_INCLUDE_PATH
   "/home/dashy/pico-arduino-compat/libs/adafruit-bme680-library/Adafruit_BME680"
   "/home/dashy/pico-arduino-compat/libs/adafruit-ltr390-library/Adafruit_LTR390"
   "/home/dashy/pico-arduino-compat/libs/adafruit-pm25-aqi-sensor/Adafruit_PM25AQI"
+  "/home/dashy/pico-arduino-compat/libs/tlv493d-a1b6/TLV493D-A1B6-3DMagnetic-Sensor/src"
+  "/home/dashy/pico-arduino-compat/libs/sensirion-i2c-scd4x/arduino-i2c-scd4x/src"
+  "/home/dashy/pico-arduino-compat/libs/sensirion-core/arduino-core/src"
   )
 
 # The set of dependency files which are needed:
@@ -193,6 +196,16 @@ set(CMAKE_DEPENDS_DEPENDENCY_FILES
   "/home/dashy/pico-arduino-compat/libs/adafruit-busio/Adafruit_BusIO/Adafruit_SPIDevice.cpp" "CMakeFiles/sensor_manager.dir/home/dashy/pico-arduino-compat/libs/adafruit-busio/Adafruit_BusIO/Adafruit_SPIDevice.cpp.obj" "gcc" "CMakeFiles/sensor_manager.dir/home/dashy/pico-arduino-compat/libs/adafruit-busio/Adafruit_BusIO/Adafruit_SPIDevice.cpp.obj.d"
   "/home/dashy/pico-arduino-compat/libs/adafruit-ltr390-library/Adafruit_LTR390/Adafruit_LTR390.cpp" "CMakeFiles/sensor_manager.dir/home/dashy/pico-arduino-compat/libs/adafruit-ltr390-library/Adafruit_LTR390/Adafruit_LTR390.cpp.obj" "gcc" "CMakeFiles/sensor_manager.dir/home/dashy/pico-arduino-compat/libs/adafruit-ltr390-library/Adafruit_LTR390/Adafruit_LTR390.cpp.obj.d"
   "/home/dashy/pico-arduino-compat/libs/adafruit-pm25-aqi-sensor/Adafruit_PM25AQI/Adafruit_PM25AQI.cpp" "CMakeFiles/sensor_manager.dir/home/dashy/pico-arduino-compat/libs/adafruit-pm25-aqi-sensor/Adafruit_PM25AQI/Adafruit_PM25AQI.cpp.obj" "gcc" "CMakeFiles/sensor_manager.dir/home/dashy/pico-arduino-compat/libs/adafruit-pm25-aqi-sensor/Adafruit_PM25AQI/Adafruit_PM25AQI.cpp.obj.d"
+  "/home/dashy/pico-arduino-compat/libs/sensirion-core/arduino-core/src/SensirionErrors.cpp" "CMakeFiles/sensor_manager.dir/home/dashy/pico-arduino-compat/libs/sensirion-core/arduino-core/src/SensirionErrors.cpp.obj" "gcc" "CMakeFiles/sensor_manager.dir/home/dashy/pico-arduino-compat/libs/sensirion-core/arduino-core/src/SensirionErrors.cpp.obj.d"
+  "/home/dashy/pico-arduino-compat/libs/sensirion-core/arduino-core/src/SensirionI2CCommunication.cpp" "CMakeFiles/sensor_manager.dir/home/dashy/pico-arduino-compat/libs/sensirion-core/arduino-core/src/SensirionI2CCommunication.cpp.obj" "gcc" "CMakeFiles/sensor_manager.dir/home/dashy/pico-arduino-compat/libs/sensirion-core/arduino-core/src/SensirionI2CCommunication.cpp.obj.d"
+  "/home/dashy/pico-arduino-compat/libs/sensirion-core/arduino-core/src/SensirionI2CTxFrame.cpp" "CMakeFiles/sensor_manager.dir/home/dashy/pico-arduino-compat/libs/sensirion-core/arduino-core/src/SensirionI2CTxFrame.cpp.obj" "gcc" "CMakeFiles/sensor_manager.dir/home/dashy/pico-arduino-compat/libs/sensirion-core/arduino-core/src/SensirionI2CTxFrame.cpp.obj.d"
+  "/home/dashy/pico-arduino-compat/libs/sensirion-core/arduino-core/src/SensirionRxFrame.cpp" "CMakeFiles/sensor_manager.dir/home/dashy/pico-arduino-compat/libs/sensirion-core/arduino-core/src/SensirionRxFrame.cpp.obj" "gcc" "CMakeFiles/sensor_manager.dir/home/dashy/pico-arduino-compat/libs/sensirion-core/arduino-core/src/SensirionRxFrame.cpp.obj.d"
+  "/home/dashy/pico-arduino-compat/libs/sensirion-core/arduino-core/src/SensirionShdlcCommunication.cpp" "CMakeFiles/sensor_manager.dir/home/dashy/pico-arduino-compat/libs/sensirion-core/arduino-core/src/SensirionShdlcCommunication.cpp.obj" "gcc" "CMakeFiles/sensor_manager.dir/home/dashy/pico-arduino-compat/libs/sensirion-core/arduino-core/src/SensirionShdlcCommunication.cpp.obj.d"
+  "/home/dashy/pico-arduino-compat/libs/sensirion-core/arduino-core/src/SensirionShdlcTxFrame.cpp" "CMakeFiles/sensor_manager.dir/home/dashy/pico-arduino-compat/libs/sensirion-core/arduino-core/src/SensirionShdlcTxFrame.cpp.obj" "gcc" "CMakeFiles/sensor_manager.dir/home/dashy/pico-arduino-compat/libs/sensirion-core/arduino-core/src/SensirionShdlcTxFrame.cpp.obj.d"
+  "/home/dashy/pico-arduino-compat/libs/sensirion-i2c-scd4x/arduino-i2c-scd4x/src/SensirionI2CScd4x.cpp" "CMakeFiles/sensor_manager.dir/home/dashy/pico-arduino-compat/libs/sensirion-i2c-scd4x/arduino-i2c-scd4x/src/SensirionI2CScd4x.cpp.obj" "gcc" "CMakeFiles/sensor_manager.dir/home/dashy/pico-arduino-compat/libs/sensirion-i2c-scd4x/arduino-i2c-scd4x/src/SensirionI2CScd4x.cpp.obj.d"
+  "/home/dashy/pico-arduino-compat/libs/tlv493d-a1b6/TLV493D-A1B6-3DMagnetic-Sensor/src/Tlv493d.cpp" "CMakeFiles/sensor_manager.dir/home/dashy/pico-arduino-compat/libs/tlv493d-a1b6/TLV493D-A1B6-3DMagnetic-Sensor/src/Tlv493d.cpp.obj" "gcc" "CMakeFiles/sensor_manager.dir/home/dashy/pico-arduino-compat/libs/tlv493d-a1b6/TLV493D-A1B6-3DMagnetic-Sensor/src/Tlv493d.cpp.obj.d"
+  "/home/dashy/pico-arduino-compat/libs/tlv493d-a1b6/TLV493D-A1B6-3DMagnetic-Sensor/src/util/BusInterface.cpp" "CMakeFiles/sensor_manager.dir/home/dashy/pico-arduino-compat/libs/tlv493d-a1b6/TLV493D-A1B6-3DMagnetic-Sensor/src/util/BusInterface.cpp.obj" "gcc" "CMakeFiles/sensor_manager.dir/home/dashy/pico-arduino-compat/libs/tlv493d-a1b6/TLV493D-A1B6-3DMagnetic-Sensor/src/util/BusInterface.cpp.obj.d"
+  "/home/dashy/pico-arduino-compat/libs/tlv493d-a1b6/TLV493D-A1B6-3DMagnetic-Sensor/src/util/RegMask.cpp" "CMakeFiles/sensor_manager.dir/home/dashy/pico-arduino-compat/libs/tlv493d-a1b6/TLV493D-A1B6-3DMagnetic-Sensor/src/util/RegMask.cpp.obj" "gcc" "CMakeFiles/sensor_manager.dir/home/dashy/pico-arduino-compat/libs/tlv493d-a1b6/TLV493D-A1B6-3DMagnetic-Sensor/src/util/RegMask.cpp.obj.d"
   "/home/dashy/pico-sdk/src/rp2_common/pico_standard_link/new_delete.cpp" "CMakeFiles/sensor_manager.dir/home/dashy/pico-sdk/src/rp2_common/pico_standard_link/new_delete.cpp.obj" "gcc" "CMakeFiles/sensor_manager.dir/home/dashy/pico-sdk/src/rp2_common/pico_standard_link/new_delete.cpp.obj.d"
   "/media/sf_Ubuntu_22.04_2_SSD_Shared/tricorder_ws/sensor_manager.cpp" "CMakeFiles/sensor_manager.dir/sensor_manager.cpp.obj" "gcc" "CMakeFiles/sensor_manager.dir/sensor_manager.cpp.obj.d"
   )
@@ -204,6 +217,8 @@ set(CMAKE_TARGET_LINKED_INFO_FILES
   "/media/sf_Ubuntu_22.04_2_SSD_Shared/tricorder_ws/build/CMakeFiles/Tricorder_BME688.dir/DependInfo.cmake"
   "/media/sf_Ubuntu_22.04_2_SSD_Shared/tricorder_ws/build/CMakeFiles/Tricorder_LTR390.dir/DependInfo.cmake"
   "/media/sf_Ubuntu_22.04_2_SSD_Shared/tricorder_ws/build/CMakeFiles/Tricorder_PMSA003I.dir/DependInfo.cmake"
+  "/media/sf_Ubuntu_22.04_2_SSD_Shared/tricorder_ws/build/CMakeFiles/Tricorder_TLV493D.dir/DependInfo.cmake"
+  "/media/sf_Ubuntu_22.04_2_SSD_Shared/tricorder_ws/build/CMakeFiles/Tricorder_SCD41.dir/DependInfo.cmake"
   )
 
 # Fortran module output directory.

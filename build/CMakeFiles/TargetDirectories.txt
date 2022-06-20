@@ -3,6 +3,8 @@
 /media/sf_Ubuntu_22.04_2_SSD_Shared/tricorder_ws/build/CMakeFiles/Tricorder_BME688.dir
 /media/sf_Ubuntu_22.04_2_SSD_Shared/tricorder_ws/build/CMakeFiles/Tricorder_LTR390.dir
 /media/sf_Ubuntu_22.04_2_SSD_Shared/tricorder_ws/build/CMakeFiles/Tricorder_PMSA003I.dir
+/media/sf_Ubuntu_22.04_2_SSD_Shared/tricorder_ws/build/CMakeFiles/Tricorder_TLV493D.dir
+/media/sf_Ubuntu_22.04_2_SSD_Shared/tricorder_ws/build/CMakeFiles/Tricorder_SCD41.dir
 /media/sf_Ubuntu_22.04_2_SSD_Shared/tricorder_ws/build/CMakeFiles/sensor_manager.dir
 /media/sf_Ubuntu_22.04_2_SSD_Shared/tricorder_ws/build/CMakeFiles/ELF2UF2Build.dir
 /media/sf_Ubuntu_22.04_2_SSD_Shared/tricorder_ws/build/CMakeFiles/edit_cache.dir
@@ -162,3 +164,9 @@
 /media/sf_Ubuntu_22.04_2_SSD_Shared/tricorder_ws/build/build-pac-adafruit-ltr390-library/CMakeFiles/rebuild_cache.dir
 /media/sf_Ubuntu_22.04_2_SSD_Shared/tricorder_ws/build/build-pac-adafruit-pm25-aqi-sensor/CMakeFiles/edit_cache.dir
 /media/sf_Ubuntu_22.04_2_SSD_Shared/tricorder_ws/build/build-pac-adafruit-pm25-aqi-sensor/CMakeFiles/rebuild_cache.dir
+/media/sf_Ubuntu_22.04_2_SSD_Shared/tricorder_ws/build/build-pac-tlv493d-a1b6/CMakeFiles/edit_cache.dir
+/media/sf_Ubuntu_22.04_2_SSD_Shared/tricorder_ws/build/build-pac-tlv493d-a1b6/CMakeFiles/rebuild_cache.dir
+/media/sf_Ubuntu_22.04_2_SSD_Shared/tricorder_ws/build/build-pac-sensirion-i2c-scd4x/CMakeFiles/edit_cache.dir
+/media/sf_Ubuntu_22.04_2_SSD_Shared/tricorder_ws/build/build-pac-sensirion-i2c-scd4x/CMakeFiles/rebuild_cache.dir
+/media/sf_Ubuntu_22.04_2_SSD_Shared/tricorder_ws/build/build-pac-sensirion-i2c-scd4x/build_pac-sensirion-core/CMakeFiles/edit_cache.dir
+/media/sf_Ubuntu_22.04_2_SSD_Shared/tricorder_ws/build/build-pac-sensirion-i2c-scd4x/build_pac-sensirion-core/CMakeFiles/rebuild_cache.dir

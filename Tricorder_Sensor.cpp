@@ -5,6 +5,18 @@ Tricorder_Sensor::Tricorder_Sensor(){
 	data_updated = false;
 	error_state = false;
 	timestamp = 0;
+	report_rate = 0;
+	
+	sensor_options.push_back(sensor_option(
+		"report_rate",
+		OP_Double,
+		[&](nlohmann::json val)->bool{
+			report_rate = val.get<double>();
+			return true;
+		},
+		[&]()->nlohmann::json{
+			return report_rate; }
+	));
 }
 
 bool Tricorder_Sensor::sensor_init(){return false;}
@@ -78,7 +90,8 @@ nlohmann::json Tricorder_Sensor::report_state(char *opnam){
 }
 
 bool Tricorder_Sensor::update_data(){
-	if(enabled && !error_state && read_sensor()){
+	unsigned long cur_time = to_us_since_boot(get_absolute_time());
+	if(enabled && !error_state && read_sensor() && cur_time - timestamp > 1000*report_rate){
 		timestamp = to_us_since_boot(get_absolute_time());
 		data_updated = true;
 		return true;

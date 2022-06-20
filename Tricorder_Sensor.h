@@ -93,5 +93,6 @@ class Tricorder_Sensor
 		virtual bool read_sensor();
 	protected:
 		std::vector<sensor_option> sensor_options;
+		double report_rate;
 };
 #endif

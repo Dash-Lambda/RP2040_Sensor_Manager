@@ -1178,6 +1178,146 @@ CMakeFiles/sensor_manager.dir/home/dashy/pico-arduino-compat/libs/adafruit-pm25-
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/sensor_manager.dir/home/dashy/pico-arduino-compat/libs/adafruit-pm25-aqi-sensor/Adafruit_PM25AQI/Adafruit_PM25AQI.cpp.s"
 	/usr/bin/arm-none-eabi-g++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/dashy/pico-arduino-compat/libs/adafruit-pm25-aqi-sensor/Adafruit_PM25AQI/Adafruit_PM25AQI.cpp -o CMakeFiles/sensor_manager.dir/home/dashy/pico-arduino-compat/libs/adafruit-pm25-aqi-sensor/Adafruit_PM25AQI/Adafruit_PM25AQI.cpp.s
 
+CMakeFiles/sensor_manager.dir/home/dashy/pico-arduino-compat/libs/tlv493d-a1b6/TLV493D-A1B6-3DMagnetic-Sensor/src/Tlv493d.cpp.obj: CMakeFiles/sensor_manager.dir/flags.make
+CMakeFiles/sensor_manager.dir/home/dashy/pico-arduino-compat/libs/tlv493d-a1b6/TLV493D-A1B6-3DMagnetic-Sensor/src/Tlv493d.cpp.obj: /home/dashy/pico-arduino-compat/libs/tlv493d-a1b6/TLV493D-A1B6-3DMagnetic-Sensor/src/Tlv493d.cpp
+CMakeFiles/sensor_manager.dir/home/dashy/pico-arduino-compat/libs/tlv493d-a1b6/TLV493D-A1B6-3DMagnetic-Sensor/src/Tlv493d.cpp.obj: CMakeFiles/sensor_manager.dir/compiler_depend.ts
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/media/sf_Ubuntu_22.04_2_SSD_Shared/tricorder_ws/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_81) "Building CXX object CMakeFiles/sensor_manager.dir/home/dashy/pico-arduino-compat/libs/tlv493d-a1b6/TLV493D-A1B6-3DMagnetic-Sensor/src/Tlv493d.cpp.obj"
+	/usr/bin/arm-none-eabi-g++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/sensor_manager.dir/home/dashy/pico-arduino-compat/libs/tlv493d-a1b6/TLV493D-A1B6-3DMagnetic-Sensor/src/Tlv493d.cpp.obj -MF CMakeFiles/sensor_manager.dir/home/dashy/pico-arduino-compat/libs/tlv493d-a1b6/TLV493D-A1B6-3DMagnetic-Sensor/src/Tlv493d.cpp.obj.d -o CMakeFiles/sensor_manager.dir/home/dashy/pico-arduino-compat/libs/tlv493d-a1b6/TLV493D-A1B6-3DMagnetic-Sensor/src/Tlv493d.cpp.obj -c /home/dashy/pico-arduino-compat/libs/tlv493d-a1b6/TLV493D-A1B6-3DMagnetic-Sensor/src/Tlv493d.cpp
+
+CMakeFiles/sensor_manager.dir/home/dashy/pico-arduino-compat/libs/tlv493d-a1b6/TLV493D-A1B6-3DMagnetic-Sensor/src/Tlv493d.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/sensor_manager.dir/home/dashy/pico-arduino-compat/libs/tlv493d-a1b6/TLV493D-A1B6-3DMagnetic-Sensor/src/Tlv493d.cpp.i"
+	/usr/bin/arm-none-eabi-g++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/dashy/pico-arduino-compat/libs/tlv493d-a1b6/TLV493D-A1B6-3DMagnetic-Sensor/src/Tlv493d.cpp > CMakeFiles/sensor_manager.dir/home/dashy/pico-arduino-compat/libs/tlv493d-a1b6/TLV493D-A1B6-3DMagnetic-Sensor/src/Tlv493d.cpp.i
+
+CMakeFiles/sensor_manager.dir/home/dashy/pico-arduino-compat/libs/tlv493d-a1b6/TLV493D-A1B6-3DMagnetic-Sensor/src/Tlv493d.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/sensor_manager.dir/home/dashy/pico-arduino-compat/libs/tlv493d-a1b6/TLV493D-A1B6-3DMagnetic-Sensor/src/Tlv493d.cpp.s"
+	/usr/bin/arm-none-eabi-g++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/dashy/pico-arduino-compat/libs/tlv493d-a1b6/TLV493D-A1B6-3DMagnetic-Sensor/src/Tlv493d.cpp -o CMakeFiles/sensor_manager.dir/home/dashy/pico-arduino-compat/libs/tlv493d-a1b6/TLV493D-A1B6-3DMagnetic-Sensor/src/Tlv493d.cpp.s
+
+CMakeFiles/sensor_manager.dir/home/dashy/pico-arduino-compat/libs/tlv493d-a1b6/TLV493D-A1B6-3DMagnetic-Sensor/src/util/RegMask.cpp.obj: CMakeFiles/sensor_manager.dir/flags.make
+CMakeFiles/sensor_manager.dir/home/dashy/pico-arduino-compat/libs/tlv493d-a1b6/TLV493D-A1B6-3DMagnetic-Sensor/src/util/RegMask.cpp.obj: /home/dashy/pico-arduino-compat/libs/tlv493d-a1b6/TLV493D-A1B6-3DMagnetic-Sensor/src/util/RegMask.cpp
+CMakeFiles/sensor_manager.dir/home/dashy/pico-arduino-compat/libs/tlv493d-a1b6/TLV493D-A1B6-3DMagnetic-Sensor/src/util/RegMask.cpp.obj: CMakeFiles/sensor_manager.dir/compiler_depend.ts
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/media/sf_Ubuntu_22.04_2_SSD_Shared/tricorder_ws/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_82) "Building CXX object CMakeFiles/sensor_manager.dir/home/dashy/pico-arduino-compat/libs/tlv493d-a1b6/TLV493D-A1B6-3DMagnetic-Sensor/src/util/RegMask.cpp.obj"
+	/usr/bin/arm-none-eabi-g++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/sensor_manager.dir/home/dashy/pico-arduino-compat/libs/tlv493d-a1b6/TLV493D-A1B6-3DMagnetic-Sensor/src/util/RegMask.cpp.obj -MF CMakeFiles/sensor_manager.dir/home/dashy/pico-arduino-compat/libs/tlv493d-a1b6/TLV493D-A1B6-3DMagnetic-Sensor/src/util/RegMask.cpp.obj.d -o CMakeFiles/sensor_manager.dir/home/dashy/pico-arduino-compat/libs/tlv493d-a1b6/TLV493D-A1B6-3DMagnetic-Sensor/src/util/RegMask.cpp.obj -c /home/dashy/pico-arduino-compat/libs/tlv493d-a1b6/TLV493D-A1B6-3DMagnetic-Sensor/src/util/RegMask.cpp
+
+CMakeFiles/sensor_manager.dir/home/dashy/pico-arduino-compat/libs/tlv493d-a1b6/TLV493D-A1B6-3DMagnetic-Sensor/src/util/RegMask.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/sensor_manager.dir/home/dashy/pico-arduino-compat/libs/tlv493d-a1b6/TLV493D-A1B6-3DMagnetic-Sensor/src/util/RegMask.cpp.i"
+	/usr/bin/arm-none-eabi-g++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/dashy/pico-arduino-compat/libs/tlv493d-a1b6/TLV493D-A1B6-3DMagnetic-Sensor/src/util/RegMask.cpp > CMakeFiles/sensor_manager.dir/home/dashy/pico-arduino-compat/libs/tlv493d-a1b6/TLV493D-A1B6-3DMagnetic-Sensor/src/util/RegMask.cpp.i
+
+CMakeFiles/sensor_manager.dir/home/dashy/pico-arduino-compat/libs/tlv493d-a1b6/TLV493D-A1B6-3DMagnetic-Sensor/src/util/RegMask.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/sensor_manager.dir/home/dashy/pico-arduino-compat/libs/tlv493d-a1b6/TLV493D-A1B6-3DMagnetic-Sensor/src/util/RegMask.cpp.s"
+	/usr/bin/arm-none-eabi-g++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/dashy/pico-arduino-compat/libs/tlv493d-a1b6/TLV493D-A1B6-3DMagnetic-Sensor/src/util/RegMask.cpp -o CMakeFiles/sensor_manager.dir/home/dashy/pico-arduino-compat/libs/tlv493d-a1b6/TLV493D-A1B6-3DMagnetic-Sensor/src/util/RegMask.cpp.s
+
+CMakeFiles/sensor_manager.dir/home/dashy/pico-arduino-compat/libs/tlv493d-a1b6/TLV493D-A1B6-3DMagnetic-Sensor/src/util/BusInterface.cpp.obj: CMakeFiles/sensor_manager.dir/flags.make
+CMakeFiles/sensor_manager.dir/home/dashy/pico-arduino-compat/libs/tlv493d-a1b6/TLV493D-A1B6-3DMagnetic-Sensor/src/util/BusInterface.cpp.obj: /home/dashy/pico-arduino-compat/libs/tlv493d-a1b6/TLV493D-A1B6-3DMagnetic-Sensor/src/util/BusInterface.cpp
+CMakeFiles/sensor_manager.dir/home/dashy/pico-arduino-compat/libs/tlv493d-a1b6/TLV493D-A1B6-3DMagnetic-Sensor/src/util/BusInterface.cpp.obj: CMakeFiles/sensor_manager.dir/compiler_depend.ts
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/media/sf_Ubuntu_22.04_2_SSD_Shared/tricorder_ws/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_83) "Building CXX object CMakeFiles/sensor_manager.dir/home/dashy/pico-arduino-compat/libs/tlv493d-a1b6/TLV493D-A1B6-3DMagnetic-Sensor/src/util/BusInterface.cpp.obj"
+	/usr/bin/arm-none-eabi-g++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/sensor_manager.dir/home/dashy/pico-arduino-compat/libs/tlv493d-a1b6/TLV493D-A1B6-3DMagnetic-Sensor/src/util/BusInterface.cpp.obj -MF CMakeFiles/sensor_manager.dir/home/dashy/pico-arduino-compat/libs/tlv493d-a1b6/TLV493D-A1B6-3DMagnetic-Sensor/src/util/BusInterface.cpp.obj.d -o CMakeFiles/sensor_manager.dir/home/dashy/pico-arduino-compat/libs/tlv493d-a1b6/TLV493D-A1B6-3DMagnetic-Sensor/src/util/BusInterface.cpp.obj -c /home/dashy/pico-arduino-compat/libs/tlv493d-a1b6/TLV493D-A1B6-3DMagnetic-Sensor/src/util/BusInterface.cpp
+
+CMakeFiles/sensor_manager.dir/home/dashy/pico-arduino-compat/libs/tlv493d-a1b6/TLV493D-A1B6-3DMagnetic-Sensor/src/util/BusInterface.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/sensor_manager.dir/home/dashy/pico-arduino-compat/libs/tlv493d-a1b6/TLV493D-A1B6-3DMagnetic-Sensor/src/util/BusInterface.cpp.i"
+	/usr/bin/arm-none-eabi-g++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/dashy/pico-arduino-compat/libs/tlv493d-a1b6/TLV493D-A1B6-3DMagnetic-Sensor/src/util/BusInterface.cpp > CMakeFiles/sensor_manager.dir/home/dashy/pico-arduino-compat/libs/tlv493d-a1b6/TLV493D-A1B6-3DMagnetic-Sensor/src/util/BusInterface.cpp.i
+
+CMakeFiles/sensor_manager.dir/home/dashy/pico-arduino-compat/libs/tlv493d-a1b6/TLV493D-A1B6-3DMagnetic-Sensor/src/util/BusInterface.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/sensor_manager.dir/home/dashy/pico-arduino-compat/libs/tlv493d-a1b6/TLV493D-A1B6-3DMagnetic-Sensor/src/util/BusInterface.cpp.s"
+	/usr/bin/arm-none-eabi-g++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/dashy/pico-arduino-compat/libs/tlv493d-a1b6/TLV493D-A1B6-3DMagnetic-Sensor/src/util/BusInterface.cpp -o CMakeFiles/sensor_manager.dir/home/dashy/pico-arduino-compat/libs/tlv493d-a1b6/TLV493D-A1B6-3DMagnetic-Sensor/src/util/BusInterface.cpp.s
+
+CMakeFiles/sensor_manager.dir/home/dashy/pico-arduino-compat/libs/sensirion-i2c-scd4x/arduino-i2c-scd4x/src/SensirionI2CScd4x.cpp.obj: CMakeFiles/sensor_manager.dir/flags.make
+CMakeFiles/sensor_manager.dir/home/dashy/pico-arduino-compat/libs/sensirion-i2c-scd4x/arduino-i2c-scd4x/src/SensirionI2CScd4x.cpp.obj: /home/dashy/pico-arduino-compat/libs/sensirion-i2c-scd4x/arduino-i2c-scd4x/src/SensirionI2CScd4x.cpp
+CMakeFiles/sensor_manager.dir/home/dashy/pico-arduino-compat/libs/sensirion-i2c-scd4x/arduino-i2c-scd4x/src/SensirionI2CScd4x.cpp.obj: CMakeFiles/sensor_manager.dir/compiler_depend.ts
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/media/sf_Ubuntu_22.04_2_SSD_Shared/tricorder_ws/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_84) "Building CXX object CMakeFiles/sensor_manager.dir/home/dashy/pico-arduino-compat/libs/sensirion-i2c-scd4x/arduino-i2c-scd4x/src/SensirionI2CScd4x.cpp.obj"
+	/usr/bin/arm-none-eabi-g++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/sensor_manager.dir/home/dashy/pico-arduino-compat/libs/sensirion-i2c-scd4x/arduino-i2c-scd4x/src/SensirionI2CScd4x.cpp.obj -MF CMakeFiles/sensor_manager.dir/home/dashy/pico-arduino-compat/libs/sensirion-i2c-scd4x/arduino-i2c-scd4x/src/SensirionI2CScd4x.cpp.obj.d -o CMakeFiles/sensor_manager.dir/home/dashy/pico-arduino-compat/libs/sensirion-i2c-scd4x/arduino-i2c-scd4x/src/SensirionI2CScd4x.cpp.obj -c /home/dashy/pico-arduino-compat/libs/sensirion-i2c-scd4x/arduino-i2c-scd4x/src/SensirionI2CScd4x.cpp
+
+CMakeFiles/sensor_manager.dir/home/dashy/pico-arduino-compat/libs/sensirion-i2c-scd4x/arduino-i2c-scd4x/src/SensirionI2CScd4x.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/sensor_manager.dir/home/dashy/pico-arduino-compat/libs/sensirion-i2c-scd4x/arduino-i2c-scd4x/src/SensirionI2CScd4x.cpp.i"
+	/usr/bin/arm-none-eabi-g++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/dashy/pico-arduino-compat/libs/sensirion-i2c-scd4x/arduino-i2c-scd4x/src/SensirionI2CScd4x.cpp > CMakeFiles/sensor_manager.dir/home/dashy/pico-arduino-compat/libs/sensirion-i2c-scd4x/arduino-i2c-scd4x/src/SensirionI2CScd4x.cpp.i
+
+CMakeFiles/sensor_manager.dir/home/dashy/pico-arduino-compat/libs/sensirion-i2c-scd4x/arduino-i2c-scd4x/src/SensirionI2CScd4x.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/sensor_manager.dir/home/dashy/pico-arduino-compat/libs/sensirion-i2c-scd4x/arduino-i2c-scd4x/src/SensirionI2CScd4x.cpp.s"
+	/usr/bin/arm-none-eabi-g++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/dashy/pico-arduino-compat/libs/sensirion-i2c-scd4x/arduino-i2c-scd4x/src/SensirionI2CScd4x.cpp -o CMakeFiles/sensor_manager.dir/home/dashy/pico-arduino-compat/libs/sensirion-i2c-scd4x/arduino-i2c-scd4x/src/SensirionI2CScd4x.cpp.s
+
+CMakeFiles/sensor_manager.dir/home/dashy/pico-arduino-compat/libs/sensirion-core/arduino-core/src/SensirionI2CCommunication.cpp.obj: CMakeFiles/sensor_manager.dir/flags.make
+CMakeFiles/sensor_manager.dir/home/dashy/pico-arduino-compat/libs/sensirion-core/arduino-core/src/SensirionI2CCommunication.cpp.obj: /home/dashy/pico-arduino-compat/libs/sensirion-core/arduino-core/src/SensirionI2CCommunication.cpp
+CMakeFiles/sensor_manager.dir/home/dashy/pico-arduino-compat/libs/sensirion-core/arduino-core/src/SensirionI2CCommunication.cpp.obj: CMakeFiles/sensor_manager.dir/compiler_depend.ts
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/media/sf_Ubuntu_22.04_2_SSD_Shared/tricorder_ws/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_85) "Building CXX object CMakeFiles/sensor_manager.dir/home/dashy/pico-arduino-compat/libs/sensirion-core/arduino-core/src/SensirionI2CCommunication.cpp.obj"
+	/usr/bin/arm-none-eabi-g++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/sensor_manager.dir/home/dashy/pico-arduino-compat/libs/sensirion-core/arduino-core/src/SensirionI2CCommunication.cpp.obj -MF CMakeFiles/sensor_manager.dir/home/dashy/pico-arduino-compat/libs/sensirion-core/arduino-core/src/SensirionI2CCommunication.cpp.obj.d -o CMakeFiles/sensor_manager.dir/home/dashy/pico-arduino-compat/libs/sensirion-core/arduino-core/src/SensirionI2CCommunication.cpp.obj -c /home/dashy/pico-arduino-compat/libs/sensirion-core/arduino-core/src/SensirionI2CCommunication.cpp
+
+CMakeFiles/sensor_manager.dir/home/dashy/pico-arduino-compat/libs/sensirion-core/arduino-core/src/SensirionI2CCommunication.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/sensor_manager.dir/home/dashy/pico-arduino-compat/libs/sensirion-core/arduino-core/src/SensirionI2CCommunication.cpp.i"
+	/usr/bin/arm-none-eabi-g++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/dashy/pico-arduino-compat/libs/sensirion-core/arduino-core/src/SensirionI2CCommunication.cpp > CMakeFiles/sensor_manager.dir/home/dashy/pico-arduino-compat/libs/sensirion-core/arduino-core/src/SensirionI2CCommunication.cpp.i
+
+CMakeFiles/sensor_manager.dir/home/dashy/pico-arduino-compat/libs/sensirion-core/arduino-core/src/SensirionI2CCommunication.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/sensor_manager.dir/home/dashy/pico-arduino-compat/libs/sensirion-core/arduino-core/src/SensirionI2CCommunication.cpp.s"
+	/usr/bin/arm-none-eabi-g++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/dashy/pico-arduino-compat/libs/sensirion-core/arduino-core/src/SensirionI2CCommunication.cpp -o CMakeFiles/sensor_manager.dir/home/dashy/pico-arduino-compat/libs/sensirion-core/arduino-core/src/SensirionI2CCommunication.cpp.s
+
+CMakeFiles/sensor_manager.dir/home/dashy/pico-arduino-compat/libs/sensirion-core/arduino-core/src/SensirionShdlcTxFrame.cpp.obj: CMakeFiles/sensor_manager.dir/flags.make
+CMakeFiles/sensor_manager.dir/home/dashy/pico-arduino-compat/libs/sensirion-core/arduino-core/src/SensirionShdlcTxFrame.cpp.obj: /home/dashy/pico-arduino-compat/libs/sensirion-core/arduino-core/src/SensirionShdlcTxFrame.cpp
+CMakeFiles/sensor_manager.dir/home/dashy/pico-arduino-compat/libs/sensirion-core/arduino-core/src/SensirionShdlcTxFrame.cpp.obj: CMakeFiles/sensor_manager.dir/compiler_depend.ts
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/media/sf_Ubuntu_22.04_2_SSD_Shared/tricorder_ws/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_86) "Building CXX object CMakeFiles/sensor_manager.dir/home/dashy/pico-arduino-compat/libs/sensirion-core/arduino-core/src/SensirionShdlcTxFrame.cpp.obj"
+	/usr/bin/arm-none-eabi-g++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/sensor_manager.dir/home/dashy/pico-arduino-compat/libs/sensirion-core/arduino-core/src/SensirionShdlcTxFrame.cpp.obj -MF CMakeFiles/sensor_manager.dir/home/dashy/pico-arduino-compat/libs/sensirion-core/arduino-core/src/SensirionShdlcTxFrame.cpp.obj.d -o CMakeFiles/sensor_manager.dir/home/dashy/pico-arduino-compat/libs/sensirion-core/arduino-core/src/SensirionShdlcTxFrame.cpp.obj -c /home/dashy/pico-arduino-compat/libs/sensirion-core/arduino-core/src/SensirionShdlcTxFrame.cpp
+
+CMakeFiles/sensor_manager.dir/home/dashy/pico-arduino-compat/libs/sensirion-core/arduino-core/src/SensirionShdlcTxFrame.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/sensor_manager.dir/home/dashy/pico-arduino-compat/libs/sensirion-core/arduino-core/src/SensirionShdlcTxFrame.cpp.i"
+	/usr/bin/arm-none-eabi-g++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/dashy/pico-arduino-compat/libs/sensirion-core/arduino-core/src/SensirionShdlcTxFrame.cpp > CMakeFiles/sensor_manager.dir/home/dashy/pico-arduino-compat/libs/sensirion-core/arduino-core/src/SensirionShdlcTxFrame.cpp.i
+
+CMakeFiles/sensor_manager.dir/home/dashy/pico-arduino-compat/libs/sensirion-core/arduino-core/src/SensirionShdlcTxFrame.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/sensor_manager.dir/home/dashy/pico-arduino-compat/libs/sensirion-core/arduino-core/src/SensirionShdlcTxFrame.cpp.s"
+	/usr/bin/arm-none-eabi-g++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/dashy/pico-arduino-compat/libs/sensirion-core/arduino-core/src/SensirionShdlcTxFrame.cpp -o CMakeFiles/sensor_manager.dir/home/dashy/pico-arduino-compat/libs/sensirion-core/arduino-core/src/SensirionShdlcTxFrame.cpp.s
+
+CMakeFiles/sensor_manager.dir/home/dashy/pico-arduino-compat/libs/sensirion-core/arduino-core/src/SensirionShdlcCommunication.cpp.obj: CMakeFiles/sensor_manager.dir/flags.make
+CMakeFiles/sensor_manager.dir/home/dashy/pico-arduino-compat/libs/sensirion-core/arduino-core/src/SensirionShdlcCommunication.cpp.obj: /home/dashy/pico-arduino-compat/libs/sensirion-core/arduino-core/src/SensirionShdlcCommunication.cpp
+CMakeFiles/sensor_manager.dir/home/dashy/pico-arduino-compat/libs/sensirion-core/arduino-core/src/SensirionShdlcCommunication.cpp.obj: CMakeFiles/sensor_manager.dir/compiler_depend.ts
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/media/sf_Ubuntu_22.04_2_SSD_Shared/tricorder_ws/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_87) "Building CXX object CMakeFiles/sensor_manager.dir/home/dashy/pico-arduino-compat/libs/sensirion-core/arduino-core/src/SensirionShdlcCommunication.cpp.obj"
+	/usr/bin/arm-none-eabi-g++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/sensor_manager.dir/home/dashy/pico-arduino-compat/libs/sensirion-core/arduino-core/src/SensirionShdlcCommunication.cpp.obj -MF CMakeFiles/sensor_manager.dir/home/dashy/pico-arduino-compat/libs/sensirion-core/arduino-core/src/SensirionShdlcCommunication.cpp.obj.d -o CMakeFiles/sensor_manager.dir/home/dashy/pico-arduino-compat/libs/sensirion-core/arduino-core/src/SensirionShdlcCommunication.cpp.obj -c /home/dashy/pico-arduino-compat/libs/sensirion-core/arduino-core/src/SensirionShdlcCommunication.cpp
+
+CMakeFiles/sensor_manager.dir/home/dashy/pico-arduino-compat/libs/sensirion-core/arduino-core/src/SensirionShdlcCommunication.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/sensor_manager.dir/home/dashy/pico-arduino-compat/libs/sensirion-core/arduino-core/src/SensirionShdlcCommunication.cpp.i"
+	/usr/bin/arm-none-eabi-g++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/dashy/pico-arduino-compat/libs/sensirion-core/arduino-core/src/SensirionShdlcCommunication.cpp > CMakeFiles/sensor_manager.dir/home/dashy/pico-arduino-compat/libs/sensirion-core/arduino-core/src/SensirionShdlcCommunication.cpp.i
+
+CMakeFiles/sensor_manager.dir/home/dashy/pico-arduino-compat/libs/sensirion-core/arduino-core/src/SensirionShdlcCommunication.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/sensor_manager.dir/home/dashy/pico-arduino-compat/libs/sensirion-core/arduino-core/src/SensirionShdlcCommunication.cpp.s"
+	/usr/bin/arm-none-eabi-g++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/dashy/pico-arduino-compat/libs/sensirion-core/arduino-core/src/SensirionShdlcCommunication.cpp -o CMakeFiles/sensor_manager.dir/home/dashy/pico-arduino-compat/libs/sensirion-core/arduino-core/src/SensirionShdlcCommunication.cpp.s
+
+CMakeFiles/sensor_manager.dir/home/dashy/pico-arduino-compat/libs/sensirion-core/arduino-core/src/SensirionI2CTxFrame.cpp.obj: CMakeFiles/sensor_manager.dir/flags.make
+CMakeFiles/sensor_manager.dir/home/dashy/pico-arduino-compat/libs/sensirion-core/arduino-core/src/SensirionI2CTxFrame.cpp.obj: /home/dashy/pico-arduino-compat/libs/sensirion-core/arduino-core/src/SensirionI2CTxFrame.cpp
+CMakeFiles/sensor_manager.dir/home/dashy/pico-arduino-compat/libs/sensirion-core/arduino-core/src/SensirionI2CTxFrame.cpp.obj: CMakeFiles/sensor_manager.dir/compiler_depend.ts
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/media/sf_Ubuntu_22.04_2_SSD_Shared/tricorder_ws/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_88) "Building CXX object CMakeFiles/sensor_manager.dir/home/dashy/pico-arduino-compat/libs/sensirion-core/arduino-core/src/SensirionI2CTxFrame.cpp.obj"
+	/usr/bin/arm-none-eabi-g++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/sensor_manager.dir/home/dashy/pico-arduino-compat/libs/sensirion-core/arduino-core/src/SensirionI2CTxFrame.cpp.obj -MF CMakeFiles/sensor_manager.dir/home/dashy/pico-arduino-compat/libs/sensirion-core/arduino-core/src/SensirionI2CTxFrame.cpp.obj.d -o CMakeFiles/sensor_manager.dir/home/dashy/pico-arduino-compat/libs/sensirion-core/arduino-core/src/SensirionI2CTxFrame.cpp.obj -c /home/dashy/pico-arduino-compat/libs/sensirion-core/arduino-core/src/SensirionI2CTxFrame.cpp
+
+CMakeFiles/sensor_manager.dir/home/dashy/pico-arduino-compat/libs/sensirion-core/arduino-core/src/SensirionI2CTxFrame.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/sensor_manager.dir/home/dashy/pico-arduino-compat/libs/sensirion-core/arduino-core/src/SensirionI2CTxFrame.cpp.i"
+	/usr/bin/arm-none-eabi-g++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/dashy/pico-arduino-compat/libs/sensirion-core/arduino-core/src/SensirionI2CTxFrame.cpp > CMakeFiles/sensor_manager.dir/home/dashy/pico-arduino-compat/libs/sensirion-core/arduino-core/src/SensirionI2CTxFrame.cpp.i
+
+CMakeFiles/sensor_manager.dir/home/dashy/pico-arduino-compat/libs/sensirion-core/arduino-core/src/SensirionI2CTxFrame.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/sensor_manager.dir/home/dashy/pico-arduino-compat/libs/sensirion-core/arduino-core/src/SensirionI2CTxFrame.cpp.s"
+	/usr/bin/arm-none-eabi-g++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/dashy/pico-arduino-compat/libs/sensirion-core/arduino-core/src/SensirionI2CTxFrame.cpp -o CMakeFiles/sensor_manager.dir/home/dashy/pico-arduino-compat/libs/sensirion-core/arduino-core/src/SensirionI2CTxFrame.cpp.s
+
+CMakeFiles/sensor_manager.dir/home/dashy/pico-arduino-compat/libs/sensirion-core/arduino-core/src/SensirionRxFrame.cpp.obj: CMakeFiles/sensor_manager.dir/flags.make
+CMakeFiles/sensor_manager.dir/home/dashy/pico-arduino-compat/libs/sensirion-core/arduino-core/src/SensirionRxFrame.cpp.obj: /home/dashy/pico-arduino-compat/libs/sensirion-core/arduino-core/src/SensirionRxFrame.cpp
+CMakeFiles/sensor_manager.dir/home/dashy/pico-arduino-compat/libs/sensirion-core/arduino-core/src/SensirionRxFrame.cpp.obj: CMakeFiles/sensor_manager.dir/compiler_depend.ts
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/media/sf_Ubuntu_22.04_2_SSD_Shared/tricorder_ws/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_89) "Building CXX object CMakeFiles/sensor_manager.dir/home/dashy/pico-arduino-compat/libs/sensirion-core/arduino-core/src/SensirionRxFrame.cpp.obj"
+	/usr/bin/arm-none-eabi-g++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/sensor_manager.dir/home/dashy/pico-arduino-compat/libs/sensirion-core/arduino-core/src/SensirionRxFrame.cpp.obj -MF CMakeFiles/sensor_manager.dir/home/dashy/pico-arduino-compat/libs/sensirion-core/arduino-core/src/SensirionRxFrame.cpp.obj.d -o CMakeFiles/sensor_manager.dir/home/dashy/pico-arduino-compat/libs/sensirion-core/arduino-core/src/SensirionRxFrame.cpp.obj -c /home/dashy/pico-arduino-compat/libs/sensirion-core/arduino-core/src/SensirionRxFrame.cpp
+
+CMakeFiles/sensor_manager.dir/home/dashy/pico-arduino-compat/libs/sensirion-core/arduino-core/src/SensirionRxFrame.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/sensor_manager.dir/home/dashy/pico-arduino-compat/libs/sensirion-core/arduino-core/src/SensirionRxFrame.cpp.i"
+	/usr/bin/arm-none-eabi-g++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/dashy/pico-arduino-compat/libs/sensirion-core/arduino-core/src/SensirionRxFrame.cpp > CMakeFiles/sensor_manager.dir/home/dashy/pico-arduino-compat/libs/sensirion-core/arduino-core/src/SensirionRxFrame.cpp.i
+
+CMakeFiles/sensor_manager.dir/home/dashy/pico-arduino-compat/libs/sensirion-core/arduino-core/src/SensirionRxFrame.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/sensor_manager.dir/home/dashy/pico-arduino-compat/libs/sensirion-core/arduino-core/src/SensirionRxFrame.cpp.s"
+	/usr/bin/arm-none-eabi-g++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/dashy/pico-arduino-compat/libs/sensirion-core/arduino-core/src/SensirionRxFrame.cpp -o CMakeFiles/sensor_manager.dir/home/dashy/pico-arduino-compat/libs/sensirion-core/arduino-core/src/SensirionRxFrame.cpp.s
+
+CMakeFiles/sensor_manager.dir/home/dashy/pico-arduino-compat/libs/sensirion-core/arduino-core/src/SensirionErrors.cpp.obj: CMakeFiles/sensor_manager.dir/flags.make
+CMakeFiles/sensor_manager.dir/home/dashy/pico-arduino-compat/libs/sensirion-core/arduino-core/src/SensirionErrors.cpp.obj: /home/dashy/pico-arduino-compat/libs/sensirion-core/arduino-core/src/SensirionErrors.cpp
+CMakeFiles/sensor_manager.dir/home/dashy/pico-arduino-compat/libs/sensirion-core/arduino-core/src/SensirionErrors.cpp.obj: CMakeFiles/sensor_manager.dir/compiler_depend.ts
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/media/sf_Ubuntu_22.04_2_SSD_Shared/tricorder_ws/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_90) "Building CXX object CMakeFiles/sensor_manager.dir/home/dashy/pico-arduino-compat/libs/sensirion-core/arduino-core/src/SensirionErrors.cpp.obj"
+	/usr/bin/arm-none-eabi-g++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/sensor_manager.dir/home/dashy/pico-arduino-compat/libs/sensirion-core/arduino-core/src/SensirionErrors.cpp.obj -MF CMakeFiles/sensor_manager.dir/home/dashy/pico-arduino-compat/libs/sensirion-core/arduino-core/src/SensirionErrors.cpp.obj.d -o CMakeFiles/sensor_manager.dir/home/dashy/pico-arduino-compat/libs/sensirion-core/arduino-core/src/SensirionErrors.cpp.obj -c /home/dashy/pico-arduino-compat/libs/sensirion-core/arduino-core/src/SensirionErrors.cpp
+
+CMakeFiles/sensor_manager.dir/home/dashy/pico-arduino-compat/libs/sensirion-core/arduino-core/src/SensirionErrors.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/sensor_manager.dir/home/dashy/pico-arduino-compat/libs/sensirion-core/arduino-core/src/SensirionErrors.cpp.i"
+	/usr/bin/arm-none-eabi-g++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/dashy/pico-arduino-compat/libs/sensirion-core/arduino-core/src/SensirionErrors.cpp > CMakeFiles/sensor_manager.dir/home/dashy/pico-arduino-compat/libs/sensirion-core/arduino-core/src/SensirionErrors.cpp.i
+
+CMakeFiles/sensor_manager.dir/home/dashy/pico-arduino-compat/libs/sensirion-core/arduino-core/src/SensirionErrors.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/sensor_manager.dir/home/dashy/pico-arduino-compat/libs/sensirion-core/arduino-core/src/SensirionErrors.cpp.s"
+	/usr/bin/arm-none-eabi-g++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/dashy/pico-arduino-compat/libs/sensirion-core/arduino-core/src/SensirionErrors.cpp -o CMakeFiles/sensor_manager.dir/home/dashy/pico-arduino-compat/libs/sensirion-core/arduino-core/src/SensirionErrors.cpp.s
+
 # Object files for target sensor_manager
 sensor_manager_OBJECTS = \
 "CMakeFiles/sensor_manager.dir/sensor_manager.cpp.obj" \
@@ -1259,7 +1399,17 @@ sensor_manager_OBJECTS = \
 "CMakeFiles/sensor_manager.dir/home/dashy/pico-arduino-compat/libs/adafruit-bme680-library/Adafruit_BME680/Adafruit_BME680.cpp.obj" \
 "CMakeFiles/sensor_manager.dir/home/dashy/pico-arduino-compat/libs/adafruit-bme680-library/Adafruit_BME680/bme68x.c.obj" \
 "CMakeFiles/sensor_manager.dir/home/dashy/pico-arduino-compat/libs/adafruit-ltr390-library/Adafruit_LTR390/Adafruit_LTR390.cpp.obj" \
-"CMakeFiles/sensor_manager.dir/home/dashy/pico-arduino-compat/libs/adafruit-pm25-aqi-sensor/Adafruit_PM25AQI/Adafruit_PM25AQI.cpp.obj"
+"CMakeFiles/sensor_manager.dir/home/dashy/pico-arduino-compat/libs/adafruit-pm25-aqi-sensor/Adafruit_PM25AQI/Adafruit_PM25AQI.cpp.obj" \
+"CMakeFiles/sensor_manager.dir/home/dashy/pico-arduino-compat/libs/tlv493d-a1b6/TLV493D-A1B6-3DMagnetic-Sensor/src/Tlv493d.cpp.obj" \
+"CMakeFiles/sensor_manager.dir/home/dashy/pico-arduino-compat/libs/tlv493d-a1b6/TLV493D-A1B6-3DMagnetic-Sensor/src/util/RegMask.cpp.obj" \
+"CMakeFiles/sensor_manager.dir/home/dashy/pico-arduino-compat/libs/tlv493d-a1b6/TLV493D-A1B6-3DMagnetic-Sensor/src/util/BusInterface.cpp.obj" \
+"CMakeFiles/sensor_manager.dir/home/dashy/pico-arduino-compat/libs/sensirion-i2c-scd4x/arduino-i2c-scd4x/src/SensirionI2CScd4x.cpp.obj" \
+"CMakeFiles/sensor_manager.dir/home/dashy/pico-arduino-compat/libs/sensirion-core/arduino-core/src/SensirionI2CCommunication.cpp.obj" \
+"CMakeFiles/sensor_manager.dir/home/dashy/pico-arduino-compat/libs/sensirion-core/arduino-core/src/SensirionShdlcTxFrame.cpp.obj" \
+"CMakeFiles/sensor_manager.dir/home/dashy/pico-arduino-compat/libs/sensirion-core/arduino-core/src/SensirionShdlcCommunication.cpp.obj" \
+"CMakeFiles/sensor_manager.dir/home/dashy/pico-arduino-compat/libs/sensirion-core/arduino-core/src/SensirionI2CTxFrame.cpp.obj" \
+"CMakeFiles/sensor_manager.dir/home/dashy/pico-arduino-compat/libs/sensirion-core/arduino-core/src/SensirionRxFrame.cpp.obj" \
+"CMakeFiles/sensor_manager.dir/home/dashy/pico-arduino-compat/libs/sensirion-core/arduino-core/src/SensirionErrors.cpp.obj"
 
 # External object files for target sensor_manager
 sensor_manager_EXTERNAL_OBJECTS =
@@ -1344,15 +1494,27 @@ sensor_manager.elf: CMakeFiles/sensor_manager.dir/home/dashy/pico-arduino-compat
 sensor_manager.elf: CMakeFiles/sensor_manager.dir/home/dashy/pico-arduino-compat/libs/adafruit-bme680-library/Adafruit_BME680/bme68x.c.obj
 sensor_manager.elf: CMakeFiles/sensor_manager.dir/home/dashy/pico-arduino-compat/libs/adafruit-ltr390-library/Adafruit_LTR390/Adafruit_LTR390.cpp.obj
 sensor_manager.elf: CMakeFiles/sensor_manager.dir/home/dashy/pico-arduino-compat/libs/adafruit-pm25-aqi-sensor/Adafruit_PM25AQI/Adafruit_PM25AQI.cpp.obj
+sensor_manager.elf: CMakeFiles/sensor_manager.dir/home/dashy/pico-arduino-compat/libs/tlv493d-a1b6/TLV493D-A1B6-3DMagnetic-Sensor/src/Tlv493d.cpp.obj
+sensor_manager.elf: CMakeFiles/sensor_manager.dir/home/dashy/pico-arduino-compat/libs/tlv493d-a1b6/TLV493D-A1B6-3DMagnetic-Sensor/src/util/RegMask.cpp.obj
+sensor_manager.elf: CMakeFiles/sensor_manager.dir/home/dashy/pico-arduino-compat/libs/tlv493d-a1b6/TLV493D-A1B6-3DMagnetic-Sensor/src/util/BusInterface.cpp.obj
+sensor_manager.elf: CMakeFiles/sensor_manager.dir/home/dashy/pico-arduino-compat/libs/sensirion-i2c-scd4x/arduino-i2c-scd4x/src/SensirionI2CScd4x.cpp.obj
+sensor_manager.elf: CMakeFiles/sensor_manager.dir/home/dashy/pico-arduino-compat/libs/sensirion-core/arduino-core/src/SensirionI2CCommunication.cpp.obj
+sensor_manager.elf: CMakeFiles/sensor_manager.dir/home/dashy/pico-arduino-compat/libs/sensirion-core/arduino-core/src/SensirionShdlcTxFrame.cpp.obj
+sensor_manager.elf: CMakeFiles/sensor_manager.dir/home/dashy/pico-arduino-compat/libs/sensirion-core/arduino-core/src/SensirionShdlcCommunication.cpp.obj
+sensor_manager.elf: CMakeFiles/sensor_manager.dir/home/dashy/pico-arduino-compat/libs/sensirion-core/arduino-core/src/SensirionI2CTxFrame.cpp.obj
+sensor_manager.elf: CMakeFiles/sensor_manager.dir/home/dashy/pico-arduino-compat/libs/sensirion-core/arduino-core/src/SensirionRxFrame.cpp.obj
+sensor_manager.elf: CMakeFiles/sensor_manager.dir/home/dashy/pico-arduino-compat/libs/sensirion-core/arduino-core/src/SensirionErrors.cpp.obj
 sensor_manager.elf: CMakeFiles/sensor_manager.dir/build.make
 sensor_manager.elf: libTricorder_Sensor.a
 sensor_manager.elf: libTricorder_AS7341.a
 sensor_manager.elf: libTricorder_BME688.a
 sensor_manager.elf: libTricorder_LTR390.a
 sensor_manager.elf: libTricorder_PMSA003I.a
+sensor_manager.elf: libTricorder_TLV493D.a
+sensor_manager.elf: libTricorder_SCD41.a
 sensor_manager.elf: pico-sdk/src/rp2_common/boot_stage2/bs2_default_padded_checksummed.S
 sensor_manager.elf: CMakeFiles/sensor_manager.dir/link.txt
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=/media/sf_Ubuntu_22.04_2_SSD_Shared/tricorder_ws/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_81) "Linking CXX executable sensor_manager.elf"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=/media/sf_Ubuntu_22.04_2_SSD_Shared/tricorder_ws/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_91) "Linking CXX executable sensor_manager.elf"
 	$(CMAKE_COMMAND) -E cmake_link_script CMakeFiles/sensor_manager.dir/link.txt --verbose=$(VERBOSE)
 	/usr/bin/arm-none-eabi-objcopy -Oihex /media/sf_Ubuntu_22.04_2_SSD_Shared/tricorder_ws/build/sensor_manager.elf sensor_manager.hex
 	/usr/bin/arm-none-eabi-objcopy -Obinary /media/sf_Ubuntu_22.04_2_SSD_Shared/tricorder_ws/build/sensor_manager.elf sensor_manager.bin

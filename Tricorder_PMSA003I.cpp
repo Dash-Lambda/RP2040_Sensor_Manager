@@ -12,36 +12,17 @@ Tricorder_PMSA003I::Tricorder_PMSA003I(){
 		},
 		[&]()->nlohmann::json{ return enabled; }
 	));
-	sensor_options.push_back(sensor_option(
-		"report_rate",
-		OP_Double,
-		[&](nlohmann::json val)->bool{
-			report_rate = val.get<double>();
-			return true;
-		},
-		[&]()->nlohmann::json{
-			return report_rate; }
-	));
 }
 
 bool Tricorder_PMSA003I::sensor_init(){
 	sensor_obj = Adafruit_PM25AQI();
 	initialized = sensor_obj.begin_I2C();
 	
-	if(initialized){
-		report_rate = 1000;
-	}
-	
 	return initialized;
 }
 
 bool Tricorder_PMSA003I::read_sensor(){
-	unsigned long cur_time = to_us_since_boot(get_absolute_time());
-	if(cur_time - timestamp > 1000*report_rate){
-		return sensor_obj.read(&current_data);
-	}else{
-		return false;
-	}
+	return sensor_obj.read(&current_data);
 }
 
 nlohmann::json Tricorder_PMSA003I::populate_data(){

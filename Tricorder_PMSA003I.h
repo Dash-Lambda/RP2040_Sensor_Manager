@@ -16,6 +16,5 @@ class Tricorder_PMSA003I : public Tricorder_Sensor
 	private:
 		Adafruit_PM25AQI sensor_obj;
 		PM25_AQI_Data current_data;
-		double report_rate;
 };
 #endif

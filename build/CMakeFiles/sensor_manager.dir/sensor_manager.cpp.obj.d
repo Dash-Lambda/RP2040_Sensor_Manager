@@ -57,6 +57,9 @@ CMakeFiles/sensor_manager.dir/sensor_manager.cpp.obj: \
  /home/dashy/pico-sdk/src/rp2040/hardware_regs/include/hardware/regs/uart.h \
  /home/dashy/pico-sdk/src/rp2040/hardware_regs/include/hardware/regs/dreq.h \
  /home/dashy/pico-sdk/src/rp2_common/pico_stdio_uart/include/pico/stdio_uart.h \
+ /home/dashy/pico-sdk/src/rp2_common/hardware_watchdog/include/hardware/watchdog.h \
+ /home/dashy/pico-sdk/src/rp2040/hardware_structs/include/hardware/structs/watchdog.h \
+ /home/dashy/pico-sdk/src/rp2040/hardware_regs/include/hardware/regs/watchdog.h \
  /media/sf_Ubuntu_22.04_2_SSD_Shared/tricorder_ws/json.hpp \
  /usr/include/newlib/c++/10.3.1/algorithm \
  /usr/include/newlib/c++/10.3.1/utility \
@@ -333,4 +336,20 @@ CMakeFiles/sensor_manager.dir/sensor_manager.cpp.obj: \
  /home/dashy/pico-arduino-compat/libs/adafruit-busio/Adafruit_BusIO/Adafruit_I2CRegister.h \
  /home/dashy/pico-arduino-compat/libs/adafruit-busio/Adafruit_BusIO/Adafruit_BusIO_Register.h \
  /media/sf_Ubuntu_22.04_2_SSD_Shared/tricorder_ws/Tricorder_PMSA003I.h \
- /home/dashy/pico-arduino-compat/libs/adafruit-pm25-aqi-sensor/Adafruit_PM25AQI/Adafruit_PM25AQI.h
+ /home/dashy/pico-arduino-compat/libs/adafruit-pm25-aqi-sensor/Adafruit_PM25AQI/Adafruit_PM25AQI.h \
+ /media/sf_Ubuntu_22.04_2_SSD_Shared/tricorder_ws/Tricorder_TLV493D.h \
+ /home/dashy/pico-arduino-compat/libs/tlv493d-a1b6/TLV493D-A1B6-3DMagnetic-Sensor/src/Tlv493d.h \
+ /home/dashy/pico-arduino-compat/libs/tlv493d-a1b6/TLV493D-A1B6-3DMagnetic-Sensor/src/./util/BusInterface.h \
+ /home/dashy/pico-arduino-compat/libs/tlv493d-a1b6/TLV493D-A1B6-3DMagnetic-Sensor/src/./util/Tlv493d_conf.h \
+ /home/dashy/pico-arduino-compat/libs/tlv493d-a1b6/TLV493D-A1B6-3DMagnetic-Sensor/src/./util/RegMask.h \
+ /media/sf_Ubuntu_22.04_2_SSD_Shared/tricorder_ws/Tricorder_SCD41.h \
+ /home/dashy/pico-arduino-compat/libs/sensirion-i2c-scd4x/arduino-i2c-scd4x/src/SensirionI2CScd4x.h \
+ /home/dashy/pico-arduino-compat/libs/sensirion-core/arduino-core/src/SensirionCore.h \
+ /home/dashy/pico-arduino-compat/libs/sensirion-core/arduino-core/src/SensirionErrors.h \
+ /home/dashy/pico-arduino-compat/libs/sensirion-core/arduino-core/src/SensirionRxFrame.h \
+ /home/dashy/pico-arduino-compat/libs/sensirion-core/arduino-core/src/SensirionShdlcCommunication.h \
+ /home/dashy/pico-arduino-compat/libs/sensirion-core/arduino-core/src/SensirionShdlcRxFrame.h \
+ /home/dashy/pico-arduino-compat/libs/sensirion-core/arduino-core/src/SensirionShdlcTxFrame.h \
+ /home/dashy/pico-arduino-compat/libs/sensirion-core/arduino-core/src/SensirionI2CCommunication.h \
+ /home/dashy/pico-arduino-compat/libs/sensirion-core/arduino-core/src/SensirionI2CRxFrame.h \
+ /home/dashy/pico-arduino-compat/libs/sensirion-core/arduino-core/src/SensirionI2CTxFrame.h

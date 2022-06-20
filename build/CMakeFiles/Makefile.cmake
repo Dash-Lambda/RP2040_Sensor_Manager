@@ -13,6 +13,9 @@ set(CMAKE_MAKEFILE_DEPENDS
   "/home/dashy/pico-arduino-compat/libs/adafruit-busio/CMakeLists.txt"
   "/home/dashy/pico-arduino-compat/libs/adafruit-ltr390-library/CMakeLists.txt"
   "/home/dashy/pico-arduino-compat/libs/adafruit-pm25-aqi-sensor/CMakeLists.txt"
+  "/home/dashy/pico-arduino-compat/libs/sensirion-core/CMakeLists.txt"
+  "/home/dashy/pico-arduino-compat/libs/sensirion-i2c-scd4x/CMakeLists.txt"
+  "/home/dashy/pico-arduino-compat/libs/tlv493d-a1b6/CMakeLists.txt"
   "/home/dashy/pico-sdk/CMakeLists.txt"
   "/home/dashy/pico-sdk/cmake/Platform/PICO.cmake"
   "/home/dashy/pico-sdk/cmake/pico_pre_load_platform.cmake"
@@ -217,6 +220,9 @@ set(CMAKE_MAKEFILE_PRODUCTS
   "build-pac-adafruit-bme680-library/CMakeFiles/CMakeDirectoryInformation.cmake"
   "build-pac-adafruit-ltr390-library/CMakeFiles/CMakeDirectoryInformation.cmake"
   "build-pac-adafruit-pm25-aqi-sensor/CMakeFiles/CMakeDirectoryInformation.cmake"
+  "build-pac-tlv493d-a1b6/CMakeFiles/CMakeDirectoryInformation.cmake"
+  "build-pac-sensirion-i2c-scd4x/CMakeFiles/CMakeDirectoryInformation.cmake"
+  "build-pac-sensirion-i2c-scd4x/build_pac-sensirion-core/CMakeFiles/CMakeDirectoryInformation.cmake"
   )
 
 # Dependency information for all targets:
@@ -226,6 +232,8 @@ set(CMAKE_DEPEND_INFO_FILES
   "CMakeFiles/Tricorder_BME688.dir/DependInfo.cmake"
   "CMakeFiles/Tricorder_LTR390.dir/DependInfo.cmake"
   "CMakeFiles/Tricorder_PMSA003I.dir/DependInfo.cmake"
+  "CMakeFiles/Tricorder_TLV493D.dir/DependInfo.cmake"
+  "CMakeFiles/Tricorder_SCD41.dir/DependInfo.cmake"
   "CMakeFiles/sensor_manager.dir/DependInfo.cmake"
   "CMakeFiles/ELF2UF2Build.dir/DependInfo.cmake"
   "pico-sdk/src/rp2_common/boot_stage2/CMakeFiles/bs2_default.dir/DependInfo.cmake"

@@ -182,6 +182,32 @@ Tricorder_PMSA003I/fast:
 .PHONY : Tricorder_PMSA003I/fast
 
 #=============================================================================
+# Target rules for targets named Tricorder_TLV493D
+
+# Build rule for target.
+Tricorder_TLV493D: cmake_check_build_system
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 Tricorder_TLV493D
+.PHONY : Tricorder_TLV493D
+
+# fast build rule for target.
+Tricorder_TLV493D/fast:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Tricorder_TLV493D.dir/build.make CMakeFiles/Tricorder_TLV493D.dir/build
+.PHONY : Tricorder_TLV493D/fast
+
+#=============================================================================
+# Target rules for targets named Tricorder_SCD41
+
+# Build rule for target.
+Tricorder_SCD41: cmake_check_build_system
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 Tricorder_SCD41
+.PHONY : Tricorder_SCD41
+
+# fast build rule for target.
+Tricorder_SCD41/fast:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Tricorder_SCD41.dir/build.make CMakeFiles/Tricorder_SCD41.dir/build
+.PHONY : Tricorder_SCD41/fast
+
+#=============================================================================
 # Target rules for targets named sensor_manager
 
 # Build rule for target.
@@ -342,6 +368,30 @@ Tricorder_PMSA003I.cpp.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/Tricorder_PMSA003I.dir/build.make CMakeFiles/Tricorder_PMSA003I.dir/Tricorder_PMSA003I.cpp.s
 .PHONY : Tricorder_PMSA003I.cpp.s
 
+Tricorder_SCD41.obj: Tricorder_SCD41.cpp.obj
+.PHONY : Tricorder_SCD41.obj
+
+# target to build an object file
+Tricorder_SCD41.cpp.obj:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Tricorder_SCD41.dir/build.make CMakeFiles/Tricorder_SCD41.dir/Tricorder_SCD41.cpp.obj
+.PHONY : Tricorder_SCD41.cpp.obj
+
+Tricorder_SCD41.i: Tricorder_SCD41.cpp.i
+.PHONY : Tricorder_SCD41.i
+
+# target to preprocess a source file
+Tricorder_SCD41.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Tricorder_SCD41.dir/build.make CMakeFiles/Tricorder_SCD41.dir/Tricorder_SCD41.cpp.i
+.PHONY : Tricorder_SCD41.cpp.i
+
+Tricorder_SCD41.s: Tricorder_SCD41.cpp.s
+.PHONY : Tricorder_SCD41.s
+
+# target to generate assembly for a file
+Tricorder_SCD41.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Tricorder_SCD41.dir/build.make CMakeFiles/Tricorder_SCD41.dir/Tricorder_SCD41.cpp.s
+.PHONY : Tricorder_SCD41.cpp.s
+
 Tricorder_Sensor.obj: Tricorder_Sensor.cpp.obj
 .PHONY : Tricorder_Sensor.obj
 
@@ -366,6 +416,30 @@ Tricorder_Sensor.cpp.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/Tricorder_Sensor.dir/build.make CMakeFiles/Tricorder_Sensor.dir/Tricorder_Sensor.cpp.s
 .PHONY : Tricorder_Sensor.cpp.s
 
+Tricorder_TLV493D.obj: Tricorder_TLV493D.cpp.obj
+.PHONY : Tricorder_TLV493D.obj
+
+# target to build an object file
+Tricorder_TLV493D.cpp.obj:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Tricorder_TLV493D.dir/build.make CMakeFiles/Tricorder_TLV493D.dir/Tricorder_TLV493D.cpp.obj
+.PHONY : Tricorder_TLV493D.cpp.obj
+
+Tricorder_TLV493D.i: Tricorder_TLV493D.cpp.i
+.PHONY : Tricorder_TLV493D.i
+
+# target to preprocess a source file
+Tricorder_TLV493D.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Tricorder_TLV493D.dir/build.make CMakeFiles/Tricorder_TLV493D.dir/Tricorder_TLV493D.cpp.i
+.PHONY : Tricorder_TLV493D.cpp.i
+
+Tricorder_TLV493D.s: Tricorder_TLV493D.cpp.s
+.PHONY : Tricorder_TLV493D.s
+
+# target to generate assembly for a file
+Tricorder_TLV493D.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Tricorder_TLV493D.dir/build.make CMakeFiles/Tricorder_TLV493D.dir/Tricorder_TLV493D.cpp.s
+.PHONY : Tricorder_TLV493D.cpp.s
+
 home/dashy/pico-arduino-compat/arduino-compat/arduino-pico-extra/HardwareSerialStdio.obj: home/dashy/pico-arduino-compat/arduino-compat/arduino-pico-extra/HardwareSerialStdio.cpp.obj
 .PHONY : home/dashy/pico-arduino-compat/arduino-compat/arduino-pico-extra/HardwareSerialStdio.obj
 
@@ -375,6 +449,8 @@ home/dashy/pico-arduino-compat/arduino-compat/arduino-pico-extra/HardwareSerialS
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/Tricorder_BME688.dir/build.make CMakeFiles/Tricorder_BME688.dir/home/dashy/pico-arduino-compat/arduino-compat/arduino-pico-extra/HardwareSerialStdio.cpp.obj
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/Tricorder_LTR390.dir/build.make CMakeFiles/Tricorder_LTR390.dir/home/dashy/pico-arduino-compat/arduino-compat/arduino-pico-extra/HardwareSerialStdio.cpp.obj
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/Tricorder_PMSA003I.dir/build.make CMakeFiles/Tricorder_PMSA003I.dir/home/dashy/pico-arduino-compat/arduino-compat/arduino-pico-extra/HardwareSerialStdio.cpp.obj
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Tricorder_TLV493D.dir/build.make CMakeFiles/Tricorder_TLV493D.dir/home/dashy/pico-arduino-compat/arduino-compat/arduino-pico-extra/HardwareSerialStdio.cpp.obj
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Tricorder_SCD41.dir/build.make CMakeFiles/Tricorder_SCD41.dir/home/dashy/pico-arduino-compat/arduino-compat/arduino-pico-extra/HardwareSerialStdio.cpp.obj
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/sensor_manager.dir/build.make CMakeFiles/sensor_manager.dir/home/dashy/pico-arduino-compat/arduino-compat/arduino-pico-extra/HardwareSerialStdio.cpp.obj
 .PHONY : home/dashy/pico-arduino-compat/arduino-compat/arduino-pico-extra/HardwareSerialStdio.cpp.obj
 
@@ -387,6 +463,8 @@ home/dashy/pico-arduino-compat/arduino-compat/arduino-pico-extra/HardwareSerialS
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/Tricorder_BME688.dir/build.make CMakeFiles/Tricorder_BME688.dir/home/dashy/pico-arduino-compat/arduino-compat/arduino-pico-extra/HardwareSerialStdio.cpp.i
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/Tricorder_LTR390.dir/build.make CMakeFiles/Tricorder_LTR390.dir/home/dashy/pico-arduino-compat/arduino-compat/arduino-pico-extra/HardwareSerialStdio.cpp.i
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/Tricorder_PMSA003I.dir/build.make CMakeFiles/Tricorder_PMSA003I.dir/home/dashy/pico-arduino-compat/arduino-compat/arduino-pico-extra/HardwareSerialStdio.cpp.i
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Tricorder_TLV493D.dir/build.make CMakeFiles/Tricorder_TLV493D.dir/home/dashy/pico-arduino-compat/arduino-compat/arduino-pico-extra/HardwareSerialStdio.cpp.i
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Tricorder_SCD41.dir/build.make CMakeFiles/Tricorder_SCD41.dir/home/dashy/pico-arduino-compat/arduino-compat/arduino-pico-extra/HardwareSerialStdio.cpp.i
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/sensor_manager.dir/build.make CMakeFiles/sensor_manager.dir/home/dashy/pico-arduino-compat/arduino-compat/arduino-pico-extra/HardwareSerialStdio.cpp.i
 .PHONY : home/dashy/pico-arduino-compat/arduino-compat/arduino-pico-extra/HardwareSerialStdio.cpp.i
 
@@ -399,6 +477,8 @@ home/dashy/pico-arduino-compat/arduino-compat/arduino-pico-extra/HardwareSerialS
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/Tricorder_BME688.dir/build.make CMakeFiles/Tricorder_BME688.dir/home/dashy/pico-arduino-compat/arduino-compat/arduino-pico-extra/HardwareSerialStdio.cpp.s
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/Tricorder_LTR390.dir/build.make CMakeFiles/Tricorder_LTR390.dir/home/dashy/pico-arduino-compat/arduino-compat/arduino-pico-extra/HardwareSerialStdio.cpp.s
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/Tricorder_PMSA003I.dir/build.make CMakeFiles/Tricorder_PMSA003I.dir/home/dashy/pico-arduino-compat/arduino-compat/arduino-pico-extra/HardwareSerialStdio.cpp.s
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Tricorder_TLV493D.dir/build.make CMakeFiles/Tricorder_TLV493D.dir/home/dashy/pico-arduino-compat/arduino-compat/arduino-pico-extra/HardwareSerialStdio.cpp.s
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Tricorder_SCD41.dir/build.make CMakeFiles/Tricorder_SCD41.dir/home/dashy/pico-arduino-compat/arduino-compat/arduino-pico-extra/HardwareSerialStdio.cpp.s
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/sensor_manager.dir/build.make CMakeFiles/sensor_manager.dir/home/dashy/pico-arduino-compat/arduino-compat/arduino-pico-extra/HardwareSerialStdio.cpp.s
 .PHONY : home/dashy/pico-arduino-compat/arduino-compat/arduino-pico-extra/HardwareSerialStdio.cpp.s
 
@@ -411,6 +491,8 @@ home/dashy/pico-arduino-compat/arduino-compat/arduino-pico-extra/SerialExtern.cp
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/Tricorder_BME688.dir/build.make CMakeFiles/Tricorder_BME688.dir/home/dashy/pico-arduino-compat/arduino-compat/arduino-pico-extra/SerialExtern.cpp.obj
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/Tricorder_LTR390.dir/build.make CMakeFiles/Tricorder_LTR390.dir/home/dashy/pico-arduino-compat/arduino-compat/arduino-pico-extra/SerialExtern.cpp.obj
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/Tricorder_PMSA003I.dir/build.make CMakeFiles/Tricorder_PMSA003I.dir/home/dashy/pico-arduino-compat/arduino-compat/arduino-pico-extra/SerialExtern.cpp.obj
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Tricorder_TLV493D.dir/build.make CMakeFiles/Tricorder_TLV493D.dir/home/dashy/pico-arduino-compat/arduino-compat/arduino-pico-extra/SerialExtern.cpp.obj
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Tricorder_SCD41.dir/build.make CMakeFiles/Tricorder_SCD41.dir/home/dashy/pico-arduino-compat/arduino-compat/arduino-pico-extra/SerialExtern.cpp.obj
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/sensor_manager.dir/build.make CMakeFiles/sensor_manager.dir/home/dashy/pico-arduino-compat/arduino-compat/arduino-pico-extra/SerialExtern.cpp.obj
 .PHONY : home/dashy/pico-arduino-compat/arduino-compat/arduino-pico-extra/SerialExtern.cpp.obj
 
@@ -423,6 +505,8 @@ home/dashy/pico-arduino-compat/arduino-compat/arduino-pico-extra/SerialExtern.cp
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/Tricorder_BME688.dir/build.make CMakeFiles/Tricorder_BME688.dir/home/dashy/pico-arduino-compat/arduino-compat/arduino-pico-extra/SerialExtern.cpp.i
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/Tricorder_LTR390.dir/build.make CMakeFiles/Tricorder_LTR390.dir/home/dashy/pico-arduino-compat/arduino-compat/arduino-pico-extra/SerialExtern.cpp.i
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/Tricorder_PMSA003I.dir/build.make CMakeFiles/Tricorder_PMSA003I.dir/home/dashy/pico-arduino-compat/arduino-compat/arduino-pico-extra/SerialExtern.cpp.i
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Tricorder_TLV493D.dir/build.make CMakeFiles/Tricorder_TLV493D.dir/home/dashy/pico-arduino-compat/arduino-compat/arduino-pico-extra/SerialExtern.cpp.i
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Tricorder_SCD41.dir/build.make CMakeFiles/Tricorder_SCD41.dir/home/dashy/pico-arduino-compat/arduino-compat/arduino-pico-extra/SerialExtern.cpp.i
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/sensor_manager.dir/build.make CMakeFiles/sensor_manager.dir/home/dashy/pico-arduino-compat/arduino-compat/arduino-pico-extra/SerialExtern.cpp.i
 .PHONY : home/dashy/pico-arduino-compat/arduino-compat/arduino-pico-extra/SerialExtern.cpp.i
 
@@ -435,6 +519,8 @@ home/dashy/pico-arduino-compat/arduino-compat/arduino-pico-extra/SerialExtern.cp
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/Tricorder_BME688.dir/build.make CMakeFiles/Tricorder_BME688.dir/home/dashy/pico-arduino-compat/arduino-compat/arduino-pico-extra/SerialExtern.cpp.s
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/Tricorder_LTR390.dir/build.make CMakeFiles/Tricorder_LTR390.dir/home/dashy/pico-arduino-compat/arduino-compat/arduino-pico-extra/SerialExtern.cpp.s
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/Tricorder_PMSA003I.dir/build.make CMakeFiles/Tricorder_PMSA003I.dir/home/dashy/pico-arduino-compat/arduino-compat/arduino-pico-extra/SerialExtern.cpp.s
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Tricorder_TLV493D.dir/build.make CMakeFiles/Tricorder_TLV493D.dir/home/dashy/pico-arduino-compat/arduino-compat/arduino-pico-extra/SerialExtern.cpp.s
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Tricorder_SCD41.dir/build.make CMakeFiles/Tricorder_SCD41.dir/home/dashy/pico-arduino-compat/arduino-compat/arduino-pico-extra/SerialExtern.cpp.s
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/sensor_manager.dir/build.make CMakeFiles/sensor_manager.dir/home/dashy/pico-arduino-compat/arduino-compat/arduino-pico-extra/SerialExtern.cpp.s
 .PHONY : home/dashy/pico-arduino-compat/arduino-compat/arduino-pico-extra/SerialExtern.cpp.s
 
@@ -447,6 +533,8 @@ home/dashy/pico-arduino-compat/arduino-compat/arduino-pico/cores/rp2040/SerialUA
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/Tricorder_BME688.dir/build.make CMakeFiles/Tricorder_BME688.dir/home/dashy/pico-arduino-compat/arduino-compat/arduino-pico/cores/rp2040/SerialUART.cpp.obj
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/Tricorder_LTR390.dir/build.make CMakeFiles/Tricorder_LTR390.dir/home/dashy/pico-arduino-compat/arduino-compat/arduino-pico/cores/rp2040/SerialUART.cpp.obj
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/Tricorder_PMSA003I.dir/build.make CMakeFiles/Tricorder_PMSA003I.dir/home/dashy/pico-arduino-compat/arduino-compat/arduino-pico/cores/rp2040/SerialUART.cpp.obj
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Tricorder_TLV493D.dir/build.make CMakeFiles/Tricorder_TLV493D.dir/home/dashy/pico-arduino-compat/arduino-compat/arduino-pico/cores/rp2040/SerialUART.cpp.obj
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Tricorder_SCD41.dir/build.make CMakeFiles/Tricorder_SCD41.dir/home/dashy/pico-arduino-compat/arduino-compat/arduino-pico/cores/rp2040/SerialUART.cpp.obj
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/sensor_manager.dir/build.make CMakeFiles/sensor_manager.dir/home/dashy/pico-arduino-compat/arduino-compat/arduino-pico/cores/rp2040/SerialUART.cpp.obj
 .PHONY : home/dashy/pico-arduino-compat/arduino-compat/arduino-pico/cores/rp2040/SerialUART.cpp.obj
 
@@ -459,6 +547,8 @@ home/dashy/pico-arduino-compat/arduino-compat/arduino-pico/cores/rp2040/SerialUA
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/Tricorder_BME688.dir/build.make CMakeFiles/Tricorder_BME688.dir/home/dashy/pico-arduino-compat/arduino-compat/arduino-pico/cores/rp2040/SerialUART.cpp.i
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/Tricorder_LTR390.dir/build.make CMakeFiles/Tricorder_LTR390.dir/home/dashy/pico-arduino-compat/arduino-compat/arduino-pico/cores/rp2040/SerialUART.cpp.i
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/Tricorder_PMSA003I.dir/build.make CMakeFiles/Tricorder_PMSA003I.dir/home/dashy/pico-arduino-compat/arduino-compat/arduino-pico/cores/rp2040/SerialUART.cpp.i
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Tricorder_TLV493D.dir/build.make CMakeFiles/Tricorder_TLV493D.dir/home/dashy/pico-arduino-compat/arduino-compat/arduino-pico/cores/rp2040/SerialUART.cpp.i
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Tricorder_SCD41.dir/build.make CMakeFiles/Tricorder_SCD41.dir/home/dashy/pico-arduino-compat/arduino-compat/arduino-pico/cores/rp2040/SerialUART.cpp.i
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/sensor_manager.dir/build.make CMakeFiles/sensor_manager.dir/home/dashy/pico-arduino-compat/arduino-compat/arduino-pico/cores/rp2040/SerialUART.cpp.i
 .PHONY : home/dashy/pico-arduino-compat/arduino-compat/arduino-pico/cores/rp2040/SerialUART.cpp.i
 
@@ -471,6 +561,8 @@ home/dashy/pico-arduino-compat/arduino-compat/arduino-pico/cores/rp2040/SerialUA
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/Tricorder_BME688.dir/build.make CMakeFiles/Tricorder_BME688.dir/home/dashy/pico-arduino-compat/arduino-compat/arduino-pico/cores/rp2040/SerialUART.cpp.s
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/Tricorder_LTR390.dir/build.make CMakeFiles/Tricorder_LTR390.dir/home/dashy/pico-arduino-compat/arduino-compat/arduino-pico/cores/rp2040/SerialUART.cpp.s
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/Tricorder_PMSA003I.dir/build.make CMakeFiles/Tricorder_PMSA003I.dir/home/dashy/pico-arduino-compat/arduino-compat/arduino-pico/cores/rp2040/SerialUART.cpp.s
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Tricorder_TLV493D.dir/build.make CMakeFiles/Tricorder_TLV493D.dir/home/dashy/pico-arduino-compat/arduino-compat/arduino-pico/cores/rp2040/SerialUART.cpp.s
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Tricorder_SCD41.dir/build.make CMakeFiles/Tricorder_SCD41.dir/home/dashy/pico-arduino-compat/arduino-compat/arduino-pico/cores/rp2040/SerialUART.cpp.s
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/sensor_manager.dir/build.make CMakeFiles/sensor_manager.dir/home/dashy/pico-arduino-compat/arduino-compat/arduino-pico/cores/rp2040/SerialUART.cpp.s
 .PHONY : home/dashy/pico-arduino-compat/arduino-compat/arduino-pico/cores/rp2040/SerialUART.cpp.s
 
@@ -483,6 +575,8 @@ home/dashy/pico-arduino-compat/arduino-compat/arduino-pico/cores/rp2040/Tone.cpp
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/Tricorder_BME688.dir/build.make CMakeFiles/Tricorder_BME688.dir/home/dashy/pico-arduino-compat/arduino-compat/arduino-pico/cores/rp2040/Tone.cpp.obj
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/Tricorder_LTR390.dir/build.make CMakeFiles/Tricorder_LTR390.dir/home/dashy/pico-arduino-compat/arduino-compat/arduino-pico/cores/rp2040/Tone.cpp.obj
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/Tricorder_PMSA003I.dir/build.make CMakeFiles/Tricorder_PMSA003I.dir/home/dashy/pico-arduino-compat/arduino-compat/arduino-pico/cores/rp2040/Tone.cpp.obj
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Tricorder_TLV493D.dir/build.make CMakeFiles/Tricorder_TLV493D.dir/home/dashy/pico-arduino-compat/arduino-compat/arduino-pico/cores/rp2040/Tone.cpp.obj
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Tricorder_SCD41.dir/build.make CMakeFiles/Tricorder_SCD41.dir/home/dashy/pico-arduino-compat/arduino-compat/arduino-pico/cores/rp2040/Tone.cpp.obj
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/sensor_manager.dir/build.make CMakeFiles/sensor_manager.dir/home/dashy/pico-arduino-compat/arduino-compat/arduino-pico/cores/rp2040/Tone.cpp.obj
 .PHONY : home/dashy/pico-arduino-compat/arduino-compat/arduino-pico/cores/rp2040/Tone.cpp.obj
 
@@ -495,6 +589,8 @@ home/dashy/pico-arduino-compat/arduino-compat/arduino-pico/cores/rp2040/Tone.cpp
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/Tricorder_BME688.dir/build.make CMakeFiles/Tricorder_BME688.dir/home/dashy/pico-arduino-compat/arduino-compat/arduino-pico/cores/rp2040/Tone.cpp.i
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/Tricorder_LTR390.dir/build.make CMakeFiles/Tricorder_LTR390.dir/home/dashy/pico-arduino-compat/arduino-compat/arduino-pico/cores/rp2040/Tone.cpp.i
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/Tricorder_PMSA003I.dir/build.make CMakeFiles/Tricorder_PMSA003I.dir/home/dashy/pico-arduino-compat/arduino-compat/arduino-pico/cores/rp2040/Tone.cpp.i
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Tricorder_TLV493D.dir/build.make CMakeFiles/Tricorder_TLV493D.dir/home/dashy/pico-arduino-compat/arduino-compat/arduino-pico/cores/rp2040/Tone.cpp.i
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Tricorder_SCD41.dir/build.make CMakeFiles/Tricorder_SCD41.dir/home/dashy/pico-arduino-compat/arduino-compat/arduino-pico/cores/rp2040/Tone.cpp.i
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/sensor_manager.dir/build.make CMakeFiles/sensor_manager.dir/home/dashy/pico-arduino-compat/arduino-compat/arduino-pico/cores/rp2040/Tone.cpp.i
 .PHONY : home/dashy/pico-arduino-compat/arduino-compat/arduino-pico/cores/rp2040/Tone.cpp.i
 
@@ -507,6 +603,8 @@ home/dashy/pico-arduino-compat/arduino-compat/arduino-pico/cores/rp2040/Tone.cpp
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/Tricorder_BME688.dir/build.make CMakeFiles/Tricorder_BME688.dir/home/dashy/pico-arduino-compat/arduino-compat/arduino-pico/cores/rp2040/Tone.cpp.s
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/Tricorder_LTR390.dir/build.make CMakeFiles/Tricorder_LTR390.dir/home/dashy/pico-arduino-compat/arduino-compat/arduino-pico/cores/rp2040/Tone.cpp.s
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/Tricorder_PMSA003I.dir/build.make CMakeFiles/Tricorder_PMSA003I.dir/home/dashy/pico-arduino-compat/arduino-compat/arduino-pico/cores/rp2040/Tone.cpp.s
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Tricorder_TLV493D.dir/build.make CMakeFiles/Tricorder_TLV493D.dir/home/dashy/pico-arduino-compat/arduino-compat/arduino-pico/cores/rp2040/Tone.cpp.s
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Tricorder_SCD41.dir/build.make CMakeFiles/Tricorder_SCD41.dir/home/dashy/pico-arduino-compat/arduino-compat/arduino-pico/cores/rp2040/Tone.cpp.s
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/sensor_manager.dir/build.make CMakeFiles/sensor_manager.dir/home/dashy/pico-arduino-compat/arduino-compat/arduino-pico/cores/rp2040/Tone.cpp.s
 .PHONY : home/dashy/pico-arduino-compat/arduino-compat/arduino-pico/cores/rp2040/Tone.cpp.s
 
@@ -519,6 +617,8 @@ home/dashy/pico-arduino-compat/arduino-compat/arduino-pico/cores/rp2040/WMath.cp
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/Tricorder_BME688.dir/build.make CMakeFiles/Tricorder_BME688.dir/home/dashy/pico-arduino-compat/arduino-compat/arduino-pico/cores/rp2040/WMath.cpp.obj
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/Tricorder_LTR390.dir/build.make CMakeFiles/Tricorder_LTR390.dir/home/dashy/pico-arduino-compat/arduino-compat/arduino-pico/cores/rp2040/WMath.cpp.obj
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/Tricorder_PMSA003I.dir/build.make CMakeFiles/Tricorder_PMSA003I.dir/home/dashy/pico-arduino-compat/arduino-compat/arduino-pico/cores/rp2040/WMath.cpp.obj
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Tricorder_TLV493D.dir/build.make CMakeFiles/Tricorder_TLV493D.dir/home/dashy/pico-arduino-compat/arduino-compat/arduino-pico/cores/rp2040/WMath.cpp.obj
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Tricorder_SCD41.dir/build.make CMakeFiles/Tricorder_SCD41.dir/home/dashy/pico-arduino-compat/arduino-compat/arduino-pico/cores/rp2040/WMath.cpp.obj
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/sensor_manager.dir/build.make CMakeFiles/sensor_manager.dir/home/dashy/pico-arduino-compat/arduino-compat/arduino-pico/cores/rp2040/WMath.cpp.obj
 .PHONY : home/dashy/pico-arduino-compat/arduino-compat/arduino-pico/cores/rp2040/WMath.cpp.obj
 
@@ -531,6 +631,8 @@ home/dashy/pico-arduino-compat/arduino-compat/arduino-pico/cores/rp2040/WMath.cp
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/Tricorder_BME688.dir/build.make CMakeFiles/Tricorder_BME688.dir/home/dashy/pico-arduino-compat/arduino-compat/arduino-pico/cores/rp2040/WMath.cpp.i
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/Tricorder_LTR390.dir/build.make CMakeFiles/Tricorder_LTR390.dir/home/dashy/pico-arduino-compat/arduino-compat/arduino-pico/cores/rp2040/WMath.cpp.i
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/Tricorder_PMSA003I.dir/build.make CMakeFiles/Tricorder_PMSA003I.dir/home/dashy/pico-arduino-compat/arduino-compat/arduino-pico/cores/rp2040/WMath.cpp.i
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Tricorder_TLV493D.dir/build.make CMakeFiles/Tricorder_TLV493D.dir/home/dashy/pico-arduino-compat/arduino-compat/arduino-pico/cores/rp2040/WMath.cpp.i
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Tricorder_SCD41.dir/build.make CMakeFiles/Tricorder_SCD41.dir/home/dashy/pico-arduino-compat/arduino-compat/arduino-pico/cores/rp2040/WMath.cpp.i
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/sensor_manager.dir/build.make CMakeFiles/sensor_manager.dir/home/dashy/pico-arduino-compat/arduino-compat/arduino-pico/cores/rp2040/WMath.cpp.i
 .PHONY : home/dashy/pico-arduino-compat/arduino-compat/arduino-pico/cores/rp2040/WMath.cpp.i
 
@@ -543,6 +645,8 @@ home/dashy/pico-arduino-compat/arduino-compat/arduino-pico/cores/rp2040/WMath.cp
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/Tricorder_BME688.dir/build.make CMakeFiles/Tricorder_BME688.dir/home/dashy/pico-arduino-compat/arduino-compat/arduino-pico/cores/rp2040/WMath.cpp.s
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/Tricorder_LTR390.dir/build.make CMakeFiles/Tricorder_LTR390.dir/home/dashy/pico-arduino-compat/arduino-compat/arduino-pico/cores/rp2040/WMath.cpp.s
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/Tricorder_PMSA003I.dir/build.make CMakeFiles/Tricorder_PMSA003I.dir/home/dashy/pico-arduino-compat/arduino-compat/arduino-pico/cores/rp2040/WMath.cpp.s
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Tricorder_TLV493D.dir/build.make CMakeFiles/Tricorder_TLV493D.dir/home/dashy/pico-arduino-compat/arduino-compat/arduino-pico/cores/rp2040/WMath.cpp.s
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Tricorder_SCD41.dir/build.make CMakeFiles/Tricorder_SCD41.dir/home/dashy/pico-arduino-compat/arduino-compat/arduino-pico/cores/rp2040/WMath.cpp.s
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/sensor_manager.dir/build.make CMakeFiles/sensor_manager.dir/home/dashy/pico-arduino-compat/arduino-compat/arduino-pico/cores/rp2040/WMath.cpp.s
 .PHONY : home/dashy/pico-arduino-compat/arduino-compat/arduino-pico/cores/rp2040/WMath.cpp.s
 
@@ -555,6 +659,8 @@ home/dashy/pico-arduino-compat/arduino-compat/arduino-pico/cores/rp2040/api/Comm
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/Tricorder_BME688.dir/build.make CMakeFiles/Tricorder_BME688.dir/home/dashy/pico-arduino-compat/arduino-compat/arduino-pico/cores/rp2040/api/Common.cpp.obj
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/Tricorder_LTR390.dir/build.make CMakeFiles/Tricorder_LTR390.dir/home/dashy/pico-arduino-compat/arduino-compat/arduino-pico/cores/rp2040/api/Common.cpp.obj
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/Tricorder_PMSA003I.dir/build.make CMakeFiles/Tricorder_PMSA003I.dir/home/dashy/pico-arduino-compat/arduino-compat/arduino-pico/cores/rp2040/api/Common.cpp.obj
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Tricorder_TLV493D.dir/build.make CMakeFiles/Tricorder_TLV493D.dir/home/dashy/pico-arduino-compat/arduino-compat/arduino-pico/cores/rp2040/api/Common.cpp.obj
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Tricorder_SCD41.dir/build.make CMakeFiles/Tricorder_SCD41.dir/home/dashy/pico-arduino-compat/arduino-compat/arduino-pico/cores/rp2040/api/Common.cpp.obj
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/sensor_manager.dir/build.make CMakeFiles/sensor_manager.dir/home/dashy/pico-arduino-compat/arduino-compat/arduino-pico/cores/rp2040/api/Common.cpp.obj
 .PHONY : home/dashy/pico-arduino-compat/arduino-compat/arduino-pico/cores/rp2040/api/Common.cpp.obj
 
@@ -567,6 +673,8 @@ home/dashy/pico-arduino-compat/arduino-compat/arduino-pico/cores/rp2040/api/Comm
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/Tricorder_BME688.dir/build.make CMakeFiles/Tricorder_BME688.dir/home/dashy/pico-arduino-compat/arduino-compat/arduino-pico/cores/rp2040/api/Common.cpp.i
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/Tricorder_LTR390.dir/build.make CMakeFiles/Tricorder_LTR390.dir/home/dashy/pico-arduino-compat/arduino-compat/arduino-pico/cores/rp2040/api/Common.cpp.i
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/Tricorder_PMSA003I.dir/build.make CMakeFiles/Tricorder_PMSA003I.dir/home/dashy/pico-arduino-compat/arduino-compat/arduino-pico/cores/rp2040/api/Common.cpp.i
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Tricorder_TLV493D.dir/build.make CMakeFiles/Tricorder_TLV493D.dir/home/dashy/pico-arduino-compat/arduino-compat/arduino-pico/cores/rp2040/api/Common.cpp.i
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Tricorder_SCD41.dir/build.make CMakeFiles/Tricorder_SCD41.dir/home/dashy/pico-arduino-compat/arduino-compat/arduino-pico/cores/rp2040/api/Common.cpp.i
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/sensor_manager.dir/build.make CMakeFiles/sensor_manager.dir/home/dashy/pico-arduino-compat/arduino-compat/arduino-pico/cores/rp2040/api/Common.cpp.i
 .PHONY : home/dashy/pico-arduino-compat/arduino-compat/arduino-pico/cores/rp2040/api/Common.cpp.i
 
@@ -579,6 +687,8 @@ home/dashy/pico-arduino-compat/arduino-compat/arduino-pico/cores/rp2040/api/Comm
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/Tricorder_BME688.dir/build.make CMakeFiles/Tricorder_BME688.dir/home/dashy/pico-arduino-compat/arduino-compat/arduino-pico/cores/rp2040/api/Common.cpp.s
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/Tricorder_LTR390.dir/build.make CMakeFiles/Tricorder_LTR390.dir/home/dashy/pico-arduino-compat/arduino-compat/arduino-pico/cores/rp2040/api/Common.cpp.s
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/Tricorder_PMSA003I.dir/build.make CMakeFiles/Tricorder_PMSA003I.dir/home/dashy/pico-arduino-compat/arduino-compat/arduino-pico/cores/rp2040/api/Common.cpp.s
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Tricorder_TLV493D.dir/build.make CMakeFiles/Tricorder_TLV493D.dir/home/dashy/pico-arduino-compat/arduino-compat/arduino-pico/cores/rp2040/api/Common.cpp.s
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Tricorder_SCD41.dir/build.make CMakeFiles/Tricorder_SCD41.dir/home/dashy/pico-arduino-compat/arduino-compat/arduino-pico/cores/rp2040/api/Common.cpp.s
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/sensor_manager.dir/build.make CMakeFiles/sensor_manager.dir/home/dashy/pico-arduino-compat/arduino-compat/arduino-pico/cores/rp2040/api/Common.cpp.s
 .PHONY : home/dashy/pico-arduino-compat/arduino-compat/arduino-pico/cores/rp2040/api/Common.cpp.s
 
@@ -591,6 +701,8 @@ home/dashy/pico-arduino-compat/arduino-compat/arduino-pico/cores/rp2040/api/IPAd
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/Tricorder_BME688.dir/build.make CMakeFiles/Tricorder_BME688.dir/home/dashy/pico-arduino-compat/arduino-compat/arduino-pico/cores/rp2040/api/IPAddress.cpp.obj
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/Tricorder_LTR390.dir/build.make CMakeFiles/Tricorder_LTR390.dir/home/dashy/pico-arduino-compat/arduino-compat/arduino-pico/cores/rp2040/api/IPAddress.cpp.obj
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/Tricorder_PMSA003I.dir/build.make CMakeFiles/Tricorder_PMSA003I.dir/home/dashy/pico-arduino-compat/arduino-compat/arduino-pico/cores/rp2040/api/IPAddress.cpp.obj
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Tricorder_TLV493D.dir/build.make CMakeFiles/Tricorder_TLV493D.dir/home/dashy/pico-arduino-compat/arduino-compat/arduino-pico/cores/rp2040/api/IPAddress.cpp.obj
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Tricorder_SCD41.dir/build.make CMakeFiles/Tricorder_SCD41.dir/home/dashy/pico-arduino-compat/arduino-compat/arduino-pico/cores/rp2040/api/IPAddress.cpp.obj
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/sensor_manager.dir/build.make CMakeFiles/sensor_manager.dir/home/dashy/pico-arduino-compat/arduino-compat/arduino-pico/cores/rp2040/api/IPAddress.cpp.obj
 .PHONY : home/dashy/pico-arduino-compat/arduino-compat/arduino-pico/cores/rp2040/api/IPAddress.cpp.obj
 
@@ -603,6 +715,8 @@ home/dashy/pico-arduino-compat/arduino-compat/arduino-pico/cores/rp2040/api/IPAd
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/Tricorder_BME688.dir/build.make CMakeFiles/Tricorder_BME688.dir/home/dashy/pico-arduino-compat/arduino-compat/arduino-pico/cores/rp2040/api/IPAddress.cpp.i
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/Tricorder_LTR390.dir/build.make CMakeFiles/Tricorder_LTR390.dir/home/dashy/pico-arduino-compat/arduino-compat/arduino-pico/cores/rp2040/api/IPAddress.cpp.i
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/Tricorder_PMSA003I.dir/build.make CMakeFiles/Tricorder_PMSA003I.dir/home/dashy/pico-arduino-compat/arduino-compat/arduino-pico/cores/rp2040/api/IPAddress.cpp.i
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Tricorder_TLV493D.dir/build.make CMakeFiles/Tricorder_TLV493D.dir/home/dashy/pico-arduino-compat/arduino-compat/arduino-pico/cores/rp2040/api/IPAddress.cpp.i
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Tricorder_SCD41.dir/build.make CMakeFiles/Tricorder_SCD41.dir/home/dashy/pico-arduino-compat/arduino-compat/arduino-pico/cores/rp2040/api/IPAddress.cpp.i
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/sensor_manager.dir/build.make CMakeFiles/sensor_manager.dir/home/dashy/pico-arduino-compat/arduino-compat/arduino-pico/cores/rp2040/api/IPAddress.cpp.i
 .PHONY : home/dashy/pico-arduino-compat/arduino-compat/arduino-pico/cores/rp2040/api/IPAddress.cpp.i
 
@@ -615,6 +729,8 @@ home/dashy/pico-arduino-compat/arduino-compat/arduino-pico/cores/rp2040/api/IPAd
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/Tricorder_BME688.dir/build.make CMakeFiles/Tricorder_BME688.dir/home/dashy/pico-arduino-compat/arduino-compat/arduino-pico/cores/rp2040/api/IPAddress.cpp.s
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/Tricorder_LTR390.dir/build.make CMakeFiles/Tricorder_LTR390.dir/home/dashy/pico-arduino-compat/arduino-compat/arduino-pico/cores/rp2040/api/IPAddress.cpp.s
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/Tricorder_PMSA003I.dir/build.make CMakeFiles/Tricorder_PMSA003I.dir/home/dashy/pico-arduino-compat/arduino-compat/arduino-pico/cores/rp2040/api/IPAddress.cpp.s
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Tricorder_TLV493D.dir/build.make CMakeFiles/Tricorder_TLV493D.dir/home/dashy/pico-arduino-compat/arduino-compat/arduino-pico/cores/rp2040/api/IPAddress.cpp.s
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Tricorder_SCD41.dir/build.make CMakeFiles/Tricorder_SCD41.dir/home/dashy/pico-arduino-compat/arduino-compat/arduino-pico/cores/rp2040/api/IPAddress.cpp.s
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/sensor_manager.dir/build.make CMakeFiles/sensor_manager.dir/home/dashy/pico-arduino-compat/arduino-compat/arduino-pico/cores/rp2040/api/IPAddress.cpp.s
 .PHONY : home/dashy/pico-arduino-compat/arduino-compat/arduino-pico/cores/rp2040/api/IPAddress.cpp.s
 
@@ -627,6 +743,8 @@ home/dashy/pico-arduino-compat/arduino-compat/arduino-pico/cores/rp2040/api/Plug
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/Tricorder_BME688.dir/build.make CMakeFiles/Tricorder_BME688.dir/home/dashy/pico-arduino-compat/arduino-compat/arduino-pico/cores/rp2040/api/PluggableUSB.cpp.obj
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/Tricorder_LTR390.dir/build.make CMakeFiles/Tricorder_LTR390.dir/home/dashy/pico-arduino-compat/arduino-compat/arduino-pico/cores/rp2040/api/PluggableUSB.cpp.obj
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/Tricorder_PMSA003I.dir/build.make CMakeFiles/Tricorder_PMSA003I.dir/home/dashy/pico-arduino-compat/arduino-compat/arduino-pico/cores/rp2040/api/PluggableUSB.cpp.obj
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Tricorder_TLV493D.dir/build.make CMakeFiles/Tricorder_TLV493D.dir/home/dashy/pico-arduino-compat/arduino-compat/arduino-pico/cores/rp2040/api/PluggableUSB.cpp.obj
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Tricorder_SCD41.dir/build.make CMakeFiles/Tricorder_SCD41.dir/home/dashy/pico-arduino-compat/arduino-compat/arduino-pico/cores/rp2040/api/PluggableUSB.cpp.obj
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/sensor_manager.dir/build.make CMakeFiles/sensor_manager.dir/home/dashy/pico-arduino-compat/arduino-compat/arduino-pico/cores/rp2040/api/PluggableUSB.cpp.obj
 .PHONY : home/dashy/pico-arduino-compat/arduino-compat/arduino-pico/cores/rp2040/api/PluggableUSB.cpp.obj
 
@@ -639,6 +757,8 @@ home/dashy/pico-arduino-compat/arduino-compat/arduino-pico/cores/rp2040/api/Plug
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/Tricorder_BME688.dir/build.make CMakeFiles/Tricorder_BME688.dir/home/dashy/pico-arduino-compat/arduino-compat/arduino-pico/cores/rp2040/api/PluggableUSB.cpp.i
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/Tricorder_LTR390.dir/build.make CMakeFiles/Tricorder_LTR390.dir/home/dashy/pico-arduino-compat/arduino-compat/arduino-pico/cores/rp2040/api/PluggableUSB.cpp.i
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/Tricorder_PMSA003I.dir/build.make CMakeFiles/Tricorder_PMSA003I.dir/home/dashy/pico-arduino-compat/arduino-compat/arduino-pico/cores/rp2040/api/PluggableUSB.cpp.i
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Tricorder_TLV493D.dir/build.make CMakeFiles/Tricorder_TLV493D.dir/home/dashy/pico-arduino-compat/arduino-compat/arduino-pico/cores/rp2040/api/PluggableUSB.cpp.i
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Tricorder_SCD41.dir/build.make CMakeFiles/Tricorder_SCD41.dir/home/dashy/pico-arduino-compat/arduino-compat/arduino-pico/cores/rp2040/api/PluggableUSB.cpp.i
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/sensor_manager.dir/build.make CMakeFiles/sensor_manager.dir/home/dashy/pico-arduino-compat/arduino-compat/arduino-pico/cores/rp2040/api/PluggableUSB.cpp.i
 .PHONY : home/dashy/pico-arduino-compat/arduino-compat/arduino-pico/cores/rp2040/api/PluggableUSB.cpp.i
 
@@ -651,6 +771,8 @@ home/dashy/pico-arduino-compat/arduino-compat/arduino-pico/cores/rp2040/api/Plug
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/Tricorder_BME688.dir/build.make CMakeFiles/Tricorder_BME688.dir/home/dashy/pico-arduino-compat/arduino-compat/arduino-pico/cores/rp2040/api/PluggableUSB.cpp.s
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/Tricorder_LTR390.dir/build.make CMakeFiles/Tricorder_LTR390.dir/home/dashy/pico-arduino-compat/arduino-compat/arduino-pico/cores/rp2040/api/PluggableUSB.cpp.s
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/Tricorder_PMSA003I.dir/build.make CMakeFiles/Tricorder_PMSA003I.dir/home/dashy/pico-arduino-compat/arduino-compat/arduino-pico/cores/rp2040/api/PluggableUSB.cpp.s
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Tricorder_TLV493D.dir/build.make CMakeFiles/Tricorder_TLV493D.dir/home/dashy/pico-arduino-compat/arduino-compat/arduino-pico/cores/rp2040/api/PluggableUSB.cpp.s
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Tricorder_SCD41.dir/build.make CMakeFiles/Tricorder_SCD41.dir/home/dashy/pico-arduino-compat/arduino-compat/arduino-pico/cores/rp2040/api/PluggableUSB.cpp.s
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/sensor_manager.dir/build.make CMakeFiles/sensor_manager.dir/home/dashy/pico-arduino-compat/arduino-compat/arduino-pico/cores/rp2040/api/PluggableUSB.cpp.s
 .PHONY : home/dashy/pico-arduino-compat/arduino-compat/arduino-pico/cores/rp2040/api/PluggableUSB.cpp.s
 
@@ -663,6 +785,8 @@ home/dashy/pico-arduino-compat/arduino-compat/arduino-pico/cores/rp2040/api/Prin
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/Tricorder_BME688.dir/build.make CMakeFiles/Tricorder_BME688.dir/home/dashy/pico-arduino-compat/arduino-compat/arduino-pico/cores/rp2040/api/Print.cpp.obj
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/Tricorder_LTR390.dir/build.make CMakeFiles/Tricorder_LTR390.dir/home/dashy/pico-arduino-compat/arduino-compat/arduino-pico/cores/rp2040/api/Print.cpp.obj
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/Tricorder_PMSA003I.dir/build.make CMakeFiles/Tricorder_PMSA003I.dir/home/dashy/pico-arduino-compat/arduino-compat/arduino-pico/cores/rp2040/api/Print.cpp.obj
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Tricorder_TLV493D.dir/build.make CMakeFiles/Tricorder_TLV493D.dir/home/dashy/pico-arduino-compat/arduino-compat/arduino-pico/cores/rp2040/api/Print.cpp.obj
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Tricorder_SCD41.dir/build.make CMakeFiles/Tricorder_SCD41.dir/home/dashy/pico-arduino-compat/arduino-compat/arduino-pico/cores/rp2040/api/Print.cpp.obj
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/sensor_manager.dir/build.make CMakeFiles/sensor_manager.dir/home/dashy/pico-arduino-compat/arduino-compat/arduino-pico/cores/rp2040/api/Print.cpp.obj
 .PHONY : home/dashy/pico-arduino-compat/arduino-compat/arduino-pico/cores/rp2040/api/Print.cpp.obj
 
@@ -675,6 +799,8 @@ home/dashy/pico-arduino-compat/arduino-compat/arduino-pico/cores/rp2040/api/Prin
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/Tricorder_BME688.dir/build.make CMakeFiles/Tricorder_BME688.dir/home/dashy/pico-arduino-compat/arduino-compat/arduino-pico/cores/rp2040/api/Print.cpp.i
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/Tricorder_LTR390.dir/build.make CMakeFiles/Tricorder_LTR390.dir/home/dashy/pico-arduino-compat/arduino-compat/arduino-pico/cores/rp2040/api/Print.cpp.i
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/Tricorder_PMSA003I.dir/build.make CMakeFiles/Tricorder_PMSA003I.dir/home/dashy/pico-arduino-compat/arduino-compat/arduino-pico/cores/rp2040/api/Print.cpp.i
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Tricorder_TLV493D.dir/build.make CMakeFiles/Tricorder_TLV493D.dir/home/dashy/pico-arduino-compat/arduino-compat/arduino-pico/cores/rp2040/api/Print.cpp.i
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Tricorder_SCD41.dir/build.make CMakeFiles/Tricorder_SCD41.dir/home/dashy/pico-arduino-compat/arduino-compat/arduino-pico/cores/rp2040/api/Print.cpp.i
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/sensor_manager.dir/build.make CMakeFiles/sensor_manager.dir/home/dashy/pico-arduino-compat/arduino-compat/arduino-pico/cores/rp2040/api/Print.cpp.i
 .PHONY : home/dashy/pico-arduino-compat/arduino-compat/arduino-pico/cores/rp2040/api/Print.cpp.i
 
@@ -687,6 +813,8 @@ home/dashy/pico-arduino-compat/arduino-compat/arduino-pico/cores/rp2040/api/Prin
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/Tricorder_BME688.dir/build.make CMakeFiles/Tricorder_BME688.dir/home/dashy/pico-arduino-compat/arduino-compat/arduino-pico/cores/rp2040/api/Print.cpp.s
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/Tricorder_LTR390.dir/build.make CMakeFiles/Tricorder_LTR390.dir/home/dashy/pico-arduino-compat/arduino-compat/arduino-pico/cores/rp2040/api/Print.cpp.s
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/Tricorder_PMSA003I.dir/build.make CMakeFiles/Tricorder_PMSA003I.dir/home/dashy/pico-arduino-compat/arduino-compat/arduino-pico/cores/rp2040/api/Print.cpp.s
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Tricorder_TLV493D.dir/build.make CMakeFiles/Tricorder_TLV493D.dir/home/dashy/pico-arduino-compat/arduino-compat/arduino-pico/cores/rp2040/api/Print.cpp.s
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Tricorder_SCD41.dir/build.make CMakeFiles/Tricorder_SCD41.dir/home/dashy/pico-arduino-compat/arduino-compat/arduino-pico/cores/rp2040/api/Print.cpp.s
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/sensor_manager.dir/build.make CMakeFiles/sensor_manager.dir/home/dashy/pico-arduino-compat/arduino-compat/arduino-pico/cores/rp2040/api/Print.cpp.s
 .PHONY : home/dashy/pico-arduino-compat/arduino-compat/arduino-pico/cores/rp2040/api/Print.cpp.s
 
@@ -699,6 +827,8 @@ home/dashy/pico-arduino-compat/arduino-compat/arduino-pico/cores/rp2040/api/Stre
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/Tricorder_BME688.dir/build.make CMakeFiles/Tricorder_BME688.dir/home/dashy/pico-arduino-compat/arduino-compat/arduino-pico/cores/rp2040/api/Stream.cpp.obj
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/Tricorder_LTR390.dir/build.make CMakeFiles/Tricorder_LTR390.dir/home/dashy/pico-arduino-compat/arduino-compat/arduino-pico/cores/rp2040/api/Stream.cpp.obj
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/Tricorder_PMSA003I.dir/build.make CMakeFiles/Tricorder_PMSA003I.dir/home/dashy/pico-arduino-compat/arduino-compat/arduino-pico/cores/rp2040/api/Stream.cpp.obj
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Tricorder_TLV493D.dir/build.make CMakeFiles/Tricorder_TLV493D.dir/home/dashy/pico-arduino-compat/arduino-compat/arduino-pico/cores/rp2040/api/Stream.cpp.obj
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Tricorder_SCD41.dir/build.make CMakeFiles/Tricorder_SCD41.dir/home/dashy/pico-arduino-compat/arduino-compat/arduino-pico/cores/rp2040/api/Stream.cpp.obj
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/sensor_manager.dir/build.make CMakeFiles/sensor_manager.dir/home/dashy/pico-arduino-compat/arduino-compat/arduino-pico/cores/rp2040/api/Stream.cpp.obj
 .PHONY : home/dashy/pico-arduino-compat/arduino-compat/arduino-pico/cores/rp2040/api/Stream.cpp.obj
 
@@ -711,6 +841,8 @@ home/dashy/pico-arduino-compat/arduino-compat/arduino-pico/cores/rp2040/api/Stre
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/Tricorder_BME688.dir/build.make CMakeFiles/Tricorder_BME688.dir/home/dashy/pico-arduino-compat/arduino-compat/arduino-pico/cores/rp2040/api/Stream.cpp.i
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/Tricorder_LTR390.dir/build.make CMakeFiles/Tricorder_LTR390.dir/home/dashy/pico-arduino-compat/arduino-compat/arduino-pico/cores/rp2040/api/Stream.cpp.i
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/Tricorder_PMSA003I.dir/build.make CMakeFiles/Tricorder_PMSA003I.dir/home/dashy/pico-arduino-compat/arduino-compat/arduino-pico/cores/rp2040/api/Stream.cpp.i
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Tricorder_TLV493D.dir/build.make CMakeFiles/Tricorder_TLV493D.dir/home/dashy/pico-arduino-compat/arduino-compat/arduino-pico/cores/rp2040/api/Stream.cpp.i
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Tricorder_SCD41.dir/build.make CMakeFiles/Tricorder_SCD41.dir/home/dashy/pico-arduino-compat/arduino-compat/arduino-pico/cores/rp2040/api/Stream.cpp.i
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/sensor_manager.dir/build.make CMakeFiles/sensor_manager.dir/home/dashy/pico-arduino-compat/arduino-compat/arduino-pico/cores/rp2040/api/Stream.cpp.i
 .PHONY : home/dashy/pico-arduino-compat/arduino-compat/arduino-pico/cores/rp2040/api/Stream.cpp.i
 
@@ -723,6 +855,8 @@ home/dashy/pico-arduino-compat/arduino-compat/arduino-pico/cores/rp2040/api/Stre
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/Tricorder_BME688.dir/build.make CMakeFiles/Tricorder_BME688.dir/home/dashy/pico-arduino-compat/arduino-compat/arduino-pico/cores/rp2040/api/Stream.cpp.s
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/Tricorder_LTR390.dir/build.make CMakeFiles/Tricorder_LTR390.dir/home/dashy/pico-arduino-compat/arduino-compat/arduino-pico/cores/rp2040/api/Stream.cpp.s
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/Tricorder_PMSA003I.dir/build.make CMakeFiles/Tricorder_PMSA003I.dir/home/dashy/pico-arduino-compat/arduino-compat/arduino-pico/cores/rp2040/api/Stream.cpp.s
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Tricorder_TLV493D.dir/build.make CMakeFiles/Tricorder_TLV493D.dir/home/dashy/pico-arduino-compat/arduino-compat/arduino-pico/cores/rp2040/api/Stream.cpp.s
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Tricorder_SCD41.dir/build.make CMakeFiles/Tricorder_SCD41.dir/home/dashy/pico-arduino-compat/arduino-compat/arduino-pico/cores/rp2040/api/Stream.cpp.s
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/sensor_manager.dir/build.make CMakeFiles/sensor_manager.dir/home/dashy/pico-arduino-compat/arduino-compat/arduino-pico/cores/rp2040/api/Stream.cpp.s
 .PHONY : home/dashy/pico-arduino-compat/arduino-compat/arduino-pico/cores/rp2040/api/Stream.cpp.s
 
@@ -735,6 +869,8 @@ home/dashy/pico-arduino-compat/arduino-compat/arduino-pico/cores/rp2040/api/Stri
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/Tricorder_BME688.dir/build.make CMakeFiles/Tricorder_BME688.dir/home/dashy/pico-arduino-compat/arduino-compat/arduino-pico/cores/rp2040/api/String.cpp.obj
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/Tricorder_LTR390.dir/build.make CMakeFiles/Tricorder_LTR390.dir/home/dashy/pico-arduino-compat/arduino-compat/arduino-pico/cores/rp2040/api/String.cpp.obj
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/Tricorder_PMSA003I.dir/build.make CMakeFiles/Tricorder_PMSA003I.dir/home/dashy/pico-arduino-compat/arduino-compat/arduino-pico/cores/rp2040/api/String.cpp.obj
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Tricorder_TLV493D.dir/build.make CMakeFiles/Tricorder_TLV493D.dir/home/dashy/pico-arduino-compat/arduino-compat/arduino-pico/cores/rp2040/api/String.cpp.obj
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Tricorder_SCD41.dir/build.make CMakeFiles/Tricorder_SCD41.dir/home/dashy/pico-arduino-compat/arduino-compat/arduino-pico/cores/rp2040/api/String.cpp.obj
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/sensor_manager.dir/build.make CMakeFiles/sensor_manager.dir/home/dashy/pico-arduino-compat/arduino-compat/arduino-pico/cores/rp2040/api/String.cpp.obj
 .PHONY : home/dashy/pico-arduino-compat/arduino-compat/arduino-pico/cores/rp2040/api/String.cpp.obj
 
@@ -747,6 +883,8 @@ home/dashy/pico-arduino-compat/arduino-compat/arduino-pico/cores/rp2040/api/Stri
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/Tricorder_BME688.dir/build.make CMakeFiles/Tricorder_BME688.dir/home/dashy/pico-arduino-compat/arduino-compat/arduino-pico/cores/rp2040/api/String.cpp.i
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/Tricorder_LTR390.dir/build.make CMakeFiles/Tricorder_LTR390.dir/home/dashy/pico-arduino-compat/arduino-compat/arduino-pico/cores/rp2040/api/String.cpp.i
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/Tricorder_PMSA003I.dir/build.make CMakeFiles/Tricorder_PMSA003I.dir/home/dashy/pico-arduino-compat/arduino-compat/arduino-pico/cores/rp2040/api/String.cpp.i
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Tricorder_TLV493D.dir/build.make CMakeFiles/Tricorder_TLV493D.dir/home/dashy/pico-arduino-compat/arduino-compat/arduino-pico/cores/rp2040/api/String.cpp.i
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Tricorder_SCD41.dir/build.make CMakeFiles/Tricorder_SCD41.dir/home/dashy/pico-arduino-compat/arduino-compat/arduino-pico/cores/rp2040/api/String.cpp.i
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/sensor_manager.dir/build.make CMakeFiles/sensor_manager.dir/home/dashy/pico-arduino-compat/arduino-compat/arduino-pico/cores/rp2040/api/String.cpp.i
 .PHONY : home/dashy/pico-arduino-compat/arduino-compat/arduino-pico/cores/rp2040/api/String.cpp.i
 
@@ -759,6 +897,8 @@ home/dashy/pico-arduino-compat/arduino-compat/arduino-pico/cores/rp2040/api/Stri
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/Tricorder_BME688.dir/build.make CMakeFiles/Tricorder_BME688.dir/home/dashy/pico-arduino-compat/arduino-compat/arduino-pico/cores/rp2040/api/String.cpp.s
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/Tricorder_LTR390.dir/build.make CMakeFiles/Tricorder_LTR390.dir/home/dashy/pico-arduino-compat/arduino-compat/arduino-pico/cores/rp2040/api/String.cpp.s
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/Tricorder_PMSA003I.dir/build.make CMakeFiles/Tricorder_PMSA003I.dir/home/dashy/pico-arduino-compat/arduino-compat/arduino-pico/cores/rp2040/api/String.cpp.s
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Tricorder_TLV493D.dir/build.make CMakeFiles/Tricorder_TLV493D.dir/home/dashy/pico-arduino-compat/arduino-compat/arduino-pico/cores/rp2040/api/String.cpp.s
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Tricorder_SCD41.dir/build.make CMakeFiles/Tricorder_SCD41.dir/home/dashy/pico-arduino-compat/arduino-compat/arduino-pico/cores/rp2040/api/String.cpp.s
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/sensor_manager.dir/build.make CMakeFiles/sensor_manager.dir/home/dashy/pico-arduino-compat/arduino-compat/arduino-pico/cores/rp2040/api/String.cpp.s
 .PHONY : home/dashy/pico-arduino-compat/arduino-compat/arduino-pico/cores/rp2040/api/String.cpp.s
 
@@ -771,6 +911,8 @@ home/dashy/pico-arduino-compat/arduino-compat/arduino-pico/cores/rp2040/delay.cp
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/Tricorder_BME688.dir/build.make CMakeFiles/Tricorder_BME688.dir/home/dashy/pico-arduino-compat/arduino-compat/arduino-pico/cores/rp2040/delay.cpp.obj
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/Tricorder_LTR390.dir/build.make CMakeFiles/Tricorder_LTR390.dir/home/dashy/pico-arduino-compat/arduino-compat/arduino-pico/cores/rp2040/delay.cpp.obj
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/Tricorder_PMSA003I.dir/build.make CMakeFiles/Tricorder_PMSA003I.dir/home/dashy/pico-arduino-compat/arduino-compat/arduino-pico/cores/rp2040/delay.cpp.obj
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Tricorder_TLV493D.dir/build.make CMakeFiles/Tricorder_TLV493D.dir/home/dashy/pico-arduino-compat/arduino-compat/arduino-pico/cores/rp2040/delay.cpp.obj
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Tricorder_SCD41.dir/build.make CMakeFiles/Tricorder_SCD41.dir/home/dashy/pico-arduino-compat/arduino-compat/arduino-pico/cores/rp2040/delay.cpp.obj
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/sensor_manager.dir/build.make CMakeFiles/sensor_manager.dir/home/dashy/pico-arduino-compat/arduino-compat/arduino-pico/cores/rp2040/delay.cpp.obj
 .PHONY : home/dashy/pico-arduino-compat/arduino-compat/arduino-pico/cores/rp2040/delay.cpp.obj
 
@@ -783,6 +925,8 @@ home/dashy/pico-arduino-compat/arduino-compat/arduino-pico/cores/rp2040/delay.cp
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/Tricorder_BME688.dir/build.make CMakeFiles/Tricorder_BME688.dir/home/dashy/pico-arduino-compat/arduino-compat/arduino-pico/cores/rp2040/delay.cpp.i
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/Tricorder_LTR390.dir/build.make CMakeFiles/Tricorder_LTR390.dir/home/dashy/pico-arduino-compat/arduino-compat/arduino-pico/cores/rp2040/delay.cpp.i
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/Tricorder_PMSA003I.dir/build.make CMakeFiles/Tricorder_PMSA003I.dir/home/dashy/pico-arduino-compat/arduino-compat/arduino-pico/cores/rp2040/delay.cpp.i
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Tricorder_TLV493D.dir/build.make CMakeFiles/Tricorder_TLV493D.dir/home/dashy/pico-arduino-compat/arduino-compat/arduino-pico/cores/rp2040/delay.cpp.i
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Tricorder_SCD41.dir/build.make CMakeFiles/Tricorder_SCD41.dir/home/dashy/pico-arduino-compat/arduino-compat/arduino-pico/cores/rp2040/delay.cpp.i
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/sensor_manager.dir/build.make CMakeFiles/sensor_manager.dir/home/dashy/pico-arduino-compat/arduino-compat/arduino-pico/cores/rp2040/delay.cpp.i
 .PHONY : home/dashy/pico-arduino-compat/arduino-compat/arduino-pico/cores/rp2040/delay.cpp.i
 
@@ -795,6 +939,8 @@ home/dashy/pico-arduino-compat/arduino-compat/arduino-pico/cores/rp2040/delay.cp
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/Tricorder_BME688.dir/build.make CMakeFiles/Tricorder_BME688.dir/home/dashy/pico-arduino-compat/arduino-compat/arduino-pico/cores/rp2040/delay.cpp.s
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/Tricorder_LTR390.dir/build.make CMakeFiles/Tricorder_LTR390.dir/home/dashy/pico-arduino-compat/arduino-compat/arduino-pico/cores/rp2040/delay.cpp.s
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/Tricorder_PMSA003I.dir/build.make CMakeFiles/Tricorder_PMSA003I.dir/home/dashy/pico-arduino-compat/arduino-compat/arduino-pico/cores/rp2040/delay.cpp.s
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Tricorder_TLV493D.dir/build.make CMakeFiles/Tricorder_TLV493D.dir/home/dashy/pico-arduino-compat/arduino-compat/arduino-pico/cores/rp2040/delay.cpp.s
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Tricorder_SCD41.dir/build.make CMakeFiles/Tricorder_SCD41.dir/home/dashy/pico-arduino-compat/arduino-compat/arduino-pico/cores/rp2040/delay.cpp.s
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/sensor_manager.dir/build.make CMakeFiles/sensor_manager.dir/home/dashy/pico-arduino-compat/arduino-compat/arduino-pico/cores/rp2040/delay.cpp.s
 .PHONY : home/dashy/pico-arduino-compat/arduino-compat/arduino-pico/cores/rp2040/delay.cpp.s
 
@@ -807,6 +953,8 @@ home/dashy/pico-arduino-compat/arduino-compat/arduino-pico/cores/rp2040/stdlib_n
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/Tricorder_BME688.dir/build.make CMakeFiles/Tricorder_BME688.dir/home/dashy/pico-arduino-compat/arduino-compat/arduino-pico/cores/rp2040/stdlib_noniso.cpp.obj
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/Tricorder_LTR390.dir/build.make CMakeFiles/Tricorder_LTR390.dir/home/dashy/pico-arduino-compat/arduino-compat/arduino-pico/cores/rp2040/stdlib_noniso.cpp.obj
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/Tricorder_PMSA003I.dir/build.make CMakeFiles/Tricorder_PMSA003I.dir/home/dashy/pico-arduino-compat/arduino-compat/arduino-pico/cores/rp2040/stdlib_noniso.cpp.obj
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Tricorder_TLV493D.dir/build.make CMakeFiles/Tricorder_TLV493D.dir/home/dashy/pico-arduino-compat/arduino-compat/arduino-pico/cores/rp2040/stdlib_noniso.cpp.obj
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Tricorder_SCD41.dir/build.make CMakeFiles/Tricorder_SCD41.dir/home/dashy/pico-arduino-compat/arduino-compat/arduino-pico/cores/rp2040/stdlib_noniso.cpp.obj
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/sensor_manager.dir/build.make CMakeFiles/sensor_manager.dir/home/dashy/pico-arduino-compat/arduino-compat/arduino-pico/cores/rp2040/stdlib_noniso.cpp.obj
 .PHONY : home/dashy/pico-arduino-compat/arduino-compat/arduino-pico/cores/rp2040/stdlib_noniso.cpp.obj
 
@@ -819,6 +967,8 @@ home/dashy/pico-arduino-compat/arduino-compat/arduino-pico/cores/rp2040/stdlib_n
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/Tricorder_BME688.dir/build.make CMakeFiles/Tricorder_BME688.dir/home/dashy/pico-arduino-compat/arduino-compat/arduino-pico/cores/rp2040/stdlib_noniso.cpp.i
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/Tricorder_LTR390.dir/build.make CMakeFiles/Tricorder_LTR390.dir/home/dashy/pico-arduino-compat/arduino-compat/arduino-pico/cores/rp2040/stdlib_noniso.cpp.i
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/Tricorder_PMSA003I.dir/build.make CMakeFiles/Tricorder_PMSA003I.dir/home/dashy/pico-arduino-compat/arduino-compat/arduino-pico/cores/rp2040/stdlib_noniso.cpp.i
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Tricorder_TLV493D.dir/build.make CMakeFiles/Tricorder_TLV493D.dir/home/dashy/pico-arduino-compat/arduino-compat/arduino-pico/cores/rp2040/stdlib_noniso.cpp.i
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Tricorder_SCD41.dir/build.make CMakeFiles/Tricorder_SCD41.dir/home/dashy/pico-arduino-compat/arduino-compat/arduino-pico/cores/rp2040/stdlib_noniso.cpp.i
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/sensor_manager.dir/build.make CMakeFiles/sensor_manager.dir/home/dashy/pico-arduino-compat/arduino-compat/arduino-pico/cores/rp2040/stdlib_noniso.cpp.i
 .PHONY : home/dashy/pico-arduino-compat/arduino-compat/arduino-pico/cores/rp2040/stdlib_noniso.cpp.i
 
@@ -831,6 +981,8 @@ home/dashy/pico-arduino-compat/arduino-compat/arduino-pico/cores/rp2040/stdlib_n
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/Tricorder_BME688.dir/build.make CMakeFiles/Tricorder_BME688.dir/home/dashy/pico-arduino-compat/arduino-compat/arduino-pico/cores/rp2040/stdlib_noniso.cpp.s
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/Tricorder_LTR390.dir/build.make CMakeFiles/Tricorder_LTR390.dir/home/dashy/pico-arduino-compat/arduino-compat/arduino-pico/cores/rp2040/stdlib_noniso.cpp.s
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/Tricorder_PMSA003I.dir/build.make CMakeFiles/Tricorder_PMSA003I.dir/home/dashy/pico-arduino-compat/arduino-compat/arduino-pico/cores/rp2040/stdlib_noniso.cpp.s
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Tricorder_TLV493D.dir/build.make CMakeFiles/Tricorder_TLV493D.dir/home/dashy/pico-arduino-compat/arduino-compat/arduino-pico/cores/rp2040/stdlib_noniso.cpp.s
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Tricorder_SCD41.dir/build.make CMakeFiles/Tricorder_SCD41.dir/home/dashy/pico-arduino-compat/arduino-compat/arduino-pico/cores/rp2040/stdlib_noniso.cpp.s
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/sensor_manager.dir/build.make CMakeFiles/sensor_manager.dir/home/dashy/pico-arduino-compat/arduino-compat/arduino-pico/cores/rp2040/stdlib_noniso.cpp.s
 .PHONY : home/dashy/pico-arduino-compat/arduino-compat/arduino-pico/cores/rp2040/stdlib_noniso.cpp.s
 
@@ -843,6 +995,8 @@ home/dashy/pico-arduino-compat/arduino-compat/arduino-pico/cores/rp2040/wiring_a
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/Tricorder_BME688.dir/build.make CMakeFiles/Tricorder_BME688.dir/home/dashy/pico-arduino-compat/arduino-compat/arduino-pico/cores/rp2040/wiring_analog.cpp.obj
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/Tricorder_LTR390.dir/build.make CMakeFiles/Tricorder_LTR390.dir/home/dashy/pico-arduino-compat/arduino-compat/arduino-pico/cores/rp2040/wiring_analog.cpp.obj
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/Tricorder_PMSA003I.dir/build.make CMakeFiles/Tricorder_PMSA003I.dir/home/dashy/pico-arduino-compat/arduino-compat/arduino-pico/cores/rp2040/wiring_analog.cpp.obj
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Tricorder_TLV493D.dir/build.make CMakeFiles/Tricorder_TLV493D.dir/home/dashy/pico-arduino-compat/arduino-compat/arduino-pico/cores/rp2040/wiring_analog.cpp.obj
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Tricorder_SCD41.dir/build.make CMakeFiles/Tricorder_SCD41.dir/home/dashy/pico-arduino-compat/arduino-compat/arduino-pico/cores/rp2040/wiring_analog.cpp.obj
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/sensor_manager.dir/build.make CMakeFiles/sensor_manager.dir/home/dashy/pico-arduino-compat/arduino-compat/arduino-pico/cores/rp2040/wiring_analog.cpp.obj
 .PHONY : home/dashy/pico-arduino-compat/arduino-compat/arduino-pico/cores/rp2040/wiring_analog.cpp.obj
 
@@ -855,6 +1009,8 @@ home/dashy/pico-arduino-compat/arduino-compat/arduino-pico/cores/rp2040/wiring_a
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/Tricorder_BME688.dir/build.make CMakeFiles/Tricorder_BME688.dir/home/dashy/pico-arduino-compat/arduino-compat/arduino-pico/cores/rp2040/wiring_analog.cpp.i
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/Tricorder_LTR390.dir/build.make CMakeFiles/Tricorder_LTR390.dir/home/dashy/pico-arduino-compat/arduino-compat/arduino-pico/cores/rp2040/wiring_analog.cpp.i
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/Tricorder_PMSA003I.dir/build.make CMakeFiles/Tricorder_PMSA003I.dir/home/dashy/pico-arduino-compat/arduino-compat/arduino-pico/cores/rp2040/wiring_analog.cpp.i
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Tricorder_TLV493D.dir/build.make CMakeFiles/Tricorder_TLV493D.dir/home/dashy/pico-arduino-compat/arduino-compat/arduino-pico/cores/rp2040/wiring_analog.cpp.i
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Tricorder_SCD41.dir/build.make CMakeFiles/Tricorder_SCD41.dir/home/dashy/pico-arduino-compat/arduino-compat/arduino-pico/cores/rp2040/wiring_analog.cpp.i
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/sensor_manager.dir/build.make CMakeFiles/sensor_manager.dir/home/dashy/pico-arduino-compat/arduino-compat/arduino-pico/cores/rp2040/wiring_analog.cpp.i
 .PHONY : home/dashy/pico-arduino-compat/arduino-compat/arduino-pico/cores/rp2040/wiring_analog.cpp.i
 
@@ -867,6 +1023,8 @@ home/dashy/pico-arduino-compat/arduino-compat/arduino-pico/cores/rp2040/wiring_a
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/Tricorder_BME688.dir/build.make CMakeFiles/Tricorder_BME688.dir/home/dashy/pico-arduino-compat/arduino-compat/arduino-pico/cores/rp2040/wiring_analog.cpp.s
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/Tricorder_LTR390.dir/build.make CMakeFiles/Tricorder_LTR390.dir/home/dashy/pico-arduino-compat/arduino-compat/arduino-pico/cores/rp2040/wiring_analog.cpp.s
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/Tricorder_PMSA003I.dir/build.make CMakeFiles/Tricorder_PMSA003I.dir/home/dashy/pico-arduino-compat/arduino-compat/arduino-pico/cores/rp2040/wiring_analog.cpp.s
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Tricorder_TLV493D.dir/build.make CMakeFiles/Tricorder_TLV493D.dir/home/dashy/pico-arduino-compat/arduino-compat/arduino-pico/cores/rp2040/wiring_analog.cpp.s
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Tricorder_SCD41.dir/build.make CMakeFiles/Tricorder_SCD41.dir/home/dashy/pico-arduino-compat/arduino-compat/arduino-pico/cores/rp2040/wiring_analog.cpp.s
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/sensor_manager.dir/build.make CMakeFiles/sensor_manager.dir/home/dashy/pico-arduino-compat/arduino-compat/arduino-pico/cores/rp2040/wiring_analog.cpp.s
 .PHONY : home/dashy/pico-arduino-compat/arduino-compat/arduino-pico/cores/rp2040/wiring_analog.cpp.s
 
@@ -879,6 +1037,8 @@ home/dashy/pico-arduino-compat/arduino-compat/arduino-pico/cores/rp2040/wiring_d
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/Tricorder_BME688.dir/build.make CMakeFiles/Tricorder_BME688.dir/home/dashy/pico-arduino-compat/arduino-compat/arduino-pico/cores/rp2040/wiring_digital.cpp.obj
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/Tricorder_LTR390.dir/build.make CMakeFiles/Tricorder_LTR390.dir/home/dashy/pico-arduino-compat/arduino-compat/arduino-pico/cores/rp2040/wiring_digital.cpp.obj
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/Tricorder_PMSA003I.dir/build.make CMakeFiles/Tricorder_PMSA003I.dir/home/dashy/pico-arduino-compat/arduino-compat/arduino-pico/cores/rp2040/wiring_digital.cpp.obj
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Tricorder_TLV493D.dir/build.make CMakeFiles/Tricorder_TLV493D.dir/home/dashy/pico-arduino-compat/arduino-compat/arduino-pico/cores/rp2040/wiring_digital.cpp.obj
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Tricorder_SCD41.dir/build.make CMakeFiles/Tricorder_SCD41.dir/home/dashy/pico-arduino-compat/arduino-compat/arduino-pico/cores/rp2040/wiring_digital.cpp.obj
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/sensor_manager.dir/build.make CMakeFiles/sensor_manager.dir/home/dashy/pico-arduino-compat/arduino-compat/arduino-pico/cores/rp2040/wiring_digital.cpp.obj
 .PHONY : home/dashy/pico-arduino-compat/arduino-compat/arduino-pico/cores/rp2040/wiring_digital.cpp.obj
 
@@ -891,6 +1051,8 @@ home/dashy/pico-arduino-compat/arduino-compat/arduino-pico/cores/rp2040/wiring_d
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/Tricorder_BME688.dir/build.make CMakeFiles/Tricorder_BME688.dir/home/dashy/pico-arduino-compat/arduino-compat/arduino-pico/cores/rp2040/wiring_digital.cpp.i
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/Tricorder_LTR390.dir/build.make CMakeFiles/Tricorder_LTR390.dir/home/dashy/pico-arduino-compat/arduino-compat/arduino-pico/cores/rp2040/wiring_digital.cpp.i
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/Tricorder_PMSA003I.dir/build.make CMakeFiles/Tricorder_PMSA003I.dir/home/dashy/pico-arduino-compat/arduino-compat/arduino-pico/cores/rp2040/wiring_digital.cpp.i
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Tricorder_TLV493D.dir/build.make CMakeFiles/Tricorder_TLV493D.dir/home/dashy/pico-arduino-compat/arduino-compat/arduino-pico/cores/rp2040/wiring_digital.cpp.i
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Tricorder_SCD41.dir/build.make CMakeFiles/Tricorder_SCD41.dir/home/dashy/pico-arduino-compat/arduino-compat/arduino-pico/cores/rp2040/wiring_digital.cpp.i
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/sensor_manager.dir/build.make CMakeFiles/sensor_manager.dir/home/dashy/pico-arduino-compat/arduino-compat/arduino-pico/cores/rp2040/wiring_digital.cpp.i
 .PHONY : home/dashy/pico-arduino-compat/arduino-compat/arduino-pico/cores/rp2040/wiring_digital.cpp.i
 
@@ -903,6 +1065,8 @@ home/dashy/pico-arduino-compat/arduino-compat/arduino-pico/cores/rp2040/wiring_d
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/Tricorder_BME688.dir/build.make CMakeFiles/Tricorder_BME688.dir/home/dashy/pico-arduino-compat/arduino-compat/arduino-pico/cores/rp2040/wiring_digital.cpp.s
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/Tricorder_LTR390.dir/build.make CMakeFiles/Tricorder_LTR390.dir/home/dashy/pico-arduino-compat/arduino-compat/arduino-pico/cores/rp2040/wiring_digital.cpp.s
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/Tricorder_PMSA003I.dir/build.make CMakeFiles/Tricorder_PMSA003I.dir/home/dashy/pico-arduino-compat/arduino-compat/arduino-pico/cores/rp2040/wiring_digital.cpp.s
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Tricorder_TLV493D.dir/build.make CMakeFiles/Tricorder_TLV493D.dir/home/dashy/pico-arduino-compat/arduino-compat/arduino-pico/cores/rp2040/wiring_digital.cpp.s
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Tricorder_SCD41.dir/build.make CMakeFiles/Tricorder_SCD41.dir/home/dashy/pico-arduino-compat/arduino-compat/arduino-pico/cores/rp2040/wiring_digital.cpp.s
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/sensor_manager.dir/build.make CMakeFiles/sensor_manager.dir/home/dashy/pico-arduino-compat/arduino-compat/arduino-pico/cores/rp2040/wiring_digital.cpp.s
 .PHONY : home/dashy/pico-arduino-compat/arduino-compat/arduino-pico/cores/rp2040/wiring_digital.cpp.s
 
@@ -915,6 +1079,8 @@ home/dashy/pico-arduino-compat/arduino-compat/arduino-pico/cores/rp2040/wiring_p
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/Tricorder_BME688.dir/build.make CMakeFiles/Tricorder_BME688.dir/home/dashy/pico-arduino-compat/arduino-compat/arduino-pico/cores/rp2040/wiring_private.cpp.obj
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/Tricorder_LTR390.dir/build.make CMakeFiles/Tricorder_LTR390.dir/home/dashy/pico-arduino-compat/arduino-compat/arduino-pico/cores/rp2040/wiring_private.cpp.obj
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/Tricorder_PMSA003I.dir/build.make CMakeFiles/Tricorder_PMSA003I.dir/home/dashy/pico-arduino-compat/arduino-compat/arduino-pico/cores/rp2040/wiring_private.cpp.obj
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Tricorder_TLV493D.dir/build.make CMakeFiles/Tricorder_TLV493D.dir/home/dashy/pico-arduino-compat/arduino-compat/arduino-pico/cores/rp2040/wiring_private.cpp.obj
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Tricorder_SCD41.dir/build.make CMakeFiles/Tricorder_SCD41.dir/home/dashy/pico-arduino-compat/arduino-compat/arduino-pico/cores/rp2040/wiring_private.cpp.obj
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/sensor_manager.dir/build.make CMakeFiles/sensor_manager.dir/home/dashy/pico-arduino-compat/arduino-compat/arduino-pico/cores/rp2040/wiring_private.cpp.obj
 .PHONY : home/dashy/pico-arduino-compat/arduino-compat/arduino-pico/cores/rp2040/wiring_private.cpp.obj
 
@@ -927,6 +1093,8 @@ home/dashy/pico-arduino-compat/arduino-compat/arduino-pico/cores/rp2040/wiring_p
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/Tricorder_BME688.dir/build.make CMakeFiles/Tricorder_BME688.dir/home/dashy/pico-arduino-compat/arduino-compat/arduino-pico/cores/rp2040/wiring_private.cpp.i
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/Tricorder_LTR390.dir/build.make CMakeFiles/Tricorder_LTR390.dir/home/dashy/pico-arduino-compat/arduino-compat/arduino-pico/cores/rp2040/wiring_private.cpp.i
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/Tricorder_PMSA003I.dir/build.make CMakeFiles/Tricorder_PMSA003I.dir/home/dashy/pico-arduino-compat/arduino-compat/arduino-pico/cores/rp2040/wiring_private.cpp.i
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Tricorder_TLV493D.dir/build.make CMakeFiles/Tricorder_TLV493D.dir/home/dashy/pico-arduino-compat/arduino-compat/arduino-pico/cores/rp2040/wiring_private.cpp.i
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Tricorder_SCD41.dir/build.make CMakeFiles/Tricorder_SCD41.dir/home/dashy/pico-arduino-compat/arduino-compat/arduino-pico/cores/rp2040/wiring_private.cpp.i
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/sensor_manager.dir/build.make CMakeFiles/sensor_manager.dir/home/dashy/pico-arduino-compat/arduino-compat/arduino-pico/cores/rp2040/wiring_private.cpp.i
 .PHONY : home/dashy/pico-arduino-compat/arduino-compat/arduino-pico/cores/rp2040/wiring_private.cpp.i
 
@@ -939,6 +1107,8 @@ home/dashy/pico-arduino-compat/arduino-compat/arduino-pico/cores/rp2040/wiring_p
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/Tricorder_BME688.dir/build.make CMakeFiles/Tricorder_BME688.dir/home/dashy/pico-arduino-compat/arduino-compat/arduino-pico/cores/rp2040/wiring_private.cpp.s
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/Tricorder_LTR390.dir/build.make CMakeFiles/Tricorder_LTR390.dir/home/dashy/pico-arduino-compat/arduino-compat/arduino-pico/cores/rp2040/wiring_private.cpp.s
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/Tricorder_PMSA003I.dir/build.make CMakeFiles/Tricorder_PMSA003I.dir/home/dashy/pico-arduino-compat/arduino-compat/arduino-pico/cores/rp2040/wiring_private.cpp.s
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Tricorder_TLV493D.dir/build.make CMakeFiles/Tricorder_TLV493D.dir/home/dashy/pico-arduino-compat/arduino-compat/arduino-pico/cores/rp2040/wiring_private.cpp.s
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Tricorder_SCD41.dir/build.make CMakeFiles/Tricorder_SCD41.dir/home/dashy/pico-arduino-compat/arduino-compat/arduino-pico/cores/rp2040/wiring_private.cpp.s
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/sensor_manager.dir/build.make CMakeFiles/sensor_manager.dir/home/dashy/pico-arduino-compat/arduino-compat/arduino-pico/cores/rp2040/wiring_private.cpp.s
 .PHONY : home/dashy/pico-arduino-compat/arduino-compat/arduino-pico/cores/rp2040/wiring_private.cpp.s
 
@@ -951,6 +1121,8 @@ home/dashy/pico-arduino-compat/arduino-compat/arduino-pico/cores/rp2040/wiring_p
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/Tricorder_BME688.dir/build.make CMakeFiles/Tricorder_BME688.dir/home/dashy/pico-arduino-compat/arduino-compat/arduino-pico/cores/rp2040/wiring_pulse.cpp.obj
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/Tricorder_LTR390.dir/build.make CMakeFiles/Tricorder_LTR390.dir/home/dashy/pico-arduino-compat/arduino-compat/arduino-pico/cores/rp2040/wiring_pulse.cpp.obj
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/Tricorder_PMSA003I.dir/build.make CMakeFiles/Tricorder_PMSA003I.dir/home/dashy/pico-arduino-compat/arduino-compat/arduino-pico/cores/rp2040/wiring_pulse.cpp.obj
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Tricorder_TLV493D.dir/build.make CMakeFiles/Tricorder_TLV493D.dir/home/dashy/pico-arduino-compat/arduino-compat/arduino-pico/cores/rp2040/wiring_pulse.cpp.obj
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Tricorder_SCD41.dir/build.make CMakeFiles/Tricorder_SCD41.dir/home/dashy/pico-arduino-compat/arduino-compat/arduino-pico/cores/rp2040/wiring_pulse.cpp.obj
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/sensor_manager.dir/build.make CMakeFiles/sensor_manager.dir/home/dashy/pico-arduino-compat/arduino-compat/arduino-pico/cores/rp2040/wiring_pulse.cpp.obj
 .PHONY : home/dashy/pico-arduino-compat/arduino-compat/arduino-pico/cores/rp2040/wiring_pulse.cpp.obj
 
@@ -963,6 +1135,8 @@ home/dashy/pico-arduino-compat/arduino-compat/arduino-pico/cores/rp2040/wiring_p
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/Tricorder_BME688.dir/build.make CMakeFiles/Tricorder_BME688.dir/home/dashy/pico-arduino-compat/arduino-compat/arduino-pico/cores/rp2040/wiring_pulse.cpp.i
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/Tricorder_LTR390.dir/build.make CMakeFiles/Tricorder_LTR390.dir/home/dashy/pico-arduino-compat/arduino-compat/arduino-pico/cores/rp2040/wiring_pulse.cpp.i
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/Tricorder_PMSA003I.dir/build.make CMakeFiles/Tricorder_PMSA003I.dir/home/dashy/pico-arduino-compat/arduino-compat/arduino-pico/cores/rp2040/wiring_pulse.cpp.i
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Tricorder_TLV493D.dir/build.make CMakeFiles/Tricorder_TLV493D.dir/home/dashy/pico-arduino-compat/arduino-compat/arduino-pico/cores/rp2040/wiring_pulse.cpp.i
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Tricorder_SCD41.dir/build.make CMakeFiles/Tricorder_SCD41.dir/home/dashy/pico-arduino-compat/arduino-compat/arduino-pico/cores/rp2040/wiring_pulse.cpp.i
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/sensor_manager.dir/build.make CMakeFiles/sensor_manager.dir/home/dashy/pico-arduino-compat/arduino-compat/arduino-pico/cores/rp2040/wiring_pulse.cpp.i
 .PHONY : home/dashy/pico-arduino-compat/arduino-compat/arduino-pico/cores/rp2040/wiring_pulse.cpp.i
 
@@ -975,6 +1149,8 @@ home/dashy/pico-arduino-compat/arduino-compat/arduino-pico/cores/rp2040/wiring_p
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/Tricorder_BME688.dir/build.make CMakeFiles/Tricorder_BME688.dir/home/dashy/pico-arduino-compat/arduino-compat/arduino-pico/cores/rp2040/wiring_pulse.cpp.s
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/Tricorder_LTR390.dir/build.make CMakeFiles/Tricorder_LTR390.dir/home/dashy/pico-arduino-compat/arduino-compat/arduino-pico/cores/rp2040/wiring_pulse.cpp.s
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/Tricorder_PMSA003I.dir/build.make CMakeFiles/Tricorder_PMSA003I.dir/home/dashy/pico-arduino-compat/arduino-compat/arduino-pico/cores/rp2040/wiring_pulse.cpp.s
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Tricorder_TLV493D.dir/build.make CMakeFiles/Tricorder_TLV493D.dir/home/dashy/pico-arduino-compat/arduino-compat/arduino-pico/cores/rp2040/wiring_pulse.cpp.s
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Tricorder_SCD41.dir/build.make CMakeFiles/Tricorder_SCD41.dir/home/dashy/pico-arduino-compat/arduino-compat/arduino-pico/cores/rp2040/wiring_pulse.cpp.s
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/sensor_manager.dir/build.make CMakeFiles/sensor_manager.dir/home/dashy/pico-arduino-compat/arduino-compat/arduino-pico/cores/rp2040/wiring_pulse.cpp.s
 .PHONY : home/dashy/pico-arduino-compat/arduino-compat/arduino-pico/cores/rp2040/wiring_pulse.cpp.s
 
@@ -987,6 +1163,8 @@ home/dashy/pico-arduino-compat/arduino-compat/arduino-pico/cores/rp2040/wiring_s
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/Tricorder_BME688.dir/build.make CMakeFiles/Tricorder_BME688.dir/home/dashy/pico-arduino-compat/arduino-compat/arduino-pico/cores/rp2040/wiring_shift.cpp.obj
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/Tricorder_LTR390.dir/build.make CMakeFiles/Tricorder_LTR390.dir/home/dashy/pico-arduino-compat/arduino-compat/arduino-pico/cores/rp2040/wiring_shift.cpp.obj
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/Tricorder_PMSA003I.dir/build.make CMakeFiles/Tricorder_PMSA003I.dir/home/dashy/pico-arduino-compat/arduino-compat/arduino-pico/cores/rp2040/wiring_shift.cpp.obj
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Tricorder_TLV493D.dir/build.make CMakeFiles/Tricorder_TLV493D.dir/home/dashy/pico-arduino-compat/arduino-compat/arduino-pico/cores/rp2040/wiring_shift.cpp.obj
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Tricorder_SCD41.dir/build.make CMakeFiles/Tricorder_SCD41.dir/home/dashy/pico-arduino-compat/arduino-compat/arduino-pico/cores/rp2040/wiring_shift.cpp.obj
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/sensor_manager.dir/build.make CMakeFiles/sensor_manager.dir/home/dashy/pico-arduino-compat/arduino-compat/arduino-pico/cores/rp2040/wiring_shift.cpp.obj
 .PHONY : home/dashy/pico-arduino-compat/arduino-compat/arduino-pico/cores/rp2040/wiring_shift.cpp.obj
 
@@ -999,6 +1177,8 @@ home/dashy/pico-arduino-compat/arduino-compat/arduino-pico/cores/rp2040/wiring_s
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/Tricorder_BME688.dir/build.make CMakeFiles/Tricorder_BME688.dir/home/dashy/pico-arduino-compat/arduino-compat/arduino-pico/cores/rp2040/wiring_shift.cpp.i
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/Tricorder_LTR390.dir/build.make CMakeFiles/Tricorder_LTR390.dir/home/dashy/pico-arduino-compat/arduino-compat/arduino-pico/cores/rp2040/wiring_shift.cpp.i
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/Tricorder_PMSA003I.dir/build.make CMakeFiles/Tricorder_PMSA003I.dir/home/dashy/pico-arduino-compat/arduino-compat/arduino-pico/cores/rp2040/wiring_shift.cpp.i
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Tricorder_TLV493D.dir/build.make CMakeFiles/Tricorder_TLV493D.dir/home/dashy/pico-arduino-compat/arduino-compat/arduino-pico/cores/rp2040/wiring_shift.cpp.i
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Tricorder_SCD41.dir/build.make CMakeFiles/Tricorder_SCD41.dir/home/dashy/pico-arduino-compat/arduino-compat/arduino-pico/cores/rp2040/wiring_shift.cpp.i
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/sensor_manager.dir/build.make CMakeFiles/sensor_manager.dir/home/dashy/pico-arduino-compat/arduino-compat/arduino-pico/cores/rp2040/wiring_shift.cpp.i
 .PHONY : home/dashy/pico-arduino-compat/arduino-compat/arduino-pico/cores/rp2040/wiring_shift.cpp.i
 
@@ -1011,6 +1191,8 @@ home/dashy/pico-arduino-compat/arduino-compat/arduino-pico/cores/rp2040/wiring_s
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/Tricorder_BME688.dir/build.make CMakeFiles/Tricorder_BME688.dir/home/dashy/pico-arduino-compat/arduino-compat/arduino-pico/cores/rp2040/wiring_shift.cpp.s
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/Tricorder_LTR390.dir/build.make CMakeFiles/Tricorder_LTR390.dir/home/dashy/pico-arduino-compat/arduino-compat/arduino-pico/cores/rp2040/wiring_shift.cpp.s
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/Tricorder_PMSA003I.dir/build.make CMakeFiles/Tricorder_PMSA003I.dir/home/dashy/pico-arduino-compat/arduino-compat/arduino-pico/cores/rp2040/wiring_shift.cpp.s
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Tricorder_TLV493D.dir/build.make CMakeFiles/Tricorder_TLV493D.dir/home/dashy/pico-arduino-compat/arduino-compat/arduino-pico/cores/rp2040/wiring_shift.cpp.s
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Tricorder_SCD41.dir/build.make CMakeFiles/Tricorder_SCD41.dir/home/dashy/pico-arduino-compat/arduino-compat/arduino-pico/cores/rp2040/wiring_shift.cpp.s
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/sensor_manager.dir/build.make CMakeFiles/sensor_manager.dir/home/dashy/pico-arduino-compat/arduino-compat/arduino-pico/cores/rp2040/wiring_shift.cpp.s
 .PHONY : home/dashy/pico-arduino-compat/arduino-compat/arduino-pico/cores/rp2040/wiring_shift.cpp.s
 
@@ -1023,6 +1205,8 @@ home/dashy/pico-arduino-compat/arduino-compat/arduino-pico/libraries/SPI/SPI.cpp
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/Tricorder_BME688.dir/build.make CMakeFiles/Tricorder_BME688.dir/home/dashy/pico-arduino-compat/arduino-compat/arduino-pico/libraries/SPI/SPI.cpp.obj
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/Tricorder_LTR390.dir/build.make CMakeFiles/Tricorder_LTR390.dir/home/dashy/pico-arduino-compat/arduino-compat/arduino-pico/libraries/SPI/SPI.cpp.obj
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/Tricorder_PMSA003I.dir/build.make CMakeFiles/Tricorder_PMSA003I.dir/home/dashy/pico-arduino-compat/arduino-compat/arduino-pico/libraries/SPI/SPI.cpp.obj
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Tricorder_TLV493D.dir/build.make CMakeFiles/Tricorder_TLV493D.dir/home/dashy/pico-arduino-compat/arduino-compat/arduino-pico/libraries/SPI/SPI.cpp.obj
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Tricorder_SCD41.dir/build.make CMakeFiles/Tricorder_SCD41.dir/home/dashy/pico-arduino-compat/arduino-compat/arduino-pico/libraries/SPI/SPI.cpp.obj
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/sensor_manager.dir/build.make CMakeFiles/sensor_manager.dir/home/dashy/pico-arduino-compat/arduino-compat/arduino-pico/libraries/SPI/SPI.cpp.obj
 .PHONY : home/dashy/pico-arduino-compat/arduino-compat/arduino-pico/libraries/SPI/SPI.cpp.obj
 
@@ -1035,6 +1219,8 @@ home/dashy/pico-arduino-compat/arduino-compat/arduino-pico/libraries/SPI/SPI.cpp
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/Tricorder_BME688.dir/build.make CMakeFiles/Tricorder_BME688.dir/home/dashy/pico-arduino-compat/arduino-compat/arduino-pico/libraries/SPI/SPI.cpp.i
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/Tricorder_LTR390.dir/build.make CMakeFiles/Tricorder_LTR390.dir/home/dashy/pico-arduino-compat/arduino-compat/arduino-pico/libraries/SPI/SPI.cpp.i
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/Tricorder_PMSA003I.dir/build.make CMakeFiles/Tricorder_PMSA003I.dir/home/dashy/pico-arduino-compat/arduino-compat/arduino-pico/libraries/SPI/SPI.cpp.i
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Tricorder_TLV493D.dir/build.make CMakeFiles/Tricorder_TLV493D.dir/home/dashy/pico-arduino-compat/arduino-compat/arduino-pico/libraries/SPI/SPI.cpp.i
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Tricorder_SCD41.dir/build.make CMakeFiles/Tricorder_SCD41.dir/home/dashy/pico-arduino-compat/arduino-compat/arduino-pico/libraries/SPI/SPI.cpp.i
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/sensor_manager.dir/build.make CMakeFiles/sensor_manager.dir/home/dashy/pico-arduino-compat/arduino-compat/arduino-pico/libraries/SPI/SPI.cpp.i
 .PHONY : home/dashy/pico-arduino-compat/arduino-compat/arduino-pico/libraries/SPI/SPI.cpp.i
 
@@ -1047,6 +1233,8 @@ home/dashy/pico-arduino-compat/arduino-compat/arduino-pico/libraries/SPI/SPI.cpp
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/Tricorder_BME688.dir/build.make CMakeFiles/Tricorder_BME688.dir/home/dashy/pico-arduino-compat/arduino-compat/arduino-pico/libraries/SPI/SPI.cpp.s
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/Tricorder_LTR390.dir/build.make CMakeFiles/Tricorder_LTR390.dir/home/dashy/pico-arduino-compat/arduino-compat/arduino-pico/libraries/SPI/SPI.cpp.s
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/Tricorder_PMSA003I.dir/build.make CMakeFiles/Tricorder_PMSA003I.dir/home/dashy/pico-arduino-compat/arduino-compat/arduino-pico/libraries/SPI/SPI.cpp.s
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Tricorder_TLV493D.dir/build.make CMakeFiles/Tricorder_TLV493D.dir/home/dashy/pico-arduino-compat/arduino-compat/arduino-pico/libraries/SPI/SPI.cpp.s
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Tricorder_SCD41.dir/build.make CMakeFiles/Tricorder_SCD41.dir/home/dashy/pico-arduino-compat/arduino-compat/arduino-pico/libraries/SPI/SPI.cpp.s
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/sensor_manager.dir/build.make CMakeFiles/sensor_manager.dir/home/dashy/pico-arduino-compat/arduino-compat/arduino-pico/libraries/SPI/SPI.cpp.s
 .PHONY : home/dashy/pico-arduino-compat/arduino-compat/arduino-pico/libraries/SPI/SPI.cpp.s
 
@@ -1059,6 +1247,8 @@ home/dashy/pico-arduino-compat/arduino-compat/arduino-pico/libraries/Wire/src/Wi
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/Tricorder_BME688.dir/build.make CMakeFiles/Tricorder_BME688.dir/home/dashy/pico-arduino-compat/arduino-compat/arduino-pico/libraries/Wire/src/Wire.cpp.obj
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/Tricorder_LTR390.dir/build.make CMakeFiles/Tricorder_LTR390.dir/home/dashy/pico-arduino-compat/arduino-compat/arduino-pico/libraries/Wire/src/Wire.cpp.obj
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/Tricorder_PMSA003I.dir/build.make CMakeFiles/Tricorder_PMSA003I.dir/home/dashy/pico-arduino-compat/arduino-compat/arduino-pico/libraries/Wire/src/Wire.cpp.obj
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Tricorder_TLV493D.dir/build.make CMakeFiles/Tricorder_TLV493D.dir/home/dashy/pico-arduino-compat/arduino-compat/arduino-pico/libraries/Wire/src/Wire.cpp.obj
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Tricorder_SCD41.dir/build.make CMakeFiles/Tricorder_SCD41.dir/home/dashy/pico-arduino-compat/arduino-compat/arduino-pico/libraries/Wire/src/Wire.cpp.obj
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/sensor_manager.dir/build.make CMakeFiles/sensor_manager.dir/home/dashy/pico-arduino-compat/arduino-compat/arduino-pico/libraries/Wire/src/Wire.cpp.obj
 .PHONY : home/dashy/pico-arduino-compat/arduino-compat/arduino-pico/libraries/Wire/src/Wire.cpp.obj
 
@@ -1071,6 +1261,8 @@ home/dashy/pico-arduino-compat/arduino-compat/arduino-pico/libraries/Wire/src/Wi
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/Tricorder_BME688.dir/build.make CMakeFiles/Tricorder_BME688.dir/home/dashy/pico-arduino-compat/arduino-compat/arduino-pico/libraries/Wire/src/Wire.cpp.i
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/Tricorder_LTR390.dir/build.make CMakeFiles/Tricorder_LTR390.dir/home/dashy/pico-arduino-compat/arduino-compat/arduino-pico/libraries/Wire/src/Wire.cpp.i
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/Tricorder_PMSA003I.dir/build.make CMakeFiles/Tricorder_PMSA003I.dir/home/dashy/pico-arduino-compat/arduino-compat/arduino-pico/libraries/Wire/src/Wire.cpp.i
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Tricorder_TLV493D.dir/build.make CMakeFiles/Tricorder_TLV493D.dir/home/dashy/pico-arduino-compat/arduino-compat/arduino-pico/libraries/Wire/src/Wire.cpp.i
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Tricorder_SCD41.dir/build.make CMakeFiles/Tricorder_SCD41.dir/home/dashy/pico-arduino-compat/arduino-compat/arduino-pico/libraries/Wire/src/Wire.cpp.i
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/sensor_manager.dir/build.make CMakeFiles/sensor_manager.dir/home/dashy/pico-arduino-compat/arduino-compat/arduino-pico/libraries/Wire/src/Wire.cpp.i
 .PHONY : home/dashy/pico-arduino-compat/arduino-compat/arduino-pico/libraries/Wire/src/Wire.cpp.i
 
@@ -1083,6 +1275,8 @@ home/dashy/pico-arduino-compat/arduino-compat/arduino-pico/libraries/Wire/src/Wi
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/Tricorder_BME688.dir/build.make CMakeFiles/Tricorder_BME688.dir/home/dashy/pico-arduino-compat/arduino-compat/arduino-pico/libraries/Wire/src/Wire.cpp.s
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/Tricorder_LTR390.dir/build.make CMakeFiles/Tricorder_LTR390.dir/home/dashy/pico-arduino-compat/arduino-compat/arduino-pico/libraries/Wire/src/Wire.cpp.s
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/Tricorder_PMSA003I.dir/build.make CMakeFiles/Tricorder_PMSA003I.dir/home/dashy/pico-arduino-compat/arduino-compat/arduino-pico/libraries/Wire/src/Wire.cpp.s
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Tricorder_TLV493D.dir/build.make CMakeFiles/Tricorder_TLV493D.dir/home/dashy/pico-arduino-compat/arduino-compat/arduino-pico/libraries/Wire/src/Wire.cpp.s
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Tricorder_SCD41.dir/build.make CMakeFiles/Tricorder_SCD41.dir/home/dashy/pico-arduino-compat/arduino-compat/arduino-pico/libraries/Wire/src/Wire.cpp.s
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/sensor_manager.dir/build.make CMakeFiles/sensor_manager.dir/home/dashy/pico-arduino-compat/arduino-compat/arduino-pico/libraries/Wire/src/Wire.cpp.s
 .PHONY : home/dashy/pico-arduino-compat/arduino-compat/arduino-pico/libraries/Wire/src/Wire.cpp.s
 
@@ -1329,6 +1523,276 @@ home/dashy/pico-arduino-compat/libs/adafruit-pm25-aqi-sensor/Adafruit_PM25AQI/Ad
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/sensor_manager.dir/build.make CMakeFiles/sensor_manager.dir/home/dashy/pico-arduino-compat/libs/adafruit-pm25-aqi-sensor/Adafruit_PM25AQI/Adafruit_PM25AQI.cpp.s
 .PHONY : home/dashy/pico-arduino-compat/libs/adafruit-pm25-aqi-sensor/Adafruit_PM25AQI/Adafruit_PM25AQI.cpp.s
 
+home/dashy/pico-arduino-compat/libs/sensirion-core/arduino-core/src/SensirionErrors.obj: home/dashy/pico-arduino-compat/libs/sensirion-core/arduino-core/src/SensirionErrors.cpp.obj
+.PHONY : home/dashy/pico-arduino-compat/libs/sensirion-core/arduino-core/src/SensirionErrors.obj
+
+# target to build an object file
+home/dashy/pico-arduino-compat/libs/sensirion-core/arduino-core/src/SensirionErrors.cpp.obj:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Tricorder_SCD41.dir/build.make CMakeFiles/Tricorder_SCD41.dir/home/dashy/pico-arduino-compat/libs/sensirion-core/arduino-core/src/SensirionErrors.cpp.obj
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/sensor_manager.dir/build.make CMakeFiles/sensor_manager.dir/home/dashy/pico-arduino-compat/libs/sensirion-core/arduino-core/src/SensirionErrors.cpp.obj
+.PHONY : home/dashy/pico-arduino-compat/libs/sensirion-core/arduino-core/src/SensirionErrors.cpp.obj
+
+home/dashy/pico-arduino-compat/libs/sensirion-core/arduino-core/src/SensirionErrors.i: home/dashy/pico-arduino-compat/libs/sensirion-core/arduino-core/src/SensirionErrors.cpp.i
+.PHONY : home/dashy/pico-arduino-compat/libs/sensirion-core/arduino-core/src/SensirionErrors.i
+
+# target to preprocess a source file
+home/dashy/pico-arduino-compat/libs/sensirion-core/arduino-core/src/SensirionErrors.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Tricorder_SCD41.dir/build.make CMakeFiles/Tricorder_SCD41.dir/home/dashy/pico-arduino-compat/libs/sensirion-core/arduino-core/src/SensirionErrors.cpp.i
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/sensor_manager.dir/build.make CMakeFiles/sensor_manager.dir/home/dashy/pico-arduino-compat/libs/sensirion-core/arduino-core/src/SensirionErrors.cpp.i
+.PHONY : home/dashy/pico-arduino-compat/libs/sensirion-core/arduino-core/src/SensirionErrors.cpp.i
+
+home/dashy/pico-arduino-compat/libs/sensirion-core/arduino-core/src/SensirionErrors.s: home/dashy/pico-arduino-compat/libs/sensirion-core/arduino-core/src/SensirionErrors.cpp.s
+.PHONY : home/dashy/pico-arduino-compat/libs/sensirion-core/arduino-core/src/SensirionErrors.s
+
+# target to generate assembly for a file
+home/dashy/pico-arduino-compat/libs/sensirion-core/arduino-core/src/SensirionErrors.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Tricorder_SCD41.dir/build.make CMakeFiles/Tricorder_SCD41.dir/home/dashy/pico-arduino-compat/libs/sensirion-core/arduino-core/src/SensirionErrors.cpp.s
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/sensor_manager.dir/build.make CMakeFiles/sensor_manager.dir/home/dashy/pico-arduino-compat/libs/sensirion-core/arduino-core/src/SensirionErrors.cpp.s
+.PHONY : home/dashy/pico-arduino-compat/libs/sensirion-core/arduino-core/src/SensirionErrors.cpp.s
+
+home/dashy/pico-arduino-compat/libs/sensirion-core/arduino-core/src/SensirionI2CCommunication.obj: home/dashy/pico-arduino-compat/libs/sensirion-core/arduino-core/src/SensirionI2CCommunication.cpp.obj
+.PHONY : home/dashy/pico-arduino-compat/libs/sensirion-core/arduino-core/src/SensirionI2CCommunication.obj
+
+# target to build an object file
+home/dashy/pico-arduino-compat/libs/sensirion-core/arduino-core/src/SensirionI2CCommunication.cpp.obj:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Tricorder_SCD41.dir/build.make CMakeFiles/Tricorder_SCD41.dir/home/dashy/pico-arduino-compat/libs/sensirion-core/arduino-core/src/SensirionI2CCommunication.cpp.obj
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/sensor_manager.dir/build.make CMakeFiles/sensor_manager.dir/home/dashy/pico-arduino-compat/libs/sensirion-core/arduino-core/src/SensirionI2CCommunication.cpp.obj
+.PHONY : home/dashy/pico-arduino-compat/libs/sensirion-core/arduino-core/src/SensirionI2CCommunication.cpp.obj
+
+home/dashy/pico-arduino-compat/libs/sensirion-core/arduino-core/src/SensirionI2CCommunication.i: home/dashy/pico-arduino-compat/libs/sensirion-core/arduino-core/src/SensirionI2CCommunication.cpp.i
+.PHONY : home/dashy/pico-arduino-compat/libs/sensirion-core/arduino-core/src/SensirionI2CCommunication.i
+
+# target to preprocess a source file
+home/dashy/pico-arduino-compat/libs/sensirion-core/arduino-core/src/SensirionI2CCommunication.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Tricorder_SCD41.dir/build.make CMakeFiles/Tricorder_SCD41.dir/home/dashy/pico-arduino-compat/libs/sensirion-core/arduino-core/src/SensirionI2CCommunication.cpp.i
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/sensor_manager.dir/build.make CMakeFiles/sensor_manager.dir/home/dashy/pico-arduino-compat/libs/sensirion-core/arduino-core/src/SensirionI2CCommunication.cpp.i
+.PHONY : home/dashy/pico-arduino-compat/libs/sensirion-core/arduino-core/src/SensirionI2CCommunication.cpp.i
+
+home/dashy/pico-arduino-compat/libs/sensirion-core/arduino-core/src/SensirionI2CCommunication.s: home/dashy/pico-arduino-compat/libs/sensirion-core/arduino-core/src/SensirionI2CCommunication.cpp.s
+.PHONY : home/dashy/pico-arduino-compat/libs/sensirion-core/arduino-core/src/SensirionI2CCommunication.s
+
+# target to generate assembly for a file
+home/dashy/pico-arduino-compat/libs/sensirion-core/arduino-core/src/SensirionI2CCommunication.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Tricorder_SCD41.dir/build.make CMakeFiles/Tricorder_SCD41.dir/home/dashy/pico-arduino-compat/libs/sensirion-core/arduino-core/src/SensirionI2CCommunication.cpp.s
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/sensor_manager.dir/build.make CMakeFiles/sensor_manager.dir/home/dashy/pico-arduino-compat/libs/sensirion-core/arduino-core/src/SensirionI2CCommunication.cpp.s
+.PHONY : home/dashy/pico-arduino-compat/libs/sensirion-core/arduino-core/src/SensirionI2CCommunication.cpp.s
+
+home/dashy/pico-arduino-compat/libs/sensirion-core/arduino-core/src/SensirionI2CTxFrame.obj: home/dashy/pico-arduino-compat/libs/sensirion-core/arduino-core/src/SensirionI2CTxFrame.cpp.obj
+.PHONY : home/dashy/pico-arduino-compat/libs/sensirion-core/arduino-core/src/SensirionI2CTxFrame.obj
+
+# target to build an object file
+home/dashy/pico-arduino-compat/libs/sensirion-core/arduino-core/src/SensirionI2CTxFrame.cpp.obj:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Tricorder_SCD41.dir/build.make CMakeFiles/Tricorder_SCD41.dir/home/dashy/pico-arduino-compat/libs/sensirion-core/arduino-core/src/SensirionI2CTxFrame.cpp.obj
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/sensor_manager.dir/build.make CMakeFiles/sensor_manager.dir/home/dashy/pico-arduino-compat/libs/sensirion-core/arduino-core/src/SensirionI2CTxFrame.cpp.obj
+.PHONY : home/dashy/pico-arduino-compat/libs/sensirion-core/arduino-core/src/SensirionI2CTxFrame.cpp.obj
+
+home/dashy/pico-arduino-compat/libs/sensirion-core/arduino-core/src/SensirionI2CTxFrame.i: home/dashy/pico-arduino-compat/libs/sensirion-core/arduino-core/src/SensirionI2CTxFrame.cpp.i
+.PHONY : home/dashy/pico-arduino-compat/libs/sensirion-core/arduino-core/src/SensirionI2CTxFrame.i
+
+# target to preprocess a source file
+home/dashy/pico-arduino-compat/libs/sensirion-core/arduino-core/src/SensirionI2CTxFrame.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Tricorder_SCD41.dir/build.make CMakeFiles/Tricorder_SCD41.dir/home/dashy/pico-arduino-compat/libs/sensirion-core/arduino-core/src/SensirionI2CTxFrame.cpp.i
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/sensor_manager.dir/build.make CMakeFiles/sensor_manager.dir/home/dashy/pico-arduino-compat/libs/sensirion-core/arduino-core/src/SensirionI2CTxFrame.cpp.i
+.PHONY : home/dashy/pico-arduino-compat/libs/sensirion-core/arduino-core/src/SensirionI2CTxFrame.cpp.i
+
+home/dashy/pico-arduino-compat/libs/sensirion-core/arduino-core/src/SensirionI2CTxFrame.s: home/dashy/pico-arduino-compat/libs/sensirion-core/arduino-core/src/SensirionI2CTxFrame.cpp.s
+.PHONY : home/dashy/pico-arduino-compat/libs/sensirion-core/arduino-core/src/SensirionI2CTxFrame.s
+
+# target to generate assembly for a file
+home/dashy/pico-arduino-compat/libs/sensirion-core/arduino-core/src/SensirionI2CTxFrame.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Tricorder_SCD41.dir/build.make CMakeFiles/Tricorder_SCD41.dir/home/dashy/pico-arduino-compat/libs/sensirion-core/arduino-core/src/SensirionI2CTxFrame.cpp.s
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/sensor_manager.dir/build.make CMakeFiles/sensor_manager.dir/home/dashy/pico-arduino-compat/libs/sensirion-core/arduino-core/src/SensirionI2CTxFrame.cpp.s
+.PHONY : home/dashy/pico-arduino-compat/libs/sensirion-core/arduino-core/src/SensirionI2CTxFrame.cpp.s
+
+home/dashy/pico-arduino-compat/libs/sensirion-core/arduino-core/src/SensirionRxFrame.obj: home/dashy/pico-arduino-compat/libs/sensirion-core/arduino-core/src/SensirionRxFrame.cpp.obj
+.PHONY : home/dashy/pico-arduino-compat/libs/sensirion-core/arduino-core/src/SensirionRxFrame.obj
+
+# target to build an object file
+home/dashy/pico-arduino-compat/libs/sensirion-core/arduino-core/src/SensirionRxFrame.cpp.obj:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Tricorder_SCD41.dir/build.make CMakeFiles/Tricorder_SCD41.dir/home/dashy/pico-arduino-compat/libs/sensirion-core/arduino-core/src/SensirionRxFrame.cpp.obj
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/sensor_manager.dir/build.make CMakeFiles/sensor_manager.dir/home/dashy/pico-arduino-compat/libs/sensirion-core/arduino-core/src/SensirionRxFrame.cpp.obj
+.PHONY : home/dashy/pico-arduino-compat/libs/sensirion-core/arduino-core/src/SensirionRxFrame.cpp.obj
+
+home/dashy/pico-arduino-compat/libs/sensirion-core/arduino-core/src/SensirionRxFrame.i: home/dashy/pico-arduino-compat/libs/sensirion-core/arduino-core/src/SensirionRxFrame.cpp.i
+.PHONY : home/dashy/pico-arduino-compat/libs/sensirion-core/arduino-core/src/SensirionRxFrame.i
+
+# target to preprocess a source file
+home/dashy/pico-arduino-compat/libs/sensirion-core/arduino-core/src/SensirionRxFrame.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Tricorder_SCD41.dir/build.make CMakeFiles/Tricorder_SCD41.dir/home/dashy/pico-arduino-compat/libs/sensirion-core/arduino-core/src/SensirionRxFrame.cpp.i
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/sensor_manager.dir/build.make CMakeFiles/sensor_manager.dir/home/dashy/pico-arduino-compat/libs/sensirion-core/arduino-core/src/SensirionRxFrame.cpp.i
+.PHONY : home/dashy/pico-arduino-compat/libs/sensirion-core/arduino-core/src/SensirionRxFrame.cpp.i
+
+home/dashy/pico-arduino-compat/libs/sensirion-core/arduino-core/src/SensirionRxFrame.s: home/dashy/pico-arduino-compat/libs/sensirion-core/arduino-core/src/SensirionRxFrame.cpp.s
+.PHONY : home/dashy/pico-arduino-compat/libs/sensirion-core/arduino-core/src/SensirionRxFrame.s
+
+# target to generate assembly for a file
+home/dashy/pico-arduino-compat/libs/sensirion-core/arduino-core/src/SensirionRxFrame.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Tricorder_SCD41.dir/build.make CMakeFiles/Tricorder_SCD41.dir/home/dashy/pico-arduino-compat/libs/sensirion-core/arduino-core/src/SensirionRxFrame.cpp.s
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/sensor_manager.dir/build.make CMakeFiles/sensor_manager.dir/home/dashy/pico-arduino-compat/libs/sensirion-core/arduino-core/src/SensirionRxFrame.cpp.s
+.PHONY : home/dashy/pico-arduino-compat/libs/sensirion-core/arduino-core/src/SensirionRxFrame.cpp.s
+
+home/dashy/pico-arduino-compat/libs/sensirion-core/arduino-core/src/SensirionShdlcCommunication.obj: home/dashy/pico-arduino-compat/libs/sensirion-core/arduino-core/src/SensirionShdlcCommunication.cpp.obj
+.PHONY : home/dashy/pico-arduino-compat/libs/sensirion-core/arduino-core/src/SensirionShdlcCommunication.obj
+
+# target to build an object file
+home/dashy/pico-arduino-compat/libs/sensirion-core/arduino-core/src/SensirionShdlcCommunication.cpp.obj:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Tricorder_SCD41.dir/build.make CMakeFiles/Tricorder_SCD41.dir/home/dashy/pico-arduino-compat/libs/sensirion-core/arduino-core/src/SensirionShdlcCommunication.cpp.obj
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/sensor_manager.dir/build.make CMakeFiles/sensor_manager.dir/home/dashy/pico-arduino-compat/libs/sensirion-core/arduino-core/src/SensirionShdlcCommunication.cpp.obj
+.PHONY : home/dashy/pico-arduino-compat/libs/sensirion-core/arduino-core/src/SensirionShdlcCommunication.cpp.obj
+
+home/dashy/pico-arduino-compat/libs/sensirion-core/arduino-core/src/SensirionShdlcCommunication.i: home/dashy/pico-arduino-compat/libs/sensirion-core/arduino-core/src/SensirionShdlcCommunication.cpp.i
+.PHONY : home/dashy/pico-arduino-compat/libs/sensirion-core/arduino-core/src/SensirionShdlcCommunication.i
+
+# target to preprocess a source file
+home/dashy/pico-arduino-compat/libs/sensirion-core/arduino-core/src/SensirionShdlcCommunication.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Tricorder_SCD41.dir/build.make CMakeFiles/Tricorder_SCD41.dir/home/dashy/pico-arduino-compat/libs/sensirion-core/arduino-core/src/SensirionShdlcCommunication.cpp.i
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/sensor_manager.dir/build.make CMakeFiles/sensor_manager.dir/home/dashy/pico-arduino-compat/libs/sensirion-core/arduino-core/src/SensirionShdlcCommunication.cpp.i
+.PHONY : home/dashy/pico-arduino-compat/libs/sensirion-core/arduino-core/src/SensirionShdlcCommunication.cpp.i
+
+home/dashy/pico-arduino-compat/libs/sensirion-core/arduino-core/src/SensirionShdlcCommunication.s: home/dashy/pico-arduino-compat/libs/sensirion-core/arduino-core/src/SensirionShdlcCommunication.cpp.s
+.PHONY : home/dashy/pico-arduino-compat/libs/sensirion-core/arduino-core/src/SensirionShdlcCommunication.s
+
+# target to generate assembly for a file
+home/dashy/pico-arduino-compat/libs/sensirion-core/arduino-core/src/SensirionShdlcCommunication.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Tricorder_SCD41.dir/build.make CMakeFiles/Tricorder_SCD41.dir/home/dashy/pico-arduino-compat/libs/sensirion-core/arduino-core/src/SensirionShdlcCommunication.cpp.s
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/sensor_manager.dir/build.make CMakeFiles/sensor_manager.dir/home/dashy/pico-arduino-compat/libs/sensirion-core/arduino-core/src/SensirionShdlcCommunication.cpp.s
+.PHONY : home/dashy/pico-arduino-compat/libs/sensirion-core/arduino-core/src/SensirionShdlcCommunication.cpp.s
+
+home/dashy/pico-arduino-compat/libs/sensirion-core/arduino-core/src/SensirionShdlcTxFrame.obj: home/dashy/pico-arduino-compat/libs/sensirion-core/arduino-core/src/SensirionShdlcTxFrame.cpp.obj
+.PHONY : home/dashy/pico-arduino-compat/libs/sensirion-core/arduino-core/src/SensirionShdlcTxFrame.obj
+
+# target to build an object file
+home/dashy/pico-arduino-compat/libs/sensirion-core/arduino-core/src/SensirionShdlcTxFrame.cpp.obj:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Tricorder_SCD41.dir/build.make CMakeFiles/Tricorder_SCD41.dir/home/dashy/pico-arduino-compat/libs/sensirion-core/arduino-core/src/SensirionShdlcTxFrame.cpp.obj
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/sensor_manager.dir/build.make CMakeFiles/sensor_manager.dir/home/dashy/pico-arduino-compat/libs/sensirion-core/arduino-core/src/SensirionShdlcTxFrame.cpp.obj
+.PHONY : home/dashy/pico-arduino-compat/libs/sensirion-core/arduino-core/src/SensirionShdlcTxFrame.cpp.obj
+
+home/dashy/pico-arduino-compat/libs/sensirion-core/arduino-core/src/SensirionShdlcTxFrame.i: home/dashy/pico-arduino-compat/libs/sensirion-core/arduino-core/src/SensirionShdlcTxFrame.cpp.i
+.PHONY : home/dashy/pico-arduino-compat/libs/sensirion-core/arduino-core/src/SensirionShdlcTxFrame.i
+
+# target to preprocess a source file
+home/dashy/pico-arduino-compat/libs/sensirion-core/arduino-core/src/SensirionShdlcTxFrame.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Tricorder_SCD41.dir/build.make CMakeFiles/Tricorder_SCD41.dir/home/dashy/pico-arduino-compat/libs/sensirion-core/arduino-core/src/SensirionShdlcTxFrame.cpp.i
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/sensor_manager.dir/build.make CMakeFiles/sensor_manager.dir/home/dashy/pico-arduino-compat/libs/sensirion-core/arduino-core/src/SensirionShdlcTxFrame.cpp.i
+.PHONY : home/dashy/pico-arduino-compat/libs/sensirion-core/arduino-core/src/SensirionShdlcTxFrame.cpp.i
+
+home/dashy/pico-arduino-compat/libs/sensirion-core/arduino-core/src/SensirionShdlcTxFrame.s: home/dashy/pico-arduino-compat/libs/sensirion-core/arduino-core/src/SensirionShdlcTxFrame.cpp.s
+.PHONY : home/dashy/pico-arduino-compat/libs/sensirion-core/arduino-core/src/SensirionShdlcTxFrame.s
+
+# target to generate assembly for a file
+home/dashy/pico-arduino-compat/libs/sensirion-core/arduino-core/src/SensirionShdlcTxFrame.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Tricorder_SCD41.dir/build.make CMakeFiles/Tricorder_SCD41.dir/home/dashy/pico-arduino-compat/libs/sensirion-core/arduino-core/src/SensirionShdlcTxFrame.cpp.s
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/sensor_manager.dir/build.make CMakeFiles/sensor_manager.dir/home/dashy/pico-arduino-compat/libs/sensirion-core/arduino-core/src/SensirionShdlcTxFrame.cpp.s
+.PHONY : home/dashy/pico-arduino-compat/libs/sensirion-core/arduino-core/src/SensirionShdlcTxFrame.cpp.s
+
+home/dashy/pico-arduino-compat/libs/sensirion-i2c-scd4x/arduino-i2c-scd4x/src/SensirionI2CScd4x.obj: home/dashy/pico-arduino-compat/libs/sensirion-i2c-scd4x/arduino-i2c-scd4x/src/SensirionI2CScd4x.cpp.obj
+.PHONY : home/dashy/pico-arduino-compat/libs/sensirion-i2c-scd4x/arduino-i2c-scd4x/src/SensirionI2CScd4x.obj
+
+# target to build an object file
+home/dashy/pico-arduino-compat/libs/sensirion-i2c-scd4x/arduino-i2c-scd4x/src/SensirionI2CScd4x.cpp.obj:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Tricorder_SCD41.dir/build.make CMakeFiles/Tricorder_SCD41.dir/home/dashy/pico-arduino-compat/libs/sensirion-i2c-scd4x/arduino-i2c-scd4x/src/SensirionI2CScd4x.cpp.obj
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/sensor_manager.dir/build.make CMakeFiles/sensor_manager.dir/home/dashy/pico-arduino-compat/libs/sensirion-i2c-scd4x/arduino-i2c-scd4x/src/SensirionI2CScd4x.cpp.obj
+.PHONY : home/dashy/pico-arduino-compat/libs/sensirion-i2c-scd4x/arduino-i2c-scd4x/src/SensirionI2CScd4x.cpp.obj
+
+home/dashy/pico-arduino-compat/libs/sensirion-i2c-scd4x/arduino-i2c-scd4x/src/SensirionI2CScd4x.i: home/dashy/pico-arduino-compat/libs/sensirion-i2c-scd4x/arduino-i2c-scd4x/src/SensirionI2CScd4x.cpp.i
+.PHONY : home/dashy/pico-arduino-compat/libs/sensirion-i2c-scd4x/arduino-i2c-scd4x/src/SensirionI2CScd4x.i
+
+# target to preprocess a source file
+home/dashy/pico-arduino-compat/libs/sensirion-i2c-scd4x/arduino-i2c-scd4x/src/SensirionI2CScd4x.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Tricorder_SCD41.dir/build.make CMakeFiles/Tricorder_SCD41.dir/home/dashy/pico-arduino-compat/libs/sensirion-i2c-scd4x/arduino-i2c-scd4x/src/SensirionI2CScd4x.cpp.i
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/sensor_manager.dir/build.make CMakeFiles/sensor_manager.dir/home/dashy/pico-arduino-compat/libs/sensirion-i2c-scd4x/arduino-i2c-scd4x/src/SensirionI2CScd4x.cpp.i
+.PHONY : home/dashy/pico-arduino-compat/libs/sensirion-i2c-scd4x/arduino-i2c-scd4x/src/SensirionI2CScd4x.cpp.i
+
+home/dashy/pico-arduino-compat/libs/sensirion-i2c-scd4x/arduino-i2c-scd4x/src/SensirionI2CScd4x.s: home/dashy/pico-arduino-compat/libs/sensirion-i2c-scd4x/arduino-i2c-scd4x/src/SensirionI2CScd4x.cpp.s
+.PHONY : home/dashy/pico-arduino-compat/libs/sensirion-i2c-scd4x/arduino-i2c-scd4x/src/SensirionI2CScd4x.s
+
+# target to generate assembly for a file
+home/dashy/pico-arduino-compat/libs/sensirion-i2c-scd4x/arduino-i2c-scd4x/src/SensirionI2CScd4x.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Tricorder_SCD41.dir/build.make CMakeFiles/Tricorder_SCD41.dir/home/dashy/pico-arduino-compat/libs/sensirion-i2c-scd4x/arduino-i2c-scd4x/src/SensirionI2CScd4x.cpp.s
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/sensor_manager.dir/build.make CMakeFiles/sensor_manager.dir/home/dashy/pico-arduino-compat/libs/sensirion-i2c-scd4x/arduino-i2c-scd4x/src/SensirionI2CScd4x.cpp.s
+.PHONY : home/dashy/pico-arduino-compat/libs/sensirion-i2c-scd4x/arduino-i2c-scd4x/src/SensirionI2CScd4x.cpp.s
+
+home/dashy/pico-arduino-compat/libs/tlv493d-a1b6/TLV493D-A1B6-3DMagnetic-Sensor/src/Tlv493d.obj: home/dashy/pico-arduino-compat/libs/tlv493d-a1b6/TLV493D-A1B6-3DMagnetic-Sensor/src/Tlv493d.cpp.obj
+.PHONY : home/dashy/pico-arduino-compat/libs/tlv493d-a1b6/TLV493D-A1B6-3DMagnetic-Sensor/src/Tlv493d.obj
+
+# target to build an object file
+home/dashy/pico-arduino-compat/libs/tlv493d-a1b6/TLV493D-A1B6-3DMagnetic-Sensor/src/Tlv493d.cpp.obj:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Tricorder_TLV493D.dir/build.make CMakeFiles/Tricorder_TLV493D.dir/home/dashy/pico-arduino-compat/libs/tlv493d-a1b6/TLV493D-A1B6-3DMagnetic-Sensor/src/Tlv493d.cpp.obj
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/sensor_manager.dir/build.make CMakeFiles/sensor_manager.dir/home/dashy/pico-arduino-compat/libs/tlv493d-a1b6/TLV493D-A1B6-3DMagnetic-Sensor/src/Tlv493d.cpp.obj
+.PHONY : home/dashy/pico-arduino-compat/libs/tlv493d-a1b6/TLV493D-A1B6-3DMagnetic-Sensor/src/Tlv493d.cpp.obj
+
+home/dashy/pico-arduino-compat/libs/tlv493d-a1b6/TLV493D-A1B6-3DMagnetic-Sensor/src/Tlv493d.i: home/dashy/pico-arduino-compat/libs/tlv493d-a1b6/TLV493D-A1B6-3DMagnetic-Sensor/src/Tlv493d.cpp.i
+.PHONY : home/dashy/pico-arduino-compat/libs/tlv493d-a1b6/TLV493D-A1B6-3DMagnetic-Sensor/src/Tlv493d.i
+
+# target to preprocess a source file
+home/dashy/pico-arduino-compat/libs/tlv493d-a1b6/TLV493D-A1B6-3DMagnetic-Sensor/src/Tlv493d.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Tricorder_TLV493D.dir/build.make CMakeFiles/Tricorder_TLV493D.dir/home/dashy/pico-arduino-compat/libs/tlv493d-a1b6/TLV493D-A1B6-3DMagnetic-Sensor/src/Tlv493d.cpp.i
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/sensor_manager.dir/build.make CMakeFiles/sensor_manager.dir/home/dashy/pico-arduino-compat/libs/tlv493d-a1b6/TLV493D-A1B6-3DMagnetic-Sensor/src/Tlv493d.cpp.i
+.PHONY : home/dashy/pico-arduino-compat/libs/tlv493d-a1b6/TLV493D-A1B6-3DMagnetic-Sensor/src/Tlv493d.cpp.i
+
+home/dashy/pico-arduino-compat/libs/tlv493d-a1b6/TLV493D-A1B6-3DMagnetic-Sensor/src/Tlv493d.s: home/dashy/pico-arduino-compat/libs/tlv493d-a1b6/TLV493D-A1B6-3DMagnetic-Sensor/src/Tlv493d.cpp.s
+.PHONY : home/dashy/pico-arduino-compat/libs/tlv493d-a1b6/TLV493D-A1B6-3DMagnetic-Sensor/src/Tlv493d.s
+
+# target to generate assembly for a file
+home/dashy/pico-arduino-compat/libs/tlv493d-a1b6/TLV493D-A1B6-3DMagnetic-Sensor/src/Tlv493d.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Tricorder_TLV493D.dir/build.make CMakeFiles/Tricorder_TLV493D.dir/home/dashy/pico-arduino-compat/libs/tlv493d-a1b6/TLV493D-A1B6-3DMagnetic-Sensor/src/Tlv493d.cpp.s
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/sensor_manager.dir/build.make CMakeFiles/sensor_manager.dir/home/dashy/pico-arduino-compat/libs/tlv493d-a1b6/TLV493D-A1B6-3DMagnetic-Sensor/src/Tlv493d.cpp.s
+.PHONY : home/dashy/pico-arduino-compat/libs/tlv493d-a1b6/TLV493D-A1B6-3DMagnetic-Sensor/src/Tlv493d.cpp.s
+
+home/dashy/pico-arduino-compat/libs/tlv493d-a1b6/TLV493D-A1B6-3DMagnetic-Sensor/src/util/BusInterface.obj: home/dashy/pico-arduino-compat/libs/tlv493d-a1b6/TLV493D-A1B6-3DMagnetic-Sensor/src/util/BusInterface.cpp.obj
+.PHONY : home/dashy/pico-arduino-compat/libs/tlv493d-a1b6/TLV493D-A1B6-3DMagnetic-Sensor/src/util/BusInterface.obj
+
+# target to build an object file
+home/dashy/pico-arduino-compat/libs/tlv493d-a1b6/TLV493D-A1B6-3DMagnetic-Sensor/src/util/BusInterface.cpp.obj:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Tricorder_TLV493D.dir/build.make CMakeFiles/Tricorder_TLV493D.dir/home/dashy/pico-arduino-compat/libs/tlv493d-a1b6/TLV493D-A1B6-3DMagnetic-Sensor/src/util/BusInterface.cpp.obj
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/sensor_manager.dir/build.make CMakeFiles/sensor_manager.dir/home/dashy/pico-arduino-compat/libs/tlv493d-a1b6/TLV493D-A1B6-3DMagnetic-Sensor/src/util/BusInterface.cpp.obj
+.PHONY : home/dashy/pico-arduino-compat/libs/tlv493d-a1b6/TLV493D-A1B6-3DMagnetic-Sensor/src/util/BusInterface.cpp.obj
+
+home/dashy/pico-arduino-compat/libs/tlv493d-a1b6/TLV493D-A1B6-3DMagnetic-Sensor/src/util/BusInterface.i: home/dashy/pico-arduino-compat/libs/tlv493d-a1b6/TLV493D-A1B6-3DMagnetic-Sensor/src/util/BusInterface.cpp.i
+.PHONY : home/dashy/pico-arduino-compat/libs/tlv493d-a1b6/TLV493D-A1B6-3DMagnetic-Sensor/src/util/BusInterface.i
+
+# target to preprocess a source file
+home/dashy/pico-arduino-compat/libs/tlv493d-a1b6/TLV493D-A1B6-3DMagnetic-Sensor/src/util/BusInterface.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Tricorder_TLV493D.dir/build.make CMakeFiles/Tricorder_TLV493D.dir/home/dashy/pico-arduino-compat/libs/tlv493d-a1b6/TLV493D-A1B6-3DMagnetic-Sensor/src/util/BusInterface.cpp.i
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/sensor_manager.dir/build.make CMakeFiles/sensor_manager.dir/home/dashy/pico-arduino-compat/libs/tlv493d-a1b6/TLV493D-A1B6-3DMagnetic-Sensor/src/util/BusInterface.cpp.i
+.PHONY : home/dashy/pico-arduino-compat/libs/tlv493d-a1b6/TLV493D-A1B6-3DMagnetic-Sensor/src/util/BusInterface.cpp.i
+
+home/dashy/pico-arduino-compat/libs/tlv493d-a1b6/TLV493D-A1B6-3DMagnetic-Sensor/src/util/BusInterface.s: home/dashy/pico-arduino-compat/libs/tlv493d-a1b6/TLV493D-A1B6-3DMagnetic-Sensor/src/util/BusInterface.cpp.s
+.PHONY : home/dashy/pico-arduino-compat/libs/tlv493d-a1b6/TLV493D-A1B6-3DMagnetic-Sensor/src/util/BusInterface.s
+
+# target to generate assembly for a file
+home/dashy/pico-arduino-compat/libs/tlv493d-a1b6/TLV493D-A1B6-3DMagnetic-Sensor/src/util/BusInterface.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Tricorder_TLV493D.dir/build.make CMakeFiles/Tricorder_TLV493D.dir/home/dashy/pico-arduino-compat/libs/tlv493d-a1b6/TLV493D-A1B6-3DMagnetic-Sensor/src/util/BusInterface.cpp.s
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/sensor_manager.dir/build.make CMakeFiles/sensor_manager.dir/home/dashy/pico-arduino-compat/libs/tlv493d-a1b6/TLV493D-A1B6-3DMagnetic-Sensor/src/util/BusInterface.cpp.s
+.PHONY : home/dashy/pico-arduino-compat/libs/tlv493d-a1b6/TLV493D-A1B6-3DMagnetic-Sensor/src/util/BusInterface.cpp.s
+
+home/dashy/pico-arduino-compat/libs/tlv493d-a1b6/TLV493D-A1B6-3DMagnetic-Sensor/src/util/RegMask.obj: home/dashy/pico-arduino-compat/libs/tlv493d-a1b6/TLV493D-A1B6-3DMagnetic-Sensor/src/util/RegMask.cpp.obj
+.PHONY : home/dashy/pico-arduino-compat/libs/tlv493d-a1b6/TLV493D-A1B6-3DMagnetic-Sensor/src/util/RegMask.obj
+
+# target to build an object file
+home/dashy/pico-arduino-compat/libs/tlv493d-a1b6/TLV493D-A1B6-3DMagnetic-Sensor/src/util/RegMask.cpp.obj:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Tricorder_TLV493D.dir/build.make CMakeFiles/Tricorder_TLV493D.dir/home/dashy/pico-arduino-compat/libs/tlv493d-a1b6/TLV493D-A1B6-3DMagnetic-Sensor/src/util/RegMask.cpp.obj
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/sensor_manager.dir/build.make CMakeFiles/sensor_manager.dir/home/dashy/pico-arduino-compat/libs/tlv493d-a1b6/TLV493D-A1B6-3DMagnetic-Sensor/src/util/RegMask.cpp.obj
+.PHONY : home/dashy/pico-arduino-compat/libs/tlv493d-a1b6/TLV493D-A1B6-3DMagnetic-Sensor/src/util/RegMask.cpp.obj
+
+home/dashy/pico-arduino-compat/libs/tlv493d-a1b6/TLV493D-A1B6-3DMagnetic-Sensor/src/util/RegMask.i: home/dashy/pico-arduino-compat/libs/tlv493d-a1b6/TLV493D-A1B6-3DMagnetic-Sensor/src/util/RegMask.cpp.i
+.PHONY : home/dashy/pico-arduino-compat/libs/tlv493d-a1b6/TLV493D-A1B6-3DMagnetic-Sensor/src/util/RegMask.i
+
+# target to preprocess a source file
+home/dashy/pico-arduino-compat/libs/tlv493d-a1b6/TLV493D-A1B6-3DMagnetic-Sensor/src/util/RegMask.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Tricorder_TLV493D.dir/build.make CMakeFiles/Tricorder_TLV493D.dir/home/dashy/pico-arduino-compat/libs/tlv493d-a1b6/TLV493D-A1B6-3DMagnetic-Sensor/src/util/RegMask.cpp.i
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/sensor_manager.dir/build.make CMakeFiles/sensor_manager.dir/home/dashy/pico-arduino-compat/libs/tlv493d-a1b6/TLV493D-A1B6-3DMagnetic-Sensor/src/util/RegMask.cpp.i
+.PHONY : home/dashy/pico-arduino-compat/libs/tlv493d-a1b6/TLV493D-A1B6-3DMagnetic-Sensor/src/util/RegMask.cpp.i
+
+home/dashy/pico-arduino-compat/libs/tlv493d-a1b6/TLV493D-A1B6-3DMagnetic-Sensor/src/util/RegMask.s: home/dashy/pico-arduino-compat/libs/tlv493d-a1b6/TLV493D-A1B6-3DMagnetic-Sensor/src/util/RegMask.cpp.s
+.PHONY : home/dashy/pico-arduino-compat/libs/tlv493d-a1b6/TLV493D-A1B6-3DMagnetic-Sensor/src/util/RegMask.s
+
+# target to generate assembly for a file
+home/dashy/pico-arduino-compat/libs/tlv493d-a1b6/TLV493D-A1B6-3DMagnetic-Sensor/src/util/RegMask.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Tricorder_TLV493D.dir/build.make CMakeFiles/Tricorder_TLV493D.dir/home/dashy/pico-arduino-compat/libs/tlv493d-a1b6/TLV493D-A1B6-3DMagnetic-Sensor/src/util/RegMask.cpp.s
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/sensor_manager.dir/build.make CMakeFiles/sensor_manager.dir/home/dashy/pico-arduino-compat/libs/tlv493d-a1b6/TLV493D-A1B6-3DMagnetic-Sensor/src/util/RegMask.cpp.s
+.PHONY : home/dashy/pico-arduino-compat/libs/tlv493d-a1b6/TLV493D-A1B6-3DMagnetic-Sensor/src/util/RegMask.cpp.s
+
 home/dashy/pico-sdk/src/common/pico_sync/critical_section.obj: home/dashy/pico-sdk/src/common/pico_sync/critical_section.c.obj
 .PHONY : home/dashy/pico-sdk/src/common/pico_sync/critical_section.obj
 
@@ -1339,6 +1803,8 @@ home/dashy/pico-sdk/src/common/pico_sync/critical_section.c.obj:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/Tricorder_BME688.dir/build.make CMakeFiles/Tricorder_BME688.dir/home/dashy/pico-sdk/src/common/pico_sync/critical_section.c.obj
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/Tricorder_LTR390.dir/build.make CMakeFiles/Tricorder_LTR390.dir/home/dashy/pico-sdk/src/common/pico_sync/critical_section.c.obj
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/Tricorder_PMSA003I.dir/build.make CMakeFiles/Tricorder_PMSA003I.dir/home/dashy/pico-sdk/src/common/pico_sync/critical_section.c.obj
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Tricorder_TLV493D.dir/build.make CMakeFiles/Tricorder_TLV493D.dir/home/dashy/pico-sdk/src/common/pico_sync/critical_section.c.obj
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Tricorder_SCD41.dir/build.make CMakeFiles/Tricorder_SCD41.dir/home/dashy/pico-sdk/src/common/pico_sync/critical_section.c.obj
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/sensor_manager.dir/build.make CMakeFiles/sensor_manager.dir/home/dashy/pico-sdk/src/common/pico_sync/critical_section.c.obj
 .PHONY : home/dashy/pico-sdk/src/common/pico_sync/critical_section.c.obj
 
@@ -1352,6 +1818,8 @@ home/dashy/pico-sdk/src/common/pico_sync/critical_section.c.i:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/Tricorder_BME688.dir/build.make CMakeFiles/Tricorder_BME688.dir/home/dashy/pico-sdk/src/common/pico_sync/critical_section.c.i
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/Tricorder_LTR390.dir/build.make CMakeFiles/Tricorder_LTR390.dir/home/dashy/pico-sdk/src/common/pico_sync/critical_section.c.i
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/Tricorder_PMSA003I.dir/build.make CMakeFiles/Tricorder_PMSA003I.dir/home/dashy/pico-sdk/src/common/pico_sync/critical_section.c.i
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Tricorder_TLV493D.dir/build.make CMakeFiles/Tricorder_TLV493D.dir/home/dashy/pico-sdk/src/common/pico_sync/critical_section.c.i
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Tricorder_SCD41.dir/build.make CMakeFiles/Tricorder_SCD41.dir/home/dashy/pico-sdk/src/common/pico_sync/critical_section.c.i
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/sensor_manager.dir/build.make CMakeFiles/sensor_manager.dir/home/dashy/pico-sdk/src/common/pico_sync/critical_section.c.i
 .PHONY : home/dashy/pico-sdk/src/common/pico_sync/critical_section.c.i
 
@@ -1365,6 +1833,8 @@ home/dashy/pico-sdk/src/common/pico_sync/critical_section.c.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/Tricorder_BME688.dir/build.make CMakeFiles/Tricorder_BME688.dir/home/dashy/pico-sdk/src/common/pico_sync/critical_section.c.s
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/Tricorder_LTR390.dir/build.make CMakeFiles/Tricorder_LTR390.dir/home/dashy/pico-sdk/src/common/pico_sync/critical_section.c.s
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/Tricorder_PMSA003I.dir/build.make CMakeFiles/Tricorder_PMSA003I.dir/home/dashy/pico-sdk/src/common/pico_sync/critical_section.c.s
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Tricorder_TLV493D.dir/build.make CMakeFiles/Tricorder_TLV493D.dir/home/dashy/pico-sdk/src/common/pico_sync/critical_section.c.s
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Tricorder_SCD41.dir/build.make CMakeFiles/Tricorder_SCD41.dir/home/dashy/pico-sdk/src/common/pico_sync/critical_section.c.s
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/sensor_manager.dir/build.make CMakeFiles/sensor_manager.dir/home/dashy/pico-sdk/src/common/pico_sync/critical_section.c.s
 .PHONY : home/dashy/pico-sdk/src/common/pico_sync/critical_section.c.s
 
@@ -1378,6 +1848,8 @@ home/dashy/pico-sdk/src/common/pico_sync/lock_core.c.obj:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/Tricorder_BME688.dir/build.make CMakeFiles/Tricorder_BME688.dir/home/dashy/pico-sdk/src/common/pico_sync/lock_core.c.obj
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/Tricorder_LTR390.dir/build.make CMakeFiles/Tricorder_LTR390.dir/home/dashy/pico-sdk/src/common/pico_sync/lock_core.c.obj
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/Tricorder_PMSA003I.dir/build.make CMakeFiles/Tricorder_PMSA003I.dir/home/dashy/pico-sdk/src/common/pico_sync/lock_core.c.obj
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Tricorder_TLV493D.dir/build.make CMakeFiles/Tricorder_TLV493D.dir/home/dashy/pico-sdk/src/common/pico_sync/lock_core.c.obj
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Tricorder_SCD41.dir/build.make CMakeFiles/Tricorder_SCD41.dir/home/dashy/pico-sdk/src/common/pico_sync/lock_core.c.obj
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/sensor_manager.dir/build.make CMakeFiles/sensor_manager.dir/home/dashy/pico-sdk/src/common/pico_sync/lock_core.c.obj
 .PHONY : home/dashy/pico-sdk/src/common/pico_sync/lock_core.c.obj
 
@@ -1391,6 +1863,8 @@ home/dashy/pico-sdk/src/common/pico_sync/lock_core.c.i:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/Tricorder_BME688.dir/build.make CMakeFiles/Tricorder_BME688.dir/home/dashy/pico-sdk/src/common/pico_sync/lock_core.c.i
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/Tricorder_LTR390.dir/build.make CMakeFiles/Tricorder_LTR390.dir/home/dashy/pico-sdk/src/common/pico_sync/lock_core.c.i
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/Tricorder_PMSA003I.dir/build.make CMakeFiles/Tricorder_PMSA003I.dir/home/dashy/pico-sdk/src/common/pico_sync/lock_core.c.i
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Tricorder_TLV493D.dir/build.make CMakeFiles/Tricorder_TLV493D.dir/home/dashy/pico-sdk/src/common/pico_sync/lock_core.c.i
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Tricorder_SCD41.dir/build.make CMakeFiles/Tricorder_SCD41.dir/home/dashy/pico-sdk/src/common/pico_sync/lock_core.c.i
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/sensor_manager.dir/build.make CMakeFiles/sensor_manager.dir/home/dashy/pico-sdk/src/common/pico_sync/lock_core.c.i
 .PHONY : home/dashy/pico-sdk/src/common/pico_sync/lock_core.c.i
 
@@ -1404,6 +1878,8 @@ home/dashy/pico-sdk/src/common/pico_sync/lock_core.c.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/Tricorder_BME688.dir/build.make CMakeFiles/Tricorder_BME688.dir/home/dashy/pico-sdk/src/common/pico_sync/lock_core.c.s
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/Tricorder_LTR390.dir/build.make CMakeFiles/Tricorder_LTR390.dir/home/dashy/pico-sdk/src/common/pico_sync/lock_core.c.s
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/Tricorder_PMSA003I.dir/build.make CMakeFiles/Tricorder_PMSA003I.dir/home/dashy/pico-sdk/src/common/pico_sync/lock_core.c.s
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Tricorder_TLV493D.dir/build.make CMakeFiles/Tricorder_TLV493D.dir/home/dashy/pico-sdk/src/common/pico_sync/lock_core.c.s
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Tricorder_SCD41.dir/build.make CMakeFiles/Tricorder_SCD41.dir/home/dashy/pico-sdk/src/common/pico_sync/lock_core.c.s
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/sensor_manager.dir/build.make CMakeFiles/sensor_manager.dir/home/dashy/pico-sdk/src/common/pico_sync/lock_core.c.s
 .PHONY : home/dashy/pico-sdk/src/common/pico_sync/lock_core.c.s
 
@@ -1417,6 +1893,8 @@ home/dashy/pico-sdk/src/common/pico_sync/mutex.c.obj:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/Tricorder_BME688.dir/build.make CMakeFiles/Tricorder_BME688.dir/home/dashy/pico-sdk/src/common/pico_sync/mutex.c.obj
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/Tricorder_LTR390.dir/build.make CMakeFiles/Tricorder_LTR390.dir/home/dashy/pico-sdk/src/common/pico_sync/mutex.c.obj
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/Tricorder_PMSA003I.dir/build.make CMakeFiles/Tricorder_PMSA003I.dir/home/dashy/pico-sdk/src/common/pico_sync/mutex.c.obj
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Tricorder_TLV493D.dir/build.make CMakeFiles/Tricorder_TLV493D.dir/home/dashy/pico-sdk/src/common/pico_sync/mutex.c.obj
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Tricorder_SCD41.dir/build.make CMakeFiles/Tricorder_SCD41.dir/home/dashy/pico-sdk/src/common/pico_sync/mutex.c.obj
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/sensor_manager.dir/build.make CMakeFiles/sensor_manager.dir/home/dashy/pico-sdk/src/common/pico_sync/mutex.c.obj
 .PHONY : home/dashy/pico-sdk/src/common/pico_sync/mutex.c.obj
 
@@ -1430,6 +1908,8 @@ home/dashy/pico-sdk/src/common/pico_sync/mutex.c.i:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/Tricorder_BME688.dir/build.make CMakeFiles/Tricorder_BME688.dir/home/dashy/pico-sdk/src/common/pico_sync/mutex.c.i
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/Tricorder_LTR390.dir/build.make CMakeFiles/Tricorder_LTR390.dir/home/dashy/pico-sdk/src/common/pico_sync/mutex.c.i
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/Tricorder_PMSA003I.dir/build.make CMakeFiles/Tricorder_PMSA003I.dir/home/dashy/pico-sdk/src/common/pico_sync/mutex.c.i
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Tricorder_TLV493D.dir/build.make CMakeFiles/Tricorder_TLV493D.dir/home/dashy/pico-sdk/src/common/pico_sync/mutex.c.i
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Tricorder_SCD41.dir/build.make CMakeFiles/Tricorder_SCD41.dir/home/dashy/pico-sdk/src/common/pico_sync/mutex.c.i
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/sensor_manager.dir/build.make CMakeFiles/sensor_manager.dir/home/dashy/pico-sdk/src/common/pico_sync/mutex.c.i
 .PHONY : home/dashy/pico-sdk/src/common/pico_sync/mutex.c.i
 
@@ -1443,6 +1923,8 @@ home/dashy/pico-sdk/src/common/pico_sync/mutex.c.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/Tricorder_BME688.dir/build.make CMakeFiles/Tricorder_BME688.dir/home/dashy/pico-sdk/src/common/pico_sync/mutex.c.s
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/Tricorder_LTR390.dir/build.make CMakeFiles/Tricorder_LTR390.dir/home/dashy/pico-sdk/src/common/pico_sync/mutex.c.s
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/Tricorder_PMSA003I.dir/build.make CMakeFiles/Tricorder_PMSA003I.dir/home/dashy/pico-sdk/src/common/pico_sync/mutex.c.s
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Tricorder_TLV493D.dir/build.make CMakeFiles/Tricorder_TLV493D.dir/home/dashy/pico-sdk/src/common/pico_sync/mutex.c.s
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Tricorder_SCD41.dir/build.make CMakeFiles/Tricorder_SCD41.dir/home/dashy/pico-sdk/src/common/pico_sync/mutex.c.s
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/sensor_manager.dir/build.make CMakeFiles/sensor_manager.dir/home/dashy/pico-sdk/src/common/pico_sync/mutex.c.s
 .PHONY : home/dashy/pico-sdk/src/common/pico_sync/mutex.c.s
 
@@ -1456,6 +1938,8 @@ home/dashy/pico-sdk/src/common/pico_sync/sem.c.obj:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/Tricorder_BME688.dir/build.make CMakeFiles/Tricorder_BME688.dir/home/dashy/pico-sdk/src/common/pico_sync/sem.c.obj
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/Tricorder_LTR390.dir/build.make CMakeFiles/Tricorder_LTR390.dir/home/dashy/pico-sdk/src/common/pico_sync/sem.c.obj
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/Tricorder_PMSA003I.dir/build.make CMakeFiles/Tricorder_PMSA003I.dir/home/dashy/pico-sdk/src/common/pico_sync/sem.c.obj
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Tricorder_TLV493D.dir/build.make CMakeFiles/Tricorder_TLV493D.dir/home/dashy/pico-sdk/src/common/pico_sync/sem.c.obj
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Tricorder_SCD41.dir/build.make CMakeFiles/Tricorder_SCD41.dir/home/dashy/pico-sdk/src/common/pico_sync/sem.c.obj
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/sensor_manager.dir/build.make CMakeFiles/sensor_manager.dir/home/dashy/pico-sdk/src/common/pico_sync/sem.c.obj
 .PHONY : home/dashy/pico-sdk/src/common/pico_sync/sem.c.obj
 
@@ -1469,6 +1953,8 @@ home/dashy/pico-sdk/src/common/pico_sync/sem.c.i:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/Tricorder_BME688.dir/build.make CMakeFiles/Tricorder_BME688.dir/home/dashy/pico-sdk/src/common/pico_sync/sem.c.i
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/Tricorder_LTR390.dir/build.make CMakeFiles/Tricorder_LTR390.dir/home/dashy/pico-sdk/src/common/pico_sync/sem.c.i
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/Tricorder_PMSA003I.dir/build.make CMakeFiles/Tricorder_PMSA003I.dir/home/dashy/pico-sdk/src/common/pico_sync/sem.c.i
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Tricorder_TLV493D.dir/build.make CMakeFiles/Tricorder_TLV493D.dir/home/dashy/pico-sdk/src/common/pico_sync/sem.c.i
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Tricorder_SCD41.dir/build.make CMakeFiles/Tricorder_SCD41.dir/home/dashy/pico-sdk/src/common/pico_sync/sem.c.i
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/sensor_manager.dir/build.make CMakeFiles/sensor_manager.dir/home/dashy/pico-sdk/src/common/pico_sync/sem.c.i
 .PHONY : home/dashy/pico-sdk/src/common/pico_sync/sem.c.i
 
@@ -1482,6 +1968,8 @@ home/dashy/pico-sdk/src/common/pico_sync/sem.c.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/Tricorder_BME688.dir/build.make CMakeFiles/Tricorder_BME688.dir/home/dashy/pico-sdk/src/common/pico_sync/sem.c.s
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/Tricorder_LTR390.dir/build.make CMakeFiles/Tricorder_LTR390.dir/home/dashy/pico-sdk/src/common/pico_sync/sem.c.s
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/Tricorder_PMSA003I.dir/build.make CMakeFiles/Tricorder_PMSA003I.dir/home/dashy/pico-sdk/src/common/pico_sync/sem.c.s
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Tricorder_TLV493D.dir/build.make CMakeFiles/Tricorder_TLV493D.dir/home/dashy/pico-sdk/src/common/pico_sync/sem.c.s
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Tricorder_SCD41.dir/build.make CMakeFiles/Tricorder_SCD41.dir/home/dashy/pico-sdk/src/common/pico_sync/sem.c.s
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/sensor_manager.dir/build.make CMakeFiles/sensor_manager.dir/home/dashy/pico-sdk/src/common/pico_sync/sem.c.s
 .PHONY : home/dashy/pico-sdk/src/common/pico_sync/sem.c.s
 
@@ -1495,6 +1983,8 @@ home/dashy/pico-sdk/src/common/pico_time/time.c.obj:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/Tricorder_BME688.dir/build.make CMakeFiles/Tricorder_BME688.dir/home/dashy/pico-sdk/src/common/pico_time/time.c.obj
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/Tricorder_LTR390.dir/build.make CMakeFiles/Tricorder_LTR390.dir/home/dashy/pico-sdk/src/common/pico_time/time.c.obj
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/Tricorder_PMSA003I.dir/build.make CMakeFiles/Tricorder_PMSA003I.dir/home/dashy/pico-sdk/src/common/pico_time/time.c.obj
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Tricorder_TLV493D.dir/build.make CMakeFiles/Tricorder_TLV493D.dir/home/dashy/pico-sdk/src/common/pico_time/time.c.obj
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Tricorder_SCD41.dir/build.make CMakeFiles/Tricorder_SCD41.dir/home/dashy/pico-sdk/src/common/pico_time/time.c.obj
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/sensor_manager.dir/build.make CMakeFiles/sensor_manager.dir/home/dashy/pico-sdk/src/common/pico_time/time.c.obj
 .PHONY : home/dashy/pico-sdk/src/common/pico_time/time.c.obj
 
@@ -1508,6 +1998,8 @@ home/dashy/pico-sdk/src/common/pico_time/time.c.i:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/Tricorder_BME688.dir/build.make CMakeFiles/Tricorder_BME688.dir/home/dashy/pico-sdk/src/common/pico_time/time.c.i
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/Tricorder_LTR390.dir/build.make CMakeFiles/Tricorder_LTR390.dir/home/dashy/pico-sdk/src/common/pico_time/time.c.i
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/Tricorder_PMSA003I.dir/build.make CMakeFiles/Tricorder_PMSA003I.dir/home/dashy/pico-sdk/src/common/pico_time/time.c.i
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Tricorder_TLV493D.dir/build.make CMakeFiles/Tricorder_TLV493D.dir/home/dashy/pico-sdk/src/common/pico_time/time.c.i
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Tricorder_SCD41.dir/build.make CMakeFiles/Tricorder_SCD41.dir/home/dashy/pico-sdk/src/common/pico_time/time.c.i
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/sensor_manager.dir/build.make CMakeFiles/sensor_manager.dir/home/dashy/pico-sdk/src/common/pico_time/time.c.i
 .PHONY : home/dashy/pico-sdk/src/common/pico_time/time.c.i
 
@@ -1521,6 +2013,8 @@ home/dashy/pico-sdk/src/common/pico_time/time.c.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/Tricorder_BME688.dir/build.make CMakeFiles/Tricorder_BME688.dir/home/dashy/pico-sdk/src/common/pico_time/time.c.s
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/Tricorder_LTR390.dir/build.make CMakeFiles/Tricorder_LTR390.dir/home/dashy/pico-sdk/src/common/pico_time/time.c.s
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/Tricorder_PMSA003I.dir/build.make CMakeFiles/Tricorder_PMSA003I.dir/home/dashy/pico-sdk/src/common/pico_time/time.c.s
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Tricorder_TLV493D.dir/build.make CMakeFiles/Tricorder_TLV493D.dir/home/dashy/pico-sdk/src/common/pico_time/time.c.s
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Tricorder_SCD41.dir/build.make CMakeFiles/Tricorder_SCD41.dir/home/dashy/pico-sdk/src/common/pico_time/time.c.s
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/sensor_manager.dir/build.make CMakeFiles/sensor_manager.dir/home/dashy/pico-sdk/src/common/pico_time/time.c.s
 .PHONY : home/dashy/pico-sdk/src/common/pico_time/time.c.s
 
@@ -1534,6 +2028,8 @@ home/dashy/pico-sdk/src/common/pico_time/timeout_helper.c.obj:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/Tricorder_BME688.dir/build.make CMakeFiles/Tricorder_BME688.dir/home/dashy/pico-sdk/src/common/pico_time/timeout_helper.c.obj
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/Tricorder_LTR390.dir/build.make CMakeFiles/Tricorder_LTR390.dir/home/dashy/pico-sdk/src/common/pico_time/timeout_helper.c.obj
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/Tricorder_PMSA003I.dir/build.make CMakeFiles/Tricorder_PMSA003I.dir/home/dashy/pico-sdk/src/common/pico_time/timeout_helper.c.obj
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Tricorder_TLV493D.dir/build.make CMakeFiles/Tricorder_TLV493D.dir/home/dashy/pico-sdk/src/common/pico_time/timeout_helper.c.obj
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Tricorder_SCD41.dir/build.make CMakeFiles/Tricorder_SCD41.dir/home/dashy/pico-sdk/src/common/pico_time/timeout_helper.c.obj
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/sensor_manager.dir/build.make CMakeFiles/sensor_manager.dir/home/dashy/pico-sdk/src/common/pico_time/timeout_helper.c.obj
 .PHONY : home/dashy/pico-sdk/src/common/pico_time/timeout_helper.c.obj
 
@@ -1547,6 +2043,8 @@ home/dashy/pico-sdk/src/common/pico_time/timeout_helper.c.i:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/Tricorder_BME688.dir/build.make CMakeFiles/Tricorder_BME688.dir/home/dashy/pico-sdk/src/common/pico_time/timeout_helper.c.i
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/Tricorder_LTR390.dir/build.make CMakeFiles/Tricorder_LTR390.dir/home/dashy/pico-sdk/src/common/pico_time/timeout_helper.c.i
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/Tricorder_PMSA003I.dir/build.make CMakeFiles/Tricorder_PMSA003I.dir/home/dashy/pico-sdk/src/common/pico_time/timeout_helper.c.i
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Tricorder_TLV493D.dir/build.make CMakeFiles/Tricorder_TLV493D.dir/home/dashy/pico-sdk/src/common/pico_time/timeout_helper.c.i
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Tricorder_SCD41.dir/build.make CMakeFiles/Tricorder_SCD41.dir/home/dashy/pico-sdk/src/common/pico_time/timeout_helper.c.i
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/sensor_manager.dir/build.make CMakeFiles/sensor_manager.dir/home/dashy/pico-sdk/src/common/pico_time/timeout_helper.c.i
 .PHONY : home/dashy/pico-sdk/src/common/pico_time/timeout_helper.c.i
 
@@ -1560,6 +2058,8 @@ home/dashy/pico-sdk/src/common/pico_time/timeout_helper.c.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/Tricorder_BME688.dir/build.make CMakeFiles/Tricorder_BME688.dir/home/dashy/pico-sdk/src/common/pico_time/timeout_helper.c.s
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/Tricorder_LTR390.dir/build.make CMakeFiles/Tricorder_LTR390.dir/home/dashy/pico-sdk/src/common/pico_time/timeout_helper.c.s
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/Tricorder_PMSA003I.dir/build.make CMakeFiles/Tricorder_PMSA003I.dir/home/dashy/pico-sdk/src/common/pico_time/timeout_helper.c.s
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Tricorder_TLV493D.dir/build.make CMakeFiles/Tricorder_TLV493D.dir/home/dashy/pico-sdk/src/common/pico_time/timeout_helper.c.s
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Tricorder_SCD41.dir/build.make CMakeFiles/Tricorder_SCD41.dir/home/dashy/pico-sdk/src/common/pico_time/timeout_helper.c.s
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/sensor_manager.dir/build.make CMakeFiles/sensor_manager.dir/home/dashy/pico-sdk/src/common/pico_time/timeout_helper.c.s
 .PHONY : home/dashy/pico-sdk/src/common/pico_time/timeout_helper.c.s
 
@@ -1573,6 +2073,8 @@ home/dashy/pico-sdk/src/common/pico_util/datetime.c.obj:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/Tricorder_BME688.dir/build.make CMakeFiles/Tricorder_BME688.dir/home/dashy/pico-sdk/src/common/pico_util/datetime.c.obj
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/Tricorder_LTR390.dir/build.make CMakeFiles/Tricorder_LTR390.dir/home/dashy/pico-sdk/src/common/pico_util/datetime.c.obj
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/Tricorder_PMSA003I.dir/build.make CMakeFiles/Tricorder_PMSA003I.dir/home/dashy/pico-sdk/src/common/pico_util/datetime.c.obj
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Tricorder_TLV493D.dir/build.make CMakeFiles/Tricorder_TLV493D.dir/home/dashy/pico-sdk/src/common/pico_util/datetime.c.obj
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Tricorder_SCD41.dir/build.make CMakeFiles/Tricorder_SCD41.dir/home/dashy/pico-sdk/src/common/pico_util/datetime.c.obj
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/sensor_manager.dir/build.make CMakeFiles/sensor_manager.dir/home/dashy/pico-sdk/src/common/pico_util/datetime.c.obj
 .PHONY : home/dashy/pico-sdk/src/common/pico_util/datetime.c.obj
 
@@ -1586,6 +2088,8 @@ home/dashy/pico-sdk/src/common/pico_util/datetime.c.i:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/Tricorder_BME688.dir/build.make CMakeFiles/Tricorder_BME688.dir/home/dashy/pico-sdk/src/common/pico_util/datetime.c.i
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/Tricorder_LTR390.dir/build.make CMakeFiles/Tricorder_LTR390.dir/home/dashy/pico-sdk/src/common/pico_util/datetime.c.i
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/Tricorder_PMSA003I.dir/build.make CMakeFiles/Tricorder_PMSA003I.dir/home/dashy/pico-sdk/src/common/pico_util/datetime.c.i
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Tricorder_TLV493D.dir/build.make CMakeFiles/Tricorder_TLV493D.dir/home/dashy/pico-sdk/src/common/pico_util/datetime.c.i
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Tricorder_SCD41.dir/build.make CMakeFiles/Tricorder_SCD41.dir/home/dashy/pico-sdk/src/common/pico_util/datetime.c.i
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/sensor_manager.dir/build.make CMakeFiles/sensor_manager.dir/home/dashy/pico-sdk/src/common/pico_util/datetime.c.i
 .PHONY : home/dashy/pico-sdk/src/common/pico_util/datetime.c.i
 
@@ -1599,6 +2103,8 @@ home/dashy/pico-sdk/src/common/pico_util/datetime.c.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/Tricorder_BME688.dir/build.make CMakeFiles/Tricorder_BME688.dir/home/dashy/pico-sdk/src/common/pico_util/datetime.c.s
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/Tricorder_LTR390.dir/build.make CMakeFiles/Tricorder_LTR390.dir/home/dashy/pico-sdk/src/common/pico_util/datetime.c.s
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/Tricorder_PMSA003I.dir/build.make CMakeFiles/Tricorder_PMSA003I.dir/home/dashy/pico-sdk/src/common/pico_util/datetime.c.s
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Tricorder_TLV493D.dir/build.make CMakeFiles/Tricorder_TLV493D.dir/home/dashy/pico-sdk/src/common/pico_util/datetime.c.s
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Tricorder_SCD41.dir/build.make CMakeFiles/Tricorder_SCD41.dir/home/dashy/pico-sdk/src/common/pico_util/datetime.c.s
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/sensor_manager.dir/build.make CMakeFiles/sensor_manager.dir/home/dashy/pico-sdk/src/common/pico_util/datetime.c.s
 .PHONY : home/dashy/pico-sdk/src/common/pico_util/datetime.c.s
 
@@ -1612,6 +2118,8 @@ home/dashy/pico-sdk/src/common/pico_util/pheap.c.obj:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/Tricorder_BME688.dir/build.make CMakeFiles/Tricorder_BME688.dir/home/dashy/pico-sdk/src/common/pico_util/pheap.c.obj
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/Tricorder_LTR390.dir/build.make CMakeFiles/Tricorder_LTR390.dir/home/dashy/pico-sdk/src/common/pico_util/pheap.c.obj
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/Tricorder_PMSA003I.dir/build.make CMakeFiles/Tricorder_PMSA003I.dir/home/dashy/pico-sdk/src/common/pico_util/pheap.c.obj
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Tricorder_TLV493D.dir/build.make CMakeFiles/Tricorder_TLV493D.dir/home/dashy/pico-sdk/src/common/pico_util/pheap.c.obj
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Tricorder_SCD41.dir/build.make CMakeFiles/Tricorder_SCD41.dir/home/dashy/pico-sdk/src/common/pico_util/pheap.c.obj
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/sensor_manager.dir/build.make CMakeFiles/sensor_manager.dir/home/dashy/pico-sdk/src/common/pico_util/pheap.c.obj
 .PHONY : home/dashy/pico-sdk/src/common/pico_util/pheap.c.obj
 
@@ -1625,6 +2133,8 @@ home/dashy/pico-sdk/src/common/pico_util/pheap.c.i:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/Tricorder_BME688.dir/build.make CMakeFiles/Tricorder_BME688.dir/home/dashy/pico-sdk/src/common/pico_util/pheap.c.i
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/Tricorder_LTR390.dir/build.make CMakeFiles/Tricorder_LTR390.dir/home/dashy/pico-sdk/src/common/pico_util/pheap.c.i
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/Tricorder_PMSA003I.dir/build.make CMakeFiles/Tricorder_PMSA003I.dir/home/dashy/pico-sdk/src/common/pico_util/pheap.c.i
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Tricorder_TLV493D.dir/build.make CMakeFiles/Tricorder_TLV493D.dir/home/dashy/pico-sdk/src/common/pico_util/pheap.c.i
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Tricorder_SCD41.dir/build.make CMakeFiles/Tricorder_SCD41.dir/home/dashy/pico-sdk/src/common/pico_util/pheap.c.i
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/sensor_manager.dir/build.make CMakeFiles/sensor_manager.dir/home/dashy/pico-sdk/src/common/pico_util/pheap.c.i
 .PHONY : home/dashy/pico-sdk/src/common/pico_util/pheap.c.i
 
@@ -1638,6 +2148,8 @@ home/dashy/pico-sdk/src/common/pico_util/pheap.c.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/Tricorder_BME688.dir/build.make CMakeFiles/Tricorder_BME688.dir/home/dashy/pico-sdk/src/common/pico_util/pheap.c.s
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/Tricorder_LTR390.dir/build.make CMakeFiles/Tricorder_LTR390.dir/home/dashy/pico-sdk/src/common/pico_util/pheap.c.s
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/Tricorder_PMSA003I.dir/build.make CMakeFiles/Tricorder_PMSA003I.dir/home/dashy/pico-sdk/src/common/pico_util/pheap.c.s
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Tricorder_TLV493D.dir/build.make CMakeFiles/Tricorder_TLV493D.dir/home/dashy/pico-sdk/src/common/pico_util/pheap.c.s
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Tricorder_SCD41.dir/build.make CMakeFiles/Tricorder_SCD41.dir/home/dashy/pico-sdk/src/common/pico_util/pheap.c.s
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/sensor_manager.dir/build.make CMakeFiles/sensor_manager.dir/home/dashy/pico-sdk/src/common/pico_util/pheap.c.s
 .PHONY : home/dashy/pico-sdk/src/common/pico_util/pheap.c.s
 
@@ -1651,6 +2163,8 @@ home/dashy/pico-sdk/src/common/pico_util/queue.c.obj:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/Tricorder_BME688.dir/build.make CMakeFiles/Tricorder_BME688.dir/home/dashy/pico-sdk/src/common/pico_util/queue.c.obj
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/Tricorder_LTR390.dir/build.make CMakeFiles/Tricorder_LTR390.dir/home/dashy/pico-sdk/src/common/pico_util/queue.c.obj
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/Tricorder_PMSA003I.dir/build.make CMakeFiles/Tricorder_PMSA003I.dir/home/dashy/pico-sdk/src/common/pico_util/queue.c.obj
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Tricorder_TLV493D.dir/build.make CMakeFiles/Tricorder_TLV493D.dir/home/dashy/pico-sdk/src/common/pico_util/queue.c.obj
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Tricorder_SCD41.dir/build.make CMakeFiles/Tricorder_SCD41.dir/home/dashy/pico-sdk/src/common/pico_util/queue.c.obj
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/sensor_manager.dir/build.make CMakeFiles/sensor_manager.dir/home/dashy/pico-sdk/src/common/pico_util/queue.c.obj
 .PHONY : home/dashy/pico-sdk/src/common/pico_util/queue.c.obj
 
@@ -1664,6 +2178,8 @@ home/dashy/pico-sdk/src/common/pico_util/queue.c.i:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/Tricorder_BME688.dir/build.make CMakeFiles/Tricorder_BME688.dir/home/dashy/pico-sdk/src/common/pico_util/queue.c.i
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/Tricorder_LTR390.dir/build.make CMakeFiles/Tricorder_LTR390.dir/home/dashy/pico-sdk/src/common/pico_util/queue.c.i
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/Tricorder_PMSA003I.dir/build.make CMakeFiles/Tricorder_PMSA003I.dir/home/dashy/pico-sdk/src/common/pico_util/queue.c.i
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Tricorder_TLV493D.dir/build.make CMakeFiles/Tricorder_TLV493D.dir/home/dashy/pico-sdk/src/common/pico_util/queue.c.i
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Tricorder_SCD41.dir/build.make CMakeFiles/Tricorder_SCD41.dir/home/dashy/pico-sdk/src/common/pico_util/queue.c.i
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/sensor_manager.dir/build.make CMakeFiles/sensor_manager.dir/home/dashy/pico-sdk/src/common/pico_util/queue.c.i
 .PHONY : home/dashy/pico-sdk/src/common/pico_util/queue.c.i
 
@@ -1677,6 +2193,8 @@ home/dashy/pico-sdk/src/common/pico_util/queue.c.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/Tricorder_BME688.dir/build.make CMakeFiles/Tricorder_BME688.dir/home/dashy/pico-sdk/src/common/pico_util/queue.c.s
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/Tricorder_LTR390.dir/build.make CMakeFiles/Tricorder_LTR390.dir/home/dashy/pico-sdk/src/common/pico_util/queue.c.s
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/Tricorder_PMSA003I.dir/build.make CMakeFiles/Tricorder_PMSA003I.dir/home/dashy/pico-sdk/src/common/pico_util/queue.c.s
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Tricorder_TLV493D.dir/build.make CMakeFiles/Tricorder_TLV493D.dir/home/dashy/pico-sdk/src/common/pico_util/queue.c.s
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Tricorder_SCD41.dir/build.make CMakeFiles/Tricorder_SCD41.dir/home/dashy/pico-sdk/src/common/pico_util/queue.c.s
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/sensor_manager.dir/build.make CMakeFiles/sensor_manager.dir/home/dashy/pico-sdk/src/common/pico_util/queue.c.s
 .PHONY : home/dashy/pico-sdk/src/common/pico_util/queue.c.s
 
@@ -1689,6 +2207,8 @@ home/dashy/pico-sdk/src/rp2_common/hardware_adc/adc.c.obj:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/Tricorder_BME688.dir/build.make CMakeFiles/Tricorder_BME688.dir/home/dashy/pico-sdk/src/rp2_common/hardware_adc/adc.c.obj
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/Tricorder_LTR390.dir/build.make CMakeFiles/Tricorder_LTR390.dir/home/dashy/pico-sdk/src/rp2_common/hardware_adc/adc.c.obj
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/Tricorder_PMSA003I.dir/build.make CMakeFiles/Tricorder_PMSA003I.dir/home/dashy/pico-sdk/src/rp2_common/hardware_adc/adc.c.obj
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Tricorder_TLV493D.dir/build.make CMakeFiles/Tricorder_TLV493D.dir/home/dashy/pico-sdk/src/rp2_common/hardware_adc/adc.c.obj
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Tricorder_SCD41.dir/build.make CMakeFiles/Tricorder_SCD41.dir/home/dashy/pico-sdk/src/rp2_common/hardware_adc/adc.c.obj
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/sensor_manager.dir/build.make CMakeFiles/sensor_manager.dir/home/dashy/pico-sdk/src/rp2_common/hardware_adc/adc.c.obj
 .PHONY : home/dashy/pico-sdk/src/rp2_common/hardware_adc/adc.c.obj
 
@@ -1701,6 +2221,8 @@ home/dashy/pico-sdk/src/rp2_common/hardware_adc/adc.c.i:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/Tricorder_BME688.dir/build.make CMakeFiles/Tricorder_BME688.dir/home/dashy/pico-sdk/src/rp2_common/hardware_adc/adc.c.i
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/Tricorder_LTR390.dir/build.make CMakeFiles/Tricorder_LTR390.dir/home/dashy/pico-sdk/src/rp2_common/hardware_adc/adc.c.i
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/Tricorder_PMSA003I.dir/build.make CMakeFiles/Tricorder_PMSA003I.dir/home/dashy/pico-sdk/src/rp2_common/hardware_adc/adc.c.i
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Tricorder_TLV493D.dir/build.make CMakeFiles/Tricorder_TLV493D.dir/home/dashy/pico-sdk/src/rp2_common/hardware_adc/adc.c.i
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Tricorder_SCD41.dir/build.make CMakeFiles/Tricorder_SCD41.dir/home/dashy/pico-sdk/src/rp2_common/hardware_adc/adc.c.i
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/sensor_manager.dir/build.make CMakeFiles/sensor_manager.dir/home/dashy/pico-sdk/src/rp2_common/hardware_adc/adc.c.i
 .PHONY : home/dashy/pico-sdk/src/rp2_common/hardware_adc/adc.c.i
 
@@ -1713,6 +2235,8 @@ home/dashy/pico-sdk/src/rp2_common/hardware_adc/adc.c.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/Tricorder_BME688.dir/build.make CMakeFiles/Tricorder_BME688.dir/home/dashy/pico-sdk/src/rp2_common/hardware_adc/adc.c.s
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/Tricorder_LTR390.dir/build.make CMakeFiles/Tricorder_LTR390.dir/home/dashy/pico-sdk/src/rp2_common/hardware_adc/adc.c.s
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/Tricorder_PMSA003I.dir/build.make CMakeFiles/Tricorder_PMSA003I.dir/home/dashy/pico-sdk/src/rp2_common/hardware_adc/adc.c.s
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Tricorder_TLV493D.dir/build.make CMakeFiles/Tricorder_TLV493D.dir/home/dashy/pico-sdk/src/rp2_common/hardware_adc/adc.c.s
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Tricorder_SCD41.dir/build.make CMakeFiles/Tricorder_SCD41.dir/home/dashy/pico-sdk/src/rp2_common/hardware_adc/adc.c.s
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/sensor_manager.dir/build.make CMakeFiles/sensor_manager.dir/home/dashy/pico-sdk/src/rp2_common/hardware_adc/adc.c.s
 .PHONY : home/dashy/pico-sdk/src/rp2_common/hardware_adc/adc.c.s
 
@@ -1726,6 +2250,8 @@ home/dashy/pico-sdk/src/rp2_common/hardware_claim/claim.c.obj:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/Tricorder_BME688.dir/build.make CMakeFiles/Tricorder_BME688.dir/home/dashy/pico-sdk/src/rp2_common/hardware_claim/claim.c.obj
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/Tricorder_LTR390.dir/build.make CMakeFiles/Tricorder_LTR390.dir/home/dashy/pico-sdk/src/rp2_common/hardware_claim/claim.c.obj
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/Tricorder_PMSA003I.dir/build.make CMakeFiles/Tricorder_PMSA003I.dir/home/dashy/pico-sdk/src/rp2_common/hardware_claim/claim.c.obj
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Tricorder_TLV493D.dir/build.make CMakeFiles/Tricorder_TLV493D.dir/home/dashy/pico-sdk/src/rp2_common/hardware_claim/claim.c.obj
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Tricorder_SCD41.dir/build.make CMakeFiles/Tricorder_SCD41.dir/home/dashy/pico-sdk/src/rp2_common/hardware_claim/claim.c.obj
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/sensor_manager.dir/build.make CMakeFiles/sensor_manager.dir/home/dashy/pico-sdk/src/rp2_common/hardware_claim/claim.c.obj
 .PHONY : home/dashy/pico-sdk/src/rp2_common/hardware_claim/claim.c.obj
 
@@ -1739,6 +2265,8 @@ home/dashy/pico-sdk/src/rp2_common/hardware_claim/claim.c.i:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/Tricorder_BME688.dir/build.make CMakeFiles/Tricorder_BME688.dir/home/dashy/pico-sdk/src/rp2_common/hardware_claim/claim.c.i
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/Tricorder_LTR390.dir/build.make CMakeFiles/Tricorder_LTR390.dir/home/dashy/pico-sdk/src/rp2_common/hardware_claim/claim.c.i
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/Tricorder_PMSA003I.dir/build.make CMakeFiles/Tricorder_PMSA003I.dir/home/dashy/pico-sdk/src/rp2_common/hardware_claim/claim.c.i
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Tricorder_TLV493D.dir/build.make CMakeFiles/Tricorder_TLV493D.dir/home/dashy/pico-sdk/src/rp2_common/hardware_claim/claim.c.i
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Tricorder_SCD41.dir/build.make CMakeFiles/Tricorder_SCD41.dir/home/dashy/pico-sdk/src/rp2_common/hardware_claim/claim.c.i
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/sensor_manager.dir/build.make CMakeFiles/sensor_manager.dir/home/dashy/pico-sdk/src/rp2_common/hardware_claim/claim.c.i
 .PHONY : home/dashy/pico-sdk/src/rp2_common/hardware_claim/claim.c.i
 
@@ -1752,6 +2280,8 @@ home/dashy/pico-sdk/src/rp2_common/hardware_claim/claim.c.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/Tricorder_BME688.dir/build.make CMakeFiles/Tricorder_BME688.dir/home/dashy/pico-sdk/src/rp2_common/hardware_claim/claim.c.s
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/Tricorder_LTR390.dir/build.make CMakeFiles/Tricorder_LTR390.dir/home/dashy/pico-sdk/src/rp2_common/hardware_claim/claim.c.s
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/Tricorder_PMSA003I.dir/build.make CMakeFiles/Tricorder_PMSA003I.dir/home/dashy/pico-sdk/src/rp2_common/hardware_claim/claim.c.s
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Tricorder_TLV493D.dir/build.make CMakeFiles/Tricorder_TLV493D.dir/home/dashy/pico-sdk/src/rp2_common/hardware_claim/claim.c.s
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Tricorder_SCD41.dir/build.make CMakeFiles/Tricorder_SCD41.dir/home/dashy/pico-sdk/src/rp2_common/hardware_claim/claim.c.s
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/sensor_manager.dir/build.make CMakeFiles/sensor_manager.dir/home/dashy/pico-sdk/src/rp2_common/hardware_claim/claim.c.s
 .PHONY : home/dashy/pico-sdk/src/rp2_common/hardware_claim/claim.c.s
 
@@ -1765,6 +2295,8 @@ home/dashy/pico-sdk/src/rp2_common/hardware_clocks/clocks.c.obj:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/Tricorder_BME688.dir/build.make CMakeFiles/Tricorder_BME688.dir/home/dashy/pico-sdk/src/rp2_common/hardware_clocks/clocks.c.obj
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/Tricorder_LTR390.dir/build.make CMakeFiles/Tricorder_LTR390.dir/home/dashy/pico-sdk/src/rp2_common/hardware_clocks/clocks.c.obj
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/Tricorder_PMSA003I.dir/build.make CMakeFiles/Tricorder_PMSA003I.dir/home/dashy/pico-sdk/src/rp2_common/hardware_clocks/clocks.c.obj
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Tricorder_TLV493D.dir/build.make CMakeFiles/Tricorder_TLV493D.dir/home/dashy/pico-sdk/src/rp2_common/hardware_clocks/clocks.c.obj
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Tricorder_SCD41.dir/build.make CMakeFiles/Tricorder_SCD41.dir/home/dashy/pico-sdk/src/rp2_common/hardware_clocks/clocks.c.obj
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/sensor_manager.dir/build.make CMakeFiles/sensor_manager.dir/home/dashy/pico-sdk/src/rp2_common/hardware_clocks/clocks.c.obj
 .PHONY : home/dashy/pico-sdk/src/rp2_common/hardware_clocks/clocks.c.obj
 
@@ -1778,6 +2310,8 @@ home/dashy/pico-sdk/src/rp2_common/hardware_clocks/clocks.c.i:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/Tricorder_BME688.dir/build.make CMakeFiles/Tricorder_BME688.dir/home/dashy/pico-sdk/src/rp2_common/hardware_clocks/clocks.c.i
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/Tricorder_LTR390.dir/build.make CMakeFiles/Tricorder_LTR390.dir/home/dashy/pico-sdk/src/rp2_common/hardware_clocks/clocks.c.i
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/Tricorder_PMSA003I.dir/build.make CMakeFiles/Tricorder_PMSA003I.dir/home/dashy/pico-sdk/src/rp2_common/hardware_clocks/clocks.c.i
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Tricorder_TLV493D.dir/build.make CMakeFiles/Tricorder_TLV493D.dir/home/dashy/pico-sdk/src/rp2_common/hardware_clocks/clocks.c.i
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Tricorder_SCD41.dir/build.make CMakeFiles/Tricorder_SCD41.dir/home/dashy/pico-sdk/src/rp2_common/hardware_clocks/clocks.c.i
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/sensor_manager.dir/build.make CMakeFiles/sensor_manager.dir/home/dashy/pico-sdk/src/rp2_common/hardware_clocks/clocks.c.i
 .PHONY : home/dashy/pico-sdk/src/rp2_common/hardware_clocks/clocks.c.i
 
@@ -1791,6 +2325,8 @@ home/dashy/pico-sdk/src/rp2_common/hardware_clocks/clocks.c.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/Tricorder_BME688.dir/build.make CMakeFiles/Tricorder_BME688.dir/home/dashy/pico-sdk/src/rp2_common/hardware_clocks/clocks.c.s
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/Tricorder_LTR390.dir/build.make CMakeFiles/Tricorder_LTR390.dir/home/dashy/pico-sdk/src/rp2_common/hardware_clocks/clocks.c.s
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/Tricorder_PMSA003I.dir/build.make CMakeFiles/Tricorder_PMSA003I.dir/home/dashy/pico-sdk/src/rp2_common/hardware_clocks/clocks.c.s
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Tricorder_TLV493D.dir/build.make CMakeFiles/Tricorder_TLV493D.dir/home/dashy/pico-sdk/src/rp2_common/hardware_clocks/clocks.c.s
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Tricorder_SCD41.dir/build.make CMakeFiles/Tricorder_SCD41.dir/home/dashy/pico-sdk/src/rp2_common/hardware_clocks/clocks.c.s
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/sensor_manager.dir/build.make CMakeFiles/sensor_manager.dir/home/dashy/pico-sdk/src/rp2_common/hardware_clocks/clocks.c.s
 .PHONY : home/dashy/pico-sdk/src/rp2_common/hardware_clocks/clocks.c.s
 
@@ -1804,6 +2340,8 @@ home/dashy/pico-sdk/src/rp2_common/hardware_divider/divider.S.obj:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/Tricorder_BME688.dir/build.make CMakeFiles/Tricorder_BME688.dir/home/dashy/pico-sdk/src/rp2_common/hardware_divider/divider.S.obj
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/Tricorder_LTR390.dir/build.make CMakeFiles/Tricorder_LTR390.dir/home/dashy/pico-sdk/src/rp2_common/hardware_divider/divider.S.obj
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/Tricorder_PMSA003I.dir/build.make CMakeFiles/Tricorder_PMSA003I.dir/home/dashy/pico-sdk/src/rp2_common/hardware_divider/divider.S.obj
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Tricorder_TLV493D.dir/build.make CMakeFiles/Tricorder_TLV493D.dir/home/dashy/pico-sdk/src/rp2_common/hardware_divider/divider.S.obj
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Tricorder_SCD41.dir/build.make CMakeFiles/Tricorder_SCD41.dir/home/dashy/pico-sdk/src/rp2_common/hardware_divider/divider.S.obj
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/sensor_manager.dir/build.make CMakeFiles/sensor_manager.dir/home/dashy/pico-sdk/src/rp2_common/hardware_divider/divider.S.obj
 .PHONY : home/dashy/pico-sdk/src/rp2_common/hardware_divider/divider.S.obj
 
@@ -1816,6 +2354,8 @@ home/dashy/pico-sdk/src/rp2_common/hardware_exception/exception.c.obj:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/Tricorder_BME688.dir/build.make CMakeFiles/Tricorder_BME688.dir/home/dashy/pico-sdk/src/rp2_common/hardware_exception/exception.c.obj
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/Tricorder_LTR390.dir/build.make CMakeFiles/Tricorder_LTR390.dir/home/dashy/pico-sdk/src/rp2_common/hardware_exception/exception.c.obj
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/Tricorder_PMSA003I.dir/build.make CMakeFiles/Tricorder_PMSA003I.dir/home/dashy/pico-sdk/src/rp2_common/hardware_exception/exception.c.obj
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Tricorder_TLV493D.dir/build.make CMakeFiles/Tricorder_TLV493D.dir/home/dashy/pico-sdk/src/rp2_common/hardware_exception/exception.c.obj
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Tricorder_SCD41.dir/build.make CMakeFiles/Tricorder_SCD41.dir/home/dashy/pico-sdk/src/rp2_common/hardware_exception/exception.c.obj
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/sensor_manager.dir/build.make CMakeFiles/sensor_manager.dir/home/dashy/pico-sdk/src/rp2_common/hardware_exception/exception.c.obj
 .PHONY : home/dashy/pico-sdk/src/rp2_common/hardware_exception/exception.c.obj
 
@@ -1828,6 +2368,8 @@ home/dashy/pico-sdk/src/rp2_common/hardware_exception/exception.c.i:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/Tricorder_BME688.dir/build.make CMakeFiles/Tricorder_BME688.dir/home/dashy/pico-sdk/src/rp2_common/hardware_exception/exception.c.i
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/Tricorder_LTR390.dir/build.make CMakeFiles/Tricorder_LTR390.dir/home/dashy/pico-sdk/src/rp2_common/hardware_exception/exception.c.i
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/Tricorder_PMSA003I.dir/build.make CMakeFiles/Tricorder_PMSA003I.dir/home/dashy/pico-sdk/src/rp2_common/hardware_exception/exception.c.i
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Tricorder_TLV493D.dir/build.make CMakeFiles/Tricorder_TLV493D.dir/home/dashy/pico-sdk/src/rp2_common/hardware_exception/exception.c.i
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Tricorder_SCD41.dir/build.make CMakeFiles/Tricorder_SCD41.dir/home/dashy/pico-sdk/src/rp2_common/hardware_exception/exception.c.i
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/sensor_manager.dir/build.make CMakeFiles/sensor_manager.dir/home/dashy/pico-sdk/src/rp2_common/hardware_exception/exception.c.i
 .PHONY : home/dashy/pico-sdk/src/rp2_common/hardware_exception/exception.c.i
 
@@ -1840,6 +2382,8 @@ home/dashy/pico-sdk/src/rp2_common/hardware_exception/exception.c.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/Tricorder_BME688.dir/build.make CMakeFiles/Tricorder_BME688.dir/home/dashy/pico-sdk/src/rp2_common/hardware_exception/exception.c.s
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/Tricorder_LTR390.dir/build.make CMakeFiles/Tricorder_LTR390.dir/home/dashy/pico-sdk/src/rp2_common/hardware_exception/exception.c.s
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/Tricorder_PMSA003I.dir/build.make CMakeFiles/Tricorder_PMSA003I.dir/home/dashy/pico-sdk/src/rp2_common/hardware_exception/exception.c.s
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Tricorder_TLV493D.dir/build.make CMakeFiles/Tricorder_TLV493D.dir/home/dashy/pico-sdk/src/rp2_common/hardware_exception/exception.c.s
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Tricorder_SCD41.dir/build.make CMakeFiles/Tricorder_SCD41.dir/home/dashy/pico-sdk/src/rp2_common/hardware_exception/exception.c.s
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/sensor_manager.dir/build.make CMakeFiles/sensor_manager.dir/home/dashy/pico-sdk/src/rp2_common/hardware_exception/exception.c.s
 .PHONY : home/dashy/pico-sdk/src/rp2_common/hardware_exception/exception.c.s
 
@@ -1853,6 +2397,8 @@ home/dashy/pico-sdk/src/rp2_common/hardware_gpio/gpio.c.obj:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/Tricorder_BME688.dir/build.make CMakeFiles/Tricorder_BME688.dir/home/dashy/pico-sdk/src/rp2_common/hardware_gpio/gpio.c.obj
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/Tricorder_LTR390.dir/build.make CMakeFiles/Tricorder_LTR390.dir/home/dashy/pico-sdk/src/rp2_common/hardware_gpio/gpio.c.obj
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/Tricorder_PMSA003I.dir/build.make CMakeFiles/Tricorder_PMSA003I.dir/home/dashy/pico-sdk/src/rp2_common/hardware_gpio/gpio.c.obj
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Tricorder_TLV493D.dir/build.make CMakeFiles/Tricorder_TLV493D.dir/home/dashy/pico-sdk/src/rp2_common/hardware_gpio/gpio.c.obj
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Tricorder_SCD41.dir/build.make CMakeFiles/Tricorder_SCD41.dir/home/dashy/pico-sdk/src/rp2_common/hardware_gpio/gpio.c.obj
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/sensor_manager.dir/build.make CMakeFiles/sensor_manager.dir/home/dashy/pico-sdk/src/rp2_common/hardware_gpio/gpio.c.obj
 .PHONY : home/dashy/pico-sdk/src/rp2_common/hardware_gpio/gpio.c.obj
 
@@ -1866,6 +2412,8 @@ home/dashy/pico-sdk/src/rp2_common/hardware_gpio/gpio.c.i:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/Tricorder_BME688.dir/build.make CMakeFiles/Tricorder_BME688.dir/home/dashy/pico-sdk/src/rp2_common/hardware_gpio/gpio.c.i
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/Tricorder_LTR390.dir/build.make CMakeFiles/Tricorder_LTR390.dir/home/dashy/pico-sdk/src/rp2_common/hardware_gpio/gpio.c.i
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/Tricorder_PMSA003I.dir/build.make CMakeFiles/Tricorder_PMSA003I.dir/home/dashy/pico-sdk/src/rp2_common/hardware_gpio/gpio.c.i
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Tricorder_TLV493D.dir/build.make CMakeFiles/Tricorder_TLV493D.dir/home/dashy/pico-sdk/src/rp2_common/hardware_gpio/gpio.c.i
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Tricorder_SCD41.dir/build.make CMakeFiles/Tricorder_SCD41.dir/home/dashy/pico-sdk/src/rp2_common/hardware_gpio/gpio.c.i
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/sensor_manager.dir/build.make CMakeFiles/sensor_manager.dir/home/dashy/pico-sdk/src/rp2_common/hardware_gpio/gpio.c.i
 .PHONY : home/dashy/pico-sdk/src/rp2_common/hardware_gpio/gpio.c.i
 
@@ -1879,6 +2427,8 @@ home/dashy/pico-sdk/src/rp2_common/hardware_gpio/gpio.c.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/Tricorder_BME688.dir/build.make CMakeFiles/Tricorder_BME688.dir/home/dashy/pico-sdk/src/rp2_common/hardware_gpio/gpio.c.s
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/Tricorder_LTR390.dir/build.make CMakeFiles/Tricorder_LTR390.dir/home/dashy/pico-sdk/src/rp2_common/hardware_gpio/gpio.c.s
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/Tricorder_PMSA003I.dir/build.make CMakeFiles/Tricorder_PMSA003I.dir/home/dashy/pico-sdk/src/rp2_common/hardware_gpio/gpio.c.s
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Tricorder_TLV493D.dir/build.make CMakeFiles/Tricorder_TLV493D.dir/home/dashy/pico-sdk/src/rp2_common/hardware_gpio/gpio.c.s
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Tricorder_SCD41.dir/build.make CMakeFiles/Tricorder_SCD41.dir/home/dashy/pico-sdk/src/rp2_common/hardware_gpio/gpio.c.s
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/sensor_manager.dir/build.make CMakeFiles/sensor_manager.dir/home/dashy/pico-sdk/src/rp2_common/hardware_gpio/gpio.c.s
 .PHONY : home/dashy/pico-sdk/src/rp2_common/hardware_gpio/gpio.c.s
 
@@ -1891,6 +2441,8 @@ home/dashy/pico-sdk/src/rp2_common/hardware_i2c/i2c.c.obj:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/Tricorder_BME688.dir/build.make CMakeFiles/Tricorder_BME688.dir/home/dashy/pico-sdk/src/rp2_common/hardware_i2c/i2c.c.obj
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/Tricorder_LTR390.dir/build.make CMakeFiles/Tricorder_LTR390.dir/home/dashy/pico-sdk/src/rp2_common/hardware_i2c/i2c.c.obj
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/Tricorder_PMSA003I.dir/build.make CMakeFiles/Tricorder_PMSA003I.dir/home/dashy/pico-sdk/src/rp2_common/hardware_i2c/i2c.c.obj
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Tricorder_TLV493D.dir/build.make CMakeFiles/Tricorder_TLV493D.dir/home/dashy/pico-sdk/src/rp2_common/hardware_i2c/i2c.c.obj
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Tricorder_SCD41.dir/build.make CMakeFiles/Tricorder_SCD41.dir/home/dashy/pico-sdk/src/rp2_common/hardware_i2c/i2c.c.obj
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/sensor_manager.dir/build.make CMakeFiles/sensor_manager.dir/home/dashy/pico-sdk/src/rp2_common/hardware_i2c/i2c.c.obj
 .PHONY : home/dashy/pico-sdk/src/rp2_common/hardware_i2c/i2c.c.obj
 
@@ -1903,6 +2455,8 @@ home/dashy/pico-sdk/src/rp2_common/hardware_i2c/i2c.c.i:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/Tricorder_BME688.dir/build.make CMakeFiles/Tricorder_BME688.dir/home/dashy/pico-sdk/src/rp2_common/hardware_i2c/i2c.c.i
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/Tricorder_LTR390.dir/build.make CMakeFiles/Tricorder_LTR390.dir/home/dashy/pico-sdk/src/rp2_common/hardware_i2c/i2c.c.i
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/Tricorder_PMSA003I.dir/build.make CMakeFiles/Tricorder_PMSA003I.dir/home/dashy/pico-sdk/src/rp2_common/hardware_i2c/i2c.c.i
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Tricorder_TLV493D.dir/build.make CMakeFiles/Tricorder_TLV493D.dir/home/dashy/pico-sdk/src/rp2_common/hardware_i2c/i2c.c.i
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Tricorder_SCD41.dir/build.make CMakeFiles/Tricorder_SCD41.dir/home/dashy/pico-sdk/src/rp2_common/hardware_i2c/i2c.c.i
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/sensor_manager.dir/build.make CMakeFiles/sensor_manager.dir/home/dashy/pico-sdk/src/rp2_common/hardware_i2c/i2c.c.i
 .PHONY : home/dashy/pico-sdk/src/rp2_common/hardware_i2c/i2c.c.i
 
@@ -1915,6 +2469,8 @@ home/dashy/pico-sdk/src/rp2_common/hardware_i2c/i2c.c.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/Tricorder_BME688.dir/build.make CMakeFiles/Tricorder_BME688.dir/home/dashy/pico-sdk/src/rp2_common/hardware_i2c/i2c.c.s
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/Tricorder_LTR390.dir/build.make CMakeFiles/Tricorder_LTR390.dir/home/dashy/pico-sdk/src/rp2_common/hardware_i2c/i2c.c.s
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/Tricorder_PMSA003I.dir/build.make CMakeFiles/Tricorder_PMSA003I.dir/home/dashy/pico-sdk/src/rp2_common/hardware_i2c/i2c.c.s
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Tricorder_TLV493D.dir/build.make CMakeFiles/Tricorder_TLV493D.dir/home/dashy/pico-sdk/src/rp2_common/hardware_i2c/i2c.c.s
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Tricorder_SCD41.dir/build.make CMakeFiles/Tricorder_SCD41.dir/home/dashy/pico-sdk/src/rp2_common/hardware_i2c/i2c.c.s
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/sensor_manager.dir/build.make CMakeFiles/sensor_manager.dir/home/dashy/pico-sdk/src/rp2_common/hardware_i2c/i2c.c.s
 .PHONY : home/dashy/pico-sdk/src/rp2_common/hardware_i2c/i2c.c.s
 
@@ -1928,6 +2484,8 @@ home/dashy/pico-sdk/src/rp2_common/hardware_irq/irq.c.obj:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/Tricorder_BME688.dir/build.make CMakeFiles/Tricorder_BME688.dir/home/dashy/pico-sdk/src/rp2_common/hardware_irq/irq.c.obj
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/Tricorder_LTR390.dir/build.make CMakeFiles/Tricorder_LTR390.dir/home/dashy/pico-sdk/src/rp2_common/hardware_irq/irq.c.obj
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/Tricorder_PMSA003I.dir/build.make CMakeFiles/Tricorder_PMSA003I.dir/home/dashy/pico-sdk/src/rp2_common/hardware_irq/irq.c.obj
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Tricorder_TLV493D.dir/build.make CMakeFiles/Tricorder_TLV493D.dir/home/dashy/pico-sdk/src/rp2_common/hardware_irq/irq.c.obj
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Tricorder_SCD41.dir/build.make CMakeFiles/Tricorder_SCD41.dir/home/dashy/pico-sdk/src/rp2_common/hardware_irq/irq.c.obj
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/sensor_manager.dir/build.make CMakeFiles/sensor_manager.dir/home/dashy/pico-sdk/src/rp2_common/hardware_irq/irq.c.obj
 .PHONY : home/dashy/pico-sdk/src/rp2_common/hardware_irq/irq.c.obj
 
@@ -1941,6 +2499,8 @@ home/dashy/pico-sdk/src/rp2_common/hardware_irq/irq.c.i:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/Tricorder_BME688.dir/build.make CMakeFiles/Tricorder_BME688.dir/home/dashy/pico-sdk/src/rp2_common/hardware_irq/irq.c.i
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/Tricorder_LTR390.dir/build.make CMakeFiles/Tricorder_LTR390.dir/home/dashy/pico-sdk/src/rp2_common/hardware_irq/irq.c.i
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/Tricorder_PMSA003I.dir/build.make CMakeFiles/Tricorder_PMSA003I.dir/home/dashy/pico-sdk/src/rp2_common/hardware_irq/irq.c.i
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Tricorder_TLV493D.dir/build.make CMakeFiles/Tricorder_TLV493D.dir/home/dashy/pico-sdk/src/rp2_common/hardware_irq/irq.c.i
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Tricorder_SCD41.dir/build.make CMakeFiles/Tricorder_SCD41.dir/home/dashy/pico-sdk/src/rp2_common/hardware_irq/irq.c.i
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/sensor_manager.dir/build.make CMakeFiles/sensor_manager.dir/home/dashy/pico-sdk/src/rp2_common/hardware_irq/irq.c.i
 .PHONY : home/dashy/pico-sdk/src/rp2_common/hardware_irq/irq.c.i
 
@@ -1954,6 +2514,8 @@ home/dashy/pico-sdk/src/rp2_common/hardware_irq/irq.c.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/Tricorder_BME688.dir/build.make CMakeFiles/Tricorder_BME688.dir/home/dashy/pico-sdk/src/rp2_common/hardware_irq/irq.c.s
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/Tricorder_LTR390.dir/build.make CMakeFiles/Tricorder_LTR390.dir/home/dashy/pico-sdk/src/rp2_common/hardware_irq/irq.c.s
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/Tricorder_PMSA003I.dir/build.make CMakeFiles/Tricorder_PMSA003I.dir/home/dashy/pico-sdk/src/rp2_common/hardware_irq/irq.c.s
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Tricorder_TLV493D.dir/build.make CMakeFiles/Tricorder_TLV493D.dir/home/dashy/pico-sdk/src/rp2_common/hardware_irq/irq.c.s
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Tricorder_SCD41.dir/build.make CMakeFiles/Tricorder_SCD41.dir/home/dashy/pico-sdk/src/rp2_common/hardware_irq/irq.c.s
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/sensor_manager.dir/build.make CMakeFiles/sensor_manager.dir/home/dashy/pico-sdk/src/rp2_common/hardware_irq/irq.c.s
 .PHONY : home/dashy/pico-sdk/src/rp2_common/hardware_irq/irq.c.s
 
@@ -1967,6 +2529,8 @@ home/dashy/pico-sdk/src/rp2_common/hardware_irq/irq_handler_chain.S.obj:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/Tricorder_BME688.dir/build.make CMakeFiles/Tricorder_BME688.dir/home/dashy/pico-sdk/src/rp2_common/hardware_irq/irq_handler_chain.S.obj
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/Tricorder_LTR390.dir/build.make CMakeFiles/Tricorder_LTR390.dir/home/dashy/pico-sdk/src/rp2_common/hardware_irq/irq_handler_chain.S.obj
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/Tricorder_PMSA003I.dir/build.make CMakeFiles/Tricorder_PMSA003I.dir/home/dashy/pico-sdk/src/rp2_common/hardware_irq/irq_handler_chain.S.obj
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Tricorder_TLV493D.dir/build.make CMakeFiles/Tricorder_TLV493D.dir/home/dashy/pico-sdk/src/rp2_common/hardware_irq/irq_handler_chain.S.obj
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Tricorder_SCD41.dir/build.make CMakeFiles/Tricorder_SCD41.dir/home/dashy/pico-sdk/src/rp2_common/hardware_irq/irq_handler_chain.S.obj
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/sensor_manager.dir/build.make CMakeFiles/sensor_manager.dir/home/dashy/pico-sdk/src/rp2_common/hardware_irq/irq_handler_chain.S.obj
 .PHONY : home/dashy/pico-sdk/src/rp2_common/hardware_irq/irq_handler_chain.S.obj
 
@@ -1979,6 +2543,8 @@ home/dashy/pico-sdk/src/rp2_common/hardware_pio/pio.c.obj:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/Tricorder_BME688.dir/build.make CMakeFiles/Tricorder_BME688.dir/home/dashy/pico-sdk/src/rp2_common/hardware_pio/pio.c.obj
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/Tricorder_LTR390.dir/build.make CMakeFiles/Tricorder_LTR390.dir/home/dashy/pico-sdk/src/rp2_common/hardware_pio/pio.c.obj
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/Tricorder_PMSA003I.dir/build.make CMakeFiles/Tricorder_PMSA003I.dir/home/dashy/pico-sdk/src/rp2_common/hardware_pio/pio.c.obj
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Tricorder_TLV493D.dir/build.make CMakeFiles/Tricorder_TLV493D.dir/home/dashy/pico-sdk/src/rp2_common/hardware_pio/pio.c.obj
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Tricorder_SCD41.dir/build.make CMakeFiles/Tricorder_SCD41.dir/home/dashy/pico-sdk/src/rp2_common/hardware_pio/pio.c.obj
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/sensor_manager.dir/build.make CMakeFiles/sensor_manager.dir/home/dashy/pico-sdk/src/rp2_common/hardware_pio/pio.c.obj
 .PHONY : home/dashy/pico-sdk/src/rp2_common/hardware_pio/pio.c.obj
 
@@ -1991,6 +2557,8 @@ home/dashy/pico-sdk/src/rp2_common/hardware_pio/pio.c.i:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/Tricorder_BME688.dir/build.make CMakeFiles/Tricorder_BME688.dir/home/dashy/pico-sdk/src/rp2_common/hardware_pio/pio.c.i
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/Tricorder_LTR390.dir/build.make CMakeFiles/Tricorder_LTR390.dir/home/dashy/pico-sdk/src/rp2_common/hardware_pio/pio.c.i
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/Tricorder_PMSA003I.dir/build.make CMakeFiles/Tricorder_PMSA003I.dir/home/dashy/pico-sdk/src/rp2_common/hardware_pio/pio.c.i
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Tricorder_TLV493D.dir/build.make CMakeFiles/Tricorder_TLV493D.dir/home/dashy/pico-sdk/src/rp2_common/hardware_pio/pio.c.i
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Tricorder_SCD41.dir/build.make CMakeFiles/Tricorder_SCD41.dir/home/dashy/pico-sdk/src/rp2_common/hardware_pio/pio.c.i
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/sensor_manager.dir/build.make CMakeFiles/sensor_manager.dir/home/dashy/pico-sdk/src/rp2_common/hardware_pio/pio.c.i
 .PHONY : home/dashy/pico-sdk/src/rp2_common/hardware_pio/pio.c.i
 
@@ -2003,6 +2571,8 @@ home/dashy/pico-sdk/src/rp2_common/hardware_pio/pio.c.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/Tricorder_BME688.dir/build.make CMakeFiles/Tricorder_BME688.dir/home/dashy/pico-sdk/src/rp2_common/hardware_pio/pio.c.s
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/Tricorder_LTR390.dir/build.make CMakeFiles/Tricorder_LTR390.dir/home/dashy/pico-sdk/src/rp2_common/hardware_pio/pio.c.s
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/Tricorder_PMSA003I.dir/build.make CMakeFiles/Tricorder_PMSA003I.dir/home/dashy/pico-sdk/src/rp2_common/hardware_pio/pio.c.s
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Tricorder_TLV493D.dir/build.make CMakeFiles/Tricorder_TLV493D.dir/home/dashy/pico-sdk/src/rp2_common/hardware_pio/pio.c.s
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Tricorder_SCD41.dir/build.make CMakeFiles/Tricorder_SCD41.dir/home/dashy/pico-sdk/src/rp2_common/hardware_pio/pio.c.s
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/sensor_manager.dir/build.make CMakeFiles/sensor_manager.dir/home/dashy/pico-sdk/src/rp2_common/hardware_pio/pio.c.s
 .PHONY : home/dashy/pico-sdk/src/rp2_common/hardware_pio/pio.c.s
 
@@ -2016,6 +2586,8 @@ home/dashy/pico-sdk/src/rp2_common/hardware_pll/pll.c.obj:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/Tricorder_BME688.dir/build.make CMakeFiles/Tricorder_BME688.dir/home/dashy/pico-sdk/src/rp2_common/hardware_pll/pll.c.obj
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/Tricorder_LTR390.dir/build.make CMakeFiles/Tricorder_LTR390.dir/home/dashy/pico-sdk/src/rp2_common/hardware_pll/pll.c.obj
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/Tricorder_PMSA003I.dir/build.make CMakeFiles/Tricorder_PMSA003I.dir/home/dashy/pico-sdk/src/rp2_common/hardware_pll/pll.c.obj
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Tricorder_TLV493D.dir/build.make CMakeFiles/Tricorder_TLV493D.dir/home/dashy/pico-sdk/src/rp2_common/hardware_pll/pll.c.obj
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Tricorder_SCD41.dir/build.make CMakeFiles/Tricorder_SCD41.dir/home/dashy/pico-sdk/src/rp2_common/hardware_pll/pll.c.obj
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/sensor_manager.dir/build.make CMakeFiles/sensor_manager.dir/home/dashy/pico-sdk/src/rp2_common/hardware_pll/pll.c.obj
 .PHONY : home/dashy/pico-sdk/src/rp2_common/hardware_pll/pll.c.obj
 
@@ -2029,6 +2601,8 @@ home/dashy/pico-sdk/src/rp2_common/hardware_pll/pll.c.i:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/Tricorder_BME688.dir/build.make CMakeFiles/Tricorder_BME688.dir/home/dashy/pico-sdk/src/rp2_common/hardware_pll/pll.c.i
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/Tricorder_LTR390.dir/build.make CMakeFiles/Tricorder_LTR390.dir/home/dashy/pico-sdk/src/rp2_common/hardware_pll/pll.c.i
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/Tricorder_PMSA003I.dir/build.make CMakeFiles/Tricorder_PMSA003I.dir/home/dashy/pico-sdk/src/rp2_common/hardware_pll/pll.c.i
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Tricorder_TLV493D.dir/build.make CMakeFiles/Tricorder_TLV493D.dir/home/dashy/pico-sdk/src/rp2_common/hardware_pll/pll.c.i
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Tricorder_SCD41.dir/build.make CMakeFiles/Tricorder_SCD41.dir/home/dashy/pico-sdk/src/rp2_common/hardware_pll/pll.c.i
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/sensor_manager.dir/build.make CMakeFiles/sensor_manager.dir/home/dashy/pico-sdk/src/rp2_common/hardware_pll/pll.c.i
 .PHONY : home/dashy/pico-sdk/src/rp2_common/hardware_pll/pll.c.i
 
@@ -2042,6 +2616,8 @@ home/dashy/pico-sdk/src/rp2_common/hardware_pll/pll.c.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/Tricorder_BME688.dir/build.make CMakeFiles/Tricorder_BME688.dir/home/dashy/pico-sdk/src/rp2_common/hardware_pll/pll.c.s
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/Tricorder_LTR390.dir/build.make CMakeFiles/Tricorder_LTR390.dir/home/dashy/pico-sdk/src/rp2_common/hardware_pll/pll.c.s
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/Tricorder_PMSA003I.dir/build.make CMakeFiles/Tricorder_PMSA003I.dir/home/dashy/pico-sdk/src/rp2_common/hardware_pll/pll.c.s
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Tricorder_TLV493D.dir/build.make CMakeFiles/Tricorder_TLV493D.dir/home/dashy/pico-sdk/src/rp2_common/hardware_pll/pll.c.s
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Tricorder_SCD41.dir/build.make CMakeFiles/Tricorder_SCD41.dir/home/dashy/pico-sdk/src/rp2_common/hardware_pll/pll.c.s
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/sensor_manager.dir/build.make CMakeFiles/sensor_manager.dir/home/dashy/pico-sdk/src/rp2_common/hardware_pll/pll.c.s
 .PHONY : home/dashy/pico-sdk/src/rp2_common/hardware_pll/pll.c.s
 
@@ -2054,6 +2630,8 @@ home/dashy/pico-sdk/src/rp2_common/hardware_spi/spi.c.obj:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/Tricorder_BME688.dir/build.make CMakeFiles/Tricorder_BME688.dir/home/dashy/pico-sdk/src/rp2_common/hardware_spi/spi.c.obj
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/Tricorder_LTR390.dir/build.make CMakeFiles/Tricorder_LTR390.dir/home/dashy/pico-sdk/src/rp2_common/hardware_spi/spi.c.obj
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/Tricorder_PMSA003I.dir/build.make CMakeFiles/Tricorder_PMSA003I.dir/home/dashy/pico-sdk/src/rp2_common/hardware_spi/spi.c.obj
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Tricorder_TLV493D.dir/build.make CMakeFiles/Tricorder_TLV493D.dir/home/dashy/pico-sdk/src/rp2_common/hardware_spi/spi.c.obj
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Tricorder_SCD41.dir/build.make CMakeFiles/Tricorder_SCD41.dir/home/dashy/pico-sdk/src/rp2_common/hardware_spi/spi.c.obj
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/sensor_manager.dir/build.make CMakeFiles/sensor_manager.dir/home/dashy/pico-sdk/src/rp2_common/hardware_spi/spi.c.obj
 .PHONY : home/dashy/pico-sdk/src/rp2_common/hardware_spi/spi.c.obj
 
@@ -2066,6 +2644,8 @@ home/dashy/pico-sdk/src/rp2_common/hardware_spi/spi.c.i:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/Tricorder_BME688.dir/build.make CMakeFiles/Tricorder_BME688.dir/home/dashy/pico-sdk/src/rp2_common/hardware_spi/spi.c.i
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/Tricorder_LTR390.dir/build.make CMakeFiles/Tricorder_LTR390.dir/home/dashy/pico-sdk/src/rp2_common/hardware_spi/spi.c.i
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/Tricorder_PMSA003I.dir/build.make CMakeFiles/Tricorder_PMSA003I.dir/home/dashy/pico-sdk/src/rp2_common/hardware_spi/spi.c.i
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Tricorder_TLV493D.dir/build.make CMakeFiles/Tricorder_TLV493D.dir/home/dashy/pico-sdk/src/rp2_common/hardware_spi/spi.c.i
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Tricorder_SCD41.dir/build.make CMakeFiles/Tricorder_SCD41.dir/home/dashy/pico-sdk/src/rp2_common/hardware_spi/spi.c.i
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/sensor_manager.dir/build.make CMakeFiles/sensor_manager.dir/home/dashy/pico-sdk/src/rp2_common/hardware_spi/spi.c.i
 .PHONY : home/dashy/pico-sdk/src/rp2_common/hardware_spi/spi.c.i
 
@@ -2078,6 +2658,8 @@ home/dashy/pico-sdk/src/rp2_common/hardware_spi/spi.c.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/Tricorder_BME688.dir/build.make CMakeFiles/Tricorder_BME688.dir/home/dashy/pico-sdk/src/rp2_common/hardware_spi/spi.c.s
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/Tricorder_LTR390.dir/build.make CMakeFiles/Tricorder_LTR390.dir/home/dashy/pico-sdk/src/rp2_common/hardware_spi/spi.c.s
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/Tricorder_PMSA003I.dir/build.make CMakeFiles/Tricorder_PMSA003I.dir/home/dashy/pico-sdk/src/rp2_common/hardware_spi/spi.c.s
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Tricorder_TLV493D.dir/build.make CMakeFiles/Tricorder_TLV493D.dir/home/dashy/pico-sdk/src/rp2_common/hardware_spi/spi.c.s
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Tricorder_SCD41.dir/build.make CMakeFiles/Tricorder_SCD41.dir/home/dashy/pico-sdk/src/rp2_common/hardware_spi/spi.c.s
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/sensor_manager.dir/build.make CMakeFiles/sensor_manager.dir/home/dashy/pico-sdk/src/rp2_common/hardware_spi/spi.c.s
 .PHONY : home/dashy/pico-sdk/src/rp2_common/hardware_spi/spi.c.s
 
@@ -2091,6 +2673,8 @@ home/dashy/pico-sdk/src/rp2_common/hardware_sync/sync.c.obj:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/Tricorder_BME688.dir/build.make CMakeFiles/Tricorder_BME688.dir/home/dashy/pico-sdk/src/rp2_common/hardware_sync/sync.c.obj
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/Tricorder_LTR390.dir/build.make CMakeFiles/Tricorder_LTR390.dir/home/dashy/pico-sdk/src/rp2_common/hardware_sync/sync.c.obj
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/Tricorder_PMSA003I.dir/build.make CMakeFiles/Tricorder_PMSA003I.dir/home/dashy/pico-sdk/src/rp2_common/hardware_sync/sync.c.obj
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Tricorder_TLV493D.dir/build.make CMakeFiles/Tricorder_TLV493D.dir/home/dashy/pico-sdk/src/rp2_common/hardware_sync/sync.c.obj
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Tricorder_SCD41.dir/build.make CMakeFiles/Tricorder_SCD41.dir/home/dashy/pico-sdk/src/rp2_common/hardware_sync/sync.c.obj
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/sensor_manager.dir/build.make CMakeFiles/sensor_manager.dir/home/dashy/pico-sdk/src/rp2_common/hardware_sync/sync.c.obj
 .PHONY : home/dashy/pico-sdk/src/rp2_common/hardware_sync/sync.c.obj
 
@@ -2104,6 +2688,8 @@ home/dashy/pico-sdk/src/rp2_common/hardware_sync/sync.c.i:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/Tricorder_BME688.dir/build.make CMakeFiles/Tricorder_BME688.dir/home/dashy/pico-sdk/src/rp2_common/hardware_sync/sync.c.i
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/Tricorder_LTR390.dir/build.make CMakeFiles/Tricorder_LTR390.dir/home/dashy/pico-sdk/src/rp2_common/hardware_sync/sync.c.i
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/Tricorder_PMSA003I.dir/build.make CMakeFiles/Tricorder_PMSA003I.dir/home/dashy/pico-sdk/src/rp2_common/hardware_sync/sync.c.i
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Tricorder_TLV493D.dir/build.make CMakeFiles/Tricorder_TLV493D.dir/home/dashy/pico-sdk/src/rp2_common/hardware_sync/sync.c.i
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Tricorder_SCD41.dir/build.make CMakeFiles/Tricorder_SCD41.dir/home/dashy/pico-sdk/src/rp2_common/hardware_sync/sync.c.i
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/sensor_manager.dir/build.make CMakeFiles/sensor_manager.dir/home/dashy/pico-sdk/src/rp2_common/hardware_sync/sync.c.i
 .PHONY : home/dashy/pico-sdk/src/rp2_common/hardware_sync/sync.c.i
 
@@ -2117,6 +2703,8 @@ home/dashy/pico-sdk/src/rp2_common/hardware_sync/sync.c.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/Tricorder_BME688.dir/build.make CMakeFiles/Tricorder_BME688.dir/home/dashy/pico-sdk/src/rp2_common/hardware_sync/sync.c.s
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/Tricorder_LTR390.dir/build.make CMakeFiles/Tricorder_LTR390.dir/home/dashy/pico-sdk/src/rp2_common/hardware_sync/sync.c.s
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/Tricorder_PMSA003I.dir/build.make CMakeFiles/Tricorder_PMSA003I.dir/home/dashy/pico-sdk/src/rp2_common/hardware_sync/sync.c.s
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Tricorder_TLV493D.dir/build.make CMakeFiles/Tricorder_TLV493D.dir/home/dashy/pico-sdk/src/rp2_common/hardware_sync/sync.c.s
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Tricorder_SCD41.dir/build.make CMakeFiles/Tricorder_SCD41.dir/home/dashy/pico-sdk/src/rp2_common/hardware_sync/sync.c.s
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/sensor_manager.dir/build.make CMakeFiles/sensor_manager.dir/home/dashy/pico-sdk/src/rp2_common/hardware_sync/sync.c.s
 .PHONY : home/dashy/pico-sdk/src/rp2_common/hardware_sync/sync.c.s
 
@@ -2130,6 +2718,8 @@ home/dashy/pico-sdk/src/rp2_common/hardware_timer/timer.c.obj:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/Tricorder_BME688.dir/build.make CMakeFiles/Tricorder_BME688.dir/home/dashy/pico-sdk/src/rp2_common/hardware_timer/timer.c.obj
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/Tricorder_LTR390.dir/build.make CMakeFiles/Tricorder_LTR390.dir/home/dashy/pico-sdk/src/rp2_common/hardware_timer/timer.c.obj
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/Tricorder_PMSA003I.dir/build.make CMakeFiles/Tricorder_PMSA003I.dir/home/dashy/pico-sdk/src/rp2_common/hardware_timer/timer.c.obj
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Tricorder_TLV493D.dir/build.make CMakeFiles/Tricorder_TLV493D.dir/home/dashy/pico-sdk/src/rp2_common/hardware_timer/timer.c.obj
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Tricorder_SCD41.dir/build.make CMakeFiles/Tricorder_SCD41.dir/home/dashy/pico-sdk/src/rp2_common/hardware_timer/timer.c.obj
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/sensor_manager.dir/build.make CMakeFiles/sensor_manager.dir/home/dashy/pico-sdk/src/rp2_common/hardware_timer/timer.c.obj
 .PHONY : home/dashy/pico-sdk/src/rp2_common/hardware_timer/timer.c.obj
 
@@ -2143,6 +2733,8 @@ home/dashy/pico-sdk/src/rp2_common/hardware_timer/timer.c.i:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/Tricorder_BME688.dir/build.make CMakeFiles/Tricorder_BME688.dir/home/dashy/pico-sdk/src/rp2_common/hardware_timer/timer.c.i
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/Tricorder_LTR390.dir/build.make CMakeFiles/Tricorder_LTR390.dir/home/dashy/pico-sdk/src/rp2_common/hardware_timer/timer.c.i
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/Tricorder_PMSA003I.dir/build.make CMakeFiles/Tricorder_PMSA003I.dir/home/dashy/pico-sdk/src/rp2_common/hardware_timer/timer.c.i
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Tricorder_TLV493D.dir/build.make CMakeFiles/Tricorder_TLV493D.dir/home/dashy/pico-sdk/src/rp2_common/hardware_timer/timer.c.i
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Tricorder_SCD41.dir/build.make CMakeFiles/Tricorder_SCD41.dir/home/dashy/pico-sdk/src/rp2_common/hardware_timer/timer.c.i
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/sensor_manager.dir/build.make CMakeFiles/sensor_manager.dir/home/dashy/pico-sdk/src/rp2_common/hardware_timer/timer.c.i
 .PHONY : home/dashy/pico-sdk/src/rp2_common/hardware_timer/timer.c.i
 
@@ -2156,6 +2748,8 @@ home/dashy/pico-sdk/src/rp2_common/hardware_timer/timer.c.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/Tricorder_BME688.dir/build.make CMakeFiles/Tricorder_BME688.dir/home/dashy/pico-sdk/src/rp2_common/hardware_timer/timer.c.s
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/Tricorder_LTR390.dir/build.make CMakeFiles/Tricorder_LTR390.dir/home/dashy/pico-sdk/src/rp2_common/hardware_timer/timer.c.s
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/Tricorder_PMSA003I.dir/build.make CMakeFiles/Tricorder_PMSA003I.dir/home/dashy/pico-sdk/src/rp2_common/hardware_timer/timer.c.s
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Tricorder_TLV493D.dir/build.make CMakeFiles/Tricorder_TLV493D.dir/home/dashy/pico-sdk/src/rp2_common/hardware_timer/timer.c.s
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Tricorder_SCD41.dir/build.make CMakeFiles/Tricorder_SCD41.dir/home/dashy/pico-sdk/src/rp2_common/hardware_timer/timer.c.s
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/sensor_manager.dir/build.make CMakeFiles/sensor_manager.dir/home/dashy/pico-sdk/src/rp2_common/hardware_timer/timer.c.s
 .PHONY : home/dashy/pico-sdk/src/rp2_common/hardware_timer/timer.c.s
 
@@ -2169,6 +2763,8 @@ home/dashy/pico-sdk/src/rp2_common/hardware_uart/uart.c.obj:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/Tricorder_BME688.dir/build.make CMakeFiles/Tricorder_BME688.dir/home/dashy/pico-sdk/src/rp2_common/hardware_uart/uart.c.obj
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/Tricorder_LTR390.dir/build.make CMakeFiles/Tricorder_LTR390.dir/home/dashy/pico-sdk/src/rp2_common/hardware_uart/uart.c.obj
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/Tricorder_PMSA003I.dir/build.make CMakeFiles/Tricorder_PMSA003I.dir/home/dashy/pico-sdk/src/rp2_common/hardware_uart/uart.c.obj
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Tricorder_TLV493D.dir/build.make CMakeFiles/Tricorder_TLV493D.dir/home/dashy/pico-sdk/src/rp2_common/hardware_uart/uart.c.obj
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Tricorder_SCD41.dir/build.make CMakeFiles/Tricorder_SCD41.dir/home/dashy/pico-sdk/src/rp2_common/hardware_uart/uart.c.obj
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/sensor_manager.dir/build.make CMakeFiles/sensor_manager.dir/home/dashy/pico-sdk/src/rp2_common/hardware_uart/uart.c.obj
 .PHONY : home/dashy/pico-sdk/src/rp2_common/hardware_uart/uart.c.obj
 
@@ -2182,6 +2778,8 @@ home/dashy/pico-sdk/src/rp2_common/hardware_uart/uart.c.i:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/Tricorder_BME688.dir/build.make CMakeFiles/Tricorder_BME688.dir/home/dashy/pico-sdk/src/rp2_common/hardware_uart/uart.c.i
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/Tricorder_LTR390.dir/build.make CMakeFiles/Tricorder_LTR390.dir/home/dashy/pico-sdk/src/rp2_common/hardware_uart/uart.c.i
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/Tricorder_PMSA003I.dir/build.make CMakeFiles/Tricorder_PMSA003I.dir/home/dashy/pico-sdk/src/rp2_common/hardware_uart/uart.c.i
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Tricorder_TLV493D.dir/build.make CMakeFiles/Tricorder_TLV493D.dir/home/dashy/pico-sdk/src/rp2_common/hardware_uart/uart.c.i
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Tricorder_SCD41.dir/build.make CMakeFiles/Tricorder_SCD41.dir/home/dashy/pico-sdk/src/rp2_common/hardware_uart/uart.c.i
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/sensor_manager.dir/build.make CMakeFiles/sensor_manager.dir/home/dashy/pico-sdk/src/rp2_common/hardware_uart/uart.c.i
 .PHONY : home/dashy/pico-sdk/src/rp2_common/hardware_uart/uart.c.i
 
@@ -2195,6 +2793,8 @@ home/dashy/pico-sdk/src/rp2_common/hardware_uart/uart.c.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/Tricorder_BME688.dir/build.make CMakeFiles/Tricorder_BME688.dir/home/dashy/pico-sdk/src/rp2_common/hardware_uart/uart.c.s
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/Tricorder_LTR390.dir/build.make CMakeFiles/Tricorder_LTR390.dir/home/dashy/pico-sdk/src/rp2_common/hardware_uart/uart.c.s
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/Tricorder_PMSA003I.dir/build.make CMakeFiles/Tricorder_PMSA003I.dir/home/dashy/pico-sdk/src/rp2_common/hardware_uart/uart.c.s
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Tricorder_TLV493D.dir/build.make CMakeFiles/Tricorder_TLV493D.dir/home/dashy/pico-sdk/src/rp2_common/hardware_uart/uart.c.s
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Tricorder_SCD41.dir/build.make CMakeFiles/Tricorder_SCD41.dir/home/dashy/pico-sdk/src/rp2_common/hardware_uart/uart.c.s
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/sensor_manager.dir/build.make CMakeFiles/sensor_manager.dir/home/dashy/pico-sdk/src/rp2_common/hardware_uart/uart.c.s
 .PHONY : home/dashy/pico-sdk/src/rp2_common/hardware_uart/uart.c.s
 
@@ -2208,6 +2808,8 @@ home/dashy/pico-sdk/src/rp2_common/hardware_vreg/vreg.c.obj:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/Tricorder_BME688.dir/build.make CMakeFiles/Tricorder_BME688.dir/home/dashy/pico-sdk/src/rp2_common/hardware_vreg/vreg.c.obj
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/Tricorder_LTR390.dir/build.make CMakeFiles/Tricorder_LTR390.dir/home/dashy/pico-sdk/src/rp2_common/hardware_vreg/vreg.c.obj
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/Tricorder_PMSA003I.dir/build.make CMakeFiles/Tricorder_PMSA003I.dir/home/dashy/pico-sdk/src/rp2_common/hardware_vreg/vreg.c.obj
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Tricorder_TLV493D.dir/build.make CMakeFiles/Tricorder_TLV493D.dir/home/dashy/pico-sdk/src/rp2_common/hardware_vreg/vreg.c.obj
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Tricorder_SCD41.dir/build.make CMakeFiles/Tricorder_SCD41.dir/home/dashy/pico-sdk/src/rp2_common/hardware_vreg/vreg.c.obj
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/sensor_manager.dir/build.make CMakeFiles/sensor_manager.dir/home/dashy/pico-sdk/src/rp2_common/hardware_vreg/vreg.c.obj
 .PHONY : home/dashy/pico-sdk/src/rp2_common/hardware_vreg/vreg.c.obj
 
@@ -2221,6 +2823,8 @@ home/dashy/pico-sdk/src/rp2_common/hardware_vreg/vreg.c.i:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/Tricorder_BME688.dir/build.make CMakeFiles/Tricorder_BME688.dir/home/dashy/pico-sdk/src/rp2_common/hardware_vreg/vreg.c.i
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/Tricorder_LTR390.dir/build.make CMakeFiles/Tricorder_LTR390.dir/home/dashy/pico-sdk/src/rp2_common/hardware_vreg/vreg.c.i
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/Tricorder_PMSA003I.dir/build.make CMakeFiles/Tricorder_PMSA003I.dir/home/dashy/pico-sdk/src/rp2_common/hardware_vreg/vreg.c.i
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Tricorder_TLV493D.dir/build.make CMakeFiles/Tricorder_TLV493D.dir/home/dashy/pico-sdk/src/rp2_common/hardware_vreg/vreg.c.i
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Tricorder_SCD41.dir/build.make CMakeFiles/Tricorder_SCD41.dir/home/dashy/pico-sdk/src/rp2_common/hardware_vreg/vreg.c.i
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/sensor_manager.dir/build.make CMakeFiles/sensor_manager.dir/home/dashy/pico-sdk/src/rp2_common/hardware_vreg/vreg.c.i
 .PHONY : home/dashy/pico-sdk/src/rp2_common/hardware_vreg/vreg.c.i
 
@@ -2234,6 +2838,8 @@ home/dashy/pico-sdk/src/rp2_common/hardware_vreg/vreg.c.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/Tricorder_BME688.dir/build.make CMakeFiles/Tricorder_BME688.dir/home/dashy/pico-sdk/src/rp2_common/hardware_vreg/vreg.c.s
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/Tricorder_LTR390.dir/build.make CMakeFiles/Tricorder_LTR390.dir/home/dashy/pico-sdk/src/rp2_common/hardware_vreg/vreg.c.s
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/Tricorder_PMSA003I.dir/build.make CMakeFiles/Tricorder_PMSA003I.dir/home/dashy/pico-sdk/src/rp2_common/hardware_vreg/vreg.c.s
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Tricorder_TLV493D.dir/build.make CMakeFiles/Tricorder_TLV493D.dir/home/dashy/pico-sdk/src/rp2_common/hardware_vreg/vreg.c.s
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Tricorder_SCD41.dir/build.make CMakeFiles/Tricorder_SCD41.dir/home/dashy/pico-sdk/src/rp2_common/hardware_vreg/vreg.c.s
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/sensor_manager.dir/build.make CMakeFiles/sensor_manager.dir/home/dashy/pico-sdk/src/rp2_common/hardware_vreg/vreg.c.s
 .PHONY : home/dashy/pico-sdk/src/rp2_common/hardware_vreg/vreg.c.s
 
@@ -2247,6 +2853,8 @@ home/dashy/pico-sdk/src/rp2_common/hardware_watchdog/watchdog.c.obj:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/Tricorder_BME688.dir/build.make CMakeFiles/Tricorder_BME688.dir/home/dashy/pico-sdk/src/rp2_common/hardware_watchdog/watchdog.c.obj
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/Tricorder_LTR390.dir/build.make CMakeFiles/Tricorder_LTR390.dir/home/dashy/pico-sdk/src/rp2_common/hardware_watchdog/watchdog.c.obj
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/Tricorder_PMSA003I.dir/build.make CMakeFiles/Tricorder_PMSA003I.dir/home/dashy/pico-sdk/src/rp2_common/hardware_watchdog/watchdog.c.obj
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Tricorder_TLV493D.dir/build.make CMakeFiles/Tricorder_TLV493D.dir/home/dashy/pico-sdk/src/rp2_common/hardware_watchdog/watchdog.c.obj
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Tricorder_SCD41.dir/build.make CMakeFiles/Tricorder_SCD41.dir/home/dashy/pico-sdk/src/rp2_common/hardware_watchdog/watchdog.c.obj
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/sensor_manager.dir/build.make CMakeFiles/sensor_manager.dir/home/dashy/pico-sdk/src/rp2_common/hardware_watchdog/watchdog.c.obj
 .PHONY : home/dashy/pico-sdk/src/rp2_common/hardware_watchdog/watchdog.c.obj
 
@@ -2260,6 +2868,8 @@ home/dashy/pico-sdk/src/rp2_common/hardware_watchdog/watchdog.c.i:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/Tricorder_BME688.dir/build.make CMakeFiles/Tricorder_BME688.dir/home/dashy/pico-sdk/src/rp2_common/hardware_watchdog/watchdog.c.i
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/Tricorder_LTR390.dir/build.make CMakeFiles/Tricorder_LTR390.dir/home/dashy/pico-sdk/src/rp2_common/hardware_watchdog/watchdog.c.i
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/Tricorder_PMSA003I.dir/build.make CMakeFiles/Tricorder_PMSA003I.dir/home/dashy/pico-sdk/src/rp2_common/hardware_watchdog/watchdog.c.i
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Tricorder_TLV493D.dir/build.make CMakeFiles/Tricorder_TLV493D.dir/home/dashy/pico-sdk/src/rp2_common/hardware_watchdog/watchdog.c.i
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Tricorder_SCD41.dir/build.make CMakeFiles/Tricorder_SCD41.dir/home/dashy/pico-sdk/src/rp2_common/hardware_watchdog/watchdog.c.i
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/sensor_manager.dir/build.make CMakeFiles/sensor_manager.dir/home/dashy/pico-sdk/src/rp2_common/hardware_watchdog/watchdog.c.i
 .PHONY : home/dashy/pico-sdk/src/rp2_common/hardware_watchdog/watchdog.c.i
 
@@ -2273,6 +2883,8 @@ home/dashy/pico-sdk/src/rp2_common/hardware_watchdog/watchdog.c.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/Tricorder_BME688.dir/build.make CMakeFiles/Tricorder_BME688.dir/home/dashy/pico-sdk/src/rp2_common/hardware_watchdog/watchdog.c.s
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/Tricorder_LTR390.dir/build.make CMakeFiles/Tricorder_LTR390.dir/home/dashy/pico-sdk/src/rp2_common/hardware_watchdog/watchdog.c.s
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/Tricorder_PMSA003I.dir/build.make CMakeFiles/Tricorder_PMSA003I.dir/home/dashy/pico-sdk/src/rp2_common/hardware_watchdog/watchdog.c.s
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Tricorder_TLV493D.dir/build.make CMakeFiles/Tricorder_TLV493D.dir/home/dashy/pico-sdk/src/rp2_common/hardware_watchdog/watchdog.c.s
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Tricorder_SCD41.dir/build.make CMakeFiles/Tricorder_SCD41.dir/home/dashy/pico-sdk/src/rp2_common/hardware_watchdog/watchdog.c.s
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/sensor_manager.dir/build.make CMakeFiles/sensor_manager.dir/home/dashy/pico-sdk/src/rp2_common/hardware_watchdog/watchdog.c.s
 .PHONY : home/dashy/pico-sdk/src/rp2_common/hardware_watchdog/watchdog.c.s
 
@@ -2286,6 +2898,8 @@ home/dashy/pico-sdk/src/rp2_common/hardware_xosc/xosc.c.obj:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/Tricorder_BME688.dir/build.make CMakeFiles/Tricorder_BME688.dir/home/dashy/pico-sdk/src/rp2_common/hardware_xosc/xosc.c.obj
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/Tricorder_LTR390.dir/build.make CMakeFiles/Tricorder_LTR390.dir/home/dashy/pico-sdk/src/rp2_common/hardware_xosc/xosc.c.obj
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/Tricorder_PMSA003I.dir/build.make CMakeFiles/Tricorder_PMSA003I.dir/home/dashy/pico-sdk/src/rp2_common/hardware_xosc/xosc.c.obj
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Tricorder_TLV493D.dir/build.make CMakeFiles/Tricorder_TLV493D.dir/home/dashy/pico-sdk/src/rp2_common/hardware_xosc/xosc.c.obj
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Tricorder_SCD41.dir/build.make CMakeFiles/Tricorder_SCD41.dir/home/dashy/pico-sdk/src/rp2_common/hardware_xosc/xosc.c.obj
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/sensor_manager.dir/build.make CMakeFiles/sensor_manager.dir/home/dashy/pico-sdk/src/rp2_common/hardware_xosc/xosc.c.obj
 .PHONY : home/dashy/pico-sdk/src/rp2_common/hardware_xosc/xosc.c.obj
 
@@ -2299,6 +2913,8 @@ home/dashy/pico-sdk/src/rp2_common/hardware_xosc/xosc.c.i:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/Tricorder_BME688.dir/build.make CMakeFiles/Tricorder_BME688.dir/home/dashy/pico-sdk/src/rp2_common/hardware_xosc/xosc.c.i
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/Tricorder_LTR390.dir/build.make CMakeFiles/Tricorder_LTR390.dir/home/dashy/pico-sdk/src/rp2_common/hardware_xosc/xosc.c.i
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/Tricorder_PMSA003I.dir/build.make CMakeFiles/Tricorder_PMSA003I.dir/home/dashy/pico-sdk/src/rp2_common/hardware_xosc/xosc.c.i
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Tricorder_TLV493D.dir/build.make CMakeFiles/Tricorder_TLV493D.dir/home/dashy/pico-sdk/src/rp2_common/hardware_xosc/xosc.c.i
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Tricorder_SCD41.dir/build.make CMakeFiles/Tricorder_SCD41.dir/home/dashy/pico-sdk/src/rp2_common/hardware_xosc/xosc.c.i
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/sensor_manager.dir/build.make CMakeFiles/sensor_manager.dir/home/dashy/pico-sdk/src/rp2_common/hardware_xosc/xosc.c.i
 .PHONY : home/dashy/pico-sdk/src/rp2_common/hardware_xosc/xosc.c.i
 
@@ -2312,6 +2928,8 @@ home/dashy/pico-sdk/src/rp2_common/hardware_xosc/xosc.c.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/Tricorder_BME688.dir/build.make CMakeFiles/Tricorder_BME688.dir/home/dashy/pico-sdk/src/rp2_common/hardware_xosc/xosc.c.s
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/Tricorder_LTR390.dir/build.make CMakeFiles/Tricorder_LTR390.dir/home/dashy/pico-sdk/src/rp2_common/hardware_xosc/xosc.c.s
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/Tricorder_PMSA003I.dir/build.make CMakeFiles/Tricorder_PMSA003I.dir/home/dashy/pico-sdk/src/rp2_common/hardware_xosc/xosc.c.s
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Tricorder_TLV493D.dir/build.make CMakeFiles/Tricorder_TLV493D.dir/home/dashy/pico-sdk/src/rp2_common/hardware_xosc/xosc.c.s
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Tricorder_SCD41.dir/build.make CMakeFiles/Tricorder_SCD41.dir/home/dashy/pico-sdk/src/rp2_common/hardware_xosc/xosc.c.s
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/sensor_manager.dir/build.make CMakeFiles/sensor_manager.dir/home/dashy/pico-sdk/src/rp2_common/hardware_xosc/xosc.c.s
 .PHONY : home/dashy/pico-sdk/src/rp2_common/hardware_xosc/xosc.c.s
 
@@ -2325,6 +2943,8 @@ home/dashy/pico-sdk/src/rp2_common/pico_bit_ops/bit_ops_aeabi.S.obj:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/Tricorder_BME688.dir/build.make CMakeFiles/Tricorder_BME688.dir/home/dashy/pico-sdk/src/rp2_common/pico_bit_ops/bit_ops_aeabi.S.obj
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/Tricorder_LTR390.dir/build.make CMakeFiles/Tricorder_LTR390.dir/home/dashy/pico-sdk/src/rp2_common/pico_bit_ops/bit_ops_aeabi.S.obj
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/Tricorder_PMSA003I.dir/build.make CMakeFiles/Tricorder_PMSA003I.dir/home/dashy/pico-sdk/src/rp2_common/pico_bit_ops/bit_ops_aeabi.S.obj
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Tricorder_TLV493D.dir/build.make CMakeFiles/Tricorder_TLV493D.dir/home/dashy/pico-sdk/src/rp2_common/pico_bit_ops/bit_ops_aeabi.S.obj
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Tricorder_SCD41.dir/build.make CMakeFiles/Tricorder_SCD41.dir/home/dashy/pico-sdk/src/rp2_common/pico_bit_ops/bit_ops_aeabi.S.obj
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/sensor_manager.dir/build.make CMakeFiles/sensor_manager.dir/home/dashy/pico-sdk/src/rp2_common/pico_bit_ops/bit_ops_aeabi.S.obj
 .PHONY : home/dashy/pico-sdk/src/rp2_common/pico_bit_ops/bit_ops_aeabi.S.obj
 
@@ -2338,6 +2958,8 @@ home/dashy/pico-sdk/src/rp2_common/pico_bootrom/bootrom.c.obj:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/Tricorder_BME688.dir/build.make CMakeFiles/Tricorder_BME688.dir/home/dashy/pico-sdk/src/rp2_common/pico_bootrom/bootrom.c.obj
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/Tricorder_LTR390.dir/build.make CMakeFiles/Tricorder_LTR390.dir/home/dashy/pico-sdk/src/rp2_common/pico_bootrom/bootrom.c.obj
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/Tricorder_PMSA003I.dir/build.make CMakeFiles/Tricorder_PMSA003I.dir/home/dashy/pico-sdk/src/rp2_common/pico_bootrom/bootrom.c.obj
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Tricorder_TLV493D.dir/build.make CMakeFiles/Tricorder_TLV493D.dir/home/dashy/pico-sdk/src/rp2_common/pico_bootrom/bootrom.c.obj
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Tricorder_SCD41.dir/build.make CMakeFiles/Tricorder_SCD41.dir/home/dashy/pico-sdk/src/rp2_common/pico_bootrom/bootrom.c.obj
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/sensor_manager.dir/build.make CMakeFiles/sensor_manager.dir/home/dashy/pico-sdk/src/rp2_common/pico_bootrom/bootrom.c.obj
 .PHONY : home/dashy/pico-sdk/src/rp2_common/pico_bootrom/bootrom.c.obj
 
@@ -2351,6 +2973,8 @@ home/dashy/pico-sdk/src/rp2_common/pico_bootrom/bootrom.c.i:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/Tricorder_BME688.dir/build.make CMakeFiles/Tricorder_BME688.dir/home/dashy/pico-sdk/src/rp2_common/pico_bootrom/bootrom.c.i
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/Tricorder_LTR390.dir/build.make CMakeFiles/Tricorder_LTR390.dir/home/dashy/pico-sdk/src/rp2_common/pico_bootrom/bootrom.c.i
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/Tricorder_PMSA003I.dir/build.make CMakeFiles/Tricorder_PMSA003I.dir/home/dashy/pico-sdk/src/rp2_common/pico_bootrom/bootrom.c.i
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Tricorder_TLV493D.dir/build.make CMakeFiles/Tricorder_TLV493D.dir/home/dashy/pico-sdk/src/rp2_common/pico_bootrom/bootrom.c.i
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Tricorder_SCD41.dir/build.make CMakeFiles/Tricorder_SCD41.dir/home/dashy/pico-sdk/src/rp2_common/pico_bootrom/bootrom.c.i
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/sensor_manager.dir/build.make CMakeFiles/sensor_manager.dir/home/dashy/pico-sdk/src/rp2_common/pico_bootrom/bootrom.c.i
 .PHONY : home/dashy/pico-sdk/src/rp2_common/pico_bootrom/bootrom.c.i
 
@@ -2364,6 +2988,8 @@ home/dashy/pico-sdk/src/rp2_common/pico_bootrom/bootrom.c.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/Tricorder_BME688.dir/build.make CMakeFiles/Tricorder_BME688.dir/home/dashy/pico-sdk/src/rp2_common/pico_bootrom/bootrom.c.s
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/Tricorder_LTR390.dir/build.make CMakeFiles/Tricorder_LTR390.dir/home/dashy/pico-sdk/src/rp2_common/pico_bootrom/bootrom.c.s
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/Tricorder_PMSA003I.dir/build.make CMakeFiles/Tricorder_PMSA003I.dir/home/dashy/pico-sdk/src/rp2_common/pico_bootrom/bootrom.c.s
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Tricorder_TLV493D.dir/build.make CMakeFiles/Tricorder_TLV493D.dir/home/dashy/pico-sdk/src/rp2_common/pico_bootrom/bootrom.c.s
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Tricorder_SCD41.dir/build.make CMakeFiles/Tricorder_SCD41.dir/home/dashy/pico-sdk/src/rp2_common/pico_bootrom/bootrom.c.s
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/sensor_manager.dir/build.make CMakeFiles/sensor_manager.dir/home/dashy/pico-sdk/src/rp2_common/pico_bootrom/bootrom.c.s
 .PHONY : home/dashy/pico-sdk/src/rp2_common/pico_bootrom/bootrom.c.s
 
@@ -2377,6 +3003,8 @@ home/dashy/pico-sdk/src/rp2_common/pico_divider/divider.S.obj:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/Tricorder_BME688.dir/build.make CMakeFiles/Tricorder_BME688.dir/home/dashy/pico-sdk/src/rp2_common/pico_divider/divider.S.obj
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/Tricorder_LTR390.dir/build.make CMakeFiles/Tricorder_LTR390.dir/home/dashy/pico-sdk/src/rp2_common/pico_divider/divider.S.obj
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/Tricorder_PMSA003I.dir/build.make CMakeFiles/Tricorder_PMSA003I.dir/home/dashy/pico-sdk/src/rp2_common/pico_divider/divider.S.obj
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Tricorder_TLV493D.dir/build.make CMakeFiles/Tricorder_TLV493D.dir/home/dashy/pico-sdk/src/rp2_common/pico_divider/divider.S.obj
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Tricorder_SCD41.dir/build.make CMakeFiles/Tricorder_SCD41.dir/home/dashy/pico-sdk/src/rp2_common/pico_divider/divider.S.obj
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/sensor_manager.dir/build.make CMakeFiles/sensor_manager.dir/home/dashy/pico-sdk/src/rp2_common/pico_divider/divider.S.obj
 .PHONY : home/dashy/pico-sdk/src/rp2_common/pico_divider/divider.S.obj
 
@@ -2390,6 +3018,8 @@ home/dashy/pico-sdk/src/rp2_common/pico_double/double_aeabi.S.obj:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/Tricorder_BME688.dir/build.make CMakeFiles/Tricorder_BME688.dir/home/dashy/pico-sdk/src/rp2_common/pico_double/double_aeabi.S.obj
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/Tricorder_LTR390.dir/build.make CMakeFiles/Tricorder_LTR390.dir/home/dashy/pico-sdk/src/rp2_common/pico_double/double_aeabi.S.obj
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/Tricorder_PMSA003I.dir/build.make CMakeFiles/Tricorder_PMSA003I.dir/home/dashy/pico-sdk/src/rp2_common/pico_double/double_aeabi.S.obj
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Tricorder_TLV493D.dir/build.make CMakeFiles/Tricorder_TLV493D.dir/home/dashy/pico-sdk/src/rp2_common/pico_double/double_aeabi.S.obj
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Tricorder_SCD41.dir/build.make CMakeFiles/Tricorder_SCD41.dir/home/dashy/pico-sdk/src/rp2_common/pico_double/double_aeabi.S.obj
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/sensor_manager.dir/build.make CMakeFiles/sensor_manager.dir/home/dashy/pico-sdk/src/rp2_common/pico_double/double_aeabi.S.obj
 .PHONY : home/dashy/pico-sdk/src/rp2_common/pico_double/double_aeabi.S.obj
 
@@ -2403,6 +3033,8 @@ home/dashy/pico-sdk/src/rp2_common/pico_double/double_init_rom.c.obj:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/Tricorder_BME688.dir/build.make CMakeFiles/Tricorder_BME688.dir/home/dashy/pico-sdk/src/rp2_common/pico_double/double_init_rom.c.obj
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/Tricorder_LTR390.dir/build.make CMakeFiles/Tricorder_LTR390.dir/home/dashy/pico-sdk/src/rp2_common/pico_double/double_init_rom.c.obj
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/Tricorder_PMSA003I.dir/build.make CMakeFiles/Tricorder_PMSA003I.dir/home/dashy/pico-sdk/src/rp2_common/pico_double/double_init_rom.c.obj
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Tricorder_TLV493D.dir/build.make CMakeFiles/Tricorder_TLV493D.dir/home/dashy/pico-sdk/src/rp2_common/pico_double/double_init_rom.c.obj
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Tricorder_SCD41.dir/build.make CMakeFiles/Tricorder_SCD41.dir/home/dashy/pico-sdk/src/rp2_common/pico_double/double_init_rom.c.obj
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/sensor_manager.dir/build.make CMakeFiles/sensor_manager.dir/home/dashy/pico-sdk/src/rp2_common/pico_double/double_init_rom.c.obj
 .PHONY : home/dashy/pico-sdk/src/rp2_common/pico_double/double_init_rom.c.obj
 
@@ -2416,6 +3048,8 @@ home/dashy/pico-sdk/src/rp2_common/pico_double/double_init_rom.c.i:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/Tricorder_BME688.dir/build.make CMakeFiles/Tricorder_BME688.dir/home/dashy/pico-sdk/src/rp2_common/pico_double/double_init_rom.c.i
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/Tricorder_LTR390.dir/build.make CMakeFiles/Tricorder_LTR390.dir/home/dashy/pico-sdk/src/rp2_common/pico_double/double_init_rom.c.i
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/Tricorder_PMSA003I.dir/build.make CMakeFiles/Tricorder_PMSA003I.dir/home/dashy/pico-sdk/src/rp2_common/pico_double/double_init_rom.c.i
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Tricorder_TLV493D.dir/build.make CMakeFiles/Tricorder_TLV493D.dir/home/dashy/pico-sdk/src/rp2_common/pico_double/double_init_rom.c.i
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Tricorder_SCD41.dir/build.make CMakeFiles/Tricorder_SCD41.dir/home/dashy/pico-sdk/src/rp2_common/pico_double/double_init_rom.c.i
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/sensor_manager.dir/build.make CMakeFiles/sensor_manager.dir/home/dashy/pico-sdk/src/rp2_common/pico_double/double_init_rom.c.i
 .PHONY : home/dashy/pico-sdk/src/rp2_common/pico_double/double_init_rom.c.i
 
@@ -2429,6 +3063,8 @@ home/dashy/pico-sdk/src/rp2_common/pico_double/double_init_rom.c.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/Tricorder_BME688.dir/build.make CMakeFiles/Tricorder_BME688.dir/home/dashy/pico-sdk/src/rp2_common/pico_double/double_init_rom.c.s
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/Tricorder_LTR390.dir/build.make CMakeFiles/Tricorder_LTR390.dir/home/dashy/pico-sdk/src/rp2_common/pico_double/double_init_rom.c.s
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/Tricorder_PMSA003I.dir/build.make CMakeFiles/Tricorder_PMSA003I.dir/home/dashy/pico-sdk/src/rp2_common/pico_double/double_init_rom.c.s
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Tricorder_TLV493D.dir/build.make CMakeFiles/Tricorder_TLV493D.dir/home/dashy/pico-sdk/src/rp2_common/pico_double/double_init_rom.c.s
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Tricorder_SCD41.dir/build.make CMakeFiles/Tricorder_SCD41.dir/home/dashy/pico-sdk/src/rp2_common/pico_double/double_init_rom.c.s
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/sensor_manager.dir/build.make CMakeFiles/sensor_manager.dir/home/dashy/pico-sdk/src/rp2_common/pico_double/double_init_rom.c.s
 .PHONY : home/dashy/pico-sdk/src/rp2_common/pico_double/double_init_rom.c.s
 
@@ -2442,6 +3078,8 @@ home/dashy/pico-sdk/src/rp2_common/pico_double/double_math.c.obj:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/Tricorder_BME688.dir/build.make CMakeFiles/Tricorder_BME688.dir/home/dashy/pico-sdk/src/rp2_common/pico_double/double_math.c.obj
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/Tricorder_LTR390.dir/build.make CMakeFiles/Tricorder_LTR390.dir/home/dashy/pico-sdk/src/rp2_common/pico_double/double_math.c.obj
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/Tricorder_PMSA003I.dir/build.make CMakeFiles/Tricorder_PMSA003I.dir/home/dashy/pico-sdk/src/rp2_common/pico_double/double_math.c.obj
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Tricorder_TLV493D.dir/build.make CMakeFiles/Tricorder_TLV493D.dir/home/dashy/pico-sdk/src/rp2_common/pico_double/double_math.c.obj
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Tricorder_SCD41.dir/build.make CMakeFiles/Tricorder_SCD41.dir/home/dashy/pico-sdk/src/rp2_common/pico_double/double_math.c.obj
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/sensor_manager.dir/build.make CMakeFiles/sensor_manager.dir/home/dashy/pico-sdk/src/rp2_common/pico_double/double_math.c.obj
 .PHONY : home/dashy/pico-sdk/src/rp2_common/pico_double/double_math.c.obj
 
@@ -2455,6 +3093,8 @@ home/dashy/pico-sdk/src/rp2_common/pico_double/double_math.c.i:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/Tricorder_BME688.dir/build.make CMakeFiles/Tricorder_BME688.dir/home/dashy/pico-sdk/src/rp2_common/pico_double/double_math.c.i
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/Tricorder_LTR390.dir/build.make CMakeFiles/Tricorder_LTR390.dir/home/dashy/pico-sdk/src/rp2_common/pico_double/double_math.c.i
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/Tricorder_PMSA003I.dir/build.make CMakeFiles/Tricorder_PMSA003I.dir/home/dashy/pico-sdk/src/rp2_common/pico_double/double_math.c.i
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Tricorder_TLV493D.dir/build.make CMakeFiles/Tricorder_TLV493D.dir/home/dashy/pico-sdk/src/rp2_common/pico_double/double_math.c.i
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Tricorder_SCD41.dir/build.make CMakeFiles/Tricorder_SCD41.dir/home/dashy/pico-sdk/src/rp2_common/pico_double/double_math.c.i
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/sensor_manager.dir/build.make CMakeFiles/sensor_manager.dir/home/dashy/pico-sdk/src/rp2_common/pico_double/double_math.c.i
 .PHONY : home/dashy/pico-sdk/src/rp2_common/pico_double/double_math.c.i
 
@@ -2468,6 +3108,8 @@ home/dashy/pico-sdk/src/rp2_common/pico_double/double_math.c.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/Tricorder_BME688.dir/build.make CMakeFiles/Tricorder_BME688.dir/home/dashy/pico-sdk/src/rp2_common/pico_double/double_math.c.s
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/Tricorder_LTR390.dir/build.make CMakeFiles/Tricorder_LTR390.dir/home/dashy/pico-sdk/src/rp2_common/pico_double/double_math.c.s
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/Tricorder_PMSA003I.dir/build.make CMakeFiles/Tricorder_PMSA003I.dir/home/dashy/pico-sdk/src/rp2_common/pico_double/double_math.c.s
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Tricorder_TLV493D.dir/build.make CMakeFiles/Tricorder_TLV493D.dir/home/dashy/pico-sdk/src/rp2_common/pico_double/double_math.c.s
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Tricorder_SCD41.dir/build.make CMakeFiles/Tricorder_SCD41.dir/home/dashy/pico-sdk/src/rp2_common/pico_double/double_math.c.s
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/sensor_manager.dir/build.make CMakeFiles/sensor_manager.dir/home/dashy/pico-sdk/src/rp2_common/pico_double/double_math.c.s
 .PHONY : home/dashy/pico-sdk/src/rp2_common/pico_double/double_math.c.s
 
@@ -2481,6 +3123,8 @@ home/dashy/pico-sdk/src/rp2_common/pico_double/double_v1_rom_shim.S.obj:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/Tricorder_BME688.dir/build.make CMakeFiles/Tricorder_BME688.dir/home/dashy/pico-sdk/src/rp2_common/pico_double/double_v1_rom_shim.S.obj
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/Tricorder_LTR390.dir/build.make CMakeFiles/Tricorder_LTR390.dir/home/dashy/pico-sdk/src/rp2_common/pico_double/double_v1_rom_shim.S.obj
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/Tricorder_PMSA003I.dir/build.make CMakeFiles/Tricorder_PMSA003I.dir/home/dashy/pico-sdk/src/rp2_common/pico_double/double_v1_rom_shim.S.obj
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Tricorder_TLV493D.dir/build.make CMakeFiles/Tricorder_TLV493D.dir/home/dashy/pico-sdk/src/rp2_common/pico_double/double_v1_rom_shim.S.obj
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Tricorder_SCD41.dir/build.make CMakeFiles/Tricorder_SCD41.dir/home/dashy/pico-sdk/src/rp2_common/pico_double/double_v1_rom_shim.S.obj
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/sensor_manager.dir/build.make CMakeFiles/sensor_manager.dir/home/dashy/pico-sdk/src/rp2_common/pico_double/double_v1_rom_shim.S.obj
 .PHONY : home/dashy/pico-sdk/src/rp2_common/pico_double/double_v1_rom_shim.S.obj
 
@@ -2494,6 +3138,8 @@ home/dashy/pico-sdk/src/rp2_common/pico_float/float_aeabi.S.obj:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/Tricorder_BME688.dir/build.make CMakeFiles/Tricorder_BME688.dir/home/dashy/pico-sdk/src/rp2_common/pico_float/float_aeabi.S.obj
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/Tricorder_LTR390.dir/build.make CMakeFiles/Tricorder_LTR390.dir/home/dashy/pico-sdk/src/rp2_common/pico_float/float_aeabi.S.obj
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/Tricorder_PMSA003I.dir/build.make CMakeFiles/Tricorder_PMSA003I.dir/home/dashy/pico-sdk/src/rp2_common/pico_float/float_aeabi.S.obj
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Tricorder_TLV493D.dir/build.make CMakeFiles/Tricorder_TLV493D.dir/home/dashy/pico-sdk/src/rp2_common/pico_float/float_aeabi.S.obj
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Tricorder_SCD41.dir/build.make CMakeFiles/Tricorder_SCD41.dir/home/dashy/pico-sdk/src/rp2_common/pico_float/float_aeabi.S.obj
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/sensor_manager.dir/build.make CMakeFiles/sensor_manager.dir/home/dashy/pico-sdk/src/rp2_common/pico_float/float_aeabi.S.obj
 .PHONY : home/dashy/pico-sdk/src/rp2_common/pico_float/float_aeabi.S.obj
 
@@ -2507,6 +3153,8 @@ home/dashy/pico-sdk/src/rp2_common/pico_float/float_init_rom.c.obj:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/Tricorder_BME688.dir/build.make CMakeFiles/Tricorder_BME688.dir/home/dashy/pico-sdk/src/rp2_common/pico_float/float_init_rom.c.obj
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/Tricorder_LTR390.dir/build.make CMakeFiles/Tricorder_LTR390.dir/home/dashy/pico-sdk/src/rp2_common/pico_float/float_init_rom.c.obj
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/Tricorder_PMSA003I.dir/build.make CMakeFiles/Tricorder_PMSA003I.dir/home/dashy/pico-sdk/src/rp2_common/pico_float/float_init_rom.c.obj
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Tricorder_TLV493D.dir/build.make CMakeFiles/Tricorder_TLV493D.dir/home/dashy/pico-sdk/src/rp2_common/pico_float/float_init_rom.c.obj
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Tricorder_SCD41.dir/build.make CMakeFiles/Tricorder_SCD41.dir/home/dashy/pico-sdk/src/rp2_common/pico_float/float_init_rom.c.obj
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/sensor_manager.dir/build.make CMakeFiles/sensor_manager.dir/home/dashy/pico-sdk/src/rp2_common/pico_float/float_init_rom.c.obj
 .PHONY : home/dashy/pico-sdk/src/rp2_common/pico_float/float_init_rom.c.obj
 
@@ -2520,6 +3168,8 @@ home/dashy/pico-sdk/src/rp2_common/pico_float/float_init_rom.c.i:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/Tricorder_BME688.dir/build.make CMakeFiles/Tricorder_BME688.dir/home/dashy/pico-sdk/src/rp2_common/pico_float/float_init_rom.c.i
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/Tricorder_LTR390.dir/build.make CMakeFiles/Tricorder_LTR390.dir/home/dashy/pico-sdk/src/rp2_common/pico_float/float_init_rom.c.i
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/Tricorder_PMSA003I.dir/build.make CMakeFiles/Tricorder_PMSA003I.dir/home/dashy/pico-sdk/src/rp2_common/pico_float/float_init_rom.c.i
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Tricorder_TLV493D.dir/build.make CMakeFiles/Tricorder_TLV493D.dir/home/dashy/pico-sdk/src/rp2_common/pico_float/float_init_rom.c.i
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Tricorder_SCD41.dir/build.make CMakeFiles/Tricorder_SCD41.dir/home/dashy/pico-sdk/src/rp2_common/pico_float/float_init_rom.c.i
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/sensor_manager.dir/build.make CMakeFiles/sensor_manager.dir/home/dashy/pico-sdk/src/rp2_common/pico_float/float_init_rom.c.i
 .PHONY : home/dashy/pico-sdk/src/rp2_common/pico_float/float_init_rom.c.i
 
@@ -2533,6 +3183,8 @@ home/dashy/pico-sdk/src/rp2_common/pico_float/float_init_rom.c.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/Tricorder_BME688.dir/build.make CMakeFiles/Tricorder_BME688.dir/home/dashy/pico-sdk/src/rp2_common/pico_float/float_init_rom.c.s
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/Tricorder_LTR390.dir/build.make CMakeFiles/Tricorder_LTR390.dir/home/dashy/pico-sdk/src/rp2_common/pico_float/float_init_rom.c.s
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/Tricorder_PMSA003I.dir/build.make CMakeFiles/Tricorder_PMSA003I.dir/home/dashy/pico-sdk/src/rp2_common/pico_float/float_init_rom.c.s
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Tricorder_TLV493D.dir/build.make CMakeFiles/Tricorder_TLV493D.dir/home/dashy/pico-sdk/src/rp2_common/pico_float/float_init_rom.c.s
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Tricorder_SCD41.dir/build.make CMakeFiles/Tricorder_SCD41.dir/home/dashy/pico-sdk/src/rp2_common/pico_float/float_init_rom.c.s
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/sensor_manager.dir/build.make CMakeFiles/sensor_manager.dir/home/dashy/pico-sdk/src/rp2_common/pico_float/float_init_rom.c.s
 .PHONY : home/dashy/pico-sdk/src/rp2_common/pico_float/float_init_rom.c.s
 
@@ -2546,6 +3198,8 @@ home/dashy/pico-sdk/src/rp2_common/pico_float/float_math.c.obj:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/Tricorder_BME688.dir/build.make CMakeFiles/Tricorder_BME688.dir/home/dashy/pico-sdk/src/rp2_common/pico_float/float_math.c.obj
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/Tricorder_LTR390.dir/build.make CMakeFiles/Tricorder_LTR390.dir/home/dashy/pico-sdk/src/rp2_common/pico_float/float_math.c.obj
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/Tricorder_PMSA003I.dir/build.make CMakeFiles/Tricorder_PMSA003I.dir/home/dashy/pico-sdk/src/rp2_common/pico_float/float_math.c.obj
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Tricorder_TLV493D.dir/build.make CMakeFiles/Tricorder_TLV493D.dir/home/dashy/pico-sdk/src/rp2_common/pico_float/float_math.c.obj
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Tricorder_SCD41.dir/build.make CMakeFiles/Tricorder_SCD41.dir/home/dashy/pico-sdk/src/rp2_common/pico_float/float_math.c.obj
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/sensor_manager.dir/build.make CMakeFiles/sensor_manager.dir/home/dashy/pico-sdk/src/rp2_common/pico_float/float_math.c.obj
 .PHONY : home/dashy/pico-sdk/src/rp2_common/pico_float/float_math.c.obj
 
@@ -2559,6 +3213,8 @@ home/dashy/pico-sdk/src/rp2_common/pico_float/float_math.c.i:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/Tricorder_BME688.dir/build.make CMakeFiles/Tricorder_BME688.dir/home/dashy/pico-sdk/src/rp2_common/pico_float/float_math.c.i
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/Tricorder_LTR390.dir/build.make CMakeFiles/Tricorder_LTR390.dir/home/dashy/pico-sdk/src/rp2_common/pico_float/float_math.c.i
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/Tricorder_PMSA003I.dir/build.make CMakeFiles/Tricorder_PMSA003I.dir/home/dashy/pico-sdk/src/rp2_common/pico_float/float_math.c.i
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Tricorder_TLV493D.dir/build.make CMakeFiles/Tricorder_TLV493D.dir/home/dashy/pico-sdk/src/rp2_common/pico_float/float_math.c.i
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Tricorder_SCD41.dir/build.make CMakeFiles/Tricorder_SCD41.dir/home/dashy/pico-sdk/src/rp2_common/pico_float/float_math.c.i
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/sensor_manager.dir/build.make CMakeFiles/sensor_manager.dir/home/dashy/pico-sdk/src/rp2_common/pico_float/float_math.c.i
 .PHONY : home/dashy/pico-sdk/src/rp2_common/pico_float/float_math.c.i
 
@@ -2572,6 +3228,8 @@ home/dashy/pico-sdk/src/rp2_common/pico_float/float_math.c.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/Tricorder_BME688.dir/build.make CMakeFiles/Tricorder_BME688.dir/home/dashy/pico-sdk/src/rp2_common/pico_float/float_math.c.s
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/Tricorder_LTR390.dir/build.make CMakeFiles/Tricorder_LTR390.dir/home/dashy/pico-sdk/src/rp2_common/pico_float/float_math.c.s
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/Tricorder_PMSA003I.dir/build.make CMakeFiles/Tricorder_PMSA003I.dir/home/dashy/pico-sdk/src/rp2_common/pico_float/float_math.c.s
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Tricorder_TLV493D.dir/build.make CMakeFiles/Tricorder_TLV493D.dir/home/dashy/pico-sdk/src/rp2_common/pico_float/float_math.c.s
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Tricorder_SCD41.dir/build.make CMakeFiles/Tricorder_SCD41.dir/home/dashy/pico-sdk/src/rp2_common/pico_float/float_math.c.s
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/sensor_manager.dir/build.make CMakeFiles/sensor_manager.dir/home/dashy/pico-sdk/src/rp2_common/pico_float/float_math.c.s
 .PHONY : home/dashy/pico-sdk/src/rp2_common/pico_float/float_math.c.s
 
@@ -2585,6 +3243,8 @@ home/dashy/pico-sdk/src/rp2_common/pico_float/float_v1_rom_shim.S.obj:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/Tricorder_BME688.dir/build.make CMakeFiles/Tricorder_BME688.dir/home/dashy/pico-sdk/src/rp2_common/pico_float/float_v1_rom_shim.S.obj
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/Tricorder_LTR390.dir/build.make CMakeFiles/Tricorder_LTR390.dir/home/dashy/pico-sdk/src/rp2_common/pico_float/float_v1_rom_shim.S.obj
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/Tricorder_PMSA003I.dir/build.make CMakeFiles/Tricorder_PMSA003I.dir/home/dashy/pico-sdk/src/rp2_common/pico_float/float_v1_rom_shim.S.obj
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Tricorder_TLV493D.dir/build.make CMakeFiles/Tricorder_TLV493D.dir/home/dashy/pico-sdk/src/rp2_common/pico_float/float_v1_rom_shim.S.obj
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Tricorder_SCD41.dir/build.make CMakeFiles/Tricorder_SCD41.dir/home/dashy/pico-sdk/src/rp2_common/pico_float/float_v1_rom_shim.S.obj
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/sensor_manager.dir/build.make CMakeFiles/sensor_manager.dir/home/dashy/pico-sdk/src/rp2_common/pico_float/float_v1_rom_shim.S.obj
 .PHONY : home/dashy/pico-sdk/src/rp2_common/pico_float/float_v1_rom_shim.S.obj
 
@@ -2598,6 +3258,8 @@ home/dashy/pico-sdk/src/rp2_common/pico_int64_ops/pico_int64_ops_aeabi.S.obj:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/Tricorder_BME688.dir/build.make CMakeFiles/Tricorder_BME688.dir/home/dashy/pico-sdk/src/rp2_common/pico_int64_ops/pico_int64_ops_aeabi.S.obj
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/Tricorder_LTR390.dir/build.make CMakeFiles/Tricorder_LTR390.dir/home/dashy/pico-sdk/src/rp2_common/pico_int64_ops/pico_int64_ops_aeabi.S.obj
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/Tricorder_PMSA003I.dir/build.make CMakeFiles/Tricorder_PMSA003I.dir/home/dashy/pico-sdk/src/rp2_common/pico_int64_ops/pico_int64_ops_aeabi.S.obj
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Tricorder_TLV493D.dir/build.make CMakeFiles/Tricorder_TLV493D.dir/home/dashy/pico-sdk/src/rp2_common/pico_int64_ops/pico_int64_ops_aeabi.S.obj
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Tricorder_SCD41.dir/build.make CMakeFiles/Tricorder_SCD41.dir/home/dashy/pico-sdk/src/rp2_common/pico_int64_ops/pico_int64_ops_aeabi.S.obj
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/sensor_manager.dir/build.make CMakeFiles/sensor_manager.dir/home/dashy/pico-sdk/src/rp2_common/pico_int64_ops/pico_int64_ops_aeabi.S.obj
 .PHONY : home/dashy/pico-sdk/src/rp2_common/pico_int64_ops/pico_int64_ops_aeabi.S.obj
 
@@ -2611,6 +3273,8 @@ home/dashy/pico-sdk/src/rp2_common/pico_malloc/pico_malloc.c.obj:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/Tricorder_BME688.dir/build.make CMakeFiles/Tricorder_BME688.dir/home/dashy/pico-sdk/src/rp2_common/pico_malloc/pico_malloc.c.obj
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/Tricorder_LTR390.dir/build.make CMakeFiles/Tricorder_LTR390.dir/home/dashy/pico-sdk/src/rp2_common/pico_malloc/pico_malloc.c.obj
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/Tricorder_PMSA003I.dir/build.make CMakeFiles/Tricorder_PMSA003I.dir/home/dashy/pico-sdk/src/rp2_common/pico_malloc/pico_malloc.c.obj
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Tricorder_TLV493D.dir/build.make CMakeFiles/Tricorder_TLV493D.dir/home/dashy/pico-sdk/src/rp2_common/pico_malloc/pico_malloc.c.obj
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Tricorder_SCD41.dir/build.make CMakeFiles/Tricorder_SCD41.dir/home/dashy/pico-sdk/src/rp2_common/pico_malloc/pico_malloc.c.obj
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/sensor_manager.dir/build.make CMakeFiles/sensor_manager.dir/home/dashy/pico-sdk/src/rp2_common/pico_malloc/pico_malloc.c.obj
 .PHONY : home/dashy/pico-sdk/src/rp2_common/pico_malloc/pico_malloc.c.obj
 
@@ -2624,6 +3288,8 @@ home/dashy/pico-sdk/src/rp2_common/pico_malloc/pico_malloc.c.i:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/Tricorder_BME688.dir/build.make CMakeFiles/Tricorder_BME688.dir/home/dashy/pico-sdk/src/rp2_common/pico_malloc/pico_malloc.c.i
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/Tricorder_LTR390.dir/build.make CMakeFiles/Tricorder_LTR390.dir/home/dashy/pico-sdk/src/rp2_common/pico_malloc/pico_malloc.c.i
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/Tricorder_PMSA003I.dir/build.make CMakeFiles/Tricorder_PMSA003I.dir/home/dashy/pico-sdk/src/rp2_common/pico_malloc/pico_malloc.c.i
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Tricorder_TLV493D.dir/build.make CMakeFiles/Tricorder_TLV493D.dir/home/dashy/pico-sdk/src/rp2_common/pico_malloc/pico_malloc.c.i
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Tricorder_SCD41.dir/build.make CMakeFiles/Tricorder_SCD41.dir/home/dashy/pico-sdk/src/rp2_common/pico_malloc/pico_malloc.c.i
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/sensor_manager.dir/build.make CMakeFiles/sensor_manager.dir/home/dashy/pico-sdk/src/rp2_common/pico_malloc/pico_malloc.c.i
 .PHONY : home/dashy/pico-sdk/src/rp2_common/pico_malloc/pico_malloc.c.i
 
@@ -2637,6 +3303,8 @@ home/dashy/pico-sdk/src/rp2_common/pico_malloc/pico_malloc.c.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/Tricorder_BME688.dir/build.make CMakeFiles/Tricorder_BME688.dir/home/dashy/pico-sdk/src/rp2_common/pico_malloc/pico_malloc.c.s
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/Tricorder_LTR390.dir/build.make CMakeFiles/Tricorder_LTR390.dir/home/dashy/pico-sdk/src/rp2_common/pico_malloc/pico_malloc.c.s
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/Tricorder_PMSA003I.dir/build.make CMakeFiles/Tricorder_PMSA003I.dir/home/dashy/pico-sdk/src/rp2_common/pico_malloc/pico_malloc.c.s
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Tricorder_TLV493D.dir/build.make CMakeFiles/Tricorder_TLV493D.dir/home/dashy/pico-sdk/src/rp2_common/pico_malloc/pico_malloc.c.s
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Tricorder_SCD41.dir/build.make CMakeFiles/Tricorder_SCD41.dir/home/dashy/pico-sdk/src/rp2_common/pico_malloc/pico_malloc.c.s
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/sensor_manager.dir/build.make CMakeFiles/sensor_manager.dir/home/dashy/pico-sdk/src/rp2_common/pico_malloc/pico_malloc.c.s
 .PHONY : home/dashy/pico-sdk/src/rp2_common/pico_malloc/pico_malloc.c.s
 
@@ -2650,6 +3318,8 @@ home/dashy/pico-sdk/src/rp2_common/pico_mem_ops/mem_ops_aeabi.S.obj:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/Tricorder_BME688.dir/build.make CMakeFiles/Tricorder_BME688.dir/home/dashy/pico-sdk/src/rp2_common/pico_mem_ops/mem_ops_aeabi.S.obj
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/Tricorder_LTR390.dir/build.make CMakeFiles/Tricorder_LTR390.dir/home/dashy/pico-sdk/src/rp2_common/pico_mem_ops/mem_ops_aeabi.S.obj
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/Tricorder_PMSA003I.dir/build.make CMakeFiles/Tricorder_PMSA003I.dir/home/dashy/pico-sdk/src/rp2_common/pico_mem_ops/mem_ops_aeabi.S.obj
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Tricorder_TLV493D.dir/build.make CMakeFiles/Tricorder_TLV493D.dir/home/dashy/pico-sdk/src/rp2_common/pico_mem_ops/mem_ops_aeabi.S.obj
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Tricorder_SCD41.dir/build.make CMakeFiles/Tricorder_SCD41.dir/home/dashy/pico-sdk/src/rp2_common/pico_mem_ops/mem_ops_aeabi.S.obj
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/sensor_manager.dir/build.make CMakeFiles/sensor_manager.dir/home/dashy/pico-sdk/src/rp2_common/pico_mem_ops/mem_ops_aeabi.S.obj
 .PHONY : home/dashy/pico-sdk/src/rp2_common/pico_mem_ops/mem_ops_aeabi.S.obj
 
@@ -2662,6 +3332,8 @@ home/dashy/pico-sdk/src/rp2_common/pico_multicore/multicore.c.obj:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/Tricorder_BME688.dir/build.make CMakeFiles/Tricorder_BME688.dir/home/dashy/pico-sdk/src/rp2_common/pico_multicore/multicore.c.obj
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/Tricorder_LTR390.dir/build.make CMakeFiles/Tricorder_LTR390.dir/home/dashy/pico-sdk/src/rp2_common/pico_multicore/multicore.c.obj
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/Tricorder_PMSA003I.dir/build.make CMakeFiles/Tricorder_PMSA003I.dir/home/dashy/pico-sdk/src/rp2_common/pico_multicore/multicore.c.obj
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Tricorder_TLV493D.dir/build.make CMakeFiles/Tricorder_TLV493D.dir/home/dashy/pico-sdk/src/rp2_common/pico_multicore/multicore.c.obj
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Tricorder_SCD41.dir/build.make CMakeFiles/Tricorder_SCD41.dir/home/dashy/pico-sdk/src/rp2_common/pico_multicore/multicore.c.obj
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/sensor_manager.dir/build.make CMakeFiles/sensor_manager.dir/home/dashy/pico-sdk/src/rp2_common/pico_multicore/multicore.c.obj
 .PHONY : home/dashy/pico-sdk/src/rp2_common/pico_multicore/multicore.c.obj
 
@@ -2674,6 +3346,8 @@ home/dashy/pico-sdk/src/rp2_common/pico_multicore/multicore.c.i:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/Tricorder_BME688.dir/build.make CMakeFiles/Tricorder_BME688.dir/home/dashy/pico-sdk/src/rp2_common/pico_multicore/multicore.c.i
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/Tricorder_LTR390.dir/build.make CMakeFiles/Tricorder_LTR390.dir/home/dashy/pico-sdk/src/rp2_common/pico_multicore/multicore.c.i
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/Tricorder_PMSA003I.dir/build.make CMakeFiles/Tricorder_PMSA003I.dir/home/dashy/pico-sdk/src/rp2_common/pico_multicore/multicore.c.i
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Tricorder_TLV493D.dir/build.make CMakeFiles/Tricorder_TLV493D.dir/home/dashy/pico-sdk/src/rp2_common/pico_multicore/multicore.c.i
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Tricorder_SCD41.dir/build.make CMakeFiles/Tricorder_SCD41.dir/home/dashy/pico-sdk/src/rp2_common/pico_multicore/multicore.c.i
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/sensor_manager.dir/build.make CMakeFiles/sensor_manager.dir/home/dashy/pico-sdk/src/rp2_common/pico_multicore/multicore.c.i
 .PHONY : home/dashy/pico-sdk/src/rp2_common/pico_multicore/multicore.c.i
 
@@ -2686,6 +3360,8 @@ home/dashy/pico-sdk/src/rp2_common/pico_multicore/multicore.c.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/Tricorder_BME688.dir/build.make CMakeFiles/Tricorder_BME688.dir/home/dashy/pico-sdk/src/rp2_common/pico_multicore/multicore.c.s
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/Tricorder_LTR390.dir/build.make CMakeFiles/Tricorder_LTR390.dir/home/dashy/pico-sdk/src/rp2_common/pico_multicore/multicore.c.s
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/Tricorder_PMSA003I.dir/build.make CMakeFiles/Tricorder_PMSA003I.dir/home/dashy/pico-sdk/src/rp2_common/pico_multicore/multicore.c.s
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Tricorder_TLV493D.dir/build.make CMakeFiles/Tricorder_TLV493D.dir/home/dashy/pico-sdk/src/rp2_common/pico_multicore/multicore.c.s
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Tricorder_SCD41.dir/build.make CMakeFiles/Tricorder_SCD41.dir/home/dashy/pico-sdk/src/rp2_common/pico_multicore/multicore.c.s
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/sensor_manager.dir/build.make CMakeFiles/sensor_manager.dir/home/dashy/pico-sdk/src/rp2_common/pico_multicore/multicore.c.s
 .PHONY : home/dashy/pico-sdk/src/rp2_common/pico_multicore/multicore.c.s
 
@@ -2699,6 +3375,8 @@ home/dashy/pico-sdk/src/rp2_common/pico_platform/platform.c.obj:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/Tricorder_BME688.dir/build.make CMakeFiles/Tricorder_BME688.dir/home/dashy/pico-sdk/src/rp2_common/pico_platform/platform.c.obj
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/Tricorder_LTR390.dir/build.make CMakeFiles/Tricorder_LTR390.dir/home/dashy/pico-sdk/src/rp2_common/pico_platform/platform.c.obj
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/Tricorder_PMSA003I.dir/build.make CMakeFiles/Tricorder_PMSA003I.dir/home/dashy/pico-sdk/src/rp2_common/pico_platform/platform.c.obj
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Tricorder_TLV493D.dir/build.make CMakeFiles/Tricorder_TLV493D.dir/home/dashy/pico-sdk/src/rp2_common/pico_platform/platform.c.obj
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Tricorder_SCD41.dir/build.make CMakeFiles/Tricorder_SCD41.dir/home/dashy/pico-sdk/src/rp2_common/pico_platform/platform.c.obj
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/sensor_manager.dir/build.make CMakeFiles/sensor_manager.dir/home/dashy/pico-sdk/src/rp2_common/pico_platform/platform.c.obj
 .PHONY : home/dashy/pico-sdk/src/rp2_common/pico_platform/platform.c.obj
 
@@ -2712,6 +3390,8 @@ home/dashy/pico-sdk/src/rp2_common/pico_platform/platform.c.i:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/Tricorder_BME688.dir/build.make CMakeFiles/Tricorder_BME688.dir/home/dashy/pico-sdk/src/rp2_common/pico_platform/platform.c.i
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/Tricorder_LTR390.dir/build.make CMakeFiles/Tricorder_LTR390.dir/home/dashy/pico-sdk/src/rp2_common/pico_platform/platform.c.i
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/Tricorder_PMSA003I.dir/build.make CMakeFiles/Tricorder_PMSA003I.dir/home/dashy/pico-sdk/src/rp2_common/pico_platform/platform.c.i
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Tricorder_TLV493D.dir/build.make CMakeFiles/Tricorder_TLV493D.dir/home/dashy/pico-sdk/src/rp2_common/pico_platform/platform.c.i
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Tricorder_SCD41.dir/build.make CMakeFiles/Tricorder_SCD41.dir/home/dashy/pico-sdk/src/rp2_common/pico_platform/platform.c.i
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/sensor_manager.dir/build.make CMakeFiles/sensor_manager.dir/home/dashy/pico-sdk/src/rp2_common/pico_platform/platform.c.i
 .PHONY : home/dashy/pico-sdk/src/rp2_common/pico_platform/platform.c.i
 
@@ -2725,6 +3405,8 @@ home/dashy/pico-sdk/src/rp2_common/pico_platform/platform.c.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/Tricorder_BME688.dir/build.make CMakeFiles/Tricorder_BME688.dir/home/dashy/pico-sdk/src/rp2_common/pico_platform/platform.c.s
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/Tricorder_LTR390.dir/build.make CMakeFiles/Tricorder_LTR390.dir/home/dashy/pico-sdk/src/rp2_common/pico_platform/platform.c.s
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/Tricorder_PMSA003I.dir/build.make CMakeFiles/Tricorder_PMSA003I.dir/home/dashy/pico-sdk/src/rp2_common/pico_platform/platform.c.s
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Tricorder_TLV493D.dir/build.make CMakeFiles/Tricorder_TLV493D.dir/home/dashy/pico-sdk/src/rp2_common/pico_platform/platform.c.s
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Tricorder_SCD41.dir/build.make CMakeFiles/Tricorder_SCD41.dir/home/dashy/pico-sdk/src/rp2_common/pico_platform/platform.c.s
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/sensor_manager.dir/build.make CMakeFiles/sensor_manager.dir/home/dashy/pico-sdk/src/rp2_common/pico_platform/platform.c.s
 .PHONY : home/dashy/pico-sdk/src/rp2_common/pico_platform/platform.c.s
 
@@ -2738,6 +3420,8 @@ home/dashy/pico-sdk/src/rp2_common/pico_printf/printf.c.obj:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/Tricorder_BME688.dir/build.make CMakeFiles/Tricorder_BME688.dir/home/dashy/pico-sdk/src/rp2_common/pico_printf/printf.c.obj
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/Tricorder_LTR390.dir/build.make CMakeFiles/Tricorder_LTR390.dir/home/dashy/pico-sdk/src/rp2_common/pico_printf/printf.c.obj
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/Tricorder_PMSA003I.dir/build.make CMakeFiles/Tricorder_PMSA003I.dir/home/dashy/pico-sdk/src/rp2_common/pico_printf/printf.c.obj
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Tricorder_TLV493D.dir/build.make CMakeFiles/Tricorder_TLV493D.dir/home/dashy/pico-sdk/src/rp2_common/pico_printf/printf.c.obj
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Tricorder_SCD41.dir/build.make CMakeFiles/Tricorder_SCD41.dir/home/dashy/pico-sdk/src/rp2_common/pico_printf/printf.c.obj
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/sensor_manager.dir/build.make CMakeFiles/sensor_manager.dir/home/dashy/pico-sdk/src/rp2_common/pico_printf/printf.c.obj
 .PHONY : home/dashy/pico-sdk/src/rp2_common/pico_printf/printf.c.obj
 
@@ -2751,6 +3435,8 @@ home/dashy/pico-sdk/src/rp2_common/pico_printf/printf.c.i:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/Tricorder_BME688.dir/build.make CMakeFiles/Tricorder_BME688.dir/home/dashy/pico-sdk/src/rp2_common/pico_printf/printf.c.i
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/Tricorder_LTR390.dir/build.make CMakeFiles/Tricorder_LTR390.dir/home/dashy/pico-sdk/src/rp2_common/pico_printf/printf.c.i
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/Tricorder_PMSA003I.dir/build.make CMakeFiles/Tricorder_PMSA003I.dir/home/dashy/pico-sdk/src/rp2_common/pico_printf/printf.c.i
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Tricorder_TLV493D.dir/build.make CMakeFiles/Tricorder_TLV493D.dir/home/dashy/pico-sdk/src/rp2_common/pico_printf/printf.c.i
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Tricorder_SCD41.dir/build.make CMakeFiles/Tricorder_SCD41.dir/home/dashy/pico-sdk/src/rp2_common/pico_printf/printf.c.i
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/sensor_manager.dir/build.make CMakeFiles/sensor_manager.dir/home/dashy/pico-sdk/src/rp2_common/pico_printf/printf.c.i
 .PHONY : home/dashy/pico-sdk/src/rp2_common/pico_printf/printf.c.i
 
@@ -2764,6 +3450,8 @@ home/dashy/pico-sdk/src/rp2_common/pico_printf/printf.c.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/Tricorder_BME688.dir/build.make CMakeFiles/Tricorder_BME688.dir/home/dashy/pico-sdk/src/rp2_common/pico_printf/printf.c.s
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/Tricorder_LTR390.dir/build.make CMakeFiles/Tricorder_LTR390.dir/home/dashy/pico-sdk/src/rp2_common/pico_printf/printf.c.s
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/Tricorder_PMSA003I.dir/build.make CMakeFiles/Tricorder_PMSA003I.dir/home/dashy/pico-sdk/src/rp2_common/pico_printf/printf.c.s
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Tricorder_TLV493D.dir/build.make CMakeFiles/Tricorder_TLV493D.dir/home/dashy/pico-sdk/src/rp2_common/pico_printf/printf.c.s
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Tricorder_SCD41.dir/build.make CMakeFiles/Tricorder_SCD41.dir/home/dashy/pico-sdk/src/rp2_common/pico_printf/printf.c.s
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/sensor_manager.dir/build.make CMakeFiles/sensor_manager.dir/home/dashy/pico-sdk/src/rp2_common/pico_printf/printf.c.s
 .PHONY : home/dashy/pico-sdk/src/rp2_common/pico_printf/printf.c.s
 
@@ -2777,6 +3465,8 @@ home/dashy/pico-sdk/src/rp2_common/pico_runtime/runtime.c.obj:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/Tricorder_BME688.dir/build.make CMakeFiles/Tricorder_BME688.dir/home/dashy/pico-sdk/src/rp2_common/pico_runtime/runtime.c.obj
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/Tricorder_LTR390.dir/build.make CMakeFiles/Tricorder_LTR390.dir/home/dashy/pico-sdk/src/rp2_common/pico_runtime/runtime.c.obj
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/Tricorder_PMSA003I.dir/build.make CMakeFiles/Tricorder_PMSA003I.dir/home/dashy/pico-sdk/src/rp2_common/pico_runtime/runtime.c.obj
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Tricorder_TLV493D.dir/build.make CMakeFiles/Tricorder_TLV493D.dir/home/dashy/pico-sdk/src/rp2_common/pico_runtime/runtime.c.obj
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Tricorder_SCD41.dir/build.make CMakeFiles/Tricorder_SCD41.dir/home/dashy/pico-sdk/src/rp2_common/pico_runtime/runtime.c.obj
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/sensor_manager.dir/build.make CMakeFiles/sensor_manager.dir/home/dashy/pico-sdk/src/rp2_common/pico_runtime/runtime.c.obj
 .PHONY : home/dashy/pico-sdk/src/rp2_common/pico_runtime/runtime.c.obj
 
@@ -2790,6 +3480,8 @@ home/dashy/pico-sdk/src/rp2_common/pico_runtime/runtime.c.i:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/Tricorder_BME688.dir/build.make CMakeFiles/Tricorder_BME688.dir/home/dashy/pico-sdk/src/rp2_common/pico_runtime/runtime.c.i
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/Tricorder_LTR390.dir/build.make CMakeFiles/Tricorder_LTR390.dir/home/dashy/pico-sdk/src/rp2_common/pico_runtime/runtime.c.i
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/Tricorder_PMSA003I.dir/build.make CMakeFiles/Tricorder_PMSA003I.dir/home/dashy/pico-sdk/src/rp2_common/pico_runtime/runtime.c.i
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Tricorder_TLV493D.dir/build.make CMakeFiles/Tricorder_TLV493D.dir/home/dashy/pico-sdk/src/rp2_common/pico_runtime/runtime.c.i
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Tricorder_SCD41.dir/build.make CMakeFiles/Tricorder_SCD41.dir/home/dashy/pico-sdk/src/rp2_common/pico_runtime/runtime.c.i
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/sensor_manager.dir/build.make CMakeFiles/sensor_manager.dir/home/dashy/pico-sdk/src/rp2_common/pico_runtime/runtime.c.i
 .PHONY : home/dashy/pico-sdk/src/rp2_common/pico_runtime/runtime.c.i
 
@@ -2803,6 +3495,8 @@ home/dashy/pico-sdk/src/rp2_common/pico_runtime/runtime.c.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/Tricorder_BME688.dir/build.make CMakeFiles/Tricorder_BME688.dir/home/dashy/pico-sdk/src/rp2_common/pico_runtime/runtime.c.s
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/Tricorder_LTR390.dir/build.make CMakeFiles/Tricorder_LTR390.dir/home/dashy/pico-sdk/src/rp2_common/pico_runtime/runtime.c.s
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/Tricorder_PMSA003I.dir/build.make CMakeFiles/Tricorder_PMSA003I.dir/home/dashy/pico-sdk/src/rp2_common/pico_runtime/runtime.c.s
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Tricorder_TLV493D.dir/build.make CMakeFiles/Tricorder_TLV493D.dir/home/dashy/pico-sdk/src/rp2_common/pico_runtime/runtime.c.s
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Tricorder_SCD41.dir/build.make CMakeFiles/Tricorder_SCD41.dir/home/dashy/pico-sdk/src/rp2_common/pico_runtime/runtime.c.s
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/sensor_manager.dir/build.make CMakeFiles/sensor_manager.dir/home/dashy/pico-sdk/src/rp2_common/pico_runtime/runtime.c.s
 .PHONY : home/dashy/pico-sdk/src/rp2_common/pico_runtime/runtime.c.s
 
@@ -2816,6 +3510,8 @@ home/dashy/pico-sdk/src/rp2_common/pico_standard_link/binary_info.c.obj:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/Tricorder_BME688.dir/build.make CMakeFiles/Tricorder_BME688.dir/home/dashy/pico-sdk/src/rp2_common/pico_standard_link/binary_info.c.obj
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/Tricorder_LTR390.dir/build.make CMakeFiles/Tricorder_LTR390.dir/home/dashy/pico-sdk/src/rp2_common/pico_standard_link/binary_info.c.obj
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/Tricorder_PMSA003I.dir/build.make CMakeFiles/Tricorder_PMSA003I.dir/home/dashy/pico-sdk/src/rp2_common/pico_standard_link/binary_info.c.obj
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Tricorder_TLV493D.dir/build.make CMakeFiles/Tricorder_TLV493D.dir/home/dashy/pico-sdk/src/rp2_common/pico_standard_link/binary_info.c.obj
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Tricorder_SCD41.dir/build.make CMakeFiles/Tricorder_SCD41.dir/home/dashy/pico-sdk/src/rp2_common/pico_standard_link/binary_info.c.obj
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/sensor_manager.dir/build.make CMakeFiles/sensor_manager.dir/home/dashy/pico-sdk/src/rp2_common/pico_standard_link/binary_info.c.obj
 .PHONY : home/dashy/pico-sdk/src/rp2_common/pico_standard_link/binary_info.c.obj
 
@@ -2829,6 +3525,8 @@ home/dashy/pico-sdk/src/rp2_common/pico_standard_link/binary_info.c.i:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/Tricorder_BME688.dir/build.make CMakeFiles/Tricorder_BME688.dir/home/dashy/pico-sdk/src/rp2_common/pico_standard_link/binary_info.c.i
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/Tricorder_LTR390.dir/build.make CMakeFiles/Tricorder_LTR390.dir/home/dashy/pico-sdk/src/rp2_common/pico_standard_link/binary_info.c.i
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/Tricorder_PMSA003I.dir/build.make CMakeFiles/Tricorder_PMSA003I.dir/home/dashy/pico-sdk/src/rp2_common/pico_standard_link/binary_info.c.i
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Tricorder_TLV493D.dir/build.make CMakeFiles/Tricorder_TLV493D.dir/home/dashy/pico-sdk/src/rp2_common/pico_standard_link/binary_info.c.i
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Tricorder_SCD41.dir/build.make CMakeFiles/Tricorder_SCD41.dir/home/dashy/pico-sdk/src/rp2_common/pico_standard_link/binary_info.c.i
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/sensor_manager.dir/build.make CMakeFiles/sensor_manager.dir/home/dashy/pico-sdk/src/rp2_common/pico_standard_link/binary_info.c.i
 .PHONY : home/dashy/pico-sdk/src/rp2_common/pico_standard_link/binary_info.c.i
 
@@ -2842,6 +3540,8 @@ home/dashy/pico-sdk/src/rp2_common/pico_standard_link/binary_info.c.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/Tricorder_BME688.dir/build.make CMakeFiles/Tricorder_BME688.dir/home/dashy/pico-sdk/src/rp2_common/pico_standard_link/binary_info.c.s
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/Tricorder_LTR390.dir/build.make CMakeFiles/Tricorder_LTR390.dir/home/dashy/pico-sdk/src/rp2_common/pico_standard_link/binary_info.c.s
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/Tricorder_PMSA003I.dir/build.make CMakeFiles/Tricorder_PMSA003I.dir/home/dashy/pico-sdk/src/rp2_common/pico_standard_link/binary_info.c.s
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Tricorder_TLV493D.dir/build.make CMakeFiles/Tricorder_TLV493D.dir/home/dashy/pico-sdk/src/rp2_common/pico_standard_link/binary_info.c.s
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Tricorder_SCD41.dir/build.make CMakeFiles/Tricorder_SCD41.dir/home/dashy/pico-sdk/src/rp2_common/pico_standard_link/binary_info.c.s
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/sensor_manager.dir/build.make CMakeFiles/sensor_manager.dir/home/dashy/pico-sdk/src/rp2_common/pico_standard_link/binary_info.c.s
 .PHONY : home/dashy/pico-sdk/src/rp2_common/pico_standard_link/binary_info.c.s
 
@@ -2855,6 +3555,8 @@ home/dashy/pico-sdk/src/rp2_common/pico_standard_link/crt0.S.obj:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/Tricorder_BME688.dir/build.make CMakeFiles/Tricorder_BME688.dir/home/dashy/pico-sdk/src/rp2_common/pico_standard_link/crt0.S.obj
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/Tricorder_LTR390.dir/build.make CMakeFiles/Tricorder_LTR390.dir/home/dashy/pico-sdk/src/rp2_common/pico_standard_link/crt0.S.obj
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/Tricorder_PMSA003I.dir/build.make CMakeFiles/Tricorder_PMSA003I.dir/home/dashy/pico-sdk/src/rp2_common/pico_standard_link/crt0.S.obj
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Tricorder_TLV493D.dir/build.make CMakeFiles/Tricorder_TLV493D.dir/home/dashy/pico-sdk/src/rp2_common/pico_standard_link/crt0.S.obj
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Tricorder_SCD41.dir/build.make CMakeFiles/Tricorder_SCD41.dir/home/dashy/pico-sdk/src/rp2_common/pico_standard_link/crt0.S.obj
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/sensor_manager.dir/build.make CMakeFiles/sensor_manager.dir/home/dashy/pico-sdk/src/rp2_common/pico_standard_link/crt0.S.obj
 .PHONY : home/dashy/pico-sdk/src/rp2_common/pico_standard_link/crt0.S.obj
 
@@ -2868,6 +3570,8 @@ home/dashy/pico-sdk/src/rp2_common/pico_standard_link/new_delete.cpp.obj:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/Tricorder_BME688.dir/build.make CMakeFiles/Tricorder_BME688.dir/home/dashy/pico-sdk/src/rp2_common/pico_standard_link/new_delete.cpp.obj
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/Tricorder_LTR390.dir/build.make CMakeFiles/Tricorder_LTR390.dir/home/dashy/pico-sdk/src/rp2_common/pico_standard_link/new_delete.cpp.obj
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/Tricorder_PMSA003I.dir/build.make CMakeFiles/Tricorder_PMSA003I.dir/home/dashy/pico-sdk/src/rp2_common/pico_standard_link/new_delete.cpp.obj
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Tricorder_TLV493D.dir/build.make CMakeFiles/Tricorder_TLV493D.dir/home/dashy/pico-sdk/src/rp2_common/pico_standard_link/new_delete.cpp.obj
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Tricorder_SCD41.dir/build.make CMakeFiles/Tricorder_SCD41.dir/home/dashy/pico-sdk/src/rp2_common/pico_standard_link/new_delete.cpp.obj
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/sensor_manager.dir/build.make CMakeFiles/sensor_manager.dir/home/dashy/pico-sdk/src/rp2_common/pico_standard_link/new_delete.cpp.obj
 .PHONY : home/dashy/pico-sdk/src/rp2_common/pico_standard_link/new_delete.cpp.obj
 
@@ -2881,6 +3585,8 @@ home/dashy/pico-sdk/src/rp2_common/pico_standard_link/new_delete.cpp.i:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/Tricorder_BME688.dir/build.make CMakeFiles/Tricorder_BME688.dir/home/dashy/pico-sdk/src/rp2_common/pico_standard_link/new_delete.cpp.i
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/Tricorder_LTR390.dir/build.make CMakeFiles/Tricorder_LTR390.dir/home/dashy/pico-sdk/src/rp2_common/pico_standard_link/new_delete.cpp.i
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/Tricorder_PMSA003I.dir/build.make CMakeFiles/Tricorder_PMSA003I.dir/home/dashy/pico-sdk/src/rp2_common/pico_standard_link/new_delete.cpp.i
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Tricorder_TLV493D.dir/build.make CMakeFiles/Tricorder_TLV493D.dir/home/dashy/pico-sdk/src/rp2_common/pico_standard_link/new_delete.cpp.i
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Tricorder_SCD41.dir/build.make CMakeFiles/Tricorder_SCD41.dir/home/dashy/pico-sdk/src/rp2_common/pico_standard_link/new_delete.cpp.i
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/sensor_manager.dir/build.make CMakeFiles/sensor_manager.dir/home/dashy/pico-sdk/src/rp2_common/pico_standard_link/new_delete.cpp.i
 .PHONY : home/dashy/pico-sdk/src/rp2_common/pico_standard_link/new_delete.cpp.i
 
@@ -2894,6 +3600,8 @@ home/dashy/pico-sdk/src/rp2_common/pico_standard_link/new_delete.cpp.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/Tricorder_BME688.dir/build.make CMakeFiles/Tricorder_BME688.dir/home/dashy/pico-sdk/src/rp2_common/pico_standard_link/new_delete.cpp.s
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/Tricorder_LTR390.dir/build.make CMakeFiles/Tricorder_LTR390.dir/home/dashy/pico-sdk/src/rp2_common/pico_standard_link/new_delete.cpp.s
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/Tricorder_PMSA003I.dir/build.make CMakeFiles/Tricorder_PMSA003I.dir/home/dashy/pico-sdk/src/rp2_common/pico_standard_link/new_delete.cpp.s
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Tricorder_TLV493D.dir/build.make CMakeFiles/Tricorder_TLV493D.dir/home/dashy/pico-sdk/src/rp2_common/pico_standard_link/new_delete.cpp.s
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Tricorder_SCD41.dir/build.make CMakeFiles/Tricorder_SCD41.dir/home/dashy/pico-sdk/src/rp2_common/pico_standard_link/new_delete.cpp.s
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/sensor_manager.dir/build.make CMakeFiles/sensor_manager.dir/home/dashy/pico-sdk/src/rp2_common/pico_standard_link/new_delete.cpp.s
 .PHONY : home/dashy/pico-sdk/src/rp2_common/pico_standard_link/new_delete.cpp.s
 
@@ -2907,6 +3615,8 @@ home/dashy/pico-sdk/src/rp2_common/pico_stdio/stdio.c.obj:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/Tricorder_BME688.dir/build.make CMakeFiles/Tricorder_BME688.dir/home/dashy/pico-sdk/src/rp2_common/pico_stdio/stdio.c.obj
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/Tricorder_LTR390.dir/build.make CMakeFiles/Tricorder_LTR390.dir/home/dashy/pico-sdk/src/rp2_common/pico_stdio/stdio.c.obj
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/Tricorder_PMSA003I.dir/build.make CMakeFiles/Tricorder_PMSA003I.dir/home/dashy/pico-sdk/src/rp2_common/pico_stdio/stdio.c.obj
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Tricorder_TLV493D.dir/build.make CMakeFiles/Tricorder_TLV493D.dir/home/dashy/pico-sdk/src/rp2_common/pico_stdio/stdio.c.obj
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Tricorder_SCD41.dir/build.make CMakeFiles/Tricorder_SCD41.dir/home/dashy/pico-sdk/src/rp2_common/pico_stdio/stdio.c.obj
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/sensor_manager.dir/build.make CMakeFiles/sensor_manager.dir/home/dashy/pico-sdk/src/rp2_common/pico_stdio/stdio.c.obj
 .PHONY : home/dashy/pico-sdk/src/rp2_common/pico_stdio/stdio.c.obj
 
@@ -2920,6 +3630,8 @@ home/dashy/pico-sdk/src/rp2_common/pico_stdio/stdio.c.i:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/Tricorder_BME688.dir/build.make CMakeFiles/Tricorder_BME688.dir/home/dashy/pico-sdk/src/rp2_common/pico_stdio/stdio.c.i
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/Tricorder_LTR390.dir/build.make CMakeFiles/Tricorder_LTR390.dir/home/dashy/pico-sdk/src/rp2_common/pico_stdio/stdio.c.i
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/Tricorder_PMSA003I.dir/build.make CMakeFiles/Tricorder_PMSA003I.dir/home/dashy/pico-sdk/src/rp2_common/pico_stdio/stdio.c.i
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Tricorder_TLV493D.dir/build.make CMakeFiles/Tricorder_TLV493D.dir/home/dashy/pico-sdk/src/rp2_common/pico_stdio/stdio.c.i
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Tricorder_SCD41.dir/build.make CMakeFiles/Tricorder_SCD41.dir/home/dashy/pico-sdk/src/rp2_common/pico_stdio/stdio.c.i
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/sensor_manager.dir/build.make CMakeFiles/sensor_manager.dir/home/dashy/pico-sdk/src/rp2_common/pico_stdio/stdio.c.i
 .PHONY : home/dashy/pico-sdk/src/rp2_common/pico_stdio/stdio.c.i
 
@@ -2933,6 +3645,8 @@ home/dashy/pico-sdk/src/rp2_common/pico_stdio/stdio.c.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/Tricorder_BME688.dir/build.make CMakeFiles/Tricorder_BME688.dir/home/dashy/pico-sdk/src/rp2_common/pico_stdio/stdio.c.s
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/Tricorder_LTR390.dir/build.make CMakeFiles/Tricorder_LTR390.dir/home/dashy/pico-sdk/src/rp2_common/pico_stdio/stdio.c.s
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/Tricorder_PMSA003I.dir/build.make CMakeFiles/Tricorder_PMSA003I.dir/home/dashy/pico-sdk/src/rp2_common/pico_stdio/stdio.c.s
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Tricorder_TLV493D.dir/build.make CMakeFiles/Tricorder_TLV493D.dir/home/dashy/pico-sdk/src/rp2_common/pico_stdio/stdio.c.s
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Tricorder_SCD41.dir/build.make CMakeFiles/Tricorder_SCD41.dir/home/dashy/pico-sdk/src/rp2_common/pico_stdio/stdio.c.s
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/sensor_manager.dir/build.make CMakeFiles/sensor_manager.dir/home/dashy/pico-sdk/src/rp2_common/pico_stdio/stdio.c.s
 .PHONY : home/dashy/pico-sdk/src/rp2_common/pico_stdio/stdio.c.s
 
@@ -2946,6 +3660,8 @@ home/dashy/pico-sdk/src/rp2_common/pico_stdio_uart/stdio_uart.c.obj:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/Tricorder_BME688.dir/build.make CMakeFiles/Tricorder_BME688.dir/home/dashy/pico-sdk/src/rp2_common/pico_stdio_uart/stdio_uart.c.obj
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/Tricorder_LTR390.dir/build.make CMakeFiles/Tricorder_LTR390.dir/home/dashy/pico-sdk/src/rp2_common/pico_stdio_uart/stdio_uart.c.obj
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/Tricorder_PMSA003I.dir/build.make CMakeFiles/Tricorder_PMSA003I.dir/home/dashy/pico-sdk/src/rp2_common/pico_stdio_uart/stdio_uart.c.obj
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Tricorder_TLV493D.dir/build.make CMakeFiles/Tricorder_TLV493D.dir/home/dashy/pico-sdk/src/rp2_common/pico_stdio_uart/stdio_uart.c.obj
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Tricorder_SCD41.dir/build.make CMakeFiles/Tricorder_SCD41.dir/home/dashy/pico-sdk/src/rp2_common/pico_stdio_uart/stdio_uart.c.obj
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/sensor_manager.dir/build.make CMakeFiles/sensor_manager.dir/home/dashy/pico-sdk/src/rp2_common/pico_stdio_uart/stdio_uart.c.obj
 .PHONY : home/dashy/pico-sdk/src/rp2_common/pico_stdio_uart/stdio_uart.c.obj
 
@@ -2959,6 +3675,8 @@ home/dashy/pico-sdk/src/rp2_common/pico_stdio_uart/stdio_uart.c.i:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/Tricorder_BME688.dir/build.make CMakeFiles/Tricorder_BME688.dir/home/dashy/pico-sdk/src/rp2_common/pico_stdio_uart/stdio_uart.c.i
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/Tricorder_LTR390.dir/build.make CMakeFiles/Tricorder_LTR390.dir/home/dashy/pico-sdk/src/rp2_common/pico_stdio_uart/stdio_uart.c.i
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/Tricorder_PMSA003I.dir/build.make CMakeFiles/Tricorder_PMSA003I.dir/home/dashy/pico-sdk/src/rp2_common/pico_stdio_uart/stdio_uart.c.i
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Tricorder_TLV493D.dir/build.make CMakeFiles/Tricorder_TLV493D.dir/home/dashy/pico-sdk/src/rp2_common/pico_stdio_uart/stdio_uart.c.i
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Tricorder_SCD41.dir/build.make CMakeFiles/Tricorder_SCD41.dir/home/dashy/pico-sdk/src/rp2_common/pico_stdio_uart/stdio_uart.c.i
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/sensor_manager.dir/build.make CMakeFiles/sensor_manager.dir/home/dashy/pico-sdk/src/rp2_common/pico_stdio_uart/stdio_uart.c.i
 .PHONY : home/dashy/pico-sdk/src/rp2_common/pico_stdio_uart/stdio_uart.c.i
 
@@ -2972,6 +3690,8 @@ home/dashy/pico-sdk/src/rp2_common/pico_stdio_uart/stdio_uart.c.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/Tricorder_BME688.dir/build.make CMakeFiles/Tricorder_BME688.dir/home/dashy/pico-sdk/src/rp2_common/pico_stdio_uart/stdio_uart.c.s
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/Tricorder_LTR390.dir/build.make CMakeFiles/Tricorder_LTR390.dir/home/dashy/pico-sdk/src/rp2_common/pico_stdio_uart/stdio_uart.c.s
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/Tricorder_PMSA003I.dir/build.make CMakeFiles/Tricorder_PMSA003I.dir/home/dashy/pico-sdk/src/rp2_common/pico_stdio_uart/stdio_uart.c.s
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Tricorder_TLV493D.dir/build.make CMakeFiles/Tricorder_TLV493D.dir/home/dashy/pico-sdk/src/rp2_common/pico_stdio_uart/stdio_uart.c.s
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Tricorder_SCD41.dir/build.make CMakeFiles/Tricorder_SCD41.dir/home/dashy/pico-sdk/src/rp2_common/pico_stdio_uart/stdio_uart.c.s
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/sensor_manager.dir/build.make CMakeFiles/sensor_manager.dir/home/dashy/pico-sdk/src/rp2_common/pico_stdio_uart/stdio_uart.c.s
 .PHONY : home/dashy/pico-sdk/src/rp2_common/pico_stdio_uart/stdio_uart.c.s
 
@@ -2985,6 +3705,8 @@ home/dashy/pico-sdk/src/rp2_common/pico_stdlib/stdlib.c.obj:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/Tricorder_BME688.dir/build.make CMakeFiles/Tricorder_BME688.dir/home/dashy/pico-sdk/src/rp2_common/pico_stdlib/stdlib.c.obj
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/Tricorder_LTR390.dir/build.make CMakeFiles/Tricorder_LTR390.dir/home/dashy/pico-sdk/src/rp2_common/pico_stdlib/stdlib.c.obj
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/Tricorder_PMSA003I.dir/build.make CMakeFiles/Tricorder_PMSA003I.dir/home/dashy/pico-sdk/src/rp2_common/pico_stdlib/stdlib.c.obj
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Tricorder_TLV493D.dir/build.make CMakeFiles/Tricorder_TLV493D.dir/home/dashy/pico-sdk/src/rp2_common/pico_stdlib/stdlib.c.obj
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Tricorder_SCD41.dir/build.make CMakeFiles/Tricorder_SCD41.dir/home/dashy/pico-sdk/src/rp2_common/pico_stdlib/stdlib.c.obj
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/sensor_manager.dir/build.make CMakeFiles/sensor_manager.dir/home/dashy/pico-sdk/src/rp2_common/pico_stdlib/stdlib.c.obj
 .PHONY : home/dashy/pico-sdk/src/rp2_common/pico_stdlib/stdlib.c.obj
 
@@ -2998,6 +3720,8 @@ home/dashy/pico-sdk/src/rp2_common/pico_stdlib/stdlib.c.i:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/Tricorder_BME688.dir/build.make CMakeFiles/Tricorder_BME688.dir/home/dashy/pico-sdk/src/rp2_common/pico_stdlib/stdlib.c.i
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/Tricorder_LTR390.dir/build.make CMakeFiles/Tricorder_LTR390.dir/home/dashy/pico-sdk/src/rp2_common/pico_stdlib/stdlib.c.i
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/Tricorder_PMSA003I.dir/build.make CMakeFiles/Tricorder_PMSA003I.dir/home/dashy/pico-sdk/src/rp2_common/pico_stdlib/stdlib.c.i
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Tricorder_TLV493D.dir/build.make CMakeFiles/Tricorder_TLV493D.dir/home/dashy/pico-sdk/src/rp2_common/pico_stdlib/stdlib.c.i
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Tricorder_SCD41.dir/build.make CMakeFiles/Tricorder_SCD41.dir/home/dashy/pico-sdk/src/rp2_common/pico_stdlib/stdlib.c.i
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/sensor_manager.dir/build.make CMakeFiles/sensor_manager.dir/home/dashy/pico-sdk/src/rp2_common/pico_stdlib/stdlib.c.i
 .PHONY : home/dashy/pico-sdk/src/rp2_common/pico_stdlib/stdlib.c.i
 
@@ -3011,6 +3735,8 @@ home/dashy/pico-sdk/src/rp2_common/pico_stdlib/stdlib.c.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/Tricorder_BME688.dir/build.make CMakeFiles/Tricorder_BME688.dir/home/dashy/pico-sdk/src/rp2_common/pico_stdlib/stdlib.c.s
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/Tricorder_LTR390.dir/build.make CMakeFiles/Tricorder_LTR390.dir/home/dashy/pico-sdk/src/rp2_common/pico_stdlib/stdlib.c.s
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/Tricorder_PMSA003I.dir/build.make CMakeFiles/Tricorder_PMSA003I.dir/home/dashy/pico-sdk/src/rp2_common/pico_stdlib/stdlib.c.s
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Tricorder_TLV493D.dir/build.make CMakeFiles/Tricorder_TLV493D.dir/home/dashy/pico-sdk/src/rp2_common/pico_stdlib/stdlib.c.s
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Tricorder_SCD41.dir/build.make CMakeFiles/Tricorder_SCD41.dir/home/dashy/pico-sdk/src/rp2_common/pico_stdlib/stdlib.c.s
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/sensor_manager.dir/build.make CMakeFiles/sensor_manager.dir/home/dashy/pico-sdk/src/rp2_common/pico_stdlib/stdlib.c.s
 .PHONY : home/dashy/pico-sdk/src/rp2_common/pico_stdlib/stdlib.c.s
 
@@ -3053,7 +3779,9 @@ help:
 	@echo "... Tricorder_BME688"
 	@echo "... Tricorder_LTR390"
 	@echo "... Tricorder_PMSA003I"
+	@echo "... Tricorder_SCD41"
 	@echo "... Tricorder_Sensor"
+	@echo "... Tricorder_TLV493D"
 	@echo "... bs2_default"
 	@echo "... sensor_manager"
 	@echo "... Tricorder_AS7341.obj"
@@ -3068,9 +3796,15 @@ help:
 	@echo "... Tricorder_PMSA003I.obj"
 	@echo "... Tricorder_PMSA003I.i"
 	@echo "... Tricorder_PMSA003I.s"
+	@echo "... Tricorder_SCD41.obj"
+	@echo "... Tricorder_SCD41.i"
+	@echo "... Tricorder_SCD41.s"
 	@echo "... Tricorder_Sensor.obj"
 	@echo "... Tricorder_Sensor.i"
 	@echo "... Tricorder_Sensor.s"
+	@echo "... Tricorder_TLV493D.obj"
+	@echo "... Tricorder_TLV493D.i"
+	@echo "... Tricorder_TLV493D.s"
 	@echo "... home/dashy/pico-arduino-compat/arduino-compat/arduino-pico-extra/HardwareSerialStdio.obj"
 	@echo "... home/dashy/pico-arduino-compat/arduino-compat/arduino-pico-extra/HardwareSerialStdio.i"
 	@echo "... home/dashy/pico-arduino-compat/arduino-compat/arduino-pico-extra/HardwareSerialStdio.s"
@@ -3155,6 +3889,36 @@ help:
 	@echo "... home/dashy/pico-arduino-compat/libs/adafruit-pm25-aqi-sensor/Adafruit_PM25AQI/Adafruit_PM25AQI.obj"
 	@echo "... home/dashy/pico-arduino-compat/libs/adafruit-pm25-aqi-sensor/Adafruit_PM25AQI/Adafruit_PM25AQI.i"
 	@echo "... home/dashy/pico-arduino-compat/libs/adafruit-pm25-aqi-sensor/Adafruit_PM25AQI/Adafruit_PM25AQI.s"
+	@echo "... home/dashy/pico-arduino-compat/libs/sensirion-core/arduino-core/src/SensirionErrors.obj"
+	@echo "... home/dashy/pico-arduino-compat/libs/sensirion-core/arduino-core/src/SensirionErrors.i"
+	@echo "... home/dashy/pico-arduino-compat/libs/sensirion-core/arduino-core/src/SensirionErrors.s"
+	@echo "... home/dashy/pico-arduino-compat/libs/sensirion-core/arduino-core/src/SensirionI2CCommunication.obj"
+	@echo "... home/dashy/pico-arduino-compat/libs/sensirion-core/arduino-core/src/SensirionI2CCommunication.i"
+	@echo "... home/dashy/pico-arduino-compat/libs/sensirion-core/arduino-core/src/SensirionI2CCommunication.s"
+	@echo "... home/dashy/pico-arduino-compat/libs/sensirion-core/arduino-core/src/SensirionI2CTxFrame.obj"
+	@echo "... home/dashy/pico-arduino-compat/libs/sensirion-core/arduino-core/src/SensirionI2CTxFrame.i"
+	@echo "... home/dashy/pico-arduino-compat/libs/sensirion-core/arduino-core/src/SensirionI2CTxFrame.s"
+	@echo "... home/dashy/pico-arduino-compat/libs/sensirion-core/arduino-core/src/SensirionRxFrame.obj"
+	@echo "... home/dashy/pico-arduino-compat/libs/sensirion-core/arduino-core/src/SensirionRxFrame.i"
+	@echo "... home/dashy/pico-arduino-compat/libs/sensirion-core/arduino-core/src/SensirionRxFrame.s"
+	@echo "... home/dashy/pico-arduino-compat/libs/sensirion-core/arduino-core/src/SensirionShdlcCommunication.obj"
+	@echo "... home/dashy/pico-arduino-compat/libs/sensirion-core/arduino-core/src/SensirionShdlcCommunication.i"
+	@echo "... home/dashy/pico-arduino-compat/libs/sensirion-core/arduino-core/src/SensirionShdlcCommunication.s"
+	@echo "... home/dashy/pico-arduino-compat/libs/sensirion-core/arduino-core/src/SensirionShdlcTxFrame.obj"
+	@echo "... home/dashy/pico-arduino-compat/libs/sensirion-core/arduino-core/src/SensirionShdlcTxFrame.i"
+	@echo "... home/dashy/pico-arduino-compat/libs/sensirion-core/arduino-core/src/SensirionShdlcTxFrame.s"
+	@echo "... home/dashy/pico-arduino-compat/libs/sensirion-i2c-scd4x/arduino-i2c-scd4x/src/SensirionI2CScd4x.obj"
+	@echo "... home/dashy/pico-arduino-compat/libs/sensirion-i2c-scd4x/arduino-i2c-scd4x/src/SensirionI2CScd4x.i"
+	@echo "... home/dashy/pico-arduino-compat/libs/sensirion-i2c-scd4x/arduino-i2c-scd4x/src/SensirionI2CScd4x.s"
+	@echo "... home/dashy/pico-arduino-compat/libs/tlv493d-a1b6/TLV493D-A1B6-3DMagnetic-Sensor/src/Tlv493d.obj"
+	@echo "... home/dashy/pico-arduino-compat/libs/tlv493d-a1b6/TLV493D-A1B6-3DMagnetic-Sensor/src/Tlv493d.i"
+	@echo "... home/dashy/pico-arduino-compat/libs/tlv493d-a1b6/TLV493D-A1B6-3DMagnetic-Sensor/src/Tlv493d.s"
+	@echo "... home/dashy/pico-arduino-compat/libs/tlv493d-a1b6/TLV493D-A1B6-3DMagnetic-Sensor/src/util/BusInterface.obj"
+	@echo "... home/dashy/pico-arduino-compat/libs/tlv493d-a1b6/TLV493D-A1B6-3DMagnetic-Sensor/src/util/BusInterface.i"
+	@echo "... home/dashy/pico-arduino-compat/libs/tlv493d-a1b6/TLV493D-A1B6-3DMagnetic-Sensor/src/util/BusInterface.s"
+	@echo "... home/dashy/pico-arduino-compat/libs/tlv493d-a1b6/TLV493D-A1B6-3DMagnetic-Sensor/src/util/RegMask.obj"
+	@echo "... home/dashy/pico-arduino-compat/libs/tlv493d-a1b6/TLV493D-A1B6-3DMagnetic-Sensor/src/util/RegMask.i"
+	@echo "... home/dashy/pico-arduino-compat/libs/tlv493d-a1b6/TLV493D-A1B6-3DMagnetic-Sensor/src/util/RegMask.s"
 	@echo "... home/dashy/pico-sdk/src/common/pico_sync/critical_section.obj"
 	@echo "... home/dashy/pico-sdk/src/common/pico_sync/critical_section.i"
 	@echo "... home/dashy/pico-sdk/src/common/pico_sync/critical_section.s"

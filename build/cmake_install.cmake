@@ -44,6 +44,8 @@ if(NOT CMAKE_INSTALL_LOCAL_ONLY)
   include("/media/sf_Ubuntu_22.04_2_SSD_Shared/tricorder_ws/build/build-pac-adafruit-bme680-library/cmake_install.cmake")
   include("/media/sf_Ubuntu_22.04_2_SSD_Shared/tricorder_ws/build/build-pac-adafruit-ltr390-library/cmake_install.cmake")
   include("/media/sf_Ubuntu_22.04_2_SSD_Shared/tricorder_ws/build/build-pac-adafruit-pm25-aqi-sensor/cmake_install.cmake")
+  include("/media/sf_Ubuntu_22.04_2_SSD_Shared/tricorder_ws/build/build-pac-tlv493d-a1b6/cmake_install.cmake")
+  include("/media/sf_Ubuntu_22.04_2_SSD_Shared/tricorder_ws/build/build-pac-sensirion-i2c-scd4x/cmake_install.cmake")
 
 endif()
 

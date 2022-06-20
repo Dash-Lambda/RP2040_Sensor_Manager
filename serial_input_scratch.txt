@@ -1,0 +1,14 @@
+<{"command": "list_sensors"}>
+<{"command": "list_options", "sensor": "BME688"}>
+<{"command": "list_options", "sensor": "AS7341"}>
+<{"command": "list_options", "sensor": "LTR390"}>
+<{"command": "list_options", "sensor": "PMSA003I"}>
+<{"command": "set_parameter", "sensor": "BME688", "param": "enabled", "value": "true"}>
+<{"command": "set_parameter", "sensor": "AS7341", "param": "enabled", "value": "true"}>
+<{"command": "set_parameter", "sensor": "LTR390", "param": "enabled", "value": "true"}>
+<{"command": "set_parameter", "sensor": "PMSA003I", "param": "enabled", "value": "true"}>
+<{"command": "set_parameter", "sensor": "BME688", "param": "enabled", "value": "false"}>
+<{"command": "set_parameter", "sensor": "AS7341", "param": "enabled", "value": "false"}>
+<{"command": "set_parameter", "sensor": "LTR390", "param": "enabled", "value": "false"}>
+<{"command": "set_parameter", "sensor": "PMSA003I", "param": "enabled", "value": "false"}>
+<{"command": "reset"}>
