@@ -60,6 +60,13 @@ CMakeFiles/sensor_manager.dir/sensor_manager.cpp.obj: \
  /home/dashy/pico-sdk/src/rp2_common/hardware_watchdog/include/hardware/watchdog.h \
  /home/dashy/pico-sdk/src/rp2040/hardware_structs/include/hardware/structs/watchdog.h \
  /home/dashy/pico-sdk/src/rp2040/hardware_regs/include/hardware/regs/watchdog.h \
+ /home/dashy/pico-sdk/src/rp2_common/pico_multicore/include/pico/multicore.h \
+ /home/dashy/pico-sdk/src/common/pico_sync/include/pico/sync.h \
+ /home/dashy/pico-sdk/src/common/pico_sync/include/pico/sem.h \
+ /home/dashy/pico-sdk/src/common/pico_sync/include/pico/lock_core.h \
+ /home/dashy/pico-sdk/src/rp2_common/hardware_sync/include/hardware/sync.h \
+ /home/dashy/pico-sdk/src/common/pico_sync/include/pico/mutex.h \
+ /home/dashy/pico-sdk/src/common/pico_sync/include/pico/critical_section.h \
  /media/sf_Ubuntu_22.04_2_SSD_Shared/tricorder_ws/json.hpp \
  /usr/include/newlib/c++/10.3.1/algorithm \
  /usr/include/newlib/c++/10.3.1/utility \
@@ -290,9 +297,6 @@ CMakeFiles/sensor_manager.dir/sensor_manager.cpp.obj: \
  /home/dashy/pico-arduino-compat/arduino-compat/arduino-pico/cores/rp2040/api/HardwareSerial.h \
  /home/dashy/pico-arduino-compat/arduino-compat/arduino-pico/cores/rp2040/SerialUART.h \
  /home/dashy/pico-arduino-compat/arduino-compat/arduino-pico/cores/rp2040/CoreMutex.h \
- /home/dashy/pico-sdk/src/common/pico_sync/include/pico/mutex.h \
- /home/dashy/pico-sdk/src/common/pico_sync/include/pico/lock_core.h \
- /home/dashy/pico-sdk/src/rp2_common/hardware_sync/include/hardware/sync.h \
  /home/dashy/pico-arduino-compat/arduino-compat/arduino-pico/cores/rp2040/RP2040.h \
  /home/dashy/pico-sdk/src/rp2_common/hardware_clocks/include/hardware/clocks.h \
  /home/dashy/pico-sdk/src/rp2040/hardware_structs/include/hardware/structs/clocks.h \
@@ -306,10 +310,6 @@ CMakeFiles/sensor_manager.dir/sensor_manager.cpp.obj: \
  /home/dashy/pico-sdk/src/rp2_common/hardware_pio/include/hardware/pio_instructions.h \
  /home/dashy/pico-sdk/src/rp2_common/hardware_exception/include/hardware/exception.h \
  /home/dashy/pico-sdk/src/rp2040/hardware_structs/include/hardware/structs/systick.h \
- /home/dashy/pico-sdk/src/rp2_common/pico_multicore/include/pico/multicore.h \
- /home/dashy/pico-sdk/src/common/pico_sync/include/pico/sync.h \
- /home/dashy/pico-sdk/src/common/pico_sync/include/pico/sem.h \
- /home/dashy/pico-sdk/src/common/pico_sync/include/pico/critical_section.h \
  /home/dashy/pico-sdk/src/common/pico_util/include/pico/util/queue.h \
  /home/dashy/pico-arduino-compat/arduino-compat/arduino-pico/cores/rp2040/Bootsel.h \
  /home/dashy/pico-arduino-compat/libs/adafruit-busio/Adafruit_BusIO/Adafruit_BusIO_Register.h \

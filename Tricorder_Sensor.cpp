@@ -1,11 +1,14 @@
 #include "Tricorder_Sensor.h"
 
 Tricorder_Sensor::Tricorder_Sensor(){
+	initialized = false;
 	enabled = false;
 	data_updated = false;
 	error_state = false;
 	timestamp = 0;
 	report_rate = 0;
+	async_is_waiting = false;
+	async_is_data_ready = false;
 	
 	sensor_options.push_back(sensor_option(
 		"report_rate",
@@ -99,4 +102,47 @@ bool Tricorder_Sensor::update_data(){
 		data_updated = false;
 		return false;
 	}
+}
+
+// ASYNC
+void Tricorder_Sensor::async_set_waiting(bool is_waiting){
+	async_is_waiting = is_waiting;
+}
+bool Tricorder_Sensor::async_get_waiting(){
+	return async_is_waiting;
+}
+
+void Tricorder_Sensor::async_set_data_ready(bool data_ready){
+	async_is_data_ready = data_ready;;
+}
+bool Tricorder_Sensor::async_get_data_ready(){
+	return async_is_data_ready;
+}
+
+nlohmann::json Tricorder_Sensor::async_get_frame(){
+	async_set_data_ready(false);
+	return async_data_frame;
+}
+
+bool Tricorder_Sensor::async_poll_sensor(){
+	if(initialized && enabled){
+		if(async_get_data_ready()){
+			return true;
+		}else if(!async_get_waiting()){
+			async_set_waiting(true);
+		}
+	}
+	return false;
+}
+
+bool Tricorder_Sensor::async_update_sensor(){
+	if(async_get_waiting()){
+		if(update_data()){
+			async_data_frame = build_json();
+			async_set_waiting(false);
+			async_set_data_ready(true);
+			return true;
+		}
+	}
+	return false;
 }

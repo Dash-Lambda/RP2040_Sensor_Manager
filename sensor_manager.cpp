@@ -1,6 +1,7 @@
 #include <stdio.h>
 #include "pico/stdlib.h"
 #include "hardware/watchdog.h"
+#include "pico/multicore.h"
 #include "json.hpp"
 #include "Tricorder_AS7341.h"
 #include "Tricorder_BME688.h"
@@ -18,10 +19,35 @@
 #define MAX_BUFFER_SIZE 256
 #define MAX_INITIALIZATION_RETRIES 2
 #define INITIALIZATION_RETRY_DELAY 10
+	
+// Sensor Array
+Tricorder_AS7341 _as7341 = Tricorder_AS7341();
+Tricorder_BME688 _bme688 = Tricorder_BME688();
+Tricorder_LTR390 _ltr390 = Tricorder_LTR390();
+Tricorder_PMSA003I _pmsa003i = Tricorder_PMSA003I();
+Tricorder_TLV493D _tlv493d = Tricorder_TLV493D();
+Tricorder_SCD41 _scd41 = Tricorder_SCD41();
+Tricorder_Sensor *sensors[] = {
+	&_as7341,
+	&_bme688,
+	&_ltr390,
+	&_pmsa003i,
+	//&_tlv493d,
+	//&_scd41
+};
 
 void send_json(nlohmann::json frame){
 	printf("<%s>\n", frame.dump().c_str());
 }
+
+void async_sensor_update_loop(){
+	while(true){
+		for(Tricorder_Sensor *sensor : sensors){
+			sensor->async_update_sensor();
+		}
+	}
+}
+	
 
 int main(){
 	// Global Variables
@@ -39,25 +65,9 @@ int main(){
 	gpio_set_function(2, GPIO_FUNC_UART);
 	gpio_set_function(3, GPIO_FUNC_UART);
 	uart_set_hw_flow(uart0, true, true);
-	if(watchdog_caused_reboot()){ printf("<Rebooted By Watchdog>\n"); }
+	//if(watchdog_caused_reboot()){ printf("<Rebooted By Watchdog>\n"); }
 	gpio_init(LED_PIN);
 	gpio_set_dir(LED_PIN, GPIO_OUT);
-	
-	// Sensor Array
-	Tricorder_AS7341 as7341 = Tricorder_AS7341();
-	Tricorder_BME688 bme688 = Tricorder_BME688();
-	Tricorder_LTR390 ltr390 = Tricorder_LTR390();
-	Tricorder_PMSA003I pmsa003i = Tricorder_PMSA003I();
-	Tricorder_TLV493D tlv493d = Tricorder_TLV493D();
-	Tricorder_SCD41 scd41 = Tricorder_SCD41();
-	Tricorder_Sensor *sensors[] = {
-		&as7341,
-		&bme688,
-		&ltr390,
-		&pmsa003i,
-		//&tlv493d,
-		//&scd41
-	};
 	
 	// Initialize Sensors
 	//printf("<Initializing Sensors>\n");
@@ -91,8 +101,15 @@ int main(){
 		led_state = !led_state;
 		sleep_ms(50);
 	}
-	printf("<Finished Initializing Sensors>\n");
+	//printf("<Finished Initializing Sensors>\n");
 	
+	// Send Ready Message
+	printf("<Sensor Manager Ready>\n");
+	
+	// Launch Asynchronous Sensor Reader
+	multicore_launch_core1(async_sensor_update_loop);
+	
+	// Main Loop
 	watchdog_enable(1000, 1);
 	while(true){
 		watchdog_update();
@@ -130,7 +147,7 @@ int main(){
 		
 		// Handle Input
 		if(read_ready){
-			printf("\n<RECV: %s>\n\n", input_buffer);
+			//printf("\n<RECV: %s>\n\n", input_buffer);
 			read_ready = false;
 			auto jinp = nlohmann::json::parse(input_buffer, nullptr, false);
 			if(!jinp.is_discarded()){
@@ -225,6 +242,14 @@ int main(){
 							break;
 						}
 					}
+				}else if(strcmp(cmd, "enable_all") == 0){
+					for(Tricorder_Sensor *sensor : sensors){
+						sensor->set_property("enabled", "true");
+					}
+				}else if(strcmp(cmd, "disable_all") == 0){
+					for(Tricorder_Sensor *sensor : sensors){
+						sensor->set_property("enabled", "false");
+					}
 				}
 			}
 		}
@@ -239,13 +264,17 @@ int main(){
 		//printf("Reporting Sensors...\n");
 		for(Tricorder_Sensor *sensor : sensors){
 			//printf("  Updating %s...\n", sensor->sensor_name);
-			bool sensor_updated = sensor->update_data();
+			//bool sensor_updated = sensor->update_data();
 			//printf("  Finished updating %s\n", sensor->sensor_name);
-			if(sensor_updated){
-				//printf("  Reporting %s...\n", sensor->sensor_name);
-				nlohmann::json report_frame = sensor->build_json();
-				send_json(report_frame);
-				//printf("  Finished reporting %s\n", sensor->sensor_name);
+			//if(sensor_updated){
+			//	//printf("  Reporting %s...\n", sensor->sensor_name);
+			//	nlohmann::json report_frame = sensor->build_json();
+			//	send_json(report_frame);
+			//	//printf("  Finished reporting %s\n", sensor->sensor_name);
+			//}
+			//sensor->async_update_sensor();
+			if(sensor->async_poll_sensor()){
+				send_json(sensor->async_get_frame());
 			}
 		}
 	}

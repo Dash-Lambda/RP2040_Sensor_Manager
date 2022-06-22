@@ -91,8 +91,22 @@ class Tricorder_Sensor
 		virtual nlohmann::json populate_data();
 		nlohmann::json query_state(char *opnam);
 		virtual bool read_sensor();
+		
+		// Async
+		void async_set_waiting(bool is_waiting);
+		bool async_get_waiting();
+		void async_set_data_ready(bool data_ready);
+		bool async_get_data_ready();
+		bool async_poll_sensor();
+		bool async_update_sensor();
+		nlohmann::json async_get_frame();
 	protected:
 		std::vector<sensor_option> sensor_options;
 		double report_rate;
+		
+		// Async
+		bool async_is_waiting;
+		bool async_is_data_ready;
+		nlohmann::json async_data_frame;
 };
 #endif
