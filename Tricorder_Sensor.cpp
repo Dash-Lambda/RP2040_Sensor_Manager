@@ -91,7 +91,7 @@ nlohmann::json Tricorder_Sensor::report_state(char *opnam){
 
 bool Tricorder_Sensor::update_data(){
 	unsigned long cur_time = to_us_since_boot(get_absolute_time());
-	if(enabled && !error_state && read_sensor() && cur_time - timestamp > 1000*report_rate){
+	if(initialized && enabled && !error_state && read_sensor() && cur_time - timestamp > 1000*report_rate){
 		timestamp = to_us_since_boot(get_absolute_time());
 		data_updated = true;
 		return true;

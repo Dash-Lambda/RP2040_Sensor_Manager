@@ -24,8 +24,21 @@ void send_json(nlohmann::json frame){
 }
 
 int main(){
+	// Global Variables
+	bool led_state = false;
+	uint64_t led_stamp = time_us_64();
+	//char nam_buf[MAX_BUFFER_SIZE], prop_buf[MAX_BUFFER_SIZE], val_buf[MAX_BUFFER_SIZE];
+	bool read_ready = false;
+	int read_state = 0;
+	int read_idx = 0;
+	
+	char input_buffer[MAX_BUFFER_SIZE];
+	
 	// Basic Initialization
 	stdio_init_all();
+	gpio_set_function(2, GPIO_FUNC_UART);
+	gpio_set_function(3, GPIO_FUNC_UART);
+	uart_set_hw_flow(uart0, true, true);
 	if(watchdog_caused_reboot()){ printf("<Rebooted By Watchdog>\n"); }
 	gpio_init(LED_PIN);
 	gpio_set_dir(LED_PIN, GPIO_OUT);
@@ -45,16 +58,6 @@ int main(){
 		//&tlv493d,
 		//&scd41
 	};
-	
-	// Global Variables
-	bool led_state = false;
-	uint64_t led_stamp = time_us_64();
-	//char nam_buf[MAX_BUFFER_SIZE], prop_buf[MAX_BUFFER_SIZE], val_buf[MAX_BUFFER_SIZE];
-	bool read_ready = false;
-	int read_state = 0;
-	int read_idx = 0;
-	
-	char input_buffer[MAX_BUFFER_SIZE];
 	
 	// Initialize Sensors
 	//printf("<Initializing Sensors>\n");
@@ -127,7 +130,7 @@ int main(){
 		
 		// Handle Input
 		if(read_ready){
-			//printf("\n<RECV: %s>\n\n", input_buffer);
+			printf("\n<RECV: %s>\n\n", input_buffer);
 			read_ready = false;
 			auto jinp = nlohmann::json::parse(input_buffer, nullptr, false);
 			if(!jinp.is_discarded()){
@@ -193,6 +196,32 @@ int main(){
 							//printf("<Initializing sensor...>\n");
 							sensor->sensor_init();
 							//printf("<Sensor initialized!>\n");
+							break;
+						}
+					}
+				}else if(strcmp(cmd, "enable") == 0){
+					//printf("<EXECUTE: Enable>\n");
+					//printf("<Getting target...>\n");
+					const char *target = jinp.at("sensor").get<std::string>().c_str();
+					//printf("<Searching for sensor...>\n");
+					for(Tricorder_Sensor *sensor : sensors){
+						if(strcmp(target, sensor->sensor_name) == 0){
+							//printf("<Enabling sensor...>\n");
+							sensor->set_property("enabled", "true");
+							//printf("<Sensor Enabled!>\n");
+							break;
+						}
+					}
+				}else if(strcmp(cmd, "disable") == 0){
+					//printf("<EXECUTE: Disable>\n");
+					//printf("<Getting target...>\n");
+					const char *target = jinp.at("sensor").get<std::string>().c_str();
+					//printf("<Searching for sensor...>\n");
+					for(Tricorder_Sensor *sensor : sensors){
+						if(strcmp(target, sensor->sensor_name) == 0){
+							//printf("<Disabling sensor...>\n");
+							sensor->set_property("enabled", "false");
+							//printf("<Sensor Disabled!>\n");
 							break;
 						}
 					}
